@@ -6,6 +6,7 @@ import Slider from './component/slider/Slider';
 import {Grid, Image} from "semantic-ui-react";
 import {MenuBar} from "./component/menu-bar/MenuBar";
 import {MatchResultCard} from "./component/match-result-card";
+import PlayerCard from "./component/player-card";
 
 class App extends Component {
     render() {
@@ -31,14 +32,27 @@ class App extends Component {
                             <MatchResultCard/>
                         </Grid.Column>
                         <Grid.Column width={2}>
-                        <MatchResultCard/>
-                    </Grid.Column>
-                        <Grid.Column width={2}>
                             <MatchResultCard/>
                         </Grid.Column>
                         <Grid.Column width={2}>
                             <MatchResultCard/>
                         </Grid.Column>
+                        <Grid.Column width={2}>
+                            <MatchResultCard/>
+                        </Grid.Column>
+                        <Grid.Column width={2}>
+                            <PlayerCard/>
+                        </Grid.Column>
+                        <Grid.Column width={2}>
+                            <PlayerCard/>
+                        </Grid.Column>
+                        <Grid.Column width={2}>
+                            <PlayerCard/>
+                        </Grid.Column>
+                        <Grid.Column width={2}>
+                            <PlayerCard/>
+                        </Grid.Column>
+
                     </Grid.Row>
                 </Grid>
             </div>
