@@ -12,7 +12,7 @@ export class MatchResultCard extends React.Component {
     render() {
         return (
             <DirectionProvider direction={DIRECTIONS.LTR}>
-                <Card className={'match-result'}>
+                <Card className={'match-result'} id="card">
                     <Card.Content>
                         <Card.Header>UEFA Champions League</Card.Header>
                     </Card.Content>
