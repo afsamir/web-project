@@ -1,0 +1,30 @@
+#site-name {
+    font-size: 20px;
+    padding-bottom: 10px;
+    margin-left: 30px;
+}
+
+#site-name:hover {
+    color: teal;
+}
+
+
+#search-bar {
+
+}
+
+#blank {
+    width: 30% !important;
+}
+
+#profile-icon {
+    float: left;
+    padding-top: 16px;
+    padding-bottom: 0;
+    margin-bottom: -4px;
+}
+
+.profile-dropdown{
+
+    margin-top: 15px !important; ;
+}
