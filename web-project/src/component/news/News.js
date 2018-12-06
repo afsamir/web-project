@@ -4,7 +4,7 @@ import {Container, Divider, Dropdown, Grid, Menu} from "semantic-ui-react";
 import './News.css'
 
 class App extends Component {
-    state = {};
+    state = {activeItem: 'buy',};
     stateOptions = [{key: 'FB', value: 'FB', text: 'Football'}, {key: 'BB', value: 'BB', text: 'Basketball'}];
 
     handleItemClick = (e, {name}) => this.setState({activeItem: name});
@@ -19,7 +19,7 @@ class App extends Component {
                 </Menu>
 
                 <Container textAlign='center'>
-                    <Dropdown placeholder='State' search selection options={this.stateOptions} inverted/>
+                    <Dropdown placeholder='State' search selection options={this.stateOptions} defaultValue='FB' inverted/>
                 </Container>
 
                 <Divider hidden/>

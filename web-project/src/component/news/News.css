@@ -1,4 +1,6 @@
 #App {
-    border: 5px double #000000;
+    border: 2px solid #000000;
+    border-radius: 7px;
+
     padding: 10px;
 }
