@@ -11,7 +11,7 @@ import {Image} from "../util/image";
 export class MatchResultCard extends React.Component {
     render() {
         return (
-            <DirectionProvider direction={DIRECTIONS.RTL}>
+            <DirectionProvider direction={DIRECTIONS.LTR}>
                 <Card className={'match-result'}>
                     <Card.Content>
                         <Card.Header>UEFA Champions League</Card.Header>
