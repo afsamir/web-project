@@ -36,5 +36,6 @@
 }
 
 .match-result{
+    min-width: 150px !important;
     width: 250px !important;
 }

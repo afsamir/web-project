@@ -18,7 +18,7 @@ export class MenuBar extends React.Component {
 
         return (
             <DirectionProvider direction={DIRECTIONS.RTL}>
-                <Segment inverted>
+                <Segment inverted className={'menu-bar'}>
                     <Menu inverted pointing secondary>
                         <Menu.Item name="Sport" id={'site-name'}/>
                         <Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick}/>
