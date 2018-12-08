@@ -9,6 +9,7 @@ import {MatchResultCard} from "./component/match-result-card";
 import PlayerCard from "./component/player-card";
 import TeamMember from "./component/team-member";
 import {NewsDiv} from "./component/news-div";
+import TeamLogo from "./component/team-logo/TeamLogo";
 
 class App extends Component {
     render() {
@@ -60,8 +61,10 @@ class App extends Component {
                         <Grid.Column width={4}>
                             <TeamMember/>
                         </Grid.Column>
+                        <Grid.Column width={4}>
+                            <TeamLogo/>
+                        </Grid.Column>
                     </Grid.Row>
-                    <NewsDiv/>
                 </Grid>
             </div>
 
