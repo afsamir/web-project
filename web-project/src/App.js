@@ -8,6 +8,7 @@ import {MenuBar} from "./component/menu-bar/MenuBar";
 import {MatchResultCard} from "./component/match-result-card";
 import PlayerCard from "./component/player-card";
 import TeamMember from "./component/team-member";
+import {NewsDiv} from "./component/news-div";
 
 class App extends Component {
     render() {
@@ -60,8 +61,10 @@ class App extends Component {
                             <TeamMember/>
                         </Grid.Column>
                     </Grid.Row>
+                    <NewsDiv/>
                 </Grid>
             </div>
+
         );
     }
 }
