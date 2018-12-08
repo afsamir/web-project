@@ -10,6 +10,7 @@ import PlayerCard from "./component/player-card";
 import TeamMember from "./component/team-member";
 import TeamLogo from "./component/team-logo/TeamLogo";
 import {SimpleSlider} from "./component/util/slideshow";
+import {TeamMemberDiv} from "./component/team-member-div";
 
 class App extends Component {
     render() {
