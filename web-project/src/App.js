@@ -7,6 +7,7 @@ import {Grid, Image} from "semantic-ui-react";
 import {MenuBar} from "./component/menu-bar/MenuBar";
 import {MatchResultCard} from "./component/match-result-card";
 import PlayerCard from "./component/player-card";
+import TeamMember from "./component/team-member";
 
 class App extends Component {
     render() {
@@ -52,7 +53,12 @@ class App extends Component {
                         <Grid.Column width={2}>
                             <PlayerCard/>
                         </Grid.Column>
+                    </Grid.Row>
 
+                    <Grid.Row>
+                        <Grid.Column width={4}>
+                            <TeamMember/>
+                        </Grid.Column>
                     </Grid.Row>
                 </Grid>
             </div>
