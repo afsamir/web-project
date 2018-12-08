@@ -18,9 +18,9 @@ class App extends Component {
                     </Header>
                     <Divider inverted/>
                     <TeamMemberDiv/>
-                    <TeamMemberDiv/>
-                    <TeamMemberDiv/>
-                    <TeamMemberDiv/>
+                    {/*<TeamMemberDiv/>*/}
+                    {/*<TeamMemberDiv/>*/}
+                    {/*<TeamMemberDiv/>*/}
 
                 </div>
             </DirectionProvider>
