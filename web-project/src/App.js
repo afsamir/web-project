@@ -10,9 +10,9 @@ import PlayerCard from "./component/player-card";
 import TeamMember from "./component/team-member";
 import TeamLogo from "./component/team-logo/TeamLogo";
 import {SimpleSlider} from "./component/util/slideshow";
-import {TeamMemberDiv} from "./component/team-member-div";
 import LeagueTable from "./component/league-table";
 import DirectionProvider, {DIRECTIONS} from "react-with-direction/dist/DirectionProvider";
+import PlayerResult from "./component/player-result";
 
 class App extends Component {
     render() {
@@ -26,40 +26,24 @@ class App extends Component {
                     </Grid.Row>
 
                     <Grid.Row>
-                    <Grid.Column width={6}>
-                    <News/>
-                    </Grid.Column>
-                    <Grid.Column width={10}>
-                        <Slider/>
-                    </Grid.Column>
+                        <Grid.Column width={6}>
+                            <News/>
+                        </Grid.Column>
+                        <Grid.Column width={10}>
+                            <Slider/>
+                        </Grid.Column>
                     </Grid.Row>
                     <Grid.Row>
-                        <Grid.Column width={2}>
-                            <MatchResultCard/>
+                        <Grid.Column width={8}>
+                            <SimpleSlider/>
                         </Grid.Column>
-                        <Grid.Column width={2}>
-                            <MatchResultCard/>
-                        </Grid.Column>
-                        <Grid.Column width={2}>
-                            <MatchResultCard/>
-                        </Grid.Column>
-                        <Grid.Column width={2}>
-                            <MatchResultCard/>
-                        </Grid.Column>
-                        <Grid.Column width={2}>
+                        <Grid.Column width={4}>
                             <PlayerCard/>
                         </Grid.Column>
-                        <Grid.Column width={2}>
-                            <PlayerCard/>
-                        </Grid.Column>
-                        <Grid.Column width={2}>
-                            <PlayerCard/>
-                        </Grid.Column>
-                        <Grid.Column width={2}>
+                        <Grid.Column width={4}>
                             <PlayerCard/>
                         </Grid.Column>
                     </Grid.Row>
-
                     <Grid.Row>
                         <Grid.Column width={4}>
                             <TeamMember/>
@@ -68,7 +52,7 @@ class App extends Component {
                             <TeamLogo/>
                         </Grid.Column>
                         <Grid.Column width={8}>
-                            <SimpleSlider/>
+                            <PlayerResult/>
                         </Grid.Column>
                     </Grid.Row>
                     <Grid.Row>

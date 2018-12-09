@@ -4,9 +4,9 @@ import './LeagueTable.css'
 import DirectionProvider, {DIRECTIONS} from "react-with-direction/dist/DirectionProvider";
 import Table from "semantic-ui-react/dist/commonjs/collections/Table/Table";
 import Dropdown from "semantic-ui-react/dist/commonjs/modules/Dropdown/Dropdown";
-import {Container} from "semantic-ui-react";
 import Divider from "semantic-ui-react/dist/commonjs/elements/Divider/Divider";
 import Segment from "semantic-ui-react/dist/commonjs/elements/Segment/Segment";
+import Header from "semantic-ui-react/dist/commonjs/elements/Header/Header";
 
 class App extends Component {
     stateOptions = [{key: 'FB', value: 'FB', text: 'Football'}, {key: 'BB', value: 'BB', text: 'Basketball'}];
@@ -41,9 +41,10 @@ class App extends Component {
         return (
             <DirectionProvider direction={DIRECTIONS.RTL} textAlign='center'>
                 <Segment id='LeagueTable' textAlign='center'>
+                    <Header>جدول لیگ</Header>
                     <Dropdown placeholder='State' search selection options={leagues} defaultValue='ir' inverted/>
                     <Divider/>
-                    <Table color='grey'>
+                    <Table>
                         <Table.Header>
                             <Table.Row>
                                 <Table.HeaderCell textAlign='center'>ردیف</Table.HeaderCell>
