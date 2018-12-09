@@ -9,22 +9,28 @@
 }
 
 
-#search-bar {
-
-}
 .menu-bar{
     margin-left: auto !important;
     margin-right: auto !important;
-    max-width: 600px;
+    max-width: 800px;
 }
 
 #profile-icon {
-    float: left;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 4px;
+    margin-bottom: -4px;
+}
+
+#search-icon {
+    padding: 4px;
     margin-bottom: -4px;
 }
 
 .profile-dropdown{
-    margin-top: 15px !important; ;
+    margin-top: 15px !important;
+    left: -45% !important;
+}
+
+.search-dropdown{
+    margin-top: 30px !important;
+    left: 150% !important;
 }
