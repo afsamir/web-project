@@ -9,7 +9,6 @@ import {MatchResultCard} from "./component/match-result-card";
 import PlayerCard from "./component/player-card";
 import TeamMember from "./component/team-member";
 import TeamLogo from "./component/team-logo/TeamLogo";
-import {SimpleSlider} from "./component/util/slideshow";
 import LeagueTable from "./component/league-table";
 import DirectionProvider, {DIRECTIONS} from "react-with-direction/dist/DirectionProvider";
 import PlayerResult from "./component/player-result";
@@ -35,7 +34,6 @@ class App extends Component {
                     </Grid.Row>
                     <Grid.Row>
                         <Grid.Column width={8}>
-                            <SimpleSlider/>
                         </Grid.Column>
                         <Grid.Column width={4}>
                             <PlayerCard/>

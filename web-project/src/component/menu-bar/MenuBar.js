@@ -17,31 +17,33 @@ export class MenuBar extends React.Component {
         const {activeItem} = this.state;
 
         return (
-            <DirectionProvider direction={DIRECTIONS.RTL}>
-                <Segment inverted  >
-                    <Menu inverted pointing secondary className={'menu-bar'}>
-                        <Menu.Item name="Sport" id={'site-name'}/>
-                        <Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick}/>
-                        <Menu.Item
-                            name='messages'
-                            active={activeItem === 'messages'}
-                            onClick={this.handleItemClick}
-                        />
-                        <Menu.Item
-                            name='friends'
-                            active={activeItem === 'friends'}
-                            onClick={this.handleItemClick}
-                        />
-                        <Menu.Item id={'search-bar'} position='left'>
-                            <SearchExampleStandard/>
-                        </Menu.Item>
-                        <Menu.Item id='profile-icon' /*position='left'*/>
-                            <ProfileIcon/>
-                        </Menu.Item>
+            <div style={{padding: "5px"}}>
+                <DirectionProvider direction={DIRECTIONS.RTL}>
+                    <Segment inverted>
+                        <Menu inverted pointing secondary className={'menu-bar'}>
+                            <Menu.Item name="Sport" id={'site-name'}/>
+                            <Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick}/>
+                            <Menu.Item
+                                name='messages'
+                                active={activeItem === 'messages'}
+                                onClick={this.handleItemClick}
+                            />
+                            <Menu.Item
+                                name='friends'
+                                active={activeItem === 'friends'}
+                                onClick={this.handleItemClick}
+                            />
+                            <Menu.Item id={'search-bar'} position='left'>
+                                <SearchExampleStandard/>
+                            </Menu.Item>
+                            <Menu.Item id='profile-icon' /*position='left'*/>
+                                <ProfileIcon/>
+                            </Menu.Item>
 
-                    </Menu>
-                </Segment>
-            </DirectionProvider>
+                        </Menu>
+                    </Segment>
+                </DirectionProvider>
+            </div>
         )
     }
 }
