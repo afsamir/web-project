@@ -35,7 +35,7 @@ export class MenuBar extends React.Component {
                         <Menu.Item id={'search-bar'} position='left'>
                             <SearchExampleStandard/>
                         </Menu.Item>
-                        <Menu.Item id={'profile-icon'} /*position='left'*/>
+                        <Menu.Item id='profile-icon' /*position='left'*/>
                             <ProfileIcon/>
                         </Menu.Item>
 
