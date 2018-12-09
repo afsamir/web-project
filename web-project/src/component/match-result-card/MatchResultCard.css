@@ -1,32 +1,5 @@
-#site-name {
-    font-size: 20px;
-    padding-bottom: 10px;
-    margin-left: 30px;
-}
-
-#site-name:hover {
-    color: teal;
-}
-
-
-#search-bar {
-
-}
-
-#blank {
-    width: 30% !important;
-}
-
-#profile-icon {
-    float: left;
-    padding-top: 16px;
-    padding-bottom: 0;
-    margin-bottom: -4px;
-}
-
-.profile-dropdown{
-
-    margin-top: 15px !important; ;
+.league{
+    text-align: center;
 }
 .goals-text{
     font-size: 18px;
@@ -36,11 +9,7 @@
 }
 
 .match-result{
-    min-width: 150px !important;
-    width: 250px !important;
-}
 
-#card {
     border: solid 2px #000;
     border-radius: 10px;
     margin: 10px;

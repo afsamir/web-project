@@ -13,7 +13,7 @@ export class SimpleSlider extends React.Component {
             dots: true,
             infinite: true,
             speed: 500,
-            slidesToShow: 5,
+            slidesToShow: 2,
             slidesToScroll: 1,
             autoplay: true,
             autoplaySpeed: 3000,
