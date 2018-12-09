@@ -1,7 +1,12 @@
-.slider div{
+.slider div {
     width: 100%;
 }
 
-.slider div img{
+.slider div img {
 
+}
+
+#Slider {
+    border: 3px solid #000000;
+    border-radius: 10px;
 }

@@ -3,8 +3,15 @@ import 'semantic-ui-css/semantic.min.css';
 import './LeagueTable.css'
 import DirectionProvider, {DIRECTIONS} from "react-with-direction/dist/DirectionProvider";
 import Table from "semantic-ui-react/dist/commonjs/collections/Table/Table";
+import Dropdown from "semantic-ui-react/dist/commonjs/modules/Dropdown/Dropdown";
+import {Container} from "semantic-ui-react";
+import Divider from "semantic-ui-react/dist/commonjs/elements/Divider/Divider";
+import Segment from "semantic-ui-react/dist/commonjs/elements/Segment/Segment";
 
 class App extends Component {
+    stateOptions = [{key: 'FB', value: 'FB', text: 'Football'}, {key: 'BB', value: 'BB', text: 'Basketball'}];
+
+
     render() {
         let teams = [
             {
@@ -25,9 +32,17 @@ class App extends Component {
             },
         ];
 
+        let leagues = [
+            {key: 'en', value: 'en', text: 'لیگ برتر انگلیس',},
+            {key: 'la', value: 'la', text: 'لالیگا',},
+            {key: 'ir', value: 'ir', text: 'لیگ برتر ایران',},
+        ];
+
         return (
-            <DirectionProvider direction={DIRECTIONS.RTL}>
-                <div id='LeagueTable'>
+            <DirectionProvider direction={DIRECTIONS.RTL} textAlign='center'>
+                <Segment id='LeagueTable' textAlign='center'>
+                    <Dropdown placeholder='State' search selection options={leagues} defaultValue='ir' inverted/>
+                    <Divider/>
                     <Table color='grey'>
                         <Table.Header>
                             <Table.Row>
@@ -51,7 +66,7 @@ class App extends Component {
                             }
                         </Table.Body>
                     </Table>
-                </div>
+                </Segment>
             </DirectionProvider>
         );
     }

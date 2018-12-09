@@ -1,15 +1,13 @@
 import React from 'react';
 import Slider from "react-slick";
 import './SlideShow.css'
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import {MatchResultCard} from "../../match-result-card";
+import Segment from "semantic-ui-react/dist/commonjs/elements/Segment/Segment";
 
 
 export class SimpleSlider extends React.Component {
-
-
     render() {
         const settings = {
             dots: true,
@@ -22,6 +20,7 @@ export class SimpleSlider extends React.Component {
         };
 
         return (
+            <Segment id='Slider'>
             <Slider {...settings} className={'slider'}>
                 <div> <MatchResultCard/></div>
                 <div><MatchResultCard/></div>
@@ -32,6 +31,7 @@ export class SimpleSlider extends React.Component {
                 <div><MatchResultCard/></div>
                 <div><MatchResultCard/></div>
             </Slider>
+            </Segment>
         );
     }
 }

@@ -3,3 +3,7 @@
     border-radius: 10px;
     width: 100%;
 }
+
+#Header {
+    background-color: transparent;
+}
