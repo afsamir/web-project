@@ -4,6 +4,7 @@
     border-radius: 4px;
     padding: 6px;
     transition-duration: 500ms;
+    align-content: space-between;
     display: inline;
     float: right;
 
@@ -30,7 +31,7 @@
 
 .news-date{
     margin: 4px;
-    color: #555555;
+    color: #858565;
     display: block;
     float: left;
     position: relative;
@@ -41,5 +42,13 @@
 .news-image{
     float: left !important;
     margin-right: 12px;
+    transition-duration: 500ms;
+
+
+}
+
+.news-image:hover{
+    box-shadow: 0 0 2rem gray;
+    transition-duration: 500ms;
 
 }
