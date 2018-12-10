@@ -1,5 +1,5 @@
 import React from 'react'
-import { Icon, Feed} from "semantic-ui-react";
+import {Icon, Feed, Label} from "semantic-ui-react";
 import './SmallMatchCard.css'
 import DirectionProvider, {DIRECTIONS} from "react-with-direction/dist/DirectionProvider";
 
@@ -12,7 +12,8 @@ export class SmallMatchCard extends React.Component {
         return (
 
             <DirectionProvider direction={DIRECTIONS.RTL}>
-                <Feed >
+
+                <Feed>
                     <Feed.Event className={'results'}>
                         <Feed.Label className={'home-logo'}>
                             <img src='https://react.semantic-ui.com/images/avatar/small/elliot.jpg' />

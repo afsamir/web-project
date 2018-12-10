@@ -1,5 +1,5 @@
 import React from 'react'
-import {Segment, Grid, Divider, Header} from "semantic-ui-react";
+import {Segment, Grid, Divider, Header, Button, Icon} from "semantic-ui-react";
 import './LeagueDashboard.css'
 import DirectionProvider, {DIRECTIONS} from "react-with-direction/dist/DirectionProvider";
 import LeagueTable from "../league-table";
@@ -15,21 +15,19 @@ export class LeagueDashboard extends React.Component {
     render() {
 
         const matchResultSettings = {
-            infinite: true,
             speed: 500,
-            slidesToShow: 4,
+            slidesToShow: 7,
             slidesToScroll: 1,
-            autoplaySpeed: 3000,
             vertical: true,
             verticalSwiping: true,
-            centerPadding:true
+            centerMode: true
         };
 
         return (
 
             <DirectionProvider direction={DIRECTIONS.RTL}>
                 <Segment>
-                    <Header content={"league"}></Header>
+                    <Header content={"league"}/>
                     <Divider/>
                     <Grid columns={2} relaxed='very'>
                         <Grid.Column className={'match-results'}>
@@ -43,8 +41,16 @@ export class LeagueDashboard extends React.Component {
                                 <SmallMatchCard/>
                                 <SmallMatchCard/>
                                 <SmallMatchCard/>
-
-
+                                <SmallMatchCard/>
+                                <SmallMatchCard/>
+                                <SmallMatchCard/>
+                                <SmallMatchCard/>
+                                <SmallMatchCard/>
+                                <SmallMatchCard/>
+                                <SmallMatchCard/>
+                                <SmallMatchCard/>
+                                <SmallMatchCard/>
+                                <SmallMatchCard/>
                             </Slider>
                         </Grid.Column>
                         <Grid.Column>
@@ -52,7 +58,13 @@ export class LeagueDashboard extends React.Component {
                         </Grid.Column>
                     </Grid>
 
-                    <Divider vertical>And</Divider>
+                    <Divider vertical>
+                        <Button circular animated='fade'>
+                        <Button.Content hidden>Full</Button.Content>
+                        <Button.Content visible>
+                            <Icon name='trophy' />
+                        </Button.Content>
+                    </Button></Divider>
 
                 </Segment>
             </DirectionProvider>

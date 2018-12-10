@@ -38,11 +38,14 @@ class App extends Component {
             {key: 'ir', value: 'ir', text: 'لیگ برتر ایران',},
         ];
 
+
+
         return (
+
             <DirectionProvider direction={DIRECTIONS.RTL} textAlign='center'>
                 <Segment id='LeagueTable' textAlign='center'>
                     <Header>جدول لیگ</Header>
-                    <Dropdown placeholder='State' search selection options={leagues} defaultValue='ir' inverted/>
+                    <Dropdown visible={visible} placeholder='State' search selection options={leagues} defaultValue='ir' inverted/>
                     <Divider/>
                     <Table>
                         <Table.Header>
