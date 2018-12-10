@@ -9,8 +9,8 @@ import DirectionProvider, {DIRECTIONS} from "react-with-direction/dist/Direction
 import Grid from "semantic-ui-react/dist/commonjs/collections/Grid/Grid";
 import {MenuBar} from "../../component/menu-bar";
 import PlayerCard from "../../component/player-card";
-import {MatchResultCard} from "../../component/match-result-card";
 import Image from "semantic-ui-react/dist/commonjs/elements/Image/Image";
+import {PictureNews} from "../../component/picture-news";
 
 class Home extends Component {
     render() {
@@ -45,7 +45,9 @@ class Home extends Component {
                                     </Slider>
                                 </Grid.Column>
                             </Grid.Row>
-                            <Grid.Row>
+                            <Grid.Row>                            <PictureNews/>
+
+
                                 <Grid.Column>
                                     <PlayerCard/>
                                 </Grid.Column>

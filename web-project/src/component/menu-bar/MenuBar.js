@@ -66,11 +66,11 @@ export class MenuBar extends React.Component {
                                 active={activeItem === 'friends'}
                                 onClick={this.handleItemClick}
                             />
-                            <Menu.Item id={'search-icon'} position='left'>
+                            <Menu.Item id={'search-icon'} >
                                 <SearchIcon/>
                             </Menu.Item>
 
-                            <Menu.Item id='profile-icon'>
+                            <Menu.Item id='profile-icon' position='left'>
                                 <ProfileIcon/>
                             </Menu.Item>
 
@@ -98,12 +98,11 @@ export class MenuBar extends React.Component {
                                 active={activeItem === 'friends'}
                                 onClick={this.handleItemClick}
                             />
-                            <Menu.Item id='search-icon' position='left'>
+                            <Menu.Item id='search-icon'>
                                 <SearchIcon/>
                             </Menu.Item>
 
-
-                            <Menu.Item id='profile-icon'>
+                            <Menu.Item id='profile-icon'  position='left'>
                                 <ProfileIcon/>
                             </Menu.Item>
 
@@ -147,7 +146,7 @@ export class SearchExampleStandard extends React.Component {
     };
 
     render() {
-        const {isLoading, value, results} = this.state
+        const {isLoading, value, results} = this.state;
 
         return (
             <Grid>
@@ -172,7 +171,6 @@ export class ProfileIcon extends React.Component {
             dropdown: false,
         }
     }
-
     mouseEnter = () => {
         if (!this.state.dropdown)
             this.setState({color: 'teal'})

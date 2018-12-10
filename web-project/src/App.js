@@ -5,7 +5,6 @@ import News from './component/news/News';
 import Slider from './component/slider/Slider';
 import {Grid} from "semantic-ui-react";
 import {MenuBar} from "./component/menu-bar/MenuBar";
-import {MatchResultCard} from "./component/match-result-card";
 import PlayerCard from "./component/player-card";
 import TeamMember from "./component/team-member";
 import TeamLogo from "./component/team-logo/TeamLogo";
