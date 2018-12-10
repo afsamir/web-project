@@ -39,7 +39,8 @@ class Home extends Component {
             autoplaySpeed: 3000,
             pauseOnHover: true,
             pauseOnDotsHover: true,
-            centerMode: true,
+            slide:MatchResultCard,
+            // centerMode: true,
         };
 
         return (
@@ -147,7 +148,7 @@ class Home extends Component {
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
-                                                {matchResultSettings.slidesToShow = 2}
+                                               <div style={{display:'none'}}>  {matchResultSettings.slidesToShow = 2}</div>
                                                 <Slider {...matchResultSettings} className={'slider'}>
                                                     <MatchResultCard/>
                                                     <MatchResultCard/>
