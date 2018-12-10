@@ -84,6 +84,10 @@ class Home extends Component {
                                                     <Grid.Row>
                                                         <Grid.Column width={16}>
                                                             <LeagueSelector/>
+                                                        </Grid.Column>
+                                                    </Grid.Row>
+                                                    <Grid.Row>
+                                                    <Grid.Column width={16}>
                                                             <LeagueDashboard/>
                                                         </Grid.Column>
                                                     </Grid.Row>
@@ -165,7 +169,9 @@ class Home extends Component {
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
-                                                <LeagueSelector/>
+                                                <LeagueSelector style={{maxWidth: '500px'}}/>
+                                            </Grid.Column>
+                                            <Grid.Column width={16}>
                                                 <LeagueDashboard/>
                                             </Grid.Column>
                                         </Grid.Row>
