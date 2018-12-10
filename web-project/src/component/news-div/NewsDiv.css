@@ -1,15 +1,41 @@
 .news-text{
     text-align: right;
+    color: #757575;
+    transition-duration: 500ms;
+    display: inline;
+    float: right;
+
 }
 
-.news-title{
-    font-size: 12px;
-    color: #454545;
+.news-text:hover{
+    text-align: right;
+    color: black;
+    transition-duration: 500ms;
+    cursor: pointer;
+}
+
+.main{
+    display: inline;
+    color: red;
+    float: right;
+    margin-left: 12px;
 }
 
 .news-icon{
 
 }
 .news-date{
-    margin: 4px;;
+    margin: 4px;
+    color: #555555;
+    display: block;
+
+    float: left;
+    position: relative;
+    bottom: -70px !important;
+
+}
+.news-image{
+    float: left !important;
+    margin-right: 12px;
+
 }
