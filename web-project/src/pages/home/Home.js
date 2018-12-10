@@ -11,7 +11,7 @@ import {MenuBar} from "../../component/menu-bar";
 import {MatchResultCard} from "../../component/match-result-card";
 import News from "../../component/news";
 import {PictureNews} from "../../component/picture-news";
-import {LeagueDashboard} from "../../component/leagues-dashboard";
+import {LeagueDashboard, LeagueSelector} from "../../component/leagues-dashboard";
 import Responsive from "semantic-ui-react/dist/commonjs/addons/Responsive/Responsive";
 import Segment from "semantic-ui-react/dist/commonjs/elements/Segment/Segment";
 
@@ -83,6 +83,7 @@ class Home extends Component {
                                                     </Grid.Row>
                                                     <Grid.Row>
                                                         <Grid.Column width={16}>
+                                                            <LeagueSelector/>
                                                             <LeagueDashboard/>
                                                         </Grid.Column>
                                                     </Grid.Row>
@@ -94,7 +95,7 @@ class Home extends Component {
                                         </Grid.Row>
                                     </Grid>
                                 </Responsive>
-                                <Responsive as={Segment} minWidth={746} maxWidth={1080}>
+                                <Responsive as={Segment} minWidth={768} maxWidth={1079}>
                                     <Grid>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
@@ -127,12 +128,13 @@ class Home extends Component {
                                                 <News/>
                                             </Grid.Column>
                                             <Grid.Column width={8}>
+                                                <LeagueSelector/>
                                                 <LeagueDashboard/>
                                             </Grid.Column>
                                         </Grid.Row>
                                     </Grid>
                                 </Responsive>
-                                <Responsive as={Segment} maxWidth={745}>
+                                <Responsive as={Segment} maxWidth={767}>
                                     <Grid>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
@@ -163,6 +165,7 @@ class Home extends Component {
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
+                                                <LeagueSelector/>
                                                 <LeagueDashboard/>
                                             </Grid.Column>
                                         </Grid.Row>

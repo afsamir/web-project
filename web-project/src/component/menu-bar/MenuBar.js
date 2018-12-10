@@ -47,7 +47,7 @@ export class MenuBar extends React.Component {
 
                             </Menu>
                         </Responsive>
-                        <Responsive maxWidth={768} minWidth={540}>
+                        <Responsive maxWidth={767} minWidth={540}>
 
                             <Menu inverted pointing secondary className={'menu-bar'}>
                                 <Menu.Item name="Sport" id={'site-name'}/>

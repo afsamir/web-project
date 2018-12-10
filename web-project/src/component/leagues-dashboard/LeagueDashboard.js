@@ -1,5 +1,5 @@
 import React from 'react'
-import {Segment, Grid, Divider, Header, Button, Icon, Tab} from "semantic-ui-react";
+import {Segment, Grid, Divider, Button, Tab, Responsive} from "semantic-ui-react";
 import './LeagueDashboard.css'
 import DirectionProvider, {DIRECTIONS} from "react-with-direction/dist/DirectionProvider";
 import LeagueTable from "../league-table";
@@ -16,60 +16,88 @@ export class LeagueDashboard extends React.Component {
     render() {
 
         const matchResultSettings = {
-            speed: 500,
+            speed: 300,
             slidesToShow: 7,
             slidesToScroll: 1,
             vertical: true,
             verticalSwiping: true,
-            centerMode: true
+            swipeToSlide: true,
+            centerMode: false
         };
 
         return (
 
             <DirectionProvider direction={DIRECTIONS.RTL}>
                 <Segment>
-                    <LeagueSelector/>
-                    <Header icon={"circular inverted trophy"} name={"League"} className={'header'}>
-                    </Header>
-                    <Divider/>
-                    <Grid columns={2} relaxed='very'>
-                        <Grid.Column className={'match-results'}>
-                            <Slider {...matchResultSettings}>
-                                <SmallMatchCard/>
-                                <SmallMatchCard/>
-                                <SmallMatchCard/>
-                                <SmallMatchCard/>
-                                <SmallMatchCard/>
-                                <SmallMatchCard/>
-                                <SmallMatchCard/>
-                                <SmallMatchCard/>
-                                <SmallMatchCard/>
-                                <SmallMatchCard/>
-                                <SmallMatchCard/>
-                                <SmallMatchCard/>
-                                <SmallMatchCard/>
-                                <SmallMatchCard/>
-                                <SmallMatchCard/>
-                                <SmallMatchCard/>
-                                <SmallMatchCard/>
-                                <SmallMatchCard/>
-                                <SmallMatchCard/>
-                            </Slider>
-                        </Grid.Column>
-                        <Grid.Column>
-                            <LeagueTable table={false}/>
-                        </Grid.Column>
-                    </Grid>
+                    <Responsive minWidth={1080}>
+                        <div style={{display: 'none'}}>{matchResultSettings.slidesToShow = 7}</div>
+                        <Grid columns={2} relaxed='very'>
+                            <Grid.Row>
+                            <Grid.Column className={'match-results'}>
+                                <Slider {...matchResultSettings}>
+                                    <SmallMatchCard/>
+                                    <SmallMatchCard/>
+                                    <SmallMatchCard/>
+                                    <SmallMatchCard/>
+                                    <SmallMatchCard/>
+                                    <SmallMatchCard/>
+                                    <SmallMatchCard/>
+                                    <SmallMatchCard/>
+                                    <SmallMatchCard/>
+                                    <SmallMatchCard/>
+                                    <SmallMatchCard/>
+                                    <SmallMatchCard/>
+                                    <SmallMatchCard/>
+                                    <SmallMatchCard/>
+                                    <SmallMatchCard/>
+                                    <SmallMatchCard/>
+                                    <SmallMatchCard/>
+                                    <SmallMatchCard/>
+                                    <SmallMatchCard/>
+                                </Slider>
+                            </Grid.Column>
+                            <Grid.Column>
+                                <LeagueTable height={'300px'} table={false}/>
+                            </Grid.Column>
+                            </Grid.Row>
+                        </Grid>
+                    </Responsive>
+                    <Responsive maxWidth={1080}>
+                        <Grid columns={1} relaxed='very'>
+                            <Grid.Row className={'match-results'}>
+                                <Grid.Column>
+                                <div style={{display: 'none'}}>{matchResultSettings.slidesToShow = 4}</div>
 
-                    <Divider fitted={true} section={false} vertical>
-                        <Button circular animated='fade'>
-                            <Button.Content hidden>Full</Button.Content>
-                            <Button.Content visible>
-                                <Icon name='trophy'/>
-                            </Button.Content>
-                        </Button>
-                    </Divider>
-
+                                <Slider {...matchResultSettings}>
+                                    <SmallMatchCard/>
+                                    <SmallMatchCard/>
+                                    <SmallMatchCard/>
+                                    <SmallMatchCard/>
+                                    <SmallMatchCard/>
+                                    <SmallMatchCard/>
+                                    <SmallMatchCard/>
+                                    <SmallMatchCard/>
+                                    <SmallMatchCard/>
+                                    <SmallMatchCard/>
+                                    <SmallMatchCard/>
+                                    <SmallMatchCard/>
+                                    <SmallMatchCard/>
+                                    <SmallMatchCard/>
+                                    <SmallMatchCard/>
+                                    <SmallMatchCard/>
+                                    <SmallMatchCard/>
+                                    <SmallMatchCard/>
+                                    <SmallMatchCard/>
+                                </Slider>
+                                </Grid.Column>
+                            </Grid.Row>
+                            <Grid.Row>
+                                <Grid.Column>
+                                <LeagueTable height={'300px'} table={false}/>
+                                </Grid.Column>
+                            </Grid.Row>
+                        </Grid>
+                    </Responsive>
                 </Segment>
             </DirectionProvider>
         )
@@ -109,21 +137,40 @@ export class LeagueSelector extends React.Component {
         const panes = [
             {
                 menuItem: 'Football',
-                render: () => <Tab.Pane attached={false}> <Dropdown placeholder='State' search selection
-                                                                    options={leagues} defaultValue='ir' inverted
-                                                                    className={'leagues-dropdown'}/>
+                render: () => <Tab.Pane> <Dropdown placeholder='State' search selection
+                                                   options={leagues} defaultValue='ir' inverted
+                                                   className={'leagues-dropdown'}/>
+                    <Button circular={true} color={'teal'} content={' صفحه لیگ'}/>
                 </Tab.Pane>
             },
             {
                 menuItem: 'Basketball',
-                render: () => <Tab.Pane attached={false}> <Dropdown placeholder='State' search selection
-                                                                    options={leagues} defaultValue='en' inverted
-                                                                    className={'leagues-dropdown'}/>
+                render: () => <Tab.Pane>
+                    <Dropdown placeholder='State' search selection
+                              options={leagues} defaultValue='en' inverted
+                              className={'leagues-dropdown'}/>
+                    <Button circular={true} color={'teal'} content={' صفحه لیگ'}/>
                 </Tab.Pane>
             }
         ];
 
-        return (<Tab menu={{tabular: true }} panes={panes}/>)
+        return (<Tab menu={{tabular: true}} panes={panes}/>)
 
+    }
+}
+
+export class JustLeagueSelector extends React.Component {
+
+    render() {
+
+        let leagues = [
+            {key: 'en', value: 'en', text: 'لیگ برتر انگلیس',},
+            {key: 'la', value: 'la', text: 'لالیگا',},
+            {key: 'ir', value: 'ir', text: 'لیگ برتر ایران',},
+        ];
+
+        return (<Dropdown placeholder='State' search selection
+                          options={leagues} defaultValue='en' inverted
+                          className={'leagues-dropdown'}/>)
     }
 }
