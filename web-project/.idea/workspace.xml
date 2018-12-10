@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd8e2431-d039-438e-b3ad-cd35c62dced9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/menu-bar/MenuBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/menu-bar/MenuBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/news/News.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/news/News.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/news/News.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/news/News.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/picture-news/PictureNew.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/picture-news/PictureNew.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/picture-news/PictureNews.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/picture-news/PictureNews.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/Home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/Home.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,8 +28,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="437">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -31,14 +37,50 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/home/Home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="26" column="31" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="31" />
+            <state relative-caret-position="95">
+              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/react-slick/lib/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/component/picture-news/PictureNew.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="23" column="46" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
               <folding>
-                <element signature="e#0#41#0" expanded="true" />
+                <element signature="e#0#25#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/component/news/News.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="607">
+              <caret line="41" column="30" lean-forward="true" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/component/news/News.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -46,8 +88,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/component/menu-bar/MenuBar.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+            <state relative-caret-position="190">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
@@ -55,8 +97,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/component/menu-bar/MenuBar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="34" column="55" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
+            <state relative-caret-position="304">
+              <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -67,8 +109,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/home/Home.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="114">
+              <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/component/picture-news/PictureNews.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -112,7 +163,6 @@
         <option value="$PROJECT_DIR$/src/component/teamMember/TeamMember.css" />
         <option value="$PROJECT_DIR$/src/component/teamMember/TeamMember.js" />
         <option value="$PROJECT_DIR$/src/component/team-member/TeamMember.js" />
-        <option value="$PROJECT_DIR$/src/component/news/News.js" />
         <option value="$PROJECT_DIR$/src/component/team-logo/TeamLogo.js" />
         <option value="$PROJECT_DIR$/src/component/team-member/TeamMember.css" />
         <option value="$PROJECT_DIR$/src/component/team-logo/TeamLogo.css" />
@@ -120,7 +170,6 @@
         <option value="$PROJECT_DIR$/src/component/league-table/leagueTable.css" />
         <option value="$PROJECT_DIR$/src/component/league-table/package.json" />
         <option value="$PROJECT_DIR$/src/component/slider/Slider.css" />
-        <option value="$PROJECT_DIR$/src/component/news/News.css" />
         <option value="$PROJECT_DIR$/src/component/player-card/PlayerCard.css" />
         <option value="$PROJECT_DIR$/src/component/league-table/LeagueTable.css" />
         <option value="$PROJECT_DIR$/src/component/player-result/PlayerResult.css" />
@@ -133,14 +182,18 @@
         <option value="$PROJECT_DIR$/src/pages/home/home.js" />
         <option value="$PROJECT_DIR$/src/pages/home/package.json" />
         <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/src/component/menu-bar/MenuBar.css" />
         <option value="$PROJECT_DIR$/src/component/util/slideshow/SlideShow.js" />
-        <option value="$PROJECT_DIR$/src/pages/home/Home.css" />
         <option value="$PROJECT_DIR$/src/component/util/slideshow/SlideShow.css" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/index.css" />
+        <option value="$PROJECT_DIR$/src/component/menu-bar/MenuBar.css" />
+        <option value="$PROJECT_DIR$/src/component/news/News.css" />
         <option value="$PROJECT_DIR$/src/component/menu-bar/MenuBar.js" />
+        <option value="$PROJECT_DIR$/src/component/news/News.js" />
+        <option value="$PROJECT_DIR$/src/component/picture-news/PictureNew.js" />
         <option value="$PROJECT_DIR$/src/pages/home/Home.js" />
+        <option value="$PROJECT_DIR$/src/pages/home/Home.css" />
+        <option value="$PROJECT_DIR$/src/component/picture-news/PictureNews.css" />
       </list>
     </option>
   </component>
@@ -181,7 +234,14 @@
               <item name="web-project" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="component" type="462c0819:PsiDirectoryNode" />
-              <item name="menu-bar" type="462c0819:PsiDirectoryNode" />
+              <item name="news" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web-project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
+              <item name="picture-news" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="web-project" type="b2602c69:ProjectViewProjectNode" />
@@ -268,7 +328,9 @@
       <workItem from="1544252780591" duration="1349000" />
       <workItem from="1544348809609" duration="9648000" />
       <workItem from="1544360046899" duration="168000" />
-      <workItem from="1544367825318" duration="10747000" />
+      <workItem from="1544367825318" duration="11522000" />
+      <workItem from="1544390463966" duration="2754000" />
+      <workItem from="1544425274405" duration="3234000" />
     </task>
     <task id="LOCAL-00001" summary="Semantic-ui-css">
       <created>1544052059663</created>
@@ -354,22 +416,30 @@
       <option name="project" value="LOCAL" />
       <updated>1544378941834</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="updated&#10;:))">
+      <created>1544379170222</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1544379170222</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33301000" />
+    <option name="totallyTimeSpent" value="40064000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49919486" visible="true" weight="0.17764892" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49919486" visible="true" weight="0.17764892" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" sideWeight="0.50080514" side_tool="true" weight="0.18239325" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32937366" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32937366" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32937366" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -377,7 +447,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32829374" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32397407" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32327586" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -547,13 +617,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/news/News.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/component/team-logo/TeamLogo.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -571,13 +634,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-slick/lib/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/component/player-result/PlayerResult.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -592,13 +648,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/news/News.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="22" column="51" selection-start-line="22" selection-end-line="23" />
         </state>
       </provider>
     </entry>
@@ -689,33 +738,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/util/slideshow/SlideShow.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/util/slideshow/SlideShow.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/util/slideshow/SlideShow.css" />
+    <entry file="file://$PROJECT_DIR$/src/component/util/slideshow/SlideShow.js" />
     <entry file="file://$PROJECT_DIR$/src/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -723,37 +747,82 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/component/menu-bar/MenuBar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="34" column="55" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
+        <state relative-caret-position="304">
+          <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/home/Home.css">
+    <entry file="file://$PROJECT_DIR$/src/component/menu-bar/MenuBar.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="190">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/menu-bar/MenuBar.css">
+    <entry file="file://$PROJECT_DIR$/src/component/news/News.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        <state relative-caret-position="57">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/picture-news/PictureNew.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="23" column="46" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/news/News.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="607">
+          <caret line="41" column="30" lean-forward="true" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-slick/lib/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/home/Home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="26" column="31" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="95">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/home/Home.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/picture-news/PictureNews.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
         </state>
       </provider>
     </entry>

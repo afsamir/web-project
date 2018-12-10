@@ -3,6 +3,7 @@ import 'semantic-ui-css/semantic.min.css';
 import {Container, Divider, Dropdown, Grid, Menu} from "semantic-ui-react";
 import './News.css'
 import {NewsDiv} from "../news-div";
+import Segment from "semantic-ui-react/dist/commonjs/elements/Segment/Segment";
 
 class App extends Component {
     state = {activeItem: 'buy',};
@@ -26,14 +27,40 @@ class App extends Component {
                 <Divider hidden/>
                 <Divider horizontal>News</Divider>
 
-                <Container fluid textAlign='justified'>
+                <Segment fluid textAlign='justified' style={{overflow: 'auto', maxHeight: 1200 }}>
+                    <NewsDiv />
                     <NewsDiv/>
                     <NewsDiv/>
                     <NewsDiv/>
                     <NewsDiv/>
                     <NewsDiv/>
                     <NewsDiv/>
-                </Container>
+                    <NewsDiv/>
+                    <NewsDiv/>
+                    <NewsDiv/>
+                    <NewsDiv/>
+                    <NewsDiv/>
+                    <NewsDiv/>
+                    <NewsDiv/>
+                    <NewsDiv/>
+                    <NewsDiv/>
+                    <NewsDiv/>
+                    <NewsDiv/>
+                    <NewsDiv/>
+                    <NewsDiv/>
+                    <NewsDiv/>
+                    <NewsDiv/>
+                    <NewsDiv/>
+                    <NewsDiv/>
+                    <NewsDiv/>
+                    <NewsDiv/>
+                    <NewsDiv/>
+                    <NewsDiv/>
+                    <NewsDiv/>
+                    <NewsDiv/>
+                    <NewsDiv/>
+                    <NewsDiv/>
+                </Segment>
             </div>
         );
     }

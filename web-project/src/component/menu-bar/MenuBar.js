@@ -8,7 +8,6 @@ import DirectionProvider, {DIRECTIONS} from 'react-with-direction/dist/Direction
 export class MenuBar extends React.Component {
     state = {
         activeItem: 'home',
-
     };
 
     handleItemClick = (e, {name}) => this.setState({activeItem: name});
@@ -18,10 +17,8 @@ export class MenuBar extends React.Component {
 
         return (
             <DirectionProvider direction={DIRECTIONS.RTL}>
-
-                <Segment inverted>
+                <Segment inverted style={{margin: '10px'}}>
                     <Responsive minWidth={768}>
-
                         <Menu inverted pointing secondary className={'menu-bar'}>
                             <Menu.Item name="Sport" id={'site-name'}/>
                             <Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick}/>
@@ -45,8 +42,6 @@ export class MenuBar extends React.Component {
                             </Menu.Item>
 
                             <Menu.Item id='search-icon'>
-
-
                             </Menu.Item>
 
                         </Menu>
