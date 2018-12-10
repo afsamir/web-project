@@ -12,16 +12,16 @@ export class SmallMatchCard extends React.Component {
         return (
 
             <DirectionProvider direction={DIRECTIONS.RTL}>
-                <Feed className={'results'}>
-                    <Feed.Event >
+                <Feed >
+                    <Feed.Event className={'results'}>
                         <Feed.Label className={'home-logo'}>
                             <img src='https://react.semantic-ui.com/images/avatar/small/elliot.jpg' />
                         </Feed.Label>
                         <Feed.Content className={'goals'}>
                             <div className={'home-goals'}>2</div>
                         </Feed.Content>
-                        <div className={'time'}>
-                            <Icon name='red clock'/>
+                        <div className={'time'} >
+                            <Icon name='red clock' className={'time-icon'}/>
                             <div>49</div>
                         </div>
                         <Feed.Content className={'goals'}>

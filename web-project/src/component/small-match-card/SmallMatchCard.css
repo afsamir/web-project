@@ -1,20 +1,37 @@
 .visitor-goals{
     float: left;
+    margin: 0 auto !important;
+    padding: 10px;
+
+
 }
 
 .home-goals{
     float: right;
+    margin: 0 auto !important;
+    padding: 10px;
+
+
+}
+.home-logo{
+
+    margin: 0 auto !important;
 }
 
 .goals{
-    margin: 10px !important;
-    max-width: 10px !important;
+    margin: 0 auto !important;
 }
 .time{
     font-size: 12px;
+    text-align: center;
 }
 .results{
-    margin-left: 0 !important;
-    margin-right: auto !important;
-    float: right;
+    margin:0 auto !important;
+    max-width: 200px !important;
+
+}
+.time-icon{
+    margin: 0 auto !important;
+
+
 }

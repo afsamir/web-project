@@ -15,14 +15,12 @@ export class LeagueDashboard extends React.Component {
     render() {
 
         const matchResultSettings = {
-            dots: true,
             infinite: true,
             speed: 500,
             slidesToShow: 4,
             slidesToScroll: 1,
             autoplaySpeed: 3000,
             vertical: true,
-            slidesPerRow: 2,
             verticalSwiping: true,
             centerPadding:true
         };
