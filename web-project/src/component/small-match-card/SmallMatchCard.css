@@ -1,0 +1,20 @@
+.visitor-goals{
+    float: left;
+}
+
+.home-goals{
+    float: right;
+}
+
+.goals{
+    margin: 10px !important;
+    max-width: 10px !important;
+}
+.time{
+    font-size: 12px;
+}
+.results{
+    margin-left: 0 !important;
+    margin-right: auto !important;
+    float: right;
+}
