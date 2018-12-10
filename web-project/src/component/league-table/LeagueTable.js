@@ -101,6 +101,138 @@ class App extends Component {
                 gameNum: 13,
                 score: 27
             },
+            {
+                id: 1,
+                name: 'پرسپولیس',
+                gameNum: 13,
+                score: 27
+            },
+            {
+                id: 1,
+                name: 'پرسپولیس',
+                gameNum: 13,
+                score: 27
+            },
+            {
+                id: 1,
+                name: 'پرسپولیس',
+                gameNum: 13,
+                score: 27
+            },
+            {
+                id: 1,
+                name: 'پرسپولیس',
+                gameNum: 13,
+                score: 27
+            },
+            {
+                id: 1,
+                name: 'پرسپولیس',
+                gameNum: 13,
+                score: 27
+            },
+            {
+                id: 1,
+                name: 'پرسپولیس',
+                gameNum: 13,
+                score: 27
+            },
+            {
+                id: 1,
+                name: 'پرسپولیس',
+                gameNum: 13,
+                score: 27
+            },
+            {
+                id: 1,
+                name: 'پرسپولیس',
+                gameNum: 13,
+                score: 27
+            },
+            {
+                id: 1,
+                name: 'پرسپولیس',
+                gameNum: 13,
+                score: 27
+            },
+            {
+                id: 1,
+                name: 'پرسپولیس',
+                gameNum: 13,
+                score: 27
+            },
+            {
+                id: 1,
+                name: 'پرسپولیس',
+                gameNum: 13,
+                score: 27
+            },
+            {
+                id: 1,
+                name: 'پرسپولیس',
+                gameNum: 13,
+                score: 27
+            },
+            {
+                id: 1,
+                name: 'پرسپولیس',
+                gameNum: 13,
+                score: 27
+            },
+            {
+                id: 1,
+                name: 'پرسپولیس',
+                gameNum: 13,
+                score: 27
+            },
+            {
+                id: 1,
+                name: 'پرسپولیس',
+                gameNum: 13,
+                score: 27
+            },
+            {
+                id: 1,
+                name: 'پرسپولیس',
+                gameNum: 13,
+                score: 27
+            },
+            {
+                id: 1,
+                name: 'پرسپولیس',
+                gameNum: 13,
+                score: 27
+            },
+            {
+                id: 1,
+                name: 'پرسپولیس',
+                gameNum: 13,
+                score: 27
+            },
+            {
+                id: 1,
+                name: 'پرسپولیس',
+                gameNum: 13,
+                score: 27
+            },
+            {
+                id: 1,
+                name: 'پرسپولیس',
+                gameNum: 13,
+                score: 27
+            },
+            {
+                id: 1,
+                name: 'پرسپولیس',
+                gameNum: 13,
+                score: 27
+            },
+            {
+                id: 1,
+                name: 'پرسپولیس',
+                gameNum: 13,
+                score: 27
+            },
 
         ];
 
@@ -119,8 +251,8 @@ class App extends Component {
                     <Header>جدول لیگ</Header>
                     <Dropdown disabled={!table} placeholder='State' search selection options={leagues} defaultValue='ir' inverted/>
                     <Divider/>
-                    <div style={{height: this.props.height, overflow:'scroll'}}>
-                    <Table >
+                    <div style={{height: '300px', overflow:'scroll'}}>
+                    <Table>
                         <Table.Header>
                             <Table.Row>
                                 <Table.HeaderCell textAlign='center'>ردیف</Table.HeaderCell>

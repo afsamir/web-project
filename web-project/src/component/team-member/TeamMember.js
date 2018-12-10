@@ -33,6 +33,9 @@ class App extends Component {
                         <TeamMemberDiv/>
                         <TeamMemberDiv/>
                         <TeamMemberDiv/>
+                        <TeamMemberDiv/>
+                        <TeamMemberDiv/>
+                        <TeamMemberDiv/>
                     </div>
                 </div>
             </DirectionProvider>

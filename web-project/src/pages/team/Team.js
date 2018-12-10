@@ -80,6 +80,66 @@ class Team extends Component {
                                         </Grid.Row>
                                     </Grid>
                                 </Responsive>
+                                <Responsive as={Segment} minWidth={768} maxWidth={1079}>
+                                    <Grid>
+                                        <Grid.Row>
+                                            <Grid.Column width={16}>
+                                                <Slider {...picSettings} className={'slider'}>
+                                                    <Image
+                                                        src="http://hd.wallpaperswide.com/thumbs/real_madrid_champions_league_winners_2016-t2.jpg"/>
+                                                </Slider>
+                                            </Grid.Column>
+                                        </Grid.Row>
+                                        <Grid.Row>
+                                            <Grid.Column width={8}>
+                                                <TeamLogo style={{padding: '10px'}}/>
+                                            </Grid.Column>
+                                            <Grid.Column width={8}>
+                                                <TeamMember/>
+                                            </Grid.Column>
+                                        </Grid.Row>
+                                        <Grid.Row>
+                                            <Grid.Column width={8}>
+                                                <TeamNews/>
+                                            </Grid.Column>
+                                            <Grid.Column width={8}>
+                                                <TeamResult/>
+                                            </Grid.Column>
+                                        </Grid.Row>
+                                    </Grid>
+                                </Responsive>
+                                <Responsive as={Segment} maxWidth={767}>
+                                    <Grid>
+                                        <Grid.Row>
+                                            <Grid.Column width={16}>
+                                                <Slider {...picSettings} className={'slider'}>
+                                                    <Image
+                                                        src="http://hd.wallpaperswide.com/thumbs/real_madrid_champions_league_winners_2016-t2.jpg"/>
+                                                </Slider>
+                                            </Grid.Column>
+                                        </Grid.Row>
+                                        <Grid.Row>
+                                            <Grid.Column width={16}>
+                                                <TeamLogo style={{padding: '10px'}}/>
+                                            </Grid.Column>
+                                        </Grid.Row>
+                                        <Grid.Row>
+                                            <Grid.Column width={16}>
+                                                <TeamNews/>
+                                            </Grid.Column>
+                                        </Grid.Row>
+                                        <Grid.Row>
+                                            <Grid.Column width={16}>
+                                                <TeamResult/>
+                                            </Grid.Column>
+                                        </Grid.Row>
+                                        <Grid.Row>
+                                            <Grid.Column width={16}>
+                                                <TeamMember/>
+                                            </Grid.Column>
+                                        </Grid.Row>
+                                    </Grid>
+                                </Responsive>
                             </Segment.Group>
                         </div>
                     </div>

@@ -57,7 +57,7 @@ export class LeagueDashboard extends React.Component {
                                 </Slider>
                             </Grid.Column>
                             <Grid.Column>
-                                <LeagueTable height={'300px'} table={false}/>
+                                <LeagueTable width={'300px'} table={false}/>
                             </Grid.Column>
                             </Grid.Row>
                         </Grid>
@@ -93,7 +93,7 @@ export class LeagueDashboard extends React.Component {
                             </Grid.Row>
                             <Grid.Row>
                                 <Grid.Column>
-                                <LeagueTable height={'300px'} table={false}/>
+                                <LeagueTable table={false}/>
                                 </Grid.Column>
                             </Grid.Row>
                         </Grid>
@@ -108,26 +108,6 @@ export class LeagueDashboard extends React.Component {
 export class LeagueSelector extends React.Component {
 
     render() {
-
-        let teams = [
-            {
-                id: 1,
-                name: 'پدیده',
-                gameNum: 14,
-                score: 30
-            }, {
-                id: 1,
-                name: 'سپاهان',
-                gameNum: 13,
-                score: 29
-            }, {
-                id: 1,
-                name: 'پرسپولیس',
-                gameNum: 13,
-                score: 27
-            },
-        ];
-
         let leagues = [
             {key: 'en', value: 'en', text: 'لیگ برتر انگلیس',},
             {key: 'la', value: 'la', text: 'لالیگا',},
