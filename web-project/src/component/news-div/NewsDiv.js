@@ -2,7 +2,7 @@ import React from 'react';
 import './NewsDiv.css';
 
 import DirectionProvider, {DIRECTIONS} from 'react-with-direction/dist/DirectionProvider';
-import {Feed, Icon, Image} from "semantic-ui-react";
+import {Feed, Icon, Image, Label} from "semantic-ui-react";
 
 
 export class NewsDiv extends React.Component {
@@ -14,18 +14,19 @@ export class NewsDiv extends React.Component {
 
     render() {
         return (
-            <DirectionProvider direction={DIRECTIONS.RTL} className={'news-div'}>
-                <div>
+            <DirectionProvider direction={DIRECTIONS.RTL} >
+                <p className={'news-div'}>
                     <Icon className={"icon"}/>
-                    <div className={'main'}>ثبیبیب</div>
+
                     <p className={'news-text'}>
+                        <p className={'main'}>لیگ قهرمانان</p>
                         <Image size={'small'} src={"https://react.semantic-ui.com/images/wireframe/image.png"}
                                className={'news-image'}/> یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!
                         <div className={'news-date'}>3 days ago</div>
 
                     </p>
 
-                </div>
+                </p>
             </DirectionProvider>
         )
     }
