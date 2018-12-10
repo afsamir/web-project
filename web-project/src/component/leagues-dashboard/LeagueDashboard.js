@@ -16,12 +16,13 @@ export class LeagueDashboard extends React.Component {
     render() {
 
         const matchResultSettings = {
-            speed: 500,
+            speed: 300,
             slidesToShow: 7,
             slidesToScroll: 1,
             vertical: true,
             verticalSwiping: true,
-            centerMode: true
+            swipeToSlide: true,
+            centerMode: false
         };
 
         return (
@@ -29,8 +30,8 @@ export class LeagueDashboard extends React.Component {
             <DirectionProvider direction={DIRECTIONS.RTL}>
                 <Segment>
                     <LeagueSelector/>
-                    <Header icon={"circular inverted trophy"} name={"League"} className={'header'}>
-                    </Header>
+                    {/*<Header icon={"circular inverted trophy"} name={"League"} className={'header'}>*/}
+                    {/*</Header>*/}
                     <Divider/>
                     <Grid columns={2} relaxed='very'>
                         <Grid.Column className={'match-results'}>
@@ -57,18 +58,18 @@ export class LeagueDashboard extends React.Component {
                             </Slider>
                         </Grid.Column>
                         <Grid.Column>
-                            <LeagueTable table={false}/>
+                            <LeagueTable height={'300px'} table={false}/>
                         </Grid.Column>
                     </Grid>
 
-                    <Divider fitted={true} section={false} vertical>
+                    {/*  <Divider clearing vertical>
                         <Button circular animated='fade'>
                             <Button.Content hidden>Full</Button.Content>
                             <Button.Content visible>
                                 <Icon name='trophy'/>
                             </Button.Content>
                         </Button>
-                    </Divider>
+                    </Divider>*/}
 
                 </Segment>
             </DirectionProvider>
@@ -109,21 +110,24 @@ export class LeagueSelector extends React.Component {
         const panes = [
             {
                 menuItem: 'Football',
-                render: () => <Tab.Pane attached={false}> <Dropdown placeholder='State' search selection
-                                                                    options={leagues} defaultValue='ir' inverted
-                                                                    className={'leagues-dropdown'}/>
+                render: () => <Tab.Pane> <Dropdown placeholder='State' search selection
+                                                   options={leagues} defaultValue='ir' inverted
+                                                   className={'leagues-dropdown'}/>
+                    <Button circular={true} color={'teal'} content={' صفحه لیگ'}/>
                 </Tab.Pane>
             },
             {
                 menuItem: 'Basketball',
-                render: () => <Tab.Pane attached={false}> <Dropdown placeholder='State' search selection
-                                                                    options={leagues} defaultValue='en' inverted
-                                                                    className={'leagues-dropdown'}/>
+                render: () => <Tab.Pane>
+                    <Dropdown placeholder='State' search selection
+                              options={leagues} defaultValue='en' inverted
+                              className={'leagues-dropdown'}/>
+                    <Button circular={true} color={'teal'} content={' صفحه لیگ'}/>
                 </Tab.Pane>
             }
         ];
 
-        return (<Tab menu={{tabular: true }} panes={panes}/>)
+        return (<Tab menu={{tabular: true}} panes={panes}/>)
 
     }
-}}
+}
