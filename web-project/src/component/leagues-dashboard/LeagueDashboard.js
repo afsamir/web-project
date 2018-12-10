@@ -126,4 +126,4 @@ export class LeagueSelector extends React.Component {
         return (<Tab menu={{tabular: true }} panes={panes}/>)
 
     }
-}}
+}

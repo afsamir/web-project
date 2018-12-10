@@ -12,19 +12,30 @@ class App extends Component {
         return (
             <DirectionProvider direction={DIRECTIONS.RTL}>
                 <div id='TeamMember'>
-                    <Header as='h2' icon textAlign='center'>
+                    <Header as='h1' icon textAlign='center'>
                         <Image src="https://cdn3.iconfinder.com/data/icons/soccer-14/33/soccer_team-512.png"/>
                         <Header.Content>اعضای تیم</Header.Content>
                     </Header>
                     <Divider inverted/>
-                    <TeamMemberDiv/>
-                    {/*<TeamMemberDiv/>*/}
-                    {/*<TeamMemberDiv/>*/}
-                    {/*<TeamMemberDiv/>*/}
-
+                    <div style={{ height: '500px', overflow: 'scroll'}}>
+                        <TeamMemberDiv/>
+                        <TeamMemberDiv/>
+                        <TeamMemberDiv/>
+                        <TeamMemberDiv/>
+                        <TeamMemberDiv/>
+                        <TeamMemberDiv/>
+                        <TeamMemberDiv/>
+                        <TeamMemberDiv/>
+                        <TeamMemberDiv/>
+                        <TeamMemberDiv/>
+                        <TeamMemberDiv/>
+                        <TeamMemberDiv/>
+                        <TeamMemberDiv/>
+                        <TeamMemberDiv/>
+                        <TeamMemberDiv/>
+                    </div>
                 </div>
             </DirectionProvider>
-
         );
     }
 }
