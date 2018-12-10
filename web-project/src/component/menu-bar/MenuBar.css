@@ -1,5 +1,4 @@
 #MenuBar {
-    overflow: hidden;
     position: fixed;
     top: 0;
     z-index: 1;
@@ -23,20 +22,20 @@
 
 #profile-icon {
     padding: 4px;
-    margin-bottom: -4px;
+
 }
 
 #search-icon {
     padding: 4px;
-    margin-bottom: -4px;
+
 }
 
 .profile-dropdown{
-    margin-top: 30px !important;
+    top: 48px !important;
     left: -45% !important;
 }
 
 .search-dropdown{
-    margin-top: 40px !important;
+    top: 64px !important;
     left: -40% !important;
 }

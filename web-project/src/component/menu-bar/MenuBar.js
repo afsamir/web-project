@@ -250,7 +250,7 @@ export class SearchIcon extends React.Component {
                                                onMouseLeave={this.mouseLeave}/>}>
                     <Transition visible={dropdown} animation='slide down' duration={250}>
                         <Dropdown.Menu inverted className={'search-dropdown'}>
-                            <SearchExampleStandard/>
+                            <SearchExampleStandard />
                         </Dropdown.Menu>
                     </Transition>
                 </Dropdown>
