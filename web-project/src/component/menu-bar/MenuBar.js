@@ -17,96 +17,97 @@ export class MenuBar extends React.Component {
 
         return (
             <DirectionProvider direction={DIRECTIONS.RTL}>
-                <Segment inverted style={{margin: '10px'}}>
-                    <Responsive minWidth={768}>
-                        <Menu inverted pointing secondary className={'menu-bar'}>
-                            <Menu.Item name="Sport" id={'site-name'}/>
-                            <Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick}/>
-                            <Menu.Item
-                                name='messages'
-                                active={activeItem === 'messages'}
-                                onClick={this.handleItemClick}
-                            />
-                            <Menu.Item
-                                name='friends'
-                                active={activeItem === 'friends'}
-                                onClick={this.handleItemClick}
-                            />
-                            <Menu.Item id={'search-bar'} position='left'>
+                <div className={MenuBar} id="MenuBar">
+                    <Segment inverted style={{marginBottom: '10px'}}>
+                        <Responsive minWidth={768}>
+                            <Menu inverted pointing secondary className={'menu-bar'}>
+                                <Menu.Item name="Sport" id={'site-name'}/>
+                                <Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick}/>
+                                <Menu.Item
+                                    name='messages'
+                                    active={activeItem === 'messages'}
+                                    onClick={this.handleItemClick}
+                                />
+                                <Menu.Item
+                                    name='friends'
+                                    active={activeItem === 'friends'}
+                                    onClick={this.handleItemClick}
+                                />
+                                <Menu.Item id={'search-bar'} position='left'>
 
-                                <SearchExampleStandard/>
-                            </Menu.Item>
+                                    <SearchExampleStandard/>
+                                </Menu.Item>
 
-                            <Menu.Item id='profile-icon' >
-                                <ProfileIcon/>
-                            </Menu.Item>
+                                <Menu.Item id='profile-icon'>
+                                    <ProfileIcon/>
+                                </Menu.Item>
 
-                            <Menu.Item id='search-icon'>
-                            </Menu.Item>
+                                <Menu.Item id='search-icon'>
+                                </Menu.Item>
 
-                        </Menu>
-                    </Responsive>
-                    <Responsive maxWidth={768} minWidth={540}>
+                            </Menu>
+                        </Responsive>
+                        <Responsive maxWidth={768} minWidth={540}>
 
-                        <Menu inverted pointing secondary className={'menu-bar'}>
-                            <Menu.Item name="Sport" id={'site-name'}/>
-                            <Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick}/>
-                            <Menu.Item
-                                name='messages'
-                                active={activeItem === 'messages'}
-                                onClick={this.handleItemClick}
-                            />
-                            <Menu.Item
-                                name='friends'
-                                active={activeItem === 'friends'}
-                                onClick={this.handleItemClick}
-                            />
-                            <Menu.Item id={'search-icon'} >
-                                <SearchIcon/>
-                            </Menu.Item>
+                            <Menu inverted pointing secondary className={'menu-bar'}>
+                                <Menu.Item name="Sport" id={'site-name'}/>
+                                <Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick}/>
+                                <Menu.Item
+                                    name='messages'
+                                    active={activeItem === 'messages'}
+                                    onClick={this.handleItemClick}
+                                />
+                                <Menu.Item
+                                    name='friends'
+                                    active={activeItem === 'friends'}
+                                    onClick={this.handleItemClick}
+                                />
+                                <Menu.Item id={'search-icon'}>
+                                    <SearchIcon/>
+                                </Menu.Item>
 
-                            <Menu.Item id='profile-icon' position='left'>
-                                <ProfileIcon/>
-                            </Menu.Item>
+                                <Menu.Item id='profile-icon' position='left'>
+                                    <ProfileIcon/>
+                                </Menu.Item>
 
-                            <Menu.Item id='search-icon'>
-
-
-                            </Menu.Item>
-
-                        </Menu>
-                    </Responsive>
-                    <Responsive maxWidth={540}>
-
-                        <Menu inverted pointing secondary className={'menu-bar'}>
-                            <Menu.Item
-                                icon='home'
-                                active={activeItem === 'home'}
-                                onClick={this.handleItemClick}/>
-                            <Menu.Item
-                                icon='trophy'
-                                active={activeItem === 'messages'}
-                                onClick={this.handleItemClick}
-                            />
-                            <Menu.Item
-                                icon='video'
-                                active={activeItem === 'friends'}
-                                onClick={this.handleItemClick}
-                            />
-                            <Menu.Item id='search-icon'>
-                                <SearchIcon/>
-                            </Menu.Item>
-
-                            <Menu.Item id='profile-icon'  position='left'>
-                                <ProfileIcon/>
-                            </Menu.Item>
+                                <Menu.Item id='search-icon'>
 
 
-                        </Menu>
-                    </Responsive>
+                                </Menu.Item>
 
-                </Segment>
+                            </Menu>
+                        </Responsive>
+                        <Responsive maxWidth={540}>
 
+                            <Menu inverted pointing secondary className={'menu-bar'}>
+                                <Menu.Item
+                                    icon='home'
+                                    active={activeItem === 'home'}
+                                    onClick={this.handleItemClick}/>
+                                <Menu.Item
+                                    icon='trophy'
+                                    active={activeItem === 'messages'}
+                                    onClick={this.handleItemClick}
+                                />
+                                <Menu.Item
+                                    icon='video'
+                                    active={activeItem === 'friends'}
+                                    onClick={this.handleItemClick}
+                                />
+                                <Menu.Item id='search-icon'>
+                                    <SearchIcon/>
+                                </Menu.Item>
+
+                                <Menu.Item id='profile-icon' position='left'>
+                                    <ProfileIcon/>
+                                </Menu.Item>
+
+
+                            </Menu>
+                        </Responsive>
+
+                    </Segment>
+                </div>
             </DirectionProvider>
         )
     }
