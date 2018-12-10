@@ -147,6 +147,7 @@ class Home extends Component {
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
+                                                {matchResultSettings.slidesToShow = 2}
                                                 <Slider {...matchResultSettings} className={'slider'}>
                                                     <MatchResultCard/>
                                                     <MatchResultCard/>
