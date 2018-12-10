@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import './Team.css';
+import './Player.css';
 import 'semantic-ui-css/semantic.min.css';
 import DirectionProvider, {DIRECTIONS} from "react-with-direction/dist/DirectionProvider";
 import Grid from "semantic-ui-react/dist/commonjs/collections/Grid/Grid";
@@ -14,6 +14,9 @@ import Image from "semantic-ui-react/dist/commonjs/elements/Image/Image";
 import TeamMember from "../../component/team-member";
 import TeamNews from "../../component/team-news/TeamNews";
 import TeamResult from "../../component/team-result/TeamResult";
+import PlayerCard from "../../component/player-card";
+import PlayerNews from "../../component/player-news/PlayerNews";
+import PlayerResult from "../../component/player-result";
 
 class Team extends Component {
     render() {
@@ -40,25 +43,22 @@ class Team extends Component {
                                 <Responsive as={Segment} minWidth={1080}>
                                     <Grid>
                                         <Grid.Row>
-                                            <Grid.Column width={11}>
+                                            <Grid.Column width={12}>
                                                 <Slider {...picSettings} className={'slider'}>
                                                     <Image
-                                                        src="http://hd.wallpaperswide.com/thumbs/real_madrid_champions_league_winners_2016-t2.jpg"/>
+                                                        src="https://stmed.net/sites/default/files/lionel-messi-wallpapers-31172-6051644.jpg"/>
                                                 </Slider>
                                             </Grid.Column>
-                                            <Grid.Column width={5}>
-                                                <TeamLogo style={{padding: '10px'}}/>
+                                            <Grid.Column width={4}>
+                                                <PlayerCard style={{padding: '10px'}}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>
-                                            <Grid.Column width={5}>
-                                                <TeamNews/>
+                                            <Grid.Column width={8}>
+                                                <PlayerNews/>
                                             </Grid.Column>
-                                            <Grid.Column width={6}>
-                                                <TeamResult/>
-                                            </Grid.Column>
-                                            <Grid.Column width={5}>
-                                                <TeamMember/>
+                                            <Grid.Column width={8}>
+                                                <PlayerResult/>
                                             </Grid.Column>
                                         </Grid.Row>
                                     </Grid>
@@ -69,24 +69,21 @@ class Team extends Component {
                                             <Grid.Column width={16}>
                                                 <Slider {...picSettings} className={'slider'}>
                                                     <Image
-                                                        src="http://hd.wallpaperswide.com/thumbs/real_madrid_champions_league_winners_2016-t2.jpg"/>
+                                                        src="https://stmed.net/sites/default/files/lionel-messi-wallpapers-31172-6051644.jpg"/>
                                                 </Slider>
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={8}>
-                                                <TeamLogo style={{padding: '10px'}}/>
+                                                <PlayerCard style={{padding: '10px'}}/>
                                             </Grid.Column>
                                             <Grid.Column width={8}>
-                                                <TeamMember/>
+                                                <PlayerNews/>
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>
-                                            <Grid.Column width={8}>
-                                                <TeamNews/>
-                                            </Grid.Column>
-                                            <Grid.Column width={8}>
-                                                <TeamResult/>
+                                            <Grid.Column width={16}>
+                                                <PlayerResult/>
                                             </Grid.Column>
                                         </Grid.Row>
                                     </Grid>
@@ -97,28 +94,23 @@ class Team extends Component {
                                             <Grid.Column width={16}>
                                                 <Slider {...picSettings} className={'slider'}>
                                                     <Image
-                                                        src="http://hd.wallpaperswide.com/thumbs/real_madrid_champions_league_winners_2016-t2.jpg"/>
+                                                        src="https://stmed.net/sites/default/files/lionel-messi-wallpapers-31172-6051644.jpg"/>
                                                 </Slider>
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
-                                                <TeamLogo style={{padding: '10px'}}/>
+                                                <PlayerCard style={{padding: '10px'}}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
-                                                <TeamNews/>
+                                                <PlayerNews/>
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
-                                                <TeamResult/>
-                                            </Grid.Column>
-                                        </Grid.Row>
-                                        <Grid.Row>
-                                            <Grid.Column width={16}>
-                                                <TeamMember/>
+                                                <PlayerResult/>
                                             </Grid.Column>
                                         </Grid.Row>
                                     </Grid>
