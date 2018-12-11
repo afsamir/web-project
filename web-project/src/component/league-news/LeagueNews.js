@@ -19,7 +19,7 @@ class App extends Component {
                         <Header.Content>اخبار لیگ</Header.Content>
                     </Header>
                     <Divider inverted/>
-                    <div style={{ height: '480px', overflow: 'scroll'}}>
+                    <div style={{ height: '310px', overflow: 'scroll'}}>
                         <NewsDiv/>
                         <NewsDiv/>
                         <NewsDiv/>

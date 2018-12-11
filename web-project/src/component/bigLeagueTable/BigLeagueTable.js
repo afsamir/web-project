@@ -7,6 +7,8 @@ import Image from "semantic-ui-react/dist/commonjs/elements/Image/Image";
 import * as DIRECTIONS from "react-with-direction";
 import Divider from "semantic-ui-react/dist/commonjs/elements/Divider/Divider";
 import Table from "semantic-ui-react/dist/commonjs/collections/Table/Table";
+import {LeagueSelector} from "../leagues-dashboard";
+import Grid from "semantic-ui-react/dist/commonjs/collections/Grid/Grid";
 
 class App extends Component {
 
@@ -140,6 +142,7 @@ class App extends Component {
                         <Image src="https://cdn3.iconfinder.com/data/icons/medcare/512/tables-512.png"/>
                         <Header.Content>جدول</Header.Content>
                     </Header>
+                    <LeagueSelector/>
                     {/*<Dropdown disabled={!table} placeholder='State' search selection options={leagues} defaultValue='ir' inverted/>*/}
                     <Divider/>
                     <div style={{height: '500px', overflow:'scroll'}}>

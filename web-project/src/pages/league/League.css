@@ -29,9 +29,9 @@ body {
     padding: 10px;
 }
 
-#match-result {
+#games {
     border: 2px solid #000000;
     border-radius: 7px;
     padding: 10px;
-    height: 646px;
+    height: 510px;
 }

@@ -17,7 +17,7 @@ class App extends Component {
                         <Header.Content>برترین ها</Header.Content>
                     </Header>
                     <Divider inverted/>
-                    <div style={{height: '480px', overflow: 'scroll'}}>
+                    <div style={{height: '310px', overflow: 'scroll'}}>
                         <TeamMemberDiv/>
                         <TeamMemberDiv/>
                         <TeamMemberDiv/>
