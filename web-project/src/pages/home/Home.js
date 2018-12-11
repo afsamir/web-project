@@ -91,7 +91,7 @@ class Home extends Component {
                                                 </Grid>
                                             </Grid.Column>
                                             <Grid.Column width={5}>
-                                                <News  height={1314}/>
+                                                <News height={1360}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                     </Grid>
