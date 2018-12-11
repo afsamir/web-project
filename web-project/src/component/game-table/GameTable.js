@@ -31,39 +31,39 @@ class GameTable extends Component {
 
                             <Table.Body>
                                 <Table.Row>
-                                    <Table.Cell textAlign='center'>276</Table.Cell>
+                                    <Table.Cell textAlign='center'>۲۸۳</Table.Cell>
                                     <Table.Cell textAlign='center'>پاس</Table.Cell>
-                                    <Table.Cell textAlign='center'>390</Table.Cell>
+                                    <Table.Cell textAlign='center'>۳۹۰</Table.Cell>
                                 </Table.Row>
                                 <Table.Row>
-                                    <Table.Cell textAlign='center'>172</Table.Cell>
+                                    <Table.Cell textAlign='center'>۱۷۲</Table.Cell>
                                     <Table.Cell textAlign='center'>پاس صحیح</Table.Cell>
-                                    <Table.Cell textAlign='center'>298</Table.Cell>
+                                    <Table.Cell textAlign='center'>۲۹۸</Table.Cell>
                                 </Table.Row>
                                 <Table.Row>
-                                    <Table.Cell textAlign='center'>7(3)</Table.Cell>
+                                    <Table.Cell textAlign='center'>۷(۳)</Table.Cell>
                                     <Table.Cell textAlign='center'>شوت</Table.Cell>
-                                    <Table.Cell textAlign='center'>14(5)</Table.Cell>
+                                    <Table.Cell textAlign='center'>۱۴(۵)</Table.Cell>
                                 </Table.Row>
                                 <Table.Row>
-                                    <Table.Cell textAlign='center'>4</Table.Cell>
+                                    <Table.Cell textAlign='center'>۴</Table.Cell>
                                     <Table.Cell textAlign='center'>کرنر</Table.Cell>
-                                    <Table.Cell textAlign='center'>1</Table.Cell>
+                                    <Table.Cell textAlign='center'>۱</Table.Cell>
                                 </Table.Row>
                                 <Table.Row>
-                                    <Table.Cell textAlign='center'>20</Table.Cell>
+                                    <Table.Cell textAlign='center'>۲۰</Table.Cell>
                                     <Table.Cell textAlign='center'>خطا</Table.Cell>
-                                    <Table.Cell textAlign='center'>11</Table.Cell>
+                                    <Table.Cell textAlign='center'>۱۱</Table.Cell>
                                 </Table.Row>
                                 <Table.Row>
-                                    <Table.Cell textAlign='center'>4</Table.Cell>
+                                    <Table.Cell textAlign='center'>۴</Table.Cell>
                                     <Table.Cell textAlign='center'>موقعیت گل</Table.Cell>
-                                    <Table.Cell textAlign='center'>7</Table.Cell>
+                                    <Table.Cell textAlign='center'>۷</Table.Cell>
                                 </Table.Row>
                                 <Table.Row>
-                                    <Table.Cell textAlign='center'>45%</Table.Cell>
+                                    <Table.Cell textAlign='center'>۴۵%</Table.Cell>
                                     <Table.Cell textAlign='center'>مالکیت توپ</Table.Cell>
-                                    <Table.Cell textAlign='center'>55%</Table.Cell>
+                                    <Table.Cell textAlign='center'>۵۵%</Table.Cell>
                                 </Table.Row>
                             </Table.Body>
                         </Table>

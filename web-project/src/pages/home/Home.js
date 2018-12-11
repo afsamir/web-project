@@ -48,11 +48,11 @@ class Home extends Component {
             <div className='Home'>
                 <MenuBar style={{position: 'fixed'}}/>
                 <DirectionProvider direction={DIRECTIONS.RTL}>
-                    <div style={{maxWidth: '1500px', margin: '30px auto 0 auto', marginTop: '80px'}}>
+                    <div style={{maxWidth: '1500px', margin: '30px auto 0 auto', marginTop: '80px'}} >
                         <div style={{margin: '5px'}}>
                             <Segment.Group>
-                                <Responsive as={Segment} minWidth={1080}>
-                                    <Grid>
+                                <Responsive as={Segment} minWidth={1080} >
+                                    <Grid id={'background'}>
                                         <Grid.Row>
                                             <Grid.Column width={11}>
                                                 <Grid>

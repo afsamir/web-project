@@ -9,6 +9,7 @@
 }
 
 .player-num{
-    position: relative;
+    /*position: relative;*/
+    padding-left: 12px !important;
     bottom: 0px;
 }
