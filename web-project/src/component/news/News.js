@@ -16,7 +16,7 @@ class App extends Component {
         return (
             <div id="App">
                 <Menu fluid widths={2} inverted>
-                    <Menu.Item name='buy' active={activeItem === 'buy'} onClick={this.handleItemClick}/>
+                    <Menu.Item name='مورد' active={activeItem === 'buy'} onClick={this.handleItemClick}/>
                     <Menu.Item name='sell' active={activeItem === 'sell'} onClick={this.handleItemClick}/>
                 </Menu>
 

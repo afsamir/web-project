@@ -17,14 +17,14 @@ export class SmallMatchCard extends React.Component {
                         <img src='https://react.semantic-ui.com/images/avatar/small/elliot.jpg'/>
                     </Feed.Label>
                     <Feed.Content className={'goals'}>
-                        <div className={'home-goals'}>2</div>
+                        <div className={'home-goals'}>۲</div>
                     </Feed.Content>
                     <div className={'time'}>
                         <Icon name={!this.props.finished ? 'red clock' : 'calendar alternate'} className={'time-icon'}/>
                         <div>۶۹</div>
                     </div>
                     <Feed.Content className={'goals'}>
-                        <div className={'visitor-goals'}>0</div>
+                        <div className={'visitor-goals'}>۰</div>
                     </Feed.Content>
                     <Feed.Label className={'visitor-logo'}>
                         <img src='https://react.semantic-ui.com/images/avatar/small/elliot.jpg'/>
