@@ -155,7 +155,7 @@ class App extends Component {
                         <Header.Content>آمار تیم</Header.Content>
                     </Header>
                     <Divider inverted/>
-                    <div style={{height: "500px", overflow: "auto"}}>
+                    <div style={{height: "480px", overflow: "auto"}}>
                         <Table color='grey'>
                             <Table.Header>
                                 <Table.Row>

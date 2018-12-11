@@ -8,13 +8,12 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Dropdown from "semantic-ui-react/dist/commonjs/modules/Dropdown/Dropdown";
+import Image from "semantic-ui-react/dist/commonjs/elements/Image/Image";
+import Header from "semantic-ui-react/dist/commonjs/elements/Header/Header";
 
 
 export class LeagueDashboard extends React.Component {
-
-
     render() {
-
         const matchResultSettings = {
             speed: 300,
             slidesToShow: 7,
@@ -28,72 +27,89 @@ export class LeagueDashboard extends React.Component {
         return (
 
             <DirectionProvider direction={DIRECTIONS.RTL}>
-                <Segment>
+                <Segment id='LeagueDashboard'>
                     <Responsive minWidth={1080}>
-                        <div style={{display: 'none'}}>{matchResultSettings.slidesToShow = 7}</div>
+                        <div style={{display: 'none'}}>{matchResultSettings.slidesToShow = 5}</div>
                         <Grid columns={2} relaxed='very'>
                             <Grid.Row>
-                            <Grid.Column className={'match-results'}>
-                                <Slider {...matchResultSettings}>
-                                    <SmallMatchCard/>
-                                    <SmallMatchCard/>
-                                    <SmallMatchCard/>
-                                    <SmallMatchCard/>
-                                    <SmallMatchCard/>
-                                    <SmallMatchCard/>
-                                    <SmallMatchCard/>
-                                    <SmallMatchCard/>
-                                    <SmallMatchCard/>
-                                    <SmallMatchCard/>
-                                    <SmallMatchCard/>
-                                    <SmallMatchCard/>
-                                    <SmallMatchCard/>
-                                    <SmallMatchCard/>
-                                    <SmallMatchCard/>
-                                    <SmallMatchCard/>
-                                    <SmallMatchCard/>
-                                    <SmallMatchCard/>
-                                    <SmallMatchCard/>
-                                </Slider>
-                            </Grid.Column>
-                            <Grid.Column>
-                                <LeagueTable width={'300px'} table={false}/>
-                            </Grid.Column>
+                                <Grid.Column className={'match-results'} width={6}>
+                                    <div id='match-result'>
+                                    <Header as='h1' icon textAlign='center'>
+                                        <Image
+                                            src="https://cdn4.iconfinder.com/data/icons/football-13/64/Football-22-512.png"/>
+                                        <Header.Content>بازی ها</Header.Content>
+                                    </Header>
+                                    <div style={{height: '250px'}}>
+                                        <Slider {...matchResultSettings}>
+                                            <SmallMatchCard/>
+                                            <SmallMatchCard/>
+                                            <SmallMatchCard/>
+                                            <SmallMatchCard/>
+                                            <SmallMatchCard/>
+                                            <SmallMatchCard/>
+                                            <SmallMatchCard/>
+                                            <SmallMatchCard/>
+                                            <SmallMatchCard/>
+                                            <SmallMatchCard/>
+                                            <SmallMatchCard/>
+                                            <SmallMatchCard/>
+                                            <SmallMatchCard/>
+                                            <SmallMatchCard/>
+                                            <SmallMatchCard/>
+                                            <SmallMatchCard/>
+                                            <SmallMatchCard/>
+                                            <SmallMatchCard/>
+                                            <SmallMatchCard/>
+                                        </Slider>
+                                    </div>
+                                        </div>
+                                </Grid.Column>
+                                <Grid.Column width={10}>
+                                    <LeagueTable width={'300px'} table={this.props.table}/>
+                                </Grid.Column>
                             </Grid.Row>
                         </Grid>
                     </Responsive>
-                    <Responsive maxWidth={1080}>
-                        <Grid columns={1} relaxed='very'>
-                            <Grid.Row className={'match-results'}>
-                                <Grid.Column>
-                                <div style={{display: 'none'}}>{matchResultSettings.slidesToShow = 4}</div>
-
-                                <Slider {...matchResultSettings}>
-                                    <SmallMatchCard/>
-                                    <SmallMatchCard/>
-                                    <SmallMatchCard/>
-                                    <SmallMatchCard/>
-                                    <SmallMatchCard/>
-                                    <SmallMatchCard/>
-                                    <SmallMatchCard/>
-                                    <SmallMatchCard/>
-                                    <SmallMatchCard/>
-                                    <SmallMatchCard/>
-                                    <SmallMatchCard/>
-                                    <SmallMatchCard/>
-                                    <SmallMatchCard/>
-                                    <SmallMatchCard/>
-                                    <SmallMatchCard/>
-                                    <SmallMatchCard/>
-                                    <SmallMatchCard/>
-                                    <SmallMatchCard/>
-                                    <SmallMatchCard/>
-                                </Slider>
+                    <Responsive maxWidth={1079}>
+                        <div style={{display: 'none'}}>{matchResultSettings.slidesToShow = 5}</div>
+                        <Grid relaxed='very'>
+                            <Grid.Row>
+                                <Grid.Column className={'match-results'} width={16}>
+                                    <div id='match-result'>
+                                        <Header as='h1' icon textAlign='center'>
+                                            <Image
+                                                src="https://cdn4.iconfinder.com/data/icons/football-13/64/Football-22-512.png"/>
+                                            <Header.Content>بازی ها</Header.Content>
+                                        </Header>
+                                        <div style={{height: '250px'}}>
+                                            <Slider {...matchResultSettings}>
+                                                <SmallMatchCard/>
+                                                <SmallMatchCard/>
+                                                <SmallMatchCard/>
+                                                <SmallMatchCard/>
+                                                <SmallMatchCard/>
+                                                <SmallMatchCard/>
+                                                <SmallMatchCard/>
+                                                <SmallMatchCard/>
+                                                <SmallMatchCard/>
+                                                <SmallMatchCard/>
+                                                <SmallMatchCard/>
+                                                <SmallMatchCard/>
+                                                <SmallMatchCard/>
+                                                <SmallMatchCard/>
+                                                <SmallMatchCard/>
+                                                <SmallMatchCard/>
+                                                <SmallMatchCard/>
+                                                <SmallMatchCard/>
+                                                <SmallMatchCard/>
+                                            </Slider>
+                                        </div>
+                                    </div>
                                 </Grid.Column>
                             </Grid.Row>
                             <Grid.Row>
-                                <Grid.Column>
-                                <LeagueTable table={false}/>
+                                <Grid.Column width={16}>
+                                    <LeagueTable width={'300px'} table={this.props.table}/>
                                 </Grid.Column>
                             </Grid.Row>
                         </Grid>
@@ -102,7 +118,6 @@ export class LeagueDashboard extends React.Component {
             </DirectionProvider>
         )
     }
-
 }
 
 export class LeagueSelector extends React.Component {

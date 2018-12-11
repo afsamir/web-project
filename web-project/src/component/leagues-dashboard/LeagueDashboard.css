@@ -8,6 +8,17 @@
 
 .leagues-dropdown{
     margin: 0 auto !important;
+}
 
+#LeagueDashboard {
+    border: 2px solid #000000;
+    border-radius: 7px;
+    padding: 10px;
+}
 
+#match-result {
+    border: 2px solid #000000;
+    border-radius: 7px;
+    padding: 10px;
+    height: 472px;
 }
