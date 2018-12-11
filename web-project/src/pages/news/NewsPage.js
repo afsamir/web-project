@@ -11,7 +11,7 @@ import News from "../../component/news";
 import {LeagueDashboard, LeagueSelector} from "../../component/leagues-dashboard";
 import Responsive from "semantic-ui-react/dist/commonjs/addons/Responsive/Responsive";
 import Segment from "semantic-ui-react/dist/commonjs/elements/Segment/Segment";
-import {Container, Image} from "semantic-ui-react";
+import {Container, Divider, Header, Icon, Image} from "semantic-ui-react";
 import {VideoFrame} from "../../component/video";
 import {PictureNews} from "../../component/picture-news";
 import {Footer} from "../../component/footer";
@@ -77,12 +77,35 @@ class NewsPage extends Component {
 
                                                         </Grid.Column>
                                                     </Grid.Row>
+                                                    <Grid.Row>
+                                                        <Grid.Column width={16}>
+                                                            <Divider horizontal>
+                                                                <Header as='h4'>
+
+                                                                    اخبار مرتبط
+                                                                </Header>
+                                                            </Divider>
+                                                            <Slider {...matchResultSettings} className={'slider'}>
+                                                                <PictureNews
+                                                                    src={'https://static.farakav.com/files/pictures/thumb/01360537.jpg'}/>
+                                                                <PictureNews
+                                                                    src={'https://static.farakav.com/files/pictures/thumb/01360537.jpg'}/>
+                                                                <PictureNews
+                                                                    src={'https://static.farakav.com/files/pictures/thumb/01360537.jpg'}/>
+                                                                <PictureNews
+                                                                    src={'https://static.farakav.com/files/pictures/thumb/01360537.jpg'}/>
+                                                                <PictureNews
+                                                                    src={'https://static.farakav.com/files/pictures/thumb/01360537.jpg'}/>
+
+                                                            </Slider>
+                                                        </Grid.Column>
+                                                    </Grid.Row>
 
 
                                                 </Grid>
                                             </Grid.Column>
                                             <Grid.Column width={5}>
-                                                <News  height={1314}/>
+                                                <News height={1314}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                     </Grid>
@@ -109,7 +132,28 @@ class NewsPage extends Component {
                                                 </Container>
                                             </Grid.Column>
                                             <Grid.Column width={5}>
-                                                <News  height={1314}/>
+                                                <News height={1314}/>
+                                            </Grid.Column>
+                                            <Grid.Column width={16}>
+                                                <Divider horizontal>
+                                                    <Header as='h4'>
+
+                                                        اخبار مرتبط
+                                                    </Header>
+                                                </Divider>
+                                                <Slider {...matchResultSettings} className={'slider'}>
+                                                    <PictureNews
+                                                        src={'https://static.farakav.com/files/pictures/thumb/01360537.jpg'}/>
+                                                    <PictureNews
+                                                        src={'https://static.farakav.com/files/pictures/thumb/01360537.jpg'}/>
+                                                    <PictureNews
+                                                        src={'https://static.farakav.com/files/pictures/thumb/01360537.jpg'}/>
+                                                    <PictureNews
+                                                        src={'https://static.farakav.com/files/pictures/thumb/01360537.jpg'}/>
+                                                    <PictureNews
+                                                        src={'https://static.farakav.com/files/pictures/thumb/01360537.jpg'}/>
+
+                                                </Slider>
                                             </Grid.Column>
                                         </Grid.Row>
                                     </Grid>
@@ -136,7 +180,30 @@ class NewsPage extends Component {
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
-                                                <News  height={480}/>
+                                                <Divider horizontal>
+                                                    <Header as='h4'>
+
+                                                        اخبار مرتبط
+                                                    </Header>
+                                                </Divider>
+                                                <Slider {...matchResultSettings} className={'slider'}>
+                                                    <PictureNews
+                                                        src={'https://static.farakav.com/files/pictures/thumb/01360537.jpg'}/>
+                                                    <PictureNews
+                                                        src={'https://static.farakav.com/files/pictures/thumb/01360537.jpg'}/>
+                                                    <PictureNews
+                                                        src={'https://static.farakav.com/files/pictures/thumb/01360537.jpg'}/>
+                                                    <PictureNews
+                                                        src={'https://static.farakav.com/files/pictures/thumb/01360537.jpg'}/>
+                                                    <PictureNews
+                                                        src={'https://static.farakav.com/files/pictures/thumb/01360537.jpg'}/>
+
+                                                </Slider>
+                                            </Grid.Column>
+                                        </Grid.Row>
+                                        <Grid.Row>
+                                            <Grid.Column width={16}>
+                                                <News height={480}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                     </Grid>
