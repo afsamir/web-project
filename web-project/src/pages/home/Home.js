@@ -14,6 +14,7 @@ import Responsive from "semantic-ui-react/dist/commonjs/addons/Responsive/Respon
 import Segment from "semantic-ui-react/dist/commonjs/elements/Segment/Segment";
 import {Image} from "semantic-ui-react";
 import {Footer} from "../../component/footer";
+import {PictureNews} from "../../component/picture-news";
 
 class Home extends Component {
     render() {
@@ -58,9 +59,9 @@ class Home extends Component {
                                                     <Grid.Row>
                                                         <Grid.Column width={16}>
                                                             <Slider {...picSettings} className={'slider'}>
-                                                                <Image src="https://www.desktopbackground.org/download/o/2014/04/29/754479_football-or-soccer-balls-hd-wallpapers-4k-wallpapers_1920x1080_h.jpg"/>
-                                                                <Image src="https://wallpaperaccess.com/full/498543.png"/>
-                                                                <Image src="https://wallpaperaccess.com/full/498589.jpg"/>
+                                                                <PictureNews text={'مسی در راه پله'} src="https://www.desktopbackground.org/download/o/2014/04/29/754479_football-or-soccer-balls-hd-wallpapers-4k-wallpapers_1920x1080_h.jpg"/>
+                                                                <PictureNews text={'یک بر دیگر برای شاگردان ال چولو'} src="https://wallpaperaccess.com/full/498543.png"/>
+                                                                <PictureNews text={'ضرب و شتم گتوزو در جریان بازی با پارما +‌ مصاحبه'} src="https://wallpaperaccess.com/full/498589.jpg"/>
                                                             </Slider>
                                                         </Grid.Column>
                                                     </Grid.Row>
@@ -101,9 +102,9 @@ class Home extends Component {
                                         <Grid.Row>
                                             <Grid.Column width={16}>
                                                 <Slider {...picSettings} className={'slider'}>
-                                                    <Image src="https://www.desktopbackground.org/download/o/2014/04/29/754479_football-or-soccer-balls-hd-wallpapers-4k-wallpapers_1920x1080_h.jpg"/>
-                                                    <Image src="https://wallpaperaccess.com/full/498543.png"/>
-                                                    <Image src="https://wallpaperaccess.com/full/498589.jpg"/>
+                                                    <PictureNews text={'مسی در راه پله'} src="https://www.desktopbackground.org/download/o/2014/04/29/754479_football-or-soccer-balls-hd-wallpapers-4k-wallpapers_1920x1080_h.jpg"/>
+                                                    <PictureNews text={'یک بر دیگر برای شاگردان ال چولو'} src="https://wallpaperaccess.com/full/498543.png"/>
+                                                    <PictureNews text={'ضرب و شتم گتوزو در جریان بازی با پارما +‌ مصاحبه'} src="https://wallpaperaccess.com/full/498589.jpg"/>
                                                 </Slider>
                                             </Grid.Column>
                                         </Grid.Row>
@@ -137,9 +138,9 @@ class Home extends Component {
                                         <Grid.Row>
                                             <Grid.Column width={16}>
                                                 <Slider {...picSettings} className={'slider'}>
-                                                    <Image src="https://www.desktopbackground.org/download/o/2014/04/29/754479_football-or-soccer-balls-hd-wallpapers-4k-wallpapers_1920x1080_h.jpg"/>
-                                                    <Image src="https://wallpaperaccess.com/full/498543.png"/>
-                                                    <Image src="https://wallpaperaccess.com/full/498589.jpg"/>
+                                                    <PictureNews text={'مسی در راه پله'} src="https://www.desktopbackground.org/download/o/2014/04/29/754479_football-or-soccer-balls-hd-wallpapers-4k-wallpapers_1920x1080_h.jpg"/>
+                                                    <PictureNews text={'یک بر دیگر برای شاگردان ال چولو'} src="https://wallpaperaccess.com/full/498543.png"/>
+                                                    <PictureNews text={'ضرب و شتم گتوزو در جریان بازی با پارما +‌ مصاحبه'} src="https://wallpaperaccess.com/full/498589.jpg"/>
                                                 </Slider>
                                             </Grid.Column>
                                         </Grid.Row>

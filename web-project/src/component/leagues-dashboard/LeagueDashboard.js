@@ -21,7 +21,8 @@ export class LeagueDashboard extends React.Component {
             vertical: true,
             verticalSwiping: true,
             swipeToSlide: true,
-            centerMode: false
+            centerMode: false,
+            arrows:false
         };
 
         return (
@@ -131,7 +132,7 @@ export class LeagueSelector extends React.Component {
 
         const panes = [
             {
-                menuItem: 'Football',
+                menuItem: 'فوتبال',
                 render: () => <Tab.Pane> <Dropdown placeholder='State' search selection
                                                    options={leagues} defaultValue='ir' inverted
                                                    className={'leagues-dropdown'}/>
@@ -139,7 +140,7 @@ export class LeagueSelector extends React.Component {
                 </Tab.Pane>
             },
             {
-                menuItem: 'Basketball',
+                menuItem: 'بسکتبال',
                 render: () => <Tab.Pane>
                     <Dropdown placeholder='State' search selection
                               options={leagues} defaultValue='en' inverted

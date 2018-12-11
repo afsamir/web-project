@@ -13,7 +13,7 @@ export class MatchResultCard extends React.Component {
                 <div className={'card'}>
                 <Card className={'match-result'} >
                     <Card.Content>
-                        <Card.Header className={'league'}>UEFA Champions League</Card.Header>
+                        <Card.Header className={'league'}>لیگ قهرمانان اروپا</Card.Header>
                     </Card.Content>
                     <Card.Content>
                         <Feed>
@@ -23,9 +23,9 @@ export class MatchResultCard extends React.Component {
                                     src="https://igbolive.com/wp-content/uploads/2018/03/manu-logo.png"
                                     alt="could not load" width={40} height={40}/>}/>
                                 <Feed.Content>
-                                    <Feed.Date content='Manchester United'/>
+                                    <Feed.Date content='منچستر یونایتد'/>
                                     <Feed.Summary className={'goals-text'}>
-                                        1
+                                        ۱
                                     </Feed.Summary>
                                 </Feed.Content>
                             </Feed.Event>
@@ -35,16 +35,16 @@ export class MatchResultCard extends React.Component {
                                     src="http://www.stickpng.com/assets/images/584a9b47b080d7616d298778.png"
                                     alt="could not load" width={40} height={40} mode={'fit'}/>}/>
                                 <Feed.Content>
-                                    <Feed.Date content='Real Madrid'/>
+                                    <Feed.Date content='ریال مادرید'/>
                                     <Feed.Summary className={'goals-text'}>
-                                        2
+                                        ۲
                                     </Feed.Summary>
                                 </Feed.Content>
                             </Feed.Event>
                             <Feed.Extra className={'game-status'}>
-                                Full time
+                                نتیجه نهایی
                                 <Divider fitted/>
-                                2018/08/13
+                                ۲۰۱۸/۰۸/۰۳
                             </Feed.Extra>
                         </Feed>
                     </Card.Content>

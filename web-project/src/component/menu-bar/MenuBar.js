@@ -21,15 +21,15 @@ export class MenuBar extends React.Component {
                     <Segment inverted attached={'bottom'} style={{marginBottom: '10px'}}>
                         <Responsive minWidth={768}>
                             <Menu inverted pointing secondary className={'menu-bar'}>
-                                <Menu.Item name="Sport" id={'site-name'}/>
-                                <Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick}/>
+                                <Menu.Item name="<ورزش>" id={'site-name'}/>
+                                <Menu.Item name='خانه' active={activeItem === 'home'} onClick={this.handleItemClick}/>
                                 <Menu.Item
-                                    name='messages'
+                                    name='لیگ ها'
                                     active={activeItem === 'messages'}
                                     onClick={this.handleItemClick}
                                 />
                                 <Menu.Item
-                                    name='friends'
+                                    name='ویدیو ها'
                                     active={activeItem === 'friends'}
                                     onClick={this.handleItemClick}
                                 />
@@ -51,14 +51,14 @@ export class MenuBar extends React.Component {
 
                             <Menu inverted pointing secondary className={'menu-bar'}>
                                 <Menu.Item name="Sport" id={'site-name'}/>
-                                <Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick}/>
+                                <Menu.Item name='خانه' active={activeItem === 'home'} onClick={this.handleItemClick}/>
                                 <Menu.Item
-                                    name='messages'
+                                    name='لیگ ها'
                                     active={activeItem === 'messages'}
                                     onClick={this.handleItemClick}
                                 />
                                 <Menu.Item
-                                    name='friends'
+                                    name='ویدیو ها'
                                     active={activeItem === 'friends'}
                                     onClick={this.handleItemClick}
                                 />
@@ -198,10 +198,10 @@ export class ProfileIcon extends React.Component {
                                                onMouseLeave={this.mouseLeave}/>}>
                     <Transition visible={dropdown} animation='slide down' duration={250}>
                         <Dropdown.Menu inverted className={'profile-dropdown'}>
-                            <Dropdown.Item content='Username' lowercase={true}/>
+                            <Dropdown.Item content='نام کابری' lowercase={true}/>
                             <Dropdown.Divider/>
-                            <Dropdown.Item text='Profile'/>
-                            <Dropdown.Item text='Logout'/>
+                            <Dropdown.Item text='نمایه'/>
+                            <Dropdown.Item text='خروج'/>
                         </Dropdown.Menu>
                     </Transition>
                 </Dropdown>
