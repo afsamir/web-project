@@ -1,4 +1,4 @@
-.news-text{
+.news-text {
     text-align: right;
     color: #757575;
     border-radius: 4px;
@@ -10,7 +10,7 @@
 
 }
 
-.news-text:hover{
+.news-text:hover {
     text-align: right;
     color: black;
     transition-duration: 500ms;
@@ -18,28 +18,30 @@
 
 }
 
-.main{
+.main {
     display: inline;
     color: red;
     float: right;
     margin-left: 12px;
     margin-bottom: 4px;
 }
-.news-div{
-    margin-bottom: 10px!important;
+
+.news-div {
+    margin-bottom: 10px !important;
 }
 
-.news-date{
+.news-date {
     margin: 4px;
-    color: #858565;
+    color: #858575;
     display: block;
-    float: left;
-    position: relative;
+    float: left !important;
+    position: sticky;
     padding: 4px;
     vertical-align: bottom !important;
 
 }
-.news-image{
+
+.news-image {
     float: left !important;
     margin-right: 12px;
     transition-duration: 500ms;
@@ -47,7 +49,7 @@
 
 }
 
-.news-image:hover{
+.news-image:hover {
     box-shadow: 0 0 2rem gray;
     transition-duration: 500ms;
 

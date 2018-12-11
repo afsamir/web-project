@@ -16,7 +16,7 @@ export class NewsDiv extends React.Component {
         return (
             <DirectionProvider direction={DIRECTIONS.RTL} >
 
-                <p className={'news-div'}>
+                <div className={'news-div'}>
                     <Responsive minWidth={768}>
                     <Icon className={"icon"}/>
 
@@ -39,7 +39,7 @@ export class NewsDiv extends React.Component {
 
                         </p>
                     </Responsive>
-                </p>
+                </div>
 
 
             </DirectionProvider>

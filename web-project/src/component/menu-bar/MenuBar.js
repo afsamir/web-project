@@ -18,7 +18,7 @@ export class MenuBar extends React.Component {
         return (
             <DirectionProvider direction={DIRECTIONS.RTL}>
                 <div className={MenuBar} id="MenuBar">
-                    <Segment inverted style={{marginBottom: '10px'}}>
+                    <Segment inverted attached={'bottom'} style={{marginBottom: '10px'}}>
                         <Responsive minWidth={768}>
                             <Menu inverted pointing secondary className={'menu-bar'}>
                                 <Menu.Item name="Sport" id={'site-name'}/>
