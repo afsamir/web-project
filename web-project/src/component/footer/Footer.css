@@ -20,8 +20,9 @@
  }
 
 .bottom-link{
-    max-width: 1500px;
-    margin-left: auto !important;
+
+    display: inline-flex;
+    margin-left:  auto !important;
     margin-right: auto !important;
     margin-top: 200px;
 
@@ -38,26 +39,4 @@
 
 }
 
-.inner-links{
-    text-align: right;
-    float: right;
-    color: #757575 !important;
-    margin-left: 36px !important ;
-
-}
-.inner-links .item a {
-    text-align: right !important;
-    color: #757575 !important;
-    transition-duration: 500ms;
-
-
-}
-
-.inner-links .item a:hover{
-    color: #a5a5a5 !important;
-    transition-duration: 500ms;
-
-
-
-}
 

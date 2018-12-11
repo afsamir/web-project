@@ -25,20 +25,7 @@ export class Footer extends React.Component{
                     </List.Item>
                 </List>
                 <Divider/>
-                <List divided verticalAlign='middle' className={'inner-links'}>
-                    <List.Item>
 
-                        <a>Shop</a>
-                    </List.Item>
-                    <Divider/>
-                    <List.Item>
-                        <a>Donate</a>
-                    </List.Item>
-                    <List.Item>
-                        <Divider/>
-                        <a>Cooperate</a>
-                    </List.Item>
-                </List>
 
                 <div className={'bottom-link'}>
 
@@ -49,11 +36,6 @@ export class Footer extends React.Component{
                         <List.Item href='#'>Contact</List.Item>
                     </List>
 
-                    <List horizontal>
-
-                        <List.Item href='#'>About Us</List.Item>
-                        <List.Item href='#'>Jobs</List.Item>
-                    </List>
 
 
                 </div>

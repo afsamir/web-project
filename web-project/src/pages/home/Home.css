@@ -1,5 +1,12 @@
+
 body {
     margin: 0 auto;
+
+}
+
+.Home{
+    box-shadow: 0rem 0rem 4rem black inset;
+
 }
 
 .slider {
