@@ -82,7 +82,7 @@ class NewsPage extends Component {
                                                 </Grid>
                                             </Grid.Column>
                                             <Grid.Column width={5}>
-                                                <News/>
+                                                <News  height={1314}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                     </Grid>
@@ -109,7 +109,7 @@ class NewsPage extends Component {
                                                 </Container>
                                             </Grid.Column>
                                             <Grid.Column width={5}>
-                                                <News/>
+                                                <News  height={1314}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                     </Grid>
@@ -136,7 +136,7 @@ class NewsPage extends Component {
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
-                                                <News/>
+                                                <News  height={480}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                     </Grid>

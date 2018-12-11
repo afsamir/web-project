@@ -25,7 +25,7 @@ class App extends Component {
 
                     <Grid.Row>
                         <Grid.Column width={6}>
-                            <News/>
+                            <News height={1314}/>
                         </Grid.Column>
                         <Grid.Column width={10}>
                             <Slider/>
