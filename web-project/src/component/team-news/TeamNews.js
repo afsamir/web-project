@@ -3,7 +3,6 @@ import 'semantic-ui-css/semantic.min.css';
 import {Divider} from "semantic-ui-react";
 import './TeamNews.css'
 import {NewsDiv} from "../news-div";
-import Segment from "semantic-ui-react/dist/commonjs/elements/Segment/Segment";
 import Header from "semantic-ui-react/dist/commonjs/elements/Header/Header";
 import Image from "semantic-ui-react/dist/commonjs/elements/Image/Image";
 import DirectionProvider, {DIRECTIONS} from "react-with-direction/dist/DirectionProvider";

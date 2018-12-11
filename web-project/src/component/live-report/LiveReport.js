@@ -1,5 +1,5 @@
 import React from 'react'
-import {Divider, Feed, Icon, List} from "semantic-ui-react";
+import {Feed} from "semantic-ui-react";
 import "./LiveReport.css"
 
 

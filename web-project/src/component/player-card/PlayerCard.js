@@ -1,16 +1,16 @@
 import React, {Component} from 'react';
 import 'semantic-ui-css/semantic.min.css';
 import './PlayerCard.css';
-import {Card, Divider} from "semantic-ui-react";
+import {Divider} from "semantic-ui-react";
 import DirectionProvider, {DIRECTIONS} from 'react-with-direction/dist/DirectionProvider'
-import Table from "semantic-ui-react/dist/commonjs/collections/Table/Table";
 import Segment from "semantic-ui-react/dist/commonjs/elements/Segment/Segment";
 import Image from "semantic-ui-react/dist/commonjs/elements/Image/Image";
 import Header from "semantic-ui-react/dist/commonjs/elements/Header/Header";
 
 class App extends Component {
     render() {
-        var info = {name: 'لیونل آندرس مسی',
+        const info = {
+            name: 'لیونل آندرس مسی',
             post: 'مهاجم',
             nationality: "آرژانتین",
             team: "بارسلونا",

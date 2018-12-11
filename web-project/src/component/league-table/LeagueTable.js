@@ -3,15 +3,12 @@ import 'semantic-ui-css/semantic.min.css';
 import './LeagueTable.css'
 import DirectionProvider, {DIRECTIONS} from "react-with-direction/dist/DirectionProvider";
 import Table from "semantic-ui-react/dist/commonjs/collections/Table/Table";
-import Dropdown from "semantic-ui-react/dist/commonjs/modules/Dropdown/Dropdown";
 import Divider from "semantic-ui-react/dist/commonjs/elements/Divider/Divider";
 import Segment from "semantic-ui-react/dist/commonjs/elements/Segment/Segment";
 import Header from "semantic-ui-react/dist/commonjs/elements/Header/Header";
 import Image from "semantic-ui-react/dist/commonjs/elements/Image/Image";
 
 class App extends Component {
-    stateOptions = [{key: 'FB', value: 'FB', text: 'Football'}, {key: 'BB', value: 'BB', text: 'Basketball'}];
-
     render() {
         let teams = [
             {
@@ -235,14 +232,6 @@ class App extends Component {
             },
 
         ];
-
-        let leagues = [
-            {key: 'en', value: 'en', text: 'لیگ برتر انگلیس',},
-            {key: 'la', value: 'la', text: 'لالیگا',},
-            {key: 'ir', value: 'ir', text: 'لیگ برتر ایران',},
-        ];
-
-        const {table} = this.props;
 
         return (
 

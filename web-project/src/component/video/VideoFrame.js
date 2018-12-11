@@ -7,7 +7,7 @@ export class VideoFrame extends React.Component {
 
         const {placeholder} = this.props,
             {url} = this.props,
-            {active} = this.props
+            {active} = this.props;
 
 
         return (

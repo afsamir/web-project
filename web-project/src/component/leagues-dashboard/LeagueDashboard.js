@@ -1,5 +1,5 @@
 import React from 'react'
-import {Segment, Grid, Divider, Button, Tab, Responsive} from "semantic-ui-react";
+import {Segment, Grid, Button, Tab, Responsive} from "semantic-ui-react";
 import './LeagueDashboard.css'
 import DirectionProvider, {DIRECTIONS} from "react-with-direction/dist/DirectionProvider";
 import LeagueTable from "../league-table";
@@ -152,21 +152,5 @@ export class LeagueSelector extends React.Component {
 
         return (<Tab menu={{tabular: true}} panes={panes}/>)
 
-    }
-}
-
-export class JustLeagueSelector extends React.Component {
-
-    render() {
-
-        let leagues = [
-            {key: 'en', value: 'en', text: 'لیگ برتر انگلیس',},
-            {key: 'la', value: 'la', text: 'لالیگا',},
-            {key: 'ir', value: 'ir', text: 'لیگ برتر ایران',},
-        ];
-
-        return (<Dropdown placeholder='State' search selection
-                          options={leagues} defaultValue='en' inverted
-                          className={'leagues-dropdown'}/>)
     }
 }

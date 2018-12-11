@@ -10,7 +10,7 @@
 
 .player-num{
     position: relative;
-    bottom: 0px;
+    bottom: 0;
 }
 .live-item{
     text-align: right;

@@ -9,9 +9,6 @@ import Image from "semantic-ui-react/dist/commonjs/elements/Image/Image";
 import Divider from "semantic-ui-react/dist/commonjs/elements/Divider/Divider";
 
 class App extends Component {
-    stateOptions = [{key: 'FB', value: 'FB', text: 'Football'}, {key: 'BB', value: 'BB', text: 'Basketball'}];
-
-
     render() {
         let teams = [
             {

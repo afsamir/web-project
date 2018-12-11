@@ -1,7 +1,6 @@
 import React from 'react'
 import {Icon, Feed,} from "semantic-ui-react";
 import './SmallMatchCard.css'
-import DirectionProvider, {DIRECTIONS} from "react-with-direction/dist/DirectionProvider";
 
 
 export class SmallMatchCard extends React.Component {
@@ -14,7 +13,7 @@ export class SmallMatchCard extends React.Component {
             <Feed className={'results'}>
                 <Feed.Event>
                     <Feed.Label className={'home-logo'}>
-                        <img src='https://react.semantic-ui.com/images/avatar/small/elliot.jpg'/>
+                        <img src='https://react.semantic-ui.com/images/avatar/small/elliot.jpg' alt={''}/>
                     </Feed.Label>
                     <Feed.Content className={'goals'}>
                         <div className={'home-goals'}>۲</div>
@@ -27,7 +26,7 @@ export class SmallMatchCard extends React.Component {
                         <div className={'visitor-goals'}>۰</div>
                     </Feed.Content>
                     <Feed.Label className={'visitor-logo'}>
-                        <img src='https://react.semantic-ui.com/images/avatar/small/elliot.jpg'/>
+                        <img src='https://react.semantic-ui.com/images/avatar/small/elliot.jpg' alt={''}/>
                     </Feed.Label>
                 </Feed.Event>
             </Feed>

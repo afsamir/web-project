@@ -15,6 +15,7 @@ import GameTable from "../../component/game-table/GameTable";
 import GameNews from "../../component/game-news/GameNews";
 import GameReport from "../../component/game-report/GameReport";
 import GameTeams from "../../component/game-teams/GameTeams";
+import Timeline from "../../component/timeline";
 
 class Home extends Component {
     render() {
@@ -41,8 +42,46 @@ class Home extends Component {
                                 <Responsive as={Segment} minWidth={1080}>
                                     <Grid className={'background'}>
                                         <Grid.Row>
-                                            <Grid.Column width={8}>
+                                            <Grid.Column width={5}>
+                                                <Timeline/>
+                                            </Grid.Column>
+                                            <Grid.Column width={6}>
                                                 <GameTable/>
+                                            </Grid.Column>
+                                            <Grid.Column width={5}>
+                                                <GameTeams/>
+                                            </Grid.Column>
+                                        </Grid.Row>
+                                        <Grid.Row>
+                                            <Grid.Column width={8}>
+                                                <GameNews/>
+                                            </Grid.Column>
+                                            <Grid.Column width={8}>
+                                                <GameReport/>
+                                            </Grid.Column>
+                                        </Grid.Row>
+                                        <Grid.Row>
+                                            <Grid.Column width={16}>
+                                                <Slider {...picSettings} className={'slider'}>
+                                                    <Image
+                                                        src="http://www.fifaworldcupnews.com/wp-content/uploads/2018/08/Bundesliga-Fixtures-Point-Table-Teams.jpg"/>
+                                                    <Image
+                                                        src="https://brightcove04pmdo-a.akamaihd.net/4221396001/4221396001_5702845000001_5702842932001-vs.jpg?pubId=4221396001&videoId=5702842932001"/>
+                                                </Slider>
+                                            </Grid.Column>
+                                        </Grid.Row>
+                                    </Grid>
+                                </Responsive>
+                                <Responsive as={Segment} maxWidth={1079} minWidth={768}>
+                                    <Grid>
+                                        <Grid.Row>
+                                            <Grid.Column width={16}>
+                                                <GameTable/>
+                                            </Grid.Column>
+                                        </Grid.Row>
+                                        <Grid.Row>
+                                            <Grid.Column width={8}>
+                                                <Timeline/>
                                             </Grid.Column>
                                             <Grid.Column width={8}>
                                                 <GameTeams/>
@@ -68,11 +107,16 @@ class Home extends Component {
                                         </Grid.Row>
                                     </Grid>
                                 </Responsive>
-                                <Responsive as={Segment} maxWidth={1079}>
+                                <Responsive as={Segment} maxWidth={767}>
                                     <Grid>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
                                                 <GameTable/>
+                                            </Grid.Column>
+                                        </Grid.Row>
+                                        <Grid.Row>
+                                            <Grid.Column width={16}>
+                                                <Timeline/>
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>

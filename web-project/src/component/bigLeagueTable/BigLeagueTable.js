@@ -4,11 +4,9 @@ import './BigLeagueTable.css'
 import Segment from "semantic-ui-react/dist/commonjs/elements/Segment/Segment";
 import Header from "semantic-ui-react/dist/commonjs/elements/Header/Header";
 import Image from "semantic-ui-react/dist/commonjs/elements/Image/Image";
-import * as DIRECTIONS from "react-with-direction";
 import Divider from "semantic-ui-react/dist/commonjs/elements/Divider/Divider";
 import Table from "semantic-ui-react/dist/commonjs/collections/Table/Table";
 import {LeagueSelector} from "../leagues-dashboard";
-import Grid from "semantic-ui-react/dist/commonjs/collections/Grid/Grid";
 
 class App extends Component {
 
