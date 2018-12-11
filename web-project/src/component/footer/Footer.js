@@ -8,7 +8,7 @@ export class Footer extends React.Component{
     render() {
         return(
             <Segment padded={true} inverted attached={'bottom'} raised className={'footer'}>
-                FOLLOW US ON
+                ما را دنبال کنید
                 <br/>
                 <List horizontal className={'media-list'}>
                     <List.Item>
@@ -31,9 +31,9 @@ export class Footer extends React.Component{
 
                     <List floated='left' horizontal>
 
-                        <List.Item href='#'>Terms</List.Item>
-                        <List.Item href='#'>Privacy</List.Item>
-                        <List.Item href='#'>Contact</List.Item>
+                        <List.Item href='#'>قوانین</List.Item>
+                        <List.Item href='#'>حریم شخصی</List.Item>
+                        <List.Item href='#'>تماس</List.Item>
                     </List>
 
 

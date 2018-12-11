@@ -21,11 +21,11 @@ export class NewsDiv extends React.Component {
                     <Icon className={"icon"}/>
 
                         <p className={'news-text'}>
-                            <p className={'main'}>UCL</p>
+                            <p className={'main'}>حاشیه</p>
                             <Image style={this.props.hasImage? {}: {display:'none'}} size={'small'} src={"https://react.semantic-ui.com/images/wireframe/image.png"}
                                className={'news-image'}/> یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!
 
-                        <div className={'news-date'}>3 days ago</div>
+                        <div className={'news-date'}>۸ ساعت پیش</div>
 
                     </p>
                     </Responsive>
@@ -36,7 +36,7 @@ export class NewsDiv extends React.Component {
                             <Icon name={'angle left'} className={'main'}/>
                             <Image size={'tiny'} src={"https://react.semantic-ui.com/images/wireframe/image.png"}
                                    className={'news-image'}/> یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!
-                            <div className={'news-date'}>3 days ago</div>
+                            <div className={'news-date'}>۸ ساعت پیش</div>
 
                         </p>
                     </Responsive>

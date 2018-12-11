@@ -7,7 +7,7 @@ import Segment from "semantic-ui-react/dist/commonjs/elements/Segment/Segment";
 
 class App extends Component {
     state = {activeItem: 'buy',};
-    stateOptions = [{key: 'FB', value: 'FB', text: 'Football'}, {key: 'BB', value: 'BB', text: 'Basketball'}];
+    stateOptions = [{key: 'FB', value: 'FB', text: 'فوتبال'}, {key: 'BB', value: 'BB', text: 'بسکتبال'}];
 
     handleItemClick = (e, {name}) => this.setState({activeItem: name});
 
@@ -16,8 +16,8 @@ class App extends Component {
         return (
             <div id="App">
                 <Menu fluid widths={2} inverted>
-                    <Menu.Item name='مورد' active={activeItem === 'buy'} onClick={this.handleItemClick}/>
-                    <Menu.Item name='sell' active={activeItem === 'sell'} onClick={this.handleItemClick}/>
+                    <Menu.Item name='آخرین اخبار' active={activeItem === 'buy'} onClick={this.handleItemClick}/>
+                    <Menu.Item name='مورد علاقه ها ' active={activeItem === 'sell'} onClick={this.handleItemClick}/>
                 </Menu>
 
                 <Container textAlign='center'>
@@ -25,7 +25,7 @@ class App extends Component {
                 </Container>
 
                 <Divider hidden/>
-                <Divider horizontal>News</Divider>
+                <Divider horizontal>اخبار</Divider>
 
                 <Segment fluid textAlign='justified' style={{overflow: 'auto', height: this.props.height }}>
                     <NewsDiv hasImage={false}/>
