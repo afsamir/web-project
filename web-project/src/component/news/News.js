@@ -27,7 +27,7 @@ class App extends Component {
                 <Divider hidden/>
                 <Divider horizontal>News</Divider>
 
-                <Segment fluid textAlign='justified' style={{overflow: 'auto', maxHeight: 1200 }}>
+                <Segment fluid textAlign='justified' style={{overflow: 'auto', height: '1314px' }}>
                     <NewsDiv />
                     <NewsDiv/>
                     <NewsDiv/>
