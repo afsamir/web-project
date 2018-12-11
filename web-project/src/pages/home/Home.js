@@ -13,7 +13,6 @@ import {LeagueDashboard, LeagueSelector} from "../../component/leagues-dashboard
 import Responsive from "semantic-ui-react/dist/commonjs/addons/Responsive/Responsive";
 import Segment from "semantic-ui-react/dist/commonjs/elements/Segment/Segment";
 import {Image} from "semantic-ui-react";
-import {VideoFrame} from "../../component/video";
 
 class Home extends Component {
     render() {
@@ -46,7 +45,7 @@ class Home extends Component {
         return (
             <div className='Home'>
                 <MenuBar style={{position: 'fixed'}}/>
-                <DirectionProvider direction={DIRECTIONS.RTL}>
+                {/*<DirectionProvider direction={DIRECTIONS.RTL}>*/}
                     <div style={{maxWidth: '1500px', margin: '30px auto 0 auto', marginTop: '80px'}}>
                         <div style={{margin: '5px'}}>
                             <Segment.Group>
@@ -177,7 +176,8 @@ class Home extends Component {
                             </Segment.Group>
                         </div>
                     </div>
-                </DirectionProvider>
+                {/*</DirectionProvider>*/}
+                <Footer/>
             </div>
         );
     }

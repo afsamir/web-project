@@ -19,7 +19,7 @@ export class PictureNews extends React.Component {
 
         return (
             <DirectionProvider direction={DIRECTIONS.RTL}>
-                <Dimmer.Dimmable as={Segment} blurring dimmed={active} onMouseEnter={this.handleShow}
+                <Dimmer.Dimmable as={Segment} blurring onMouseEnter={this.handleShow}
                                  onMouseLeave={this.handleHide}  className={'pic-news-div'}>
                     <Image src={this.props.src} centered fluid/>
 

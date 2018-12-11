@@ -47,7 +47,6 @@ export class Footer extends React.Component{
                         <List.Item href='#'>Terms</List.Item>
                         <List.Item href='#'>Privacy</List.Item>
                         <List.Item href='#'>Contact</List.Item>
-
                     </List>
 
                     <List horizontal>
