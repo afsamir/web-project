@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import 'semantic-ui-css/semantic.min.css';
-import {Divider} from "semantic-ui-react";
+import {Divider, Icon} from "semantic-ui-react";
 import './LeagueNews.css'
 import {NewsDiv} from "../news-div";
 import Segment from "semantic-ui-react/dist/commonjs/elements/Segment/Segment";
@@ -14,12 +14,11 @@ class App extends Component {
             <DirectionProvider direction={DIRECTIONS.RTL}>
                 <div id="App">
                     <Header as='h1' icon textAlign='center'>
-                        <Image
-                            src="https://lh3.googleusercontent.com/_w5swHd9Zf7DcdjNN55ttYEwZ11OrMi8Hf9c7jBhK8wgnetmEmY8sWCT9hDaY_bNxx9I"/>
+                        <Icon  name='newspaper'/>
                         <Header.Content>اخبار لیگ</Header.Content>
                     </Header>
                     <Divider inverted/>
-                    <div style={{ height: '310px', overflow: 'scroll'}}>
+                    <div style={{height: '310px', overflow: 'scroll'}}>
                         <NewsDiv/>
                         <NewsDiv/>
                         <NewsDiv/>
