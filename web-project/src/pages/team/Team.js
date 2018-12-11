@@ -14,6 +14,7 @@ import Image from "semantic-ui-react/dist/commonjs/elements/Image/Image";
 import TeamMember from "../../component/team-member";
 import TeamNews from "../../component/team-news/TeamNews";
 import TeamResult from "../../component/team-result/TeamResult";
+import {LeagueDashboard} from "../../component/leagues-dashboard";
 
 class Team extends Component {
     render() {
@@ -40,14 +41,19 @@ class Team extends Component {
                                 <Responsive as={Segment} minWidth={1080}>
                                     <Grid>
                                         <Grid.Row>
-                                            <Grid.Column width={11}>
+                                            <Grid.Column width={12}>
                                                 <Slider {...picSettings} className={'slider'}>
                                                     <Image
                                                         src="http://hd.wallpaperswide.com/thumbs/real_madrid_champions_league_winners_2016-t2.jpg"/>
                                                 </Slider>
                                             </Grid.Column>
-                                            <Grid.Column width={5}>
+                                            <Grid.Column width={4}>
                                                 <TeamLogo style={{padding: '10px'}}/>
+                                            </Grid.Column>
+                                        </Grid.Row>
+                                        <Grid.Row>
+                                            <Grid.Column width={16}>
+                                                <LeagueDashboard/>
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>
@@ -82,6 +88,11 @@ class Team extends Component {
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>
+                                            <Grid.Column width={16}>
+                                                <LeagueDashboard/>
+                                            </Grid.Column>
+                                        </Grid.Row>
+                                        <Grid.Row>
                                             <Grid.Column width={8}>
                                                 <TeamNews/>
                                             </Grid.Column>
@@ -104,6 +115,11 @@ class Team extends Component {
                                         <Grid.Row>
                                             <Grid.Column width={16}>
                                                 <TeamLogo style={{padding: '10px'}}/>
+                                            </Grid.Column>
+                                        </Grid.Row>
+                                        <Grid.Row>
+                                            <Grid.Column width={16}>
+                                                <LeagueDashboard/>
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>

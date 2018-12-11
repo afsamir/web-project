@@ -7,10 +7,10 @@ import Dropdown from "semantic-ui-react/dist/commonjs/modules/Dropdown/Dropdown"
 import Divider from "semantic-ui-react/dist/commonjs/elements/Divider/Divider";
 import Segment from "semantic-ui-react/dist/commonjs/elements/Segment/Segment";
 import Header from "semantic-ui-react/dist/commonjs/elements/Header/Header";
+import Image from "semantic-ui-react/dist/commonjs/elements/Image/Image";
 
 class App extends Component {
     stateOptions = [{key: 'FB', value: 'FB', text: 'Football'}, {key: 'BB', value: 'BB', text: 'Basketball'}];
-
 
     render() {
         let teams = [
@@ -248,8 +248,11 @@ class App extends Component {
 
             <DirectionProvider direction={DIRECTIONS.RTL} textAlign='center'>
                 <Segment id='LeagueTable' textAlign='center'>
-                    <Header>جدول لیگ</Header>
-                    <Dropdown disabled={!table} placeholder='State' search selection options={leagues} defaultValue='ir' inverted/>
+                    <Header as='h1' icon textAlign='center'>
+                        <Image src="https://cdn3.iconfinder.com/data/icons/medcare/512/tables-512.png"/>
+                        <Header.Content>جدول</Header.Content>
+                    </Header>
+                    {/*<Dropdown disabled={!table} placeholder='State' search selection options={leagues} defaultValue='ir' inverted/>*/}
                     <Divider/>
                     <div style={{height: '300px', overflow:'scroll'}}>
                     <Table>

@@ -39,7 +39,7 @@ class Home extends Component {
             autoplaySpeed: 3000,
             pauseOnHover: true,
             pauseOnDotsHover: true,
-            slide:MatchResultCard,
+            slide: MatchResultCard,
             // centerMode: true,
         };
 
@@ -87,8 +87,8 @@ class Home extends Component {
                                                         </Grid.Column>
                                                     </Grid.Row>
                                                     <Grid.Row>
-                                                    <Grid.Column width={16}>
-                                                            <LeagueDashboard/>
+                                                        <Grid.Column width={16}>
+                                                            <LeagueDashboard table={false}/>
                                                         </Grid.Column>
                                                     </Grid.Row>
                                                 </Grid>
@@ -154,7 +154,8 @@ class Home extends Component {
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
-                                               <div style={{display:'none'}}>  {matchResultSettings.slidesToShow = 2}</div>
+                                                <div
+                                                    style={{display: 'none'}}>  {matchResultSettings.slidesToShow = 2}</div>
                                                 <Slider {...matchResultSettings} className={'slider'}>
                                                     <MatchResultCard/>
                                                     <MatchResultCard/>
