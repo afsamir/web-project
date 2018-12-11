@@ -1,5 +1,5 @@
 import React from 'react'
-import {Divider, Icon, Image, List, Segment} from "semantic-ui-react";
+import {Divider, Icon, List, Segment} from "semantic-ui-react";
 import './Footer.css'
 
 export class Footer extends React.Component{
@@ -12,15 +12,15 @@ export class Footer extends React.Component{
                 <br/>
                 <List horizontal className={'media-list'}>
                     <List.Item>
-                        <Icon circular inverted name={'big twitter'} className={'icon'}> <a/></Icon>
+                        <Icon circular inverted name={'big twitter'} className={'icon'}> </Icon>
 
                     </List.Item>
                     <List.Item>
-                        <Icon circular inverted name={'big facebook f'} className={'icon'}> <a/></Icon>
+                        <Icon circular inverted name={'big facebook f'} className={'icon'}></Icon>
 
                     </List.Item>
                     <List.Item>
-                        <Icon circular inverted name={'big instagram'} className={'icon'}> <a/></Icon>
+                        <Icon circular inverted name={'big instagram'} className={'icon'}> </Icon>
 
                     </List.Item>
                 </List>

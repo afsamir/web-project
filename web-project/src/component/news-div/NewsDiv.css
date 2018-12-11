@@ -50,7 +50,7 @@
 }
 
 .news-image:hover {
-    box-shadow: 0 0 2rem gray;
+    box-shadow: 0 0 22rem gray;
     transition-duration: 500ms;
 
 }

@@ -14,6 +14,7 @@ import {PictureNews} from "../../component/picture-news";
 import {LeagueDashboard, LeagueSelector} from "../../component/leagues-dashboard";
 import Responsive from "semantic-ui-react/dist/commonjs/addons/Responsive/Responsive";
 import Segment from "semantic-ui-react/dist/commonjs/elements/Segment/Segment";
+import {Footer} from "../../component/footer";
 
 class Home extends Component {
     render() {
@@ -98,6 +99,8 @@ class Home extends Component {
                                             </Grid.Column>
                                         </Grid.Row>
                                     </Grid>
+                                    <Footer/>
+
                                 </Responsive>
                                 <Responsive as={Segment} minWidth={768} maxWidth={1079}>
                                     <Grid>
@@ -180,8 +183,10 @@ class Home extends Component {
                                                 <News/>
                                             </Grid.Column>
                                         </Grid.Row>
+
                                     </Grid>
                                 </Responsive>
+
                             </Segment.Group>
                         </div>
                     </div>

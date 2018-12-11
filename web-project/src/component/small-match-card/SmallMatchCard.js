@@ -1,5 +1,5 @@
 import React from 'react'
-import {Icon, Feed, Label} from "semantic-ui-react";
+import {Icon, Feed, } from "semantic-ui-react";
 import './SmallMatchCard.css'
 import DirectionProvider, {DIRECTIONS} from "react-with-direction/dist/DirectionProvider";
 
@@ -22,7 +22,7 @@ export class SmallMatchCard extends React.Component {
                             <div className={'home-goals'}>2</div>
                         </Feed.Content>
                         <div className={'time'} >
-                            <Icon name='red clock' className={'time-icon'}/>
+                            <Icon name={this.props.finished ?'red clock' : 'calender'} className={'time-icon'}/>
                             <div>49</div>
                         </div>
                         <Feed.Content className={'goals'}>
