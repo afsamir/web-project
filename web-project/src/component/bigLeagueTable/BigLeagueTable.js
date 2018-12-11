@@ -96,6 +96,42 @@ class App extends Component {
                 goalAverage: '25',
                 score: '36',
             },
+            {
+                id: 1,
+                name: 'دورتموند',
+                gameNum: '14',
+                win: '11',
+                lose: '0',
+                draw: '0',
+                goalNum1: '39',
+                goalNum2: '14',
+                goalAverage: '25',
+                score: '36',
+            },
+            {
+                id: 1,
+                name: 'دورتموند',
+                gameNum: '14',
+                win: '11',
+                lose: '0',
+                draw: '0',
+                goalNum1: '39',
+                goalNum2: '14',
+                goalAverage: '25',
+                score: '36',
+            },
+            {
+                id: 1,
+                name: 'دورتموند',
+                gameNum: '14',
+                win: '11',
+                lose: '0',
+                draw: '0',
+                goalNum1: '39',
+                goalNum2: '14',
+                goalAverage: '25',
+                score: '36',
+            },
         ];
         return (
             <div>
@@ -106,11 +142,11 @@ class App extends Component {
                     </Header>
                     {/*<Dropdown disabled={!table} placeholder='State' search selection options={leagues} defaultValue='ir' inverted/>*/}
                     <Divider/>
-                    <div style={{height: '300px', overflow:'scroll'}}>
+                    <div style={{height: '500px', overflow:'scroll'}}>
                         <Table>
                             <Table.Header>
                                 <Table.Row>
-                                    <Table.HeaderCell textAlign='center'>ردیف</Table.HeaderCell>
+                                    <Table.HeaderCell textAlign='center'>رتبه</Table.HeaderCell>
                                     <Table.HeaderCell textAlign='center'>نام تیم</Table.HeaderCell>
                                     <Table.HeaderCell textAlign='center'>بازی ها</Table.HeaderCell>
                                     <Table.HeaderCell textAlign='center'>برد</Table.HeaderCell>

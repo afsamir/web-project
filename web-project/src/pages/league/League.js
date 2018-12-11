@@ -17,6 +17,10 @@ import {PictureNews} from "../../component/picture-news";
 import {Footer} from "../../component/footer";
 import LeagueCard from "../../component/league-card/LeagueCard";
 import BigLeagueTable from "../../component/bigLeagueTable/BigLeagueTable";
+import LeagueNews from "../../component/league-news/LeagueNews";
+import BestPlayer from "../../component/best-player/BestPlayer";
+import Header from "semantic-ui-react/dist/commonjs/elements/Header/Header";
+import {SmallMatchCard} from "../../component/small-match-card";
 
 class Home extends Component {
     render() {
@@ -33,17 +37,13 @@ class Home extends Component {
             // centerMode: true,
         };
         const matchResultSettings = {
-            dots: true,
-            infinite: true,
-            speed: 500,
-            slidesToShow: 4,
+            speed: 300,
+            slidesToShow: 7,
             slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 3000,
-            pauseOnHover: true,
-            pauseOnDotsHover: true,
-            slide: MatchResultCard,
-            // centerMode: true,
+            vertical: true,
+            verticalSwiping: true,
+            swipeToSlide: true,
+            centerMode: false
         };
 
         return (
@@ -69,6 +69,46 @@ class Home extends Component {
                                         <Grid.Row>
                                             <Grid.Column width={16}>
                                                 <BigLeagueTable/>
+                                            </Grid.Column>
+                                        </Grid.Row>
+                                        <Grid.Row>
+                                            <Grid.Column width={5}>
+                                                <BestPlayer/>
+                                            </Grid.Column>
+                                            <Grid.Column width={6}>
+                                                <LeagueNews/>
+                                            </Grid.Column>
+                                            <Grid.Column className={'match-results'} width={5}>
+                                                <div id='match-result'>
+                                                    <Header as='h1' icon textAlign='center'>
+                                                        <Image
+                                                            src="https://cdn4.iconfinder.com/data/icons/football-13/64/Football-22-512.png"/>
+                                                        <Header.Content>بازی ها</Header.Content>
+                                                    </Header>
+                                                    <div style={{height: '250px'}}>
+                                                        <Slider {...matchResultSettings}>
+                                                            <SmallMatchCard finished={false}/>
+                                                            <SmallMatchCard finished={true}/>
+                                                            <SmallMatchCard finished={true}/>
+                                                            <SmallMatchCard/>
+                                                            <SmallMatchCard/>
+                                                            <SmallMatchCard/>
+                                                            <SmallMatchCard/>
+                                                            <SmallMatchCard/>
+                                                            <SmallMatchCard/>
+                                                            <SmallMatchCard/>
+                                                            <SmallMatchCard/>
+                                                            <SmallMatchCard/>
+                                                            <SmallMatchCard/>
+                                                            <SmallMatchCard/>
+                                                            <SmallMatchCard/>
+                                                            <SmallMatchCard/>
+                                                            <SmallMatchCard/>
+                                                            <SmallMatchCard/>
+                                                            <SmallMatchCard/>
+                                                        </Slider>
+                                                    </div>
+                                                </div>
                                             </Grid.Column>
                                         </Grid.Row>
                                     </Grid>
