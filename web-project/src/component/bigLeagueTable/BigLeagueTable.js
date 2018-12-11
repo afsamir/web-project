@@ -7,11 +7,49 @@ import Image from "semantic-ui-react/dist/commonjs/elements/Image/Image";
 import * as DIRECTIONS from "react-with-direction";
 import Divider from "semantic-ui-react/dist/commonjs/elements/Divider/Divider";
 import Table from "semantic-ui-react/dist/commonjs/collections/Table/Table";
+import {LeagueSelector} from "../leagues-dashboard";
+import Grid from "semantic-ui-react/dist/commonjs/collections/Grid/Grid";
 
 class App extends Component {
 
     render() {
         let teams = [
+            {
+                id: 1,
+                name: 'دورتموند',
+                gameNum: '14',
+                win: '11',
+                lose: '0',
+                draw: '0',
+                goalNum1: '39',
+                goalNum2: '14',
+                goalAverage: '25',
+                score: '36',
+            },
+            {
+                id: 1,
+                name: 'دورتموند',
+                gameNum: '14',
+                win: '11',
+                lose: '0',
+                draw: '0',
+                goalNum1: '39',
+                goalNum2: '14',
+                goalAverage: '25',
+                score: '36',
+            },
+            {
+                id: 1,
+                name: 'دورتموند',
+                gameNum: '14',
+                win: '11',
+                lose: '0',
+                draw: '0',
+                goalNum1: '39',
+                goalNum2: '14',
+                goalAverage: '25',
+                score: '36',
+            },
             {
                 id: 1,
                 name: 'دورتموند',
@@ -104,13 +142,14 @@ class App extends Component {
                         <Image src="https://cdn3.iconfinder.com/data/icons/medcare/512/tables-512.png"/>
                         <Header.Content>جدول</Header.Content>
                     </Header>
+                    <LeagueSelector/>
                     {/*<Dropdown disabled={!table} placeholder='State' search selection options={leagues} defaultValue='ir' inverted/>*/}
                     <Divider/>
-                    <div style={{height: '300px', overflow:'scroll'}}>
+                    <div style={{height: '500px', overflow:'scroll'}}>
                         <Table>
                             <Table.Header>
                                 <Table.Row>
-                                    <Table.HeaderCell textAlign='center'>ردیف</Table.HeaderCell>
+                                    <Table.HeaderCell textAlign='center'>رتبه</Table.HeaderCell>
                                     <Table.HeaderCell textAlign='center'>نام تیم</Table.HeaderCell>
                                     <Table.HeaderCell textAlign='center'>بازی ها</Table.HeaderCell>
                                     <Table.HeaderCell textAlign='center'>برد</Table.HeaderCell>

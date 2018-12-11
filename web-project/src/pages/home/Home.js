@@ -46,7 +46,7 @@ class Home extends Component {
         return (
             <div className='Home'>
                 <MenuBar style={{position: 'fixed'}}/>
-                {/*<DirectionProvider direction={DIRECTIONS.RTL}>*/}
+                <DirectionProvider direction={DIRECTIONS.RTL}>
                     <div style={{maxWidth: '1500px', margin: '30px auto 0 auto', marginTop: '80px'}}>
                         <div style={{margin: '5px'}}>
                             <Segment.Group>
@@ -177,7 +177,7 @@ class Home extends Component {
                             </Segment.Group>
                         </div>
                     </div>
-                {/*</DirectionProvider>*/}
+                </DirectionProvider>
                 <Footer/>
             </div>
         );

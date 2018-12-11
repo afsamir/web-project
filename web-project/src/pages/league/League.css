@@ -10,3 +10,28 @@ body {
 .slider div{
     border:0;
 }
+
+.header{
+    text-align: center;
+}
+
+.select-buttons{
+    margin: 0 auto !important;
+}
+
+.leagues-dropdown{
+    margin: 0 auto !important;
+}
+
+#LeagueDashboard {
+    border: 2px solid #000000;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+#games {
+    border: 2px solid #000000;
+    border-radius: 7px;
+    padding: 10px;
+    height: 510px;
+}
