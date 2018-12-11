@@ -1,6 +1,12 @@
 .league {
     text-align: center;
 }
+.league:hover{
+    box-shadow: 0rem 0rem 1rem black, -0rem 0rem 1rem black;
+
+    /*box-shadow:1rem 1rem 2rem black inset;*/
+
+}
 
 .goals-text {
     font-size: 18px;
@@ -22,5 +28,10 @@
 
 .match-result:hover {
     transition-duration: 500ms;
-    box-shadow: 0 0 2rem black
+    box-shadow: 0 0 1rem black, -0 0 1rem black;
+}
+.card{
+    margin: 10px auto !important;
+    padding: 5px;
+
 }

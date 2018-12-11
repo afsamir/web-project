@@ -44,6 +44,8 @@
 .results:hover{
     background-color: #c5c5c5;
     transition-duration: 500ms;
+    box-shadow: 0 0 1rem black
+
 }
 
 .time-icon {
