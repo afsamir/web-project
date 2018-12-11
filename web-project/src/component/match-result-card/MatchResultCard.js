@@ -9,8 +9,9 @@ import {Image} from "../util/image";
 export class MatchResultCard extends React.Component {
     render() {
         return (
-            <DirectionProvider direction={DIRECTIONS.LTR}>
-                <Card className={'match-result'} id="card">
+            <DirectionProvider direction={DIRECTIONS.LTR} >
+                <div className={'card'}>
+                <Card className={'match-result'} >
                     <Card.Content>
                         <Card.Header className={'league'}>UEFA Champions League</Card.Header>
                     </Card.Content>
@@ -48,6 +49,7 @@ export class MatchResultCard extends React.Component {
                         </Feed>
                     </Card.Content>
                 </Card>
+                </div>
             </DirectionProvider>)
     }
 
