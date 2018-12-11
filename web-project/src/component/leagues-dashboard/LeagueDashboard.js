@@ -41,9 +41,9 @@ export class LeagueDashboard extends React.Component {
                                     </Header>
                                     <div style={{height: '250px'}}>
                                         <Slider {...matchResultSettings}>
-                                            <SmallMatchCard/>
-                                            <SmallMatchCard/>
-                                            <SmallMatchCard/>
+                                            <SmallMatchCard finished={false}/>
+                                            <SmallMatchCard finished={true}/>
+                                            <SmallMatchCard finished={true}/>
                                             <SmallMatchCard/>
                                             <SmallMatchCard/>
                                             <SmallMatchCard/>
