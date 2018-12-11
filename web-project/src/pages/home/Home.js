@@ -13,6 +13,7 @@ import {LeagueDashboard, LeagueSelector} from "../../component/leagues-dashboard
 import Responsive from "semantic-ui-react/dist/commonjs/addons/Responsive/Responsive";
 import Segment from "semantic-ui-react/dist/commonjs/elements/Segment/Segment";
 import {Image} from "semantic-ui-react";
+import {VideoFrame} from "../../component/video";
 
 class Home extends Component {
     render() {
