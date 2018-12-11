@@ -12,9 +12,9 @@ import Segment from "semantic-ui-react/dist/commonjs/elements/Segment/Segment";
 import {Image} from "semantic-ui-react";
 import {Footer} from "../../component/footer";
 import GameTable from "../../component/game-table/GameTable";
-import Divider from "semantic-ui-react/dist/commonjs/elements/Divider/Divider";
 import GameNews from "../../component/game-news/GameNews";
 import GameReport from "../../component/game-report/GameReport";
+import GameTeams from "../../component/game-teams/GameTeams";
 
 class Home extends Component {
     render() {
@@ -29,15 +29,6 @@ class Home extends Component {
             pauseOnHover: true,
             pauseOnDotsHover: true,
             // centerMode: true,
-        };
-        const matchResultSettings = {
-            speed: 300,
-            slidesToShow: 5,
-            slidesToScroll: 1,
-            vertical: true,
-            verticalSwiping: true,
-            swipeToSlide: true,
-            centerMode: false
         };
 
         return (
@@ -54,7 +45,7 @@ class Home extends Component {
                                                 <GameTable/>
                                             </Grid.Column>
                                             <Grid.Column width={8}>
-                                                {/*<GameNews/>*/}
+                                                <GameTeams/>
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>
@@ -77,11 +68,39 @@ class Home extends Component {
                                         </Grid.Row>
                                     </Grid>
                                 </Responsive>
-                                <Responsive as={Segment} minWidth={768} maxWidth={1079}>
-
-                                </Responsive>
-                                <Responsive as={Segment} maxWidth={767}>
-
+                                <Responsive as={Segment} maxWidth={1079}>
+                                    <Grid>
+                                        <Grid.Row>
+                                            <Grid.Column width={16}>
+                                                <GameTable/>
+                                            </Grid.Column>
+                                        </Grid.Row>
+                                        <Grid.Row>
+                                            <Grid.Column width={16}>
+                                                <GameTeams/>
+                                            </Grid.Column>
+                                        </Grid.Row>
+                                        <Grid.Row>
+                                            <Grid.Column width={16}>
+                                                <GameNews/>
+                                            </Grid.Column>
+                                        </Grid.Row>
+                                        <Grid.Row>
+                                            <Grid.Column width={16}>
+                                                <GameReport/>
+                                            </Grid.Column>
+                                        </Grid.Row>
+                                        <Grid.Row>
+                                            <Grid.Column width={16}>
+                                                <Slider {...picSettings} className={'slider'}>
+                                                    <Image
+                                                        src="http://www.fifaworldcupnews.com/wp-content/uploads/2018/08/Bundesliga-Fixtures-Point-Table-Teams.jpg"/>
+                                                    <Image
+                                                        src="https://brightcove04pmdo-a.akamaihd.net/4221396001/4221396001_5702845000001_5702842932001-vs.jpg?pubId=4221396001&videoId=5702842932001"/>
+                                                </Slider>
+                                            </Grid.Column>
+                                        </Grid.Row>
+                                    </Grid>
                                 </Responsive>
                             </Segment.Group>
                         </div>

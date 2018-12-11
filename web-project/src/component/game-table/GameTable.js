@@ -24,7 +24,7 @@ class GameTable extends Component {
                             <Table.Header>
                                 <Table.Row>
                                     <Table.HeaderCell textAlign='center'><img src='https://upload.wikimedia.org/wikipedia/commons/7/70/Perspolis_FC.png' style={{height: '100px', width: '100px'}}/><Divider/><h3>پرسپولیس</h3></Table.HeaderCell>
-                                    <Table.HeaderCell textAlign='center'> </Table.HeaderCell>
+                                    <Table.HeaderCell textAlign='center'> <h1>0 - 0</h1> </Table.HeaderCell>
                                     <Table.HeaderCell textAlign='center'><img src='https://www.cambodianfootball.com/medias/esteghlal-logo.png' style={{height: '100px', width: '100px'}}/><Divider/><h3>استقلال تهران</h3></Table.HeaderCell>
                                 </Table.Row>
                             </Table.Header>
