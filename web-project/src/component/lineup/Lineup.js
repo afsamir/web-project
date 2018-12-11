@@ -16,22 +16,27 @@ export class Lineup extends React.Component {
                     <List.Item >
                         <LineupItem number={1} name={"leo messi"} events={[{item:'black futbol', minute:34}, {item:'red ambulance ', minute:56}]}/>
                     </List.Item>
-                    <List.Item >
-                        <LineupItem number={1} name={"leo messi"} events={[{item:'black futbol', minute:34}, {item:'red ambulance ', minute:56}]}/>
-                    </List.Item>
-                    <List.Item >
-                        <LineupItem number={1} name={"leo messi"} events={[{item:'black futbol', minute:34}, {item:'red ambulance ', minute:56}]}/>
-                    </List.Item>
-                    <List.Item >
-                        <LineupItem number={1} name={"leo messi"} events={[{item:'black futbol', minute:34}, {item:'red ambulance ', minute:56}]}/>
-                    </List.Item>
-                    <List.Item >
-                        <LineupItem number={1} name={"leo messi"} events={[{item:'black futbol', minute:34}, {item:'red ambulance ', minute:56}]}/>
-                    </List.Item>
-                    <List.Item >
-                        <LineupItem number={1} name={"leo messi"} events={[{item:'black futbol', minute:34}, {item:'red ambulance ', minute:56}]}/>
-                    </List.Item>
 
+                    <List.Item >
+                        <LineupItem number={1} name={"leo messi"} events={[{item:'black futbol', minute:34}, {item:'red ambulance ', minute:56}]}/>
+                    </List.Item>
+                    <List.Item >
+                        <LineupItem number={1} name={"leo messi"} events={[{item:'black futbol', minute:34}, {item:'red ambulance ', minute:56}]}/>
+                    </List.Item>
+                    <List.Item >
+                        <LineupItem number={1} name={"leo messi"} events={[{item:'black futbol', minute:34}, {item:'red ambulance ', minute:56}]}/>
+                    </List.Item>
+                    <List.Item >
+                        <LineupItem number={1} name={"leo messi"} events={[{item:'black futbol', minute:34}, {item:'red ambulance ', minute:56}]}/>
+                    </List.Item>
+                    <List.Item active>Sub</List.Item>
+                    <Divider/>
+                    <List.Item >
+                        <LineupItem number={1} name={"leo messi"} events={[{item:'black futbol', minute:34}, {item:'red ambulance ', minute:56}]}/>
+                    </List.Item>
+                    <List.Item >
+                        <LineupItem number={1} name={"leo messi"} events={[{item:'black futbol', minute:34}, {item:'red ambulance ', minute:56}]}/>
+                    </List.Item>
 
 
                 </List>
@@ -48,12 +53,11 @@ export class LineupItem extends React.Component {
         const {number} = this.props, {name} = this.props, {events} = this.props;
         return (
 
-            <List horizontal>
-
-                <List.Item>
+            <List horizontal className={'lineup-item'}>
+                <List.Item className={'player-num'}>
                     {number}
                 </List.Item>
-                <List.Item as='a' className={'player name'}>
+                <List.Item as='a' className={'player-name'}>
                     {name}
                 </List.Item>
                 {events.map(event =>  <List.Item>
