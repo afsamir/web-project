@@ -5,8 +5,10 @@ export class VideoFrame extends React.Component {
 
     render() {
 
-        const {placeholder} = this.props;
-        const {url} = this.props;
+        const {placeholder} = this.props,
+            {url} = this.props,
+            {active} = this.props
+
 
         return (
             <Embed
@@ -14,8 +16,9 @@ export class VideoFrame extends React.Component {
                 brandedUI
                 color='red'
                 hd={false}
+                active={active}
                 placeholder={placeholder}
-                url={"http://bing.com"}
+                url={url}
                 className={'video-frame'}
             />
         );

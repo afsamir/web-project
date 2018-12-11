@@ -13,6 +13,8 @@ import Responsive from "semantic-ui-react/dist/commonjs/addons/Responsive/Respon
 import Segment from "semantic-ui-react/dist/commonjs/elements/Segment/Segment";
 import {Container, Image} from "semantic-ui-react";
 import {VideoFrame} from "../../component/video";
+import {PictureNews} from "../../component/picture-news";
+import {Footer} from "../../component/footer";
 
 class NewsPage extends Component {
     render() {
@@ -56,14 +58,22 @@ class NewsPage extends Component {
                                                 <Grid>
                                                     <Grid.Row>
                                                         <Grid.Column width={16}>
-                                                            <VideoFrame/>
+                                                            {/*<VideoFrame active={false} url={"http://varzesh3.com"} placeholder={'https://static.farakav.com/files/pictures/thumb/01360537.jpg'}/>*/}
+                                                            <PictureNews
+                                                                src={'https://static.farakav.com/files/pictures/thumb/01360537.jpg'}/>
                                                         </Grid.Column>
                                                     </Grid.Row>
 
 
                                                     <Grid.Row>
-                                                        <Grid.Column width={11}>
-                                                            <Container textAlign={'right'} content={<pre> خصخینخیصخصینخصنیصنصیصیصییییییییییییییییییییییییییییییییییییییییییییی یخنصصصصصصصصصصصصصصصصصصصصصصصصصصصصصصصصصصصصصص صیییییییییییییییییییییییییییییی</pre>}></Container>
+                                                        <Grid.Column width={16}>
+                                                            <Container textAlign={'right'}>
+                                                                <p> طبی همانطور که در کنفرانس معارفه خود اشاره کرده بود،
+                                                                    دیروز در گفت و گو با شبکه تلویزیونی خوزستان هم تاکید
+                                                                    کرد که تلاش کرده در وهله اول بازیکنان تیمش را همدل
+                                                                    کند. او گفت: حالا بچه ها متحد هستند و برای نام فولاد
+                                                                    بازی می کنند، نه گروه یا دسته ای دیگر.</p>
+                                                            </Container>
 
                                                         </Grid.Column>
                                                     </Grid.Row>
@@ -81,35 +91,25 @@ class NewsPage extends Component {
                                     <Grid>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
-                                                <Slider {...picSettings} className={'slider'}>
-                                                    <Image
-                                                        src="https://www.desktopbackground.org/download/o/2014/04/29/754479_football-or-soccer-balls-hd-wallpapers-4k-wallpapers_1920x1080_h.jpg"/>
-                                                    <Image src="https://wallpaperaccess.com/full/498543.png"/>
-                                                    <Image src="https://wallpaperaccess.com/full/498589.jpg"/>
-                                                </Slider>
+                                                <PictureNews
+                                                    src={'https://static.farakav.com/files/pictures/thumb/01360537.jpg'}/>
+
                                             </Grid.Column>
                                         </Grid.Row>
+
+
                                         <Grid.Row>
-                                            <Grid.Column width={16}>
-                                                <Slider {...matchResultSettings} className={'slider'}>
-                                                    <MatchResultCard/>
-                                                    <MatchResultCard/>
-                                                    <MatchResultCard/>
-                                                    <MatchResultCard/>
-                                                    <MatchResultCard/>
-                                                    <MatchResultCard/>
-                                                    <MatchResultCard/>
-                                                    <MatchResultCard/>
-                                                </Slider>
+                                            <Grid.Column width={11}>
+                                                <Container textAlign={'right'}>
+                                                    <p> طبی همانطور که در کنفرانس معارفه خود اشاره کرده بود، دیروز در
+                                                        گفت و گو با شبکه تلویزیونی خوزستان هم تاکید کرد که تلاش کرده در
+                                                        وهله اول بازیکنان تیمش را همدل کند. او گفت: حالا بچه ها متحد
+                                                        هستند و برای نام فولاد بازی می کنند، نه گروه یا دسته ای
+                                                        دیگر.</p>
+                                                </Container>
                                             </Grid.Column>
-                                        </Grid.Row>
-                                        <Grid.Row>
-                                            <Grid.Column width={8}>
+                                            <Grid.Column width={5}>
                                                 <News/>
-                                            </Grid.Column>
-                                            <Grid.Column width={8}>
-                                                <LeagueSelector/>
-                                                <LeagueDashboard/>
                                             </Grid.Column>
                                         </Grid.Row>
                                     </Grid>
@@ -118,36 +118,20 @@ class NewsPage extends Component {
                                     <Grid>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
-                                                <Slider {...picSettings} className={'slider'}>
-                                                    <Image
-                                                        src="https://www.desktopbackground.org/download/o/2014/04/29/754479_football-or-soccer-balls-hd-wallpapers-4k-wallpapers_1920x1080_h.jpg"/>
-                                                    <Image src="https://wallpaperaccess.com/full/498543.png"/>
-                                                    <Image src="https://wallpaperaccess.com/full/498589.jpg"/>
-                                                </Slider>
+                                                <PictureNews
+                                                    src={'https://static.farakav.com/files/pictures/thumb/01360537.jpg'}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
-                                                <div
-                                                    style={{display: 'none'}}>  {matchResultSettings.slidesToShow = 2}</div>
-                                                <Slider {...matchResultSettings} className={'slider'}>
-                                                    <MatchResultCard/>
-                                                    <MatchResultCard/>
-                                                    <MatchResultCard/>
-                                                    <MatchResultCard/>
-                                                    <MatchResultCard/>
-                                                    <MatchResultCard/>
-                                                    <MatchResultCard/>
-                                                    <MatchResultCard/>
-                                                </Slider>
-                                            </Grid.Column>
-                                        </Grid.Row>
-                                        <Grid.Row>
-                                            <Grid.Column width={16}>
-                                                <LeagueSelector style={{maxWidth: '500px'}}/>
-                                            </Grid.Column>
-                                            <Grid.Column width={16}>
-                                                <LeagueDashboard/>
+                                                <Container textAlign={'right'}>
+                                                    <p> طبی همانطور که در کنفرانس معارفه خود اشاره کرده بود، دیروز در
+                                                        گفت و گو با شبکه تلویزیونی خوزستان هم تاکید کرد که تلاش کرده در
+                                                        وهله اول بازیکنان تیمش را همدل کند. او گفت: حالا بچه ها متحد
+                                                        هستند و برای نام فولاد بازی می کنند، نه گروه یا دسته ای
+                                                        دیگر.</p>
+                                                </Container>
+
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>
@@ -159,6 +143,7 @@ class NewsPage extends Component {
                                 </Responsive>
                             </Segment.Group>
                         </div>
+                        <Footer/>
                     </div>
                 </DirectionProvider>
             </div>

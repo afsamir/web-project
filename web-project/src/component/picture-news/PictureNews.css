@@ -1,5 +1,7 @@
 .pic-news-div{
     padding: 0 !important;
+    z-index: 0 !important;
+    cursor: pointer;
 }
 
 .pic-news{
