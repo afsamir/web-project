@@ -1,15 +1,21 @@
 .footer{
     height: 400px;
     text-align: center;
-
+    position: fixed;
+    margin: 0 auto !important;
 }
 
 .media-list{
     margin-top: 30px !important;
 }
 
-.icon:hover{
 
+.media-list >item{
+    margin-left: 0 !important;
+    background-color: red !important;
+    display: none;
+}
+.icon:hover{
     cursor: pointer;
  }
 

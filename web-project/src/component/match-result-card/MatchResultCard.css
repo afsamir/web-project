@@ -1,19 +1,26 @@
-.league{
-    text-align: center;
-}
-.goals-text{
-    font-size: 18px;
-}
-.game-status{
+.league {
     text-align: center;
 }
 
-.match-result{
+.goals-text {
+    font-size: 18px;
+}
+
+.game-status {
+    text-align: center;
+}
+
+.match-result {
     margin: 0 auto;
     min-width: 150px !important;
     width: 250px !important;
     border: solid 2px #000;
     border-radius: 10px;
-    /*margin: 10px;*/
+    transition-duration: 500ms;
 }
 
+
+.match-result:hover {
+    transition-duration: 500ms;
+    box-shadow: 0 0 2rem black
+}

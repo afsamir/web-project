@@ -21,8 +21,8 @@ export class NewsDiv extends React.Component {
                     <Icon className={"icon"}/>
 
                     <p className={'news-text'}>
-                        <p className={'main'}>لیگ قهرمانان</p>
-                        <Image size={'small'} src={"https://react.semantic-ui.com/images/wireframe/image.png"}
+                        <p className={'main'}>UCL</p>
+                        <Image style={this.props.hasImage? {}: {display:'none'}} size={'small'} src={"https://react.semantic-ui.com/images/wireframe/image.png"}
                                className={'news-image'}/> یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!
                         <div className={'news-date'}>3 days ago</div>
 
