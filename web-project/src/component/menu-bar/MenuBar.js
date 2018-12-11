@@ -22,15 +22,15 @@ export class MenuBar extends React.Component {
                         <Responsive minWidth={768}>
                             <Menu inverted pointing secondary className={'menu-bar'}>
                                 <Menu.Item name="<ورزش>" id={'site-name'}/>
-                                <Menu.Item name='خانه' active={activeItem === 'home'} onClick={this.handleItemClick}/>
+                                <Menu.Item name='خانه' active={activeItem === 'خانه'} onClick={this.handleItemClick}/>
                                 <Menu.Item
                                     name='لیگ ها'
-                                    active={activeItem === 'messages'}
+                                    active={activeItem === 'لیگ ها'}
                                     onClick={this.handleItemClick}
                                 />
                                 <Menu.Item
                                     name='ویدیو ها'
-                                    active={activeItem === 'friends'}
+                                    active={activeItem === 'ویدیو ها'}
                                     onClick={this.handleItemClick}
                                 />
                                 <Menu.Item id={'search-bar'} position='left'>
@@ -51,15 +51,15 @@ export class MenuBar extends React.Component {
 
                             <Menu inverted pointing secondary className={'menu-bar'}>
                                 <Menu.Item name="Sport" id={'site-name'}/>
-                                <Menu.Item name='خانه' active={activeItem === 'home'} onClick={this.handleItemClick}/>
+                                <Menu.Item name='خانه' active={activeItem === 'خانه'} onClick={this.handleItemClick}/>
                                 <Menu.Item
                                     name='لیگ ها'
-                                    active={activeItem === 'messages'}
+                                    active={activeItem === 'لیگ ها'}
                                     onClick={this.handleItemClick}
                                 />
                                 <Menu.Item
                                     name='ویدیو ها'
-                                    active={activeItem === 'friends'}
+                                    active={activeItem === 'ویدیو ها'}
                                     onClick={this.handleItemClick}
                                 />
                                 <Menu.Item id={'search-icon'}>

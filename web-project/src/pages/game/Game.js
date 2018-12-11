@@ -40,7 +40,7 @@ class Home extends Component {
                         <div style={{margin: '5px'}}>
                             <Segment.Group>
                                 <Responsive as={Segment} minWidth={1080}>
-                                    <Grid className={'background'}>
+                                    <Grid id={'background'}>
                                         <Grid.Row>
                                             <Grid.Column width={5}>
                                                 <Timeline/>

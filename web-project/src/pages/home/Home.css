@@ -4,11 +4,11 @@ body {
 
 }
 
-#background{
+/*#background{*/
 
-    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxURcGMejI8alW9012WRR1dM5HSUMHVCJa47fU9WhTRdbNA604") no-repeat;
-    background-size: cover;
-}
+    /*background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxURcGMejI8alW9012WRR1dM5HSUMHVCJa47fU9WhTRdbNA604") no-repeat;*/
+    /*background-size: cover;*/
+/*}*/
 
 .slider {
     border: 3px solid #000000;

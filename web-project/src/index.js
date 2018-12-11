@@ -1,6 +1,5 @@
 import React from 'react';
 import './index.css';
-import * as serviceWorker from './serviceWorker';
 import ReactDOM from 'react-dom';
 import App from './App';
 import Home from './pages/home/Home'
@@ -14,11 +13,11 @@ import BigLeagueTable from "./component/bigLeagueTable/BigLeagueTable";
 import Game from "./pages/game/Game";
 import NewsPage from "./pages/news";
 
-// ReactDOM.render(<Home/>, document.getElementById('root'));
+ReactDOM.render(<Home/>, document.getElementById('root'));
 // ReactDOM.render(<Team/>, document.getElementById('root'));
 // ReactDOM.render(<Player/>, document.getElementById('root'));
 // ReactDOM.render(<League/>, document.getElementById('root'));
-ReactDOM.render(<NewsPage/>, document.getElementById('root'));
+// ReactDOM.render(<NewsPage/>, document.getElementById('root'));
 // ReactDOM.render(<Game/>, document.getElementById('root'));
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
