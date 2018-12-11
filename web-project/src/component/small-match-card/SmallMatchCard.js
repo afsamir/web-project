@@ -21,7 +21,7 @@ export class SmallMatchCard extends React.Component {
                     </Feed.Content>
                     <div className={'time'}>
                         <Icon name={!this.props.finished ? 'red clock' : 'calendar alternate'} className={'time-icon'}/>
-                        <div>49</div>
+                        <div>۶۹</div>
                     </div>
                     <Feed.Content className={'goals'}>
                         <div className={'visitor-goals'}>0</div>
