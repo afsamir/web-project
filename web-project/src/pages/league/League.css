@@ -1,0 +1,12 @@
+body {
+    margin: 0 auto;
+}
+
+.slider {
+    border: 3px solid #000000;
+    border-radius: 10px;
+}
+
+.slider div{
+    border:0;
+}

@@ -13,6 +13,8 @@ import {LeagueDashboard, LeagueSelector} from "../../component/leagues-dashboard
 import Responsive from "semantic-ui-react/dist/commonjs/addons/Responsive/Responsive";
 import Segment from "semantic-ui-react/dist/commonjs/elements/Segment/Segment";
 import {Image} from "semantic-ui-react";
+import {PictureNews} from "../../component/picture-news";
+import {Footer} from "../../component/footer";
 
 class Home extends Component {
     render() {
@@ -45,7 +47,7 @@ class Home extends Component {
         return (
             <div className='Home'>
                 <MenuBar style={{position: 'fixed'}}/>
-                <DirectionProvider direction={DIRECTIONS.RTL}>
+                {/*<DirectionProvider direction={DIRECTIONS.RTL}>*/}
                     <div style={{maxWidth: '1500px', margin: '30px auto 0 auto', marginTop: '80px'}}>
                         <div style={{margin: '5px'}}>
                             <Segment.Group>
@@ -57,7 +59,7 @@ class Home extends Component {
                                                     <Grid.Row>
                                                         <Grid.Column width={16}>
                                                             <Slider {...picSettings} className={'slider'}>
-                                                                <Image src="https://www.desktopbackground.org/download/o/2014/04/29/754479_football-or-soccer-balls-hd-wallpapers-4k-wallpapers_1920x1080_h.jpg"/>
+                                                                <PictureNews text={'Hello world'} src="https://www.desktopbackground.org/download/o/2014/04/29/754479_football-or-soccer-balls-hd-wallpapers-4k-wallpapers_1920x1080_h.jpg"/>
                                                                 <Image src="https://wallpaperaccess.com/full/498543.png"/>
                                                                 <Image src="https://wallpaperaccess.com/full/498589.jpg"/>
                                                             </Slider>
@@ -176,7 +178,8 @@ class Home extends Component {
                             </Segment.Group>
                         </div>
                     </div>
-                </DirectionProvider>
+                {/*</DirectionProvider>*/}
+                <Footer/>
             </div>
         );
     }
