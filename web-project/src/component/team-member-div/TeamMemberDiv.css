@@ -1,7 +1,14 @@
 .member {
     border-radius: 5px;
-    margin-bottom: 8px !important;
-    /*background-color: #f5f5f5;*/
+    padding: 3px !important;
+    margin: 8px !important;
+    background-color: #f5f5f5;
+    transition-duration: 500ms;
+}
+.member:hover{
+    box-shadow: 0 0 1rem #353535;
+    transition-duration: 500ms;
+
 }
 
 .position {
@@ -9,6 +16,7 @@
     color: #a5a5a5;
     margin-right: 8px;
     margin-top: -12px !important;
+
 }
 
 .name {
@@ -18,3 +26,4 @@
     margin-right: 8px;
 
 }
+

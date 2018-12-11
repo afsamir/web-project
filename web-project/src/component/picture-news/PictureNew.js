@@ -9,7 +9,6 @@ export class PictureNews extends React.Component {
     constructor(props){
         super(props);
         this.state={
-            active:true
         }
     }
     handleShow = () => this.setState({active: true});

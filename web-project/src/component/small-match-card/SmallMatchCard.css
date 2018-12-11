@@ -32,6 +32,7 @@
 }
 
 .results {
+    background-color: #f5f5f5;
     border-radius: 4px;
     margin: 0 auto !important;
     padding: 30px !important;
@@ -42,7 +43,6 @@
 }
 
 .results:hover{
-    background-color: #c5c5c5;
     transition-duration: 500ms;
     box-shadow: 0 0 1rem black
 

@@ -7,7 +7,7 @@ export class TeamMemberDiv extends React.Component{
 
     render() {
         return (
-            <DirectionProvider direction={DIRECTIONS.RTL}>
+            <DirectionProvider direction={DIRECTIONS.RTL} className={'member-card'}>
                 <Feed className={'member'}>
                     <Feed.Event>
                         <Feed.Label image={<Image circular size='small' src='https://react.semantic-ui.com/images/avatar/small/elliot.jpg' />}/>

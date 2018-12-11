@@ -210,9 +210,9 @@ class NewsPage extends Component {
                                 </Responsive>
                             </Segment.Group>
                         </div>
-                        <Footer/>
                     </div>
                 </DirectionProvider>
+                <Footer/>
             </div>
         );
     }
