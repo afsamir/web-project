@@ -8,28 +8,14 @@ import Grid from "semantic-ui-react/dist/commonjs/collections/Grid/Grid";
 import {MenuBar} from "../../component/menu-bar";
 import {MatchResultCard} from "../../component/match-result-card";
 import News from "../../component/news";
-import {LeagueDashboard, LeagueSelector} from "../../component/leagues-dashboard";
 import Responsive from "semantic-ui-react/dist/commonjs/addons/Responsive/Responsive";
 import Segment from "semantic-ui-react/dist/commonjs/elements/Segment/Segment";
-import {Container, Divider, Header, Icon, Image} from "semantic-ui-react";
-import {VideoFrame} from "../../component/video";
+import {Container, Divider, Header} from "semantic-ui-react";
 import {PictureNews} from "../../component/picture-news";
 import {Footer} from "../../component/footer";
 
 class NewsPage extends Component {
     render() {
-        const picSettings = {
-            dots: true,
-            infinite: true,
-            speed: 500,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 3000,
-            pauseOnHover: true,
-            pauseOnDotsHover: true,
-            // centerMode: true,
-        };
         const matchResultSettings = {
             dots: true,
             infinite: true,

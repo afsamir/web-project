@@ -12,6 +12,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-*{
 
+@font-face {
+  font-family: 'B Nazanin';
+  src: local('B Nazanin'),
+  local('BNazanin'),
+  url('BNazanin/BNazanin.woff2') format('woff2'),
+  url('BNazanin/BNazanin.woff') format('woff'),
+  url('BNazanin/BNazanin.ttf') format('truetype');
+  font-weight: 400;
+  font-stretch: normal;
+  /*font-style: normal;*/
 }

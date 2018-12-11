@@ -21,10 +21,6 @@ class App extends Component {
                     <Divider inverted/>
                     <div style={{height: '509px', overflow: 'scroll'}}>
                        <LiveReport item={'futbol'} time={'۲۰:۳۴'} summary={' گل برای سپاهان : هادی عقیلی'}/>
-
-
-
-
                     </div>
                 </div>
             </DirectionProvider>

@@ -1,5 +1,5 @@
 .footer{
-    height: 400px;
+    height: 200px;
     text-align: center;
     position: fixed;
     margin: 0 auto !important;
@@ -10,7 +10,7 @@
 }
 
 
-.media-list >item{
+.media-list > item{
     margin-left: 0 !important;
     background-color: red !important;
     display: none;
@@ -24,7 +24,7 @@
     display: inline-flex;
     margin-left:  auto !important;
     margin-right: auto !important;
-    margin-top: 200px;
+    /*margin-top: 200px;*/
 
 }
 .bottom-link .item {

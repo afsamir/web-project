@@ -20,16 +20,16 @@ class GameTeams extends Component {
                         <Table>
                             <Table.Header>
                                 <Table.Row>
-                                    <Table.HeaderCell textAlign='center'><img src='https://upload.wikimedia.org/wikipedia/commons/7/70/Perspolis_FC.png' style={{height: '100px', width: '100px'}}/><Divider/><h3>پرسپولیس</h3></Table.HeaderCell>
-                                    <Table.HeaderCell textAlign='center'></Table.HeaderCell>
-                                    <Table.HeaderCell textAlign='center'><img src='https://www.cambodianfootball.com/medias/esteghlal-logo.png' style={{height: '100px', width: '100px'}}/><Divider/><h3>استقلال تهران</h3></Table.HeaderCell>
+                                    <Table.HeaderCell textAlign='center'><img src='https://upload.wikimedia.org/wikipedia/commons/7/70/Perspolis_FC.png' style={{height: '100px', width: '100px'}} alt={''}/><Divider/><h3>پرسپولیس</h3></Table.HeaderCell>
+                                    <Table.HeaderCell textAlign='center'/>
+                                    <Table.HeaderCell textAlign='center'><img src='https://www.cambodianfootball.com/medias/esteghlal-logo.png' style={{height: '100px', width: '100px'}} alt={''}/><Divider/><h3>استقلال تهران</h3></Table.HeaderCell>
                                 </Table.Row>
                             </Table.Header>
 
                             <Table.Body>
                                 <Table.Row>
                                     <Table.Cell textAlign='center'><Lineup/></Table.Cell>
-                                    <Table.Cell textAlign='center'></Table.Cell>
+                                    <Table.Cell textAlign='center'/>
                                     <Table.Cell textAlign='center'><Lineup/></Table.Cell>
                                 </Table.Row>
                             </Table.Body>
