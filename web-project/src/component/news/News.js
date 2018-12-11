@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import 'semantic-ui-css/semantic.min.css';
-import {Container, Divider, Dropdown, Grid, Menu} from "semantic-ui-react";
+import {Container, Divider, Dropdown, Menu} from "semantic-ui-react";
 import './News.css'
 import {NewsDiv} from "../news-div";
 import Segment from "semantic-ui-react/dist/commonjs/elements/Segment/Segment";
@@ -28,8 +28,8 @@ class App extends Component {
                 <Divider horizontal>News</Divider>
 
                 <Segment fluid textAlign='justified' style={{overflow: 'auto', height: '1314px' }}>
-                    <NewsDiv />
-                    <NewsDiv/>
+                    <NewsDiv hasImage={false}/>
+                    <NewsDiv hasImage={true}/>
                     <NewsDiv/>
                     <NewsDiv/>
                     <NewsDiv/>

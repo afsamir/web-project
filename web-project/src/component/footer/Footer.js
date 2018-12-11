@@ -16,7 +16,7 @@ export class Footer extends React.Component{
 
                     </List.Item>
                     <List.Item>
-                        <Icon circular inverted name={'big facebook f'} className={'icon'}></Icon>
+                        <Icon circular inverted name={'big facebook f'} className={'icon'}> </Icon>
 
                     </List.Item>
                     <List.Item>
