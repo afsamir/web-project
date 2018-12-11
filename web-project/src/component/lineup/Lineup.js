@@ -2,13 +2,11 @@ import React from 'react'
 import {Divider, Icon, List} from "semantic-ui-react";
 import "./Lineup.css"
 
-
 export class Lineup extends React.Component {
     render() {
         return (
             <div className={'lineup'}>
                 <List size={'huge'} link>
-                    <List.Item active>Home</List.Item>
                     <Divider/>
                     <List.Item >
                         <LineupItem number={1} name={"leo messi"} events={[{item:'black futbol', minute:34}, {item:'red ambulance ', minute:56}]}/>
