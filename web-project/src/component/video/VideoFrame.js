@@ -15,7 +15,7 @@ export class VideoFrame extends React.Component {
                 color='red'
                 hd={false}
                 placeholder={placeholder}
-                url={url}
+                url={"http://bing.com"}
                 className={'video-frame'}
             />
         );

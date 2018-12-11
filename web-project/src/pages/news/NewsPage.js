@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -11,7 +11,7 @@ import News from "../../component/news";
 import {LeagueDashboard, LeagueSelector} from "../../component/leagues-dashboard";
 import Responsive from "semantic-ui-react/dist/commonjs/addons/Responsive/Responsive";
 import Segment from "semantic-ui-react/dist/commonjs/elements/Segment/Segment";
-import {Image} from "semantic-ui-react";
+import {Container, Image} from "semantic-ui-react";
 import {VideoFrame} from "../../component/video";
 
 class NewsPage extends Component {
@@ -56,37 +56,19 @@ class NewsPage extends Component {
                                                 <Grid>
                                                     <Grid.Row>
                                                         <Grid.Column width={16}>
-                                                            <Slider {...picSettings} className={'slider'}>
-                                                                <Image src="https://www.desktopbackground.org/download/o/2014/04/29/754479_football-or-soccer-balls-hd-wallpapers-4k-wallpapers_1920x1080_h.jpg"/>
-                                                                <Image src="https://wallpaperaccess.com/full/498543.png"/>
-                                                                <Image src="https://wallpaperaccess.com/full/498589.jpg"/>
-                                                            </Slider>
+                                                            <VideoFrame/>
                                                         </Grid.Column>
                                                     </Grid.Row>
+
+
                                                     <Grid.Row>
-                                                        <Grid.Column width={16}>
-                                                            <Slider {...matchResultSettings} className={'slider'}>
-                                                                <MatchResultCard/>
-                                                                <MatchResultCard/>
-                                                                <MatchResultCard/>
-                                                                <MatchResultCard/>
-                                                                <MatchResultCard/>
-                                                                <MatchResultCard/>
-                                                                <MatchResultCard/>
-                                                                <MatchResultCard/>
-                                                            </Slider>
+                                                        <Grid.Column width={11}>
+                                                            <Container textAlign={'right'} content={<pre> خصخینخیصخصینخصنیصنصیصیصییییییییییییییییییییییییییییییییییییییییییییی یخنصصصصصصصصصصصصصصصصصصصصصصصصصصصصصصصصصصصصصص صیییییییییییییییییییییییییییییی</pre>}></Container>
+
                                                         </Grid.Column>
                                                     </Grid.Row>
-                                                    <Grid.Row>
-                                                        <Grid.Column width={16}>
-                                                            <LeagueSelector/>
-                                                        </Grid.Column>
-                                                    </Grid.Row>
-                                                    <Grid.Row>
-                                                        <Grid.Column width={16}>
-                                                            <LeagueDashboard table={false}/>
-                                                        </Grid.Column>
-                                                    </Grid.Row>
+
+
                                                 </Grid>
                                             </Grid.Column>
                                             <Grid.Column width={5}>
@@ -100,7 +82,8 @@ class NewsPage extends Component {
                                         <Grid.Row>
                                             <Grid.Column width={16}>
                                                 <Slider {...picSettings} className={'slider'}>
-                                                    <Image src="https://www.desktopbackground.org/download/o/2014/04/29/754479_football-or-soccer-balls-hd-wallpapers-4k-wallpapers_1920x1080_h.jpg"/>
+                                                    <Image
+                                                        src="https://www.desktopbackground.org/download/o/2014/04/29/754479_football-or-soccer-balls-hd-wallpapers-4k-wallpapers_1920x1080_h.jpg"/>
                                                     <Image src="https://wallpaperaccess.com/full/498543.png"/>
                                                     <Image src="https://wallpaperaccess.com/full/498589.jpg"/>
                                                 </Slider>
@@ -136,7 +119,8 @@ class NewsPage extends Component {
                                         <Grid.Row>
                                             <Grid.Column width={16}>
                                                 <Slider {...picSettings} className={'slider'}>
-                                                    <Image src="https://www.desktopbackground.org/download/o/2014/04/29/754479_football-or-soccer-balls-hd-wallpapers-4k-wallpapers_1920x1080_h.jpg"/>
+                                                    <Image
+                                                        src="https://www.desktopbackground.org/download/o/2014/04/29/754479_football-or-soccer-balls-hd-wallpapers-4k-wallpapers_1920x1080_h.jpg"/>
                                                     <Image src="https://wallpaperaccess.com/full/498543.png"/>
                                                     <Image src="https://wallpaperaccess.com/full/498589.jpg"/>
                                                 </Slider>
