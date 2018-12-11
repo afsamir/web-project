@@ -1,0 +1,31 @@
+.lineup{
+
+    max-width: 300px !important;
+}
+
+.lineup-item{
+    min-height: 55px !important;
+
+}
+
+.player-num{
+    position: relative;
+    bottom: 0px;
+}
+.live-item{
+    text-align: right;
+    display: inline;
+    margin-left: 24px;
+    margin-right: 6px;
+    font-size: 16px;
+}
+
+.live-date{
+    display: inline;
+    margin-left: 24px;
+    margin-right: 6px;
+    color: #757575;
+    font-size: 14px;
+
+
+}

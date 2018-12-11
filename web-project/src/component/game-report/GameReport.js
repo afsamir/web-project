@@ -6,6 +6,7 @@ import {NewsDiv} from "../news-div";
 import Header from "semantic-ui-react/dist/commonjs/elements/Header/Header";
 import Image from "semantic-ui-react/dist/commonjs/elements/Image/Image";
 import DirectionProvider, {DIRECTIONS} from "react-with-direction/dist/DirectionProvider";
+import {LiveReport} from "../live-report";
 
 class App extends Component {
     render() {
@@ -19,38 +20,11 @@ class App extends Component {
                     </Header>
                     <Divider inverted/>
                     <div style={{height: '509px', overflow: 'scroll'}}>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
+                       <LiveReport item={'futbol'} time={'۲۰:۳۴'} summary={' گل برای سپاهان : هادی عقیلی'}/>
+
+
+
+
                     </div>
                 </div>
             </DirectionProvider>
