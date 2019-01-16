@@ -13,19 +13,18 @@ export class MatchResultCard extends React.Component {
                 <div className={'card'}>
                 <Card className={'match-result'} >
                     <Card.Content>
-                        <Card.Header className={'league'}>لیگ قهرمانان اروپا</Card.Header>
+                        <Card.Header className={'league'}>{this.props.matchResultCard.title}</Card.Header>
                     </Card.Content>
                     <Card.Content>
                         <Feed>
-
                             <Feed.Event>
                                 <Feed.Label image={<Image
                                     src="https://igbolive.com/wp-content/uploads/2018/03/manu-logo.png"
                                     alt="could not load" width={40} height={40}/>}/>
                                 <Feed.Content>
-                                    <Feed.Date content='منچستر یونایتد'/>
+                                    <Feed.Date content={this.props.matchResultCard.team1}/>
                                     <Feed.Summary className={'goals-text'}>
-                                        ۱
+                                        {this.props.matchResultCard.goal1}
                                     </Feed.Summary>
                                 </Feed.Content>
                             </Feed.Event>
@@ -35,16 +34,16 @@ export class MatchResultCard extends React.Component {
                                     src="http://www.stickpng.com/assets/images/584a9b47b080d7616d298778.png"
                                     alt="could not load" width={40} height={40} mode={'fit'}/>}/>
                                 <Feed.Content>
-                                    <Feed.Date content='ریال مادرید'/>
+                                    <Feed.Date content={this.props.matchResultCard.team2}/>
                                     <Feed.Summary className={'goals-text'}>
-                                        ۲
+                                        {this.props.matchResultCard.goal2}
                                     </Feed.Summary>
                                 </Feed.Content>
                             </Feed.Event>
                             <Feed.Extra className={'game-status'}>
-                                نتیجه نهایی
+                                {this.props.matchResultCard.state}
                                 <Divider fitted/>
-                                ۲۰۱۸/۰۸/۰۳
+                                {this.props.matchResultCard.date}
                             </Feed.Extra>
                         </Feed>
                     </Card.Content>

@@ -16,6 +16,47 @@ import {Image} from "semantic-ui-react";
 import {Footer} from "../../component/footer";
 
 class Home extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state  = {
+            sliderImage: [
+                {
+                    src: 'https://wallpaperaccess.com/full/498543.png'
+                },
+                {
+                    src: 'https://wallpaperaccess.com/full/498589.jpg'
+                }
+            ],
+            matchResultCards: [
+                {
+                    title: "لیگ قهرمانان اروپا", team1: "منچستر یونایتد", goal1: "2", team2: "بارسلونا", goal2: "1",
+                    state: "نتیجه نهایی", date: "۲۰۱۸/۰۸/۰۳",
+                },
+                {
+                    title: "لیگ قهرمانان اروپا", team1: "منچستر یونایتد", goal1: "2", team2: "بارسلونا", goal2: "1",
+                    state: "نتیجه نهایی", date: "۲۰۱۸/۰۸/۰۳",
+                },
+                {
+                    title: "لیگ قهرمانان اروپا", team1: "منچستر یونایتد", goal1: "2", team2: "بارسلونا", goal2: "1",
+                    state: "نتیجه نهایی", date: "۲۰۱۸/۰۸/۰۳",
+                },
+                {
+                    title: "لیگ قهرمانان اروپا", team1: "منچستر یونایتد", goal1: "2", team2: "بارسلونا", goal2: "1",
+                    state: "نتیجه نهایی", date: "۲۰۱۸/۰۸/۰۳",
+                },
+                {
+                    title: "لیگ قهرمانان اروپا", team1: "منچستر یونایتد", goal1: "2", team2: "بارسلونا", goal2: "1",
+                    state: "نتیجه نهایی", date: "۲۰۱۸/۰۸/۰۳",
+                },
+                {
+                    title: "لیگ قهرمانان اروپا", team1: "منچستر یونایتد", goal1: "2", team2: "بارسلونا", goal2: "1",
+                    state: "نتیجه نهایی", date: "۲۰۱۸/۰۸/۰۳",
+                },
+            ]
+        };
+    }
+
     render() {
         const picSettings = {
             dots: true,
@@ -58,23 +99,18 @@ class Home extends Component {
                                                     <Grid.Row>
                                                         <Grid.Column width={16}>
                                                             <Slider {...picSettings} className={'slider'}>
-                                                                <Image src="https://www.desktopbackground.org/download/o/2014/04/29/754479_football-or-soccer-balls-hd-wallpapers-4k-wallpapers_1920x1080_h.jpg"/>
-                                                                <Image src="https://wallpaperaccess.com/full/498543.png"/>
-                                                                <Image src="https://wallpaperaccess.com/full/498589.jpg"/>
+                                                                {this.state.sliderImage.map( c  =>
+                                                                    <Image src={c.src}/>
+                                                                )}
                                                             </Slider>
                                                         </Grid.Column>
                                                     </Grid.Row>
                                                     <Grid.Row>
                                                         <Grid.Column width={16}>
                                                             <Slider {...matchResultSettings} className={'slider'}>
-                                                                <MatchResultCard/>
-                                                                <MatchResultCard/>
-                                                                <MatchResultCard/>
-                                                                <MatchResultCard/>
-                                                                <MatchResultCard/>
-                                                                <MatchResultCard/>
-                                                                <MatchResultCard/>
-                                                                <MatchResultCard/>
+                                                                {this.state.matchResultCards.map( c  =>
+                                                                    <MatchResultCard matchResultCard={c}/>
+                                                                )}
                                                             </Slider>
                                                         </Grid.Column>
                                                     </Grid.Row>
@@ -101,23 +137,18 @@ class Home extends Component {
                                         <Grid.Row>
                                             <Grid.Column width={16}>
                                                 <Slider {...picSettings} className={'slider'}>
-                                                    <Image src="https://www.desktopbackground.org/download/o/2014/04/29/754479_football-or-soccer-balls-hd-wallpapers-4k-wallpapers_1920x1080_h.jpg"/>
-                                                    <Image src="https://wallpaperaccess.com/full/498543.png"/>
-                                                    <Image src="https://wallpaperaccess.com/full/498589.jpg"/>
+                                                    {this.state.sliderImage.map( c  =>
+                                                        <Image src={c.src}/>
+                                                    )}
                                                 </Slider>
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
                                                 <Slider {...matchResultSettings} className={'slider'}>
-                                                    <MatchResultCard/>
-                                                    <MatchResultCard/>
-                                                    <MatchResultCard/>
-                                                    <MatchResultCard/>
-                                                    <MatchResultCard/>
-                                                    <MatchResultCard/>
-                                                    <MatchResultCard/>
-                                                    <MatchResultCard/>
+                                                    {this.state.matchResultCards.map( c  =>
+                                                        <MatchResultCard matchResultCard={c}/>
+                                                    )}
                                                 </Slider>
                                             </Grid.Column>
                                         </Grid.Row>
@@ -147,9 +178,9 @@ class Home extends Component {
                                         <Grid.Row>
                                             <Grid.Column width={16}>
                                                 <Slider {...picSettings} className={'slider'}>
-                                                    <Image src="https://www.desktopbackground.org/download/o/2014/04/29/754479_football-or-soccer-balls-hd-wallpapers-4k-wallpapers_1920x1080_h.jpg"/>
-                                                    <Image src="https://wallpaperaccess.com/full/498543.png"/>
-                                                    <Image src="https://wallpaperaccess.com/full/498589.jpg"/>
+                                                    {this.state.sliderImage.map( c  =>
+                                                        <Image src={c.src}/>
+                                                    )}
                                                 </Slider>
                                             </Grid.Column>
                                         </Grid.Row>
@@ -158,14 +189,11 @@ class Home extends Component {
                                                 <div
                                                     style={{display: 'none'}}>  {matchResultSettings.slidesToShow = 2}</div>
                                                 <Slider {...matchResultSettings} className={'slider'}>
-                                                    <MatchResultCard/>
-                                                    <MatchResultCard/>
-                                                    <MatchResultCard/>
-                                                    <MatchResultCard/>
-                                                    <MatchResultCard/>
-                                                    <MatchResultCard/>
-                                                    <MatchResultCard/>
-                                                    <MatchResultCard/>
+                                                    <Slider {...matchResultSettings} className={'slider'}>
+                                                        {this.state.matchResultCards.map( c  =>
+                                                            <MatchResultCard matchResultCard={c}/>
+                                                        )}
+                                                    </Slider>
                                                 </Slider>
                                             </Grid.Column>
                                         </Grid.Row>
