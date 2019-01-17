@@ -32,26 +32,32 @@ class Home extends Component {
                 {
                     title: "لیگ قهرمانان اروپا", team1: "منچستر یونایتد", goal1: "2", team2: "بارسلونا", goal2: "1",
                     state: "نتیجه نهایی", date: "۲۰۱۸/۰۸/۰۳",
+                    src1: "https://igbolive.com/wp-content/uploads/2018/03/manu-logo.png",
+                    src2: "http://upload.wikimedia.org/wikipedia/it/archive/0/07/20120411134648!Fc_barcelona.png",
                 },
                 {
                     title: "لیگ قهرمانان اروپا", team1: "منچستر یونایتد", goal1: "2", team2: "بارسلونا", goal2: "1",
                     state: "نتیجه نهایی", date: "۲۰۱۸/۰۸/۰۳",
+                    src1: "https://igbolive.com/wp-content/uploads/2018/03/manu-logo.png",
+                    src2: "http://upload.wikimedia.org/wikipedia/it/archive/0/07/20120411134648!Fc_barcelona.png",
                 },
                 {
                     title: "لیگ قهرمانان اروپا", team1: "منچستر یونایتد", goal1: "2", team2: "بارسلونا", goal2: "1",
                     state: "نتیجه نهایی", date: "۲۰۱۸/۰۸/۰۳",
+                    src1: "https://igbolive.com/wp-content/uploads/2018/03/manu-logo.png",
+                    src2: "http://upload.wikimedia.org/wikipedia/it/archive/0/07/20120411134648!Fc_barcelona.png",
                 },
                 {
                     title: "لیگ قهرمانان اروپا", team1: "منچستر یونایتد", goal1: "2", team2: "بارسلونا", goal2: "1",
                     state: "نتیجه نهایی", date: "۲۰۱۸/۰۸/۰۳",
+                    src1: "https://igbolive.com/wp-content/uploads/2018/03/manu-logo.png",
+                    src2: "http://upload.wikimedia.org/wikipedia/it/archive/0/07/20120411134648!Fc_barcelona.png",
                 },
                 {
                     title: "لیگ قهرمانان اروپا", team1: "منچستر یونایتد", goal1: "2", team2: "بارسلونا", goal2: "1",
                     state: "نتیجه نهایی", date: "۲۰۱۸/۰۸/۰۳",
-                },
-                {
-                    title: "لیگ قهرمانان اروپا", team1: "منچستر یونایتد", goal1: "2", team2: "بارسلونا", goal2: "1",
-                    state: "نتیجه نهایی", date: "۲۰۱۸/۰۸/۰۳",
+                    src1: "https://igbolive.com/wp-content/uploads/2018/03/manu-logo.png",
+                    src2: "http://upload.wikimedia.org/wikipedia/it/archive/0/07/20120411134648!Fc_barcelona.png",
                 },
             ]
         };
@@ -109,7 +115,7 @@ class Home extends Component {
                                                         <Grid.Column width={16}>
                                                             <Slider {...matchResultSettings} className={'slider'}>
                                                                 {this.state.matchResultCards.map( c  =>
-                                                                    <MatchResultCard matchResultCard={c}/>
+                                                                    <MatchResultCard data={c}/>
                                                                 )}
                                                             </Slider>
                                                         </Grid.Column>
@@ -121,7 +127,7 @@ class Home extends Component {
                                                     </Grid.Row>
                                                     <Grid.Row>
                                                         <Grid.Column width={16}>
-                                                            <LeagueDashboard table={false}/>
+                                                            <LeagueDashboard/>
                                                         </Grid.Column>
                                                     </Grid.Row>
                                                 </Grid>
@@ -147,7 +153,7 @@ class Home extends Component {
                                             <Grid.Column width={16}>
                                                 <Slider {...matchResultSettings} className={'slider'}>
                                                     {this.state.matchResultCards.map( c  =>
-                                                        <MatchResultCard matchResultCard={c}/>
+                                                        <MatchResultCard data={c}/>
                                                     )}
                                                 </Slider>
                                             </Grid.Column>
@@ -156,12 +162,12 @@ class Home extends Component {
                                             <Grid.Column width={8}>
                                                 <Grid>
                                                     <Grid.Row>
-                                                        <Grid.Column>
+                                                        <Grid.Column width={16}>
                                                             <LeagueSelector/>
                                                         </Grid.Column>
                                                     </Grid.Row>
                                                     <Grid.Row>
-                                                        <Grid.Column>
+                                                        <Grid.Column width={16}>
                                                             <LeagueDashboard/>
                                                         </Grid.Column>
                                                     </Grid.Row>
@@ -189,11 +195,9 @@ class Home extends Component {
                                                 <div
                                                     style={{display: 'none'}}>  {matchResultSettings.slidesToShow = 2}</div>
                                                 <Slider {...matchResultSettings} className={'slider'}>
-                                                    <Slider {...matchResultSettings} className={'slider'}>
-                                                        {this.state.matchResultCards.map( c  =>
-                                                            <MatchResultCard matchResultCard={c}/>
-                                                        )}
-                                                    </Slider>
+                                                    {this.state.matchResultCards.map( c  =>
+                                                        <MatchResultCard data={c}/>
+                                                    )}
                                                 </Slider>
                                             </Grid.Column>
                                         </Grid.Row>

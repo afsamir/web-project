@@ -4,29 +4,25 @@ import './SmallMatchCard.css'
 
 
 export class SmallMatchCard extends React.Component {
-
     render() {
-
-
         return (
-
             <Feed className={'results'}>
                 <Feed.Event>
                     <Feed.Label className={'home-logo'}>
-                        <img src='https://react.semantic-ui.com/images/avatar/small/elliot.jpg' alt={''}/>
+                        <img src={this.props.data.src1} alt={''}/>
                     </Feed.Label>
                     <Feed.Content className={'goals'}>
-                        <div className={'home-goals'}>۲</div>
+                        <div className={'home-goals'}>{this.props.data.goalNum1}</div>
                     </Feed.Content>
                     <div className={'time'}>
-                        <Icon name={!this.props.finished ? 'red clock' : 'calendar alternate'} className={'time-icon'}/>
-                        <div>۶۹</div>
+                        <Icon name={!this.props.data.finished ? 'red clock' : 'calendar alternate'} className={'time-icon'}/>
+                        <div>{this.props.data.time}</div>
                     </div>
                     <Feed.Content className={'goals'}>
-                        <div className={'visitor-goals'}>۰</div>
+                        <div className={'visitor-goals'}>{this.props.data.goalNum2}</div>
                     </Feed.Content>
                     <Feed.Label className={'visitor-logo'}>
-                        <img src='https://react.semantic-ui.com/images/avatar/small/elliot.jpg' alt={''}/>
+                        <img src={this.props.data.src2} alt={''}/>
                     </Feed.Label>
                 </Feed.Event>
             </Feed>

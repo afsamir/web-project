@@ -13,6 +13,49 @@ import Header from "semantic-ui-react/dist/commonjs/elements/Header/Header";
 
 
 export class LeagueDashboard extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state  = {
+            SmallMatchCards: [
+                {
+                    src1: "https://igbolive.com/wp-content/uploads/2018/03/manu-logo.png",
+                    src2: "http://upload.wikimedia.org/wikipedia/it/archive/0/07/20120411134648!Fc_barcelona.png",
+                    goalNum1: 1, goalNum2: 2, time: 55, finished: true
+                },
+                {
+                    src1: "https://igbolive.com/wp-content/uploads/2018/03/manu-logo.png",
+                    src2: "http://upload.wikimedia.org/wikipedia/it/archive/0/07/20120411134648!Fc_barcelona.png",
+                    goalNum1: 1, goalNum2: 2, time: 55, finished: true
+                },
+                {
+                    src1: "https://igbolive.com/wp-content/uploads/2018/03/manu-logo.png",
+                    src2: "http://upload.wikimedia.org/wikipedia/it/archive/0/07/20120411134648!Fc_barcelona.png",
+                    goalNum1: 1, goalNum2: 2, time: 55, finished: true
+                },
+                {
+                    src1: "https://igbolive.com/wp-content/uploads/2018/03/manu-logo.png",
+                    src2: "http://upload.wikimedia.org/wikipedia/it/archive/0/07/20120411134648!Fc_barcelona.png",
+                    goalNum1: 1, goalNum2: 2, time: 55, finished: true
+                },
+                {
+                    src1: "https://igbolive.com/wp-content/uploads/2018/03/manu-logo.png",
+                    src2: "http://upload.wikimedia.org/wikipedia/it/archive/0/07/20120411134648!Fc_barcelona.png",
+                    goalNum1: 1, goalNum2: 2, time: 55, finished: true
+                },
+                {
+                    src1: "https://igbolive.com/wp-content/uploads/2018/03/manu-logo.png",
+                    src2: "http://upload.wikimedia.org/wikipedia/it/archive/0/07/20120411134648!Fc_barcelona.png",
+                    goalNum1: 1, goalNum2: 2, time: 55, finished: true
+                },
+                {
+                    src1: "https://igbolive.com/wp-content/uploads/2018/03/manu-logo.png",
+                    src2: "http://upload.wikimedia.org/wikipedia/it/archive/0/07/20120411134648!Fc_barcelona.png",
+                    goalNum1: 1, goalNum2: 2, time: 55, finished: true
+                },
+            ],
+        }
+    }
+
     render() {
         const matchResultSettings = {
             speed: 300,
@@ -26,7 +69,6 @@ export class LeagueDashboard extends React.Component {
         };
 
         return (
-
             <DirectionProvider direction={DIRECTIONS.RTL}>
                 <Segment id='LeagueDashboard'>
                     <Responsive minWidth={1080}>
@@ -42,31 +84,15 @@ export class LeagueDashboard extends React.Component {
                                     </Header>
                                     <div style={{height: '250px'}}>
                                         <Slider {...matchResultSettings}>
-                                            <SmallMatchCard finished={false}/>
-                                            <SmallMatchCard finished={true}/>
-                                            <SmallMatchCard finished={true}/>
-                                            <SmallMatchCard/>
-                                            <SmallMatchCard/>
-                                            <SmallMatchCard/>
-                                            <SmallMatchCard/>
-                                            <SmallMatchCard/>
-                                            <SmallMatchCard/>
-                                            <SmallMatchCard/>
-                                            <SmallMatchCard/>
-                                            <SmallMatchCard/>
-                                            <SmallMatchCard/>
-                                            <SmallMatchCard/>
-                                            <SmallMatchCard/>
-                                            <SmallMatchCard/>
-                                            <SmallMatchCard/>
-                                            <SmallMatchCard/>
-                                            <SmallMatchCard/>
+                                            {this.state.SmallMatchCards.map( c  =>
+                                                <SmallMatchCard data={c}/>
+                                            )}
                                         </Slider>
                                     </div>
                                         </div>
                                 </Grid.Column>
                                 <Grid.Column width={10}>
-                                    <LeagueTable width={'300px'} table={this.props.table}/>
+                                    <LeagueTable width={'300px'} table={false}/>
                                 </Grid.Column>
                             </Grid.Row>
                         </Grid>
@@ -84,25 +110,9 @@ export class LeagueDashboard extends React.Component {
                                         </Header>
                                         <div style={{height: '250px'}}>
                                             <Slider {...matchResultSettings}>
-                                                <SmallMatchCard/>
-                                                <SmallMatchCard/>
-                                                <SmallMatchCard/>
-                                                <SmallMatchCard/>
-                                                <SmallMatchCard/>
-                                                <SmallMatchCard/>
-                                                <SmallMatchCard/>
-                                                <SmallMatchCard/>
-                                                <SmallMatchCard/>
-                                                <SmallMatchCard/>
-                                                <SmallMatchCard/>
-                                                <SmallMatchCard/>
-                                                <SmallMatchCard/>
-                                                <SmallMatchCard/>
-                                                <SmallMatchCard/>
-                                                <SmallMatchCard/>
-                                                <SmallMatchCard/>
-                                                <SmallMatchCard/>
-                                                <SmallMatchCard/>
+                                                {this.state.SmallMatchCards.map( c  =>
+                                                    <SmallMatchCard data={c}/>
+                                                )}
                                             </Slider>
                                         </div>
                                     </div>

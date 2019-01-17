@@ -10,228 +10,75 @@ import Image from "semantic-ui-react/dist/commonjs/elements/Image/Image";
 
 class App extends Component {
     render() {
-        let teams = [
-            {
-                id: 1,
-                name: 'پدیده',
-                gameNum: 14,
-                score: 30
-            }, {
-                id: 1,
-                name: 'سپاهان',
-                gameNum: 13,
-                score: 29
-            }, {
-                id: 1,
-                name: 'پرسپولیس',
-                gameNum: 13,
-                score: 27
-            },
-            {
-                id: 1,
-                name: 'پرسپولیس',
-                gameNum: 13,
-                score: 27
-            },
-            {
-                id: 1,
-                name: 'پرسپولیس',
-                gameNum: 13,
-                score: 27
-            },{
-                id: 1,
-                name: 'پرسپولیس',
-                gameNum: 13,
-                score: 27
-            },
-            {
-                id: 1,
-                name: 'پرسپولیس',
-                gameNum: 13,
-                score: 27
-            },
-            {
-                id: 1,
-                name: 'پرسپولیس',
-                gameNum: 13,
-                score: 27
-            },
-            {
-                id: 1,
-                name: 'پرسپولیس',
-                gameNum: 13,
-                score: 27
-            },
-            {
-                id: 1,
-                name: 'پرسپولیس',
-                gameNum: 13,
-                score: 27
-            },
-            {
-                id: 1,
-                name: 'پرسپولیس',
-                gameNum: 13,
-                score: 27
-            },
-            {
-                id: 1,
-                name: 'پرسپولیس',
-                gameNum: 13,
-                score: 27
-            },
-            {
-                id: 1,
-                name: 'پرسپولیس',
-                gameNum: 13,
-                score: 27
-            },
-            {
-                id: 1,
-                name: 'پرسپولیس',
-                gameNum: 13,
-                score: 27
-            },
-            {
-                id: 1,
-                name: 'پرسپولیس',
-                gameNum: 13,
-                score: 27
-            },
-            {
-                id: 1,
-                name: 'پرسپولیس',
-                gameNum: 13,
-                score: 27
-            },
-            {
-                id: 1,
-                name: 'پرسپولیس',
-                gameNum: 13,
-                score: 27
-            },
-            {
-                id: 1,
-                name: 'پرسپولیس',
-                gameNum: 13,
-                score: 27
-            },
-            {
-                id: 1,
-                name: 'پرسپولیس',
-                gameNum: 13,
-                score: 27
-            },
-            {
-                id: 1,
-                name: 'پرسپولیس',
-                gameNum: 13,
-                score: 27
-            },
-            {
-                id: 1,
-                name: 'پرسپولیس',
-                gameNum: 13,
-                score: 27
-            },
-            {
-                id: 1,
-                name: 'پرسپولیس',
-                gameNum: 13,
-                score: 27
-            },
-            {
-                id: 1,
-                name: 'پرسپولیس',
-                gameNum: 13,
-                score: 27
-            },
-            {
-                id: 1,
-                name: 'پرسپولیس',
-                gameNum: 13,
-                score: 27
-            },
-            {
-                id: 1,
-                name: 'پرسپولیس',
-                gameNum: 13,
-                score: 27
-            },
-            {
-                id: 1,
-                name: 'پرسپولیس',
-                gameNum: 13,
-                score: 27
-            },
-            {
-                id: 1,
-                name: 'پرسپولیس',
-                gameNum: 13,
-                score: 27
-            },
-            {
-                id: 1,
-                name: 'پرسپولیس',
-                gameNum: 13,
-                score: 27
-            },
-            {
-                id: 1,
-                name: 'پرسپولیس',
-                gameNum: 13,
-                score: 27
-            },
-            {
-                id: 1,
-                name: 'پرسپولیس',
-                gameNum: 13,
-                score: 27
-            },
-            {
-                id: 1,
-                name: 'پرسپولیس',
-                gameNum: 13,
-                score: 27
-            },
-            {
-                id: 1,
-                name: 'پرسپولیس',
-                gameNum: 13,
-                score: 27
-            },
-            {
-                id: 1,
-                name: 'پرسپولیس',
-                gameNum: 13,
-                score: 27
-            },
-            {
-                id: 1,
-                name: 'پرسپولیس',
-                gameNum: 13,
-                score: 27
-            },
-            {
-                id: 1,
-                name: 'پرسپولیس',
-                gameNum: 13,
-                score: 27
-            },
-            {
-                id: 1,
-                name: 'پرسپولیس',
-                gameNum: 13,
-                score: 27
-            },
-            {
-                id: 1,
-                name: 'پرسپولیس',
-                gameNum: 13,
-                score: 27
-            },
-
-        ];
+        this.state  = {
+            teams: [
+                {
+                    id: 1,
+                    name: 'پدیده',
+                    gameNum: 14,
+                    score: 30
+                },
+                {
+                    id: 1,
+                    name: 'سپاهان',
+                    gameNum: 13,
+                    score: 29
+                },
+                {
+                    id: 1,
+                    name: 'پرسپولیس',
+                    gameNum: 13,
+                    score: 27
+                },
+                {
+                    id: 1,
+                    name: 'پرسپولیس',
+                    gameNum: 13,
+                    score: 27
+                },
+                {
+                    id: 1,
+                    name: 'پرسپولیس',
+                    gameNum: 13,
+                    score: 27
+                },{
+                    id: 1,
+                    name: 'پرسپولیس',
+                    gameNum: 13,
+                    score: 27
+                },
+                {
+                    id: 1,
+                    name: 'پرسپولیس',
+                    gameNum: 13,
+                    score: 27
+                },
+                {
+                    id: 1,
+                    name: 'پرسپولیس',
+                    gameNum: 13,
+                    score: 27
+                },
+                {
+                    id: 1,
+                    name: 'پرسپولیس',
+                    gameNum: 13,
+                    score: 27
+                },
+                {
+                    id: 1,
+                    name: 'پرسپولیس',
+                    gameNum: 13,
+                    score: 27
+                },
+                {
+                    id: 1,
+                    name: 'پرسپولیس',
+                    gameNum: 13,
+                    score: 27
+                },
+            ],
+        };
 
         return (
 
@@ -256,8 +103,8 @@ class App extends Component {
 
                         <Table.Body>
                             {
-                                teams.map(team =>
-                                    <Table.Row key={teams.id}>
+                                this.state.teams.map(team =>
+                                    <Table.Row>
                                         <Table.Cell textAlign='center'> {team.id} </Table.Cell>
                                         <Table.Cell textAlign='center'> {team.name} </Table.Cell>
                                         <Table.Cell textAlign='center'> {team.gameNum} </Table.Cell>
