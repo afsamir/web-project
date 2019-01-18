@@ -13,49 +13,6 @@ import Header from "semantic-ui-react/dist/commonjs/elements/Header/Header";
 
 
 export class LeagueDashboard extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state  = {
-            SmallMatchCards: [
-                {
-                    src1: "https://igbolive.com/wp-content/uploads/2018/03/manu-logo.png",
-                    src2: "http://upload.wikimedia.org/wikipedia/it/archive/0/07/20120411134648!Fc_barcelona.png",
-                    goalNum1: 1, goalNum2: 2, time: 55, finished: true
-                },
-                {
-                    src1: "https://igbolive.com/wp-content/uploads/2018/03/manu-logo.png",
-                    src2: "http://upload.wikimedia.org/wikipedia/it/archive/0/07/20120411134648!Fc_barcelona.png",
-                    goalNum1: 1, goalNum2: 2, time: 55, finished: true
-                },
-                {
-                    src1: "https://igbolive.com/wp-content/uploads/2018/03/manu-logo.png",
-                    src2: "http://upload.wikimedia.org/wikipedia/it/archive/0/07/20120411134648!Fc_barcelona.png",
-                    goalNum1: 1, goalNum2: 2, time: 55, finished: true
-                },
-                {
-                    src1: "https://igbolive.com/wp-content/uploads/2018/03/manu-logo.png",
-                    src2: "http://upload.wikimedia.org/wikipedia/it/archive/0/07/20120411134648!Fc_barcelona.png",
-                    goalNum1: 1, goalNum2: 2, time: 55, finished: true
-                },
-                {
-                    src1: "https://igbolive.com/wp-content/uploads/2018/03/manu-logo.png",
-                    src2: "http://upload.wikimedia.org/wikipedia/it/archive/0/07/20120411134648!Fc_barcelona.png",
-                    goalNum1: 1, goalNum2: 2, time: 55, finished: true
-                },
-                {
-                    src1: "https://igbolive.com/wp-content/uploads/2018/03/manu-logo.png",
-                    src2: "http://upload.wikimedia.org/wikipedia/it/archive/0/07/20120411134648!Fc_barcelona.png",
-                    goalNum1: 1, goalNum2: 2, time: 55, finished: true
-                },
-                {
-                    src1: "https://igbolive.com/wp-content/uploads/2018/03/manu-logo.png",
-                    src2: "http://upload.wikimedia.org/wikipedia/it/archive/0/07/20120411134648!Fc_barcelona.png",
-                    goalNum1: 1, goalNum2: 2, time: 55, finished: true
-                },
-            ],
-        }
-    }
-
     render() {
         const matchResultSettings = {
             speed: 300,
@@ -84,7 +41,7 @@ export class LeagueDashboard extends React.Component {
                                     </Header>
                                     <div style={{height: '250px'}}>
                                         <Slider {...matchResultSettings}>
-                                            {this.state.SmallMatchCards.map( c  =>
+                                            {this.props.smallMatchCards.map( c  =>
                                                 <SmallMatchCard data={c}/>
                                             )}
                                         </Slider>
@@ -92,7 +49,7 @@ export class LeagueDashboard extends React.Component {
                                         </div>
                                 </Grid.Column>
                                 <Grid.Column width={10}>
-                                    <LeagueTable width={'300px'} table={false}/>
+                                    <LeagueTable width={'300px'} tableData={this.props.tableData}/>
                                 </Grid.Column>
                             </Grid.Row>
                         </Grid>
@@ -110,7 +67,7 @@ export class LeagueDashboard extends React.Component {
                                         </Header>
                                         <div style={{height: '250px'}}>
                                             <Slider {...matchResultSettings}>
-                                                {this.state.SmallMatchCards.map( c  =>
+                                                {this.props.smallMatchCards.map( c  =>
                                                     <SmallMatchCard data={c}/>
                                                 )}
                                             </Slider>
@@ -120,7 +77,7 @@ export class LeagueDashboard extends React.Component {
                             </Grid.Row>
                             <Grid.Row>
                                 <Grid.Column width={16}>
-                                    <LeagueTable width={'300px'} table={this.props.table}/>
+                                    <LeagueTable width={'300px'} tableData={this.props.tableData}/>
                                 </Grid.Column>
                             </Grid.Row>
                         </Grid>

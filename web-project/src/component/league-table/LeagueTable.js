@@ -10,78 +10,7 @@ import Image from "semantic-ui-react/dist/commonjs/elements/Image/Image";
 
 class App extends Component {
     render() {
-        this.state  = {
-            teams: [
-                {
-                    id: 1,
-                    name: 'پدیده',
-                    gameNum: 14,
-                    score: 30
-                },
-                {
-                    id: 1,
-                    name: 'سپاهان',
-                    gameNum: 13,
-                    score: 29
-                },
-                {
-                    id: 1,
-                    name: 'پرسپولیس',
-                    gameNum: 13,
-                    score: 27
-                },
-                {
-                    id: 1,
-                    name: 'پرسپولیس',
-                    gameNum: 13,
-                    score: 27
-                },
-                {
-                    id: 1,
-                    name: 'پرسپولیس',
-                    gameNum: 13,
-                    score: 27
-                },{
-                    id: 1,
-                    name: 'پرسپولیس',
-                    gameNum: 13,
-                    score: 27
-                },
-                {
-                    id: 1,
-                    name: 'پرسپولیس',
-                    gameNum: 13,
-                    score: 27
-                },
-                {
-                    id: 1,
-                    name: 'پرسپولیس',
-                    gameNum: 13,
-                    score: 27
-                },
-                {
-                    id: 1,
-                    name: 'پرسپولیس',
-                    gameNum: 13,
-                    score: 27
-                },
-                {
-                    id: 1,
-                    name: 'پرسپولیس',
-                    gameNum: 13,
-                    score: 27
-                },
-                {
-                    id: 1,
-                    name: 'پرسپولیس',
-                    gameNum: 13,
-                    score: 27
-                },
-            ],
-        };
-
         return (
-
             <DirectionProvider direction={DIRECTIONS.RTL} textAlign='center'>
                 <Segment id='LeagueTable' textAlign='center'>
                     <Header as='h1' icon textAlign='center'>
@@ -103,7 +32,7 @@ class App extends Component {
 
                         <Table.Body>
                             {
-                                this.state.teams.map(team =>
+                                this.props.tableData.map(team =>
                                     <Table.Row>
                                         <Table.Cell textAlign='center'> {team.id} </Table.Cell>
                                         <Table.Cell textAlign='center'> {team.name} </Table.Cell>

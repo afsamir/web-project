@@ -9,107 +9,6 @@ import Table from "semantic-ui-react/dist/commonjs/collections/Table";
 class App extends Component {
     state = {
         activeItem: 'buy',
-        news: [
-            {
-                type: 'حاشیه',
-                title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                image: false,
-                src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
-                time: '۸ساعت پیش'
-            },
-            {
-                type: 'حاشیه',
-                title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                image: true,
-                src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
-                time: '۸ساعت پیش'
-            },
-            {
-                type: 'حاشیه',
-                title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                image: false,
-                src: 'https://react.semantic-ui.com/images/wireframe/image.png',
-                time: '۸ساعت پیش'
-            },
-            {
-                type: 'حاشیه',
-                title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                image: true,
-                src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
-                time: '۸ساعت پیش'
-            },
-            {
-                type: 'حاشیه',
-                title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                image: false,
-                src: 'https://react.semantic-ui.com/images/wireframe/image.png',
-                time: '۸ساعت پیش'
-            },
-            {
-                type: 'حاشیه',
-                title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                image: true,
-                src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
-                time: '۸ساعت پیش'
-            },
-            {
-                type: 'حاشیه',
-                title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                image: false,
-                src: 'https://react.semantic-ui.com/images/wireframe/image.png',
-                time: '۸ساعت پیش'
-            },
-            {
-                type: 'حاشیه',
-                title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                image: true,
-                src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
-                time: '۸ساعت پیش'
-            },
-            {
-                type: 'حاشیه',
-                title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                image: false,
-                src: 'https://react.semantic-ui.com/images/wireframe/image.png',
-                time: '۸ساعت پیش'
-            },
-            {
-                type: 'حاشیه',
-                title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                image: true,
-                src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
-                time: '۸ساعت پیش'
-            },
-            {
-                type: 'حاشیه',
-                title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                image: false,
-                src: 'https://react.semantic-ui.com/images/wireframe/image.png',
-                time: '۸ساعت پیش'
-            },
-            {
-                type: 'حاشیه',
-                title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                image: true,
-                src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
-                time: '۸ساعت پیش'
-            },
-            {
-                type: 'حاشیه',
-                title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                image: false,
-                src: 'https://react.semantic-ui.com/images/wireframe/image.png',
-                time: '۸ساعت پیش'
-            },
-            {
-                type: 'حاشیه',
-                title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                image: true,
-                src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
-                time: '۸ساعت پیش'
-            },
-        ]
-
     };
     stateOptions = [{key: 'FB', value: 'FB', text: 'فوتبال'}, {key: 'BB', value: 'BB', text: 'بسکتبال'}];
 
@@ -132,7 +31,8 @@ class App extends Component {
                 <Divider horizontal>اخبار</Divider>
 
                 <Segment fluid textAlign='justified' style={{overflow: 'auto', height: this.props.height }}>
-                    {this.state.news.map(news =>
+                    {console.log(this.props.news)}
+                    {this.props.news.map(news =>
                         <NewsDiv data={news}/>
                     )}
                 </Segment>

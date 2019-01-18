@@ -59,7 +59,211 @@ class Home extends Component {
                     src1: "https://igbolive.com/wp-content/uploads/2018/03/manu-logo.png",
                     src2: "http://upload.wikimedia.org/wikipedia/it/archive/0/07/20120411134648!Fc_barcelona.png",
                 },
-            ]
+            ],
+            news: [
+                {
+                    type: 'حاشیه',
+                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
+                    image: false,
+                    src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
+                    time: '۸ساعت پیش'
+                },
+                {
+                    type: 'حاشیه',
+                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
+                    image: true,
+                    src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
+                    time: '۸ساعت پیش'
+                },
+                {
+                    type: 'حاشیه',
+                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
+                    image: false,
+                    src: 'https://react.semantic-ui.com/images/wireframe/image.png',
+                    time: '۸ساعت پیش'
+                },
+                {
+                    type: 'حاشیه',
+                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
+                    image: true,
+                    src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
+                    time: '۸ساعت پیش'
+                },
+                {
+                    type: 'حاشیه',
+                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
+                    image: false,
+                    src: 'https://react.semantic-ui.com/images/wireframe/image.png',
+                    time: '۸ساعت پیش'
+                },
+                {
+                    type: 'حاشیه',
+                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
+                    image: true,
+                    src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
+                    time: '۸ساعت پیش'
+                },
+                {
+                    type: 'حاشیه',
+                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
+                    image: false,
+                    src: 'https://react.semantic-ui.com/images/wireframe/image.png',
+                    time: '۸ساعت پیش'
+                },
+                {
+                    type: 'حاشیه',
+                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
+                    image: true,
+                    src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
+                    time: '۸ساعت پیش'
+                },
+                {
+                    type: 'حاشیه',
+                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
+                    image: false,
+                    src: 'https://react.semantic-ui.com/images/wireframe/image.png',
+                    time: '۸ساعت پیش'
+                },
+                {
+                    type: 'حاشیه',
+                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
+                    image: true,
+                    src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
+                    time: '۸ساعت پیش'
+                },
+                {
+                    type: 'حاشیه',
+                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
+                    image: false,
+                    src: 'https://react.semantic-ui.com/images/wireframe/image.png',
+                    time: '۸ساعت پیش'
+                },
+                {
+                    type: 'حاشیه',
+                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
+                    image: true,
+                    src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
+                    time: '۸ساعت پیش'
+                },
+                {
+                    type: 'حاشیه',
+                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
+                    image: false,
+                    src: 'https://react.semantic-ui.com/images/wireframe/image.png',
+                    time: '۸ساعت پیش'
+                },
+                {
+                    type: 'حاشیه',
+                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
+                    image: true,
+                    src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
+                    time: '۸ساعت پیش'
+                },
+            ],
+            smallMatchCards: [
+                {
+                    src1: "https://igbolive.com/wp-content/uploads/2018/03/manu-logo.png",
+                    src2: "http://upload.wikimedia.org/wikipedia/it/archive/0/07/20120411134648!Fc_barcelona.png",
+                    goalNum1: 1, goalNum2: 2, time: 55, finished: true
+                },
+                {
+                    src1: "https://igbolive.com/wp-content/uploads/2018/03/manu-logo.png",
+                    src2: "http://upload.wikimedia.org/wikipedia/it/archive/0/07/20120411134648!Fc_barcelona.png",
+                    goalNum1: 1, goalNum2: 2, time: 55, finished: true
+                },
+                {
+                    src1: "https://igbolive.com/wp-content/uploads/2018/03/manu-logo.png",
+                    src2: "http://upload.wikimedia.org/wikipedia/it/archive/0/07/20120411134648!Fc_barcelona.png",
+                    goalNum1: 1, goalNum2: 2, time: 55, finished: true
+                },
+                {
+                    src1: "https://igbolive.com/wp-content/uploads/2018/03/manu-logo.png",
+                    src2: "http://upload.wikimedia.org/wikipedia/it/archive/0/07/20120411134648!Fc_barcelona.png",
+                    goalNum1: 1, goalNum2: 2, time: 55, finished: true
+                },
+                {
+                    src1: "https://igbolive.com/wp-content/uploads/2018/03/manu-logo.png",
+                    src2: "http://upload.wikimedia.org/wikipedia/it/archive/0/07/20120411134648!Fc_barcelona.png",
+                    goalNum1: 1, goalNum2: 2, time: 55, finished: true
+                },
+                {
+                    src1: "https://igbolive.com/wp-content/uploads/2018/03/manu-logo.png",
+                    src2: "http://upload.wikimedia.org/wikipedia/it/archive/0/07/20120411134648!Fc_barcelona.png",
+                    goalNum1: 1, goalNum2: 2, time: 55, finished: true
+                },
+                {
+                    src1: "https://igbolive.com/wp-content/uploads/2018/03/manu-logo.png",
+                    src2: "http://upload.wikimedia.org/wikipedia/it/archive/0/07/20120411134648!Fc_barcelona.png",
+                    goalNum1: 1, goalNum2: 2, time: 55, finished: true
+                },
+            ],
+            tableData: [
+                {
+                    id: 1,
+                    name: 'پدیده',
+                    gameNum: 14,
+                    score: 30
+                },
+                {
+                    id: 1,
+                    name: 'سپاهان',
+                    gameNum: 13,
+                    score: 29
+                },
+                {
+                    id: 1,
+                    name: 'پرسپولیس',
+                    gameNum: 13,
+                    score: 27
+                },
+                {
+                    id: 1,
+                    name: 'پرسپولیس',
+                    gameNum: 13,
+                    score: 27
+                },
+                {
+                    id: 1,
+                    name: 'پرسپولیس',
+                    gameNum: 13,
+                    score: 27
+                },{
+                    id: 1,
+                    name: 'پرسپولیس',
+                    gameNum: 13,
+                    score: 27
+                },
+                {
+                    id: 1,
+                    name: 'پرسپولیس',
+                    gameNum: 13,
+                    score: 27
+                },
+                {
+                    id: 1,
+                    name: 'پرسپولیس',
+                    gameNum: 13,
+                    score: 27
+                },
+                {
+                    id: 1,
+                    name: 'پرسپولیس',
+                    gameNum: 13,
+                    score: 27
+                },
+                {
+                    id: 1,
+                    name: 'پرسپولیس',
+                    gameNum: 13,
+                    score: 27
+                },
+                {
+                    id: 1,
+                    name: 'پرسپولیس',
+                    gameNum: 13,
+                    score: 27
+                },
+            ],
         };
     }
 
@@ -127,13 +331,13 @@ class Home extends Component {
                                                     </Grid.Row>
                                                     <Grid.Row>
                                                         <Grid.Column width={16}>
-                                                            <LeagueDashboard/>
+                                                            <LeagueDashboard smallMatchCards={this.state.smallMatchCards} tableData={this.state.tableData}/>
                                                         </Grid.Column>
                                                     </Grid.Row>
                                                 </Grid>
                                             </Grid.Column>
                                             <Grid.Column width={5}>
-                                                <News height={1360}/>
+                                                <News news={this.state.news} height={1360}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                     </Grid>
@@ -168,13 +372,13 @@ class Home extends Component {
                                                     </Grid.Row>
                                                     <Grid.Row>
                                                         <Grid.Column width={16}>
-                                                            <LeagueDashboard/>
+                                                            <LeagueDashboard smallMatchCards={this.state.smallMatchCards} tableData={this.state.tableData}/>
                                                         </Grid.Column>
                                                     </Grid.Row>
                                                 </Grid>
                                             </Grid.Column>
                                             <Grid.Column width={8}>
-                                                <News  height={1314}/>
+                                                <News news={this.state.news} height={974}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                     </Grid>
@@ -206,12 +410,12 @@ class Home extends Component {
                                                 <LeagueSelector style={{maxWidth: '500px'}}/>
                                             </Grid.Column>
                                             <Grid.Column width={16}>
-                                                <LeagueDashboard/>
+                                                <LeagueDashboard smallMatchCards={this.state.smallMatchCards} tableData={this.state.tableData}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
-                                                <News  height={1314}/>
+                                                <News news={this.state.news} height={1314}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                     </Grid>

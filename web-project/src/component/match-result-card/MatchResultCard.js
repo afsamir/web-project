@@ -5,7 +5,6 @@ import {Card, Feed, Divider} from 'semantic-ui-react'
 import DirectionProvider, {DIRECTIONS} from 'react-with-direction/dist/DirectionProvider';
 import {Image} from "../util/image";
 
-
 export class MatchResultCard extends React.Component {
     render() {
         return (
@@ -51,7 +50,5 @@ export class MatchResultCard extends React.Component {
                 </div>
             </DirectionProvider>)
     }
-
-
 }
 

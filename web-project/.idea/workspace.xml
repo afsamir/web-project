@@ -6,10 +6,8 @@
       <change beforePath="$PROJECT_DIR$/src/component/league-table/LeagueTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/league-table/LeagueTable.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/leagues-dashboard/LeagueDashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/leagues-dashboard/LeagueDashboard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/match-result-card/MatchResultCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/match-result-card/MatchResultCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/news-div/NewsDiv.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/news-div/NewsDiv.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/news-div/NewsDiv.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/news-div/NewsDiv.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/news/News.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/news/News.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/small-match-card/SmallMatchCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/small-match-card/SmallMatchCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/Home.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -29,8 +27,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/home/Home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="117" column="79" selection-start-line="117" selection-start-column="79" selection-end-line="117" selection-end-column="79" />
+            <state relative-caret-position="4654">
+              <caret line="412" column="61" selection-start-line="412" selection-start-column="61" selection-end-line="412" selection-end-column="61" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -39,10 +37,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/component/match-result-card/MatchResultCard.js">
+        <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-108">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="306">
+              <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -73,20 +74,24 @@
       <find>Home</find>
       <find>MatchResultCard</find>
       <find>Slider</find>
-      <find>LeagueDashboard</find>
       <find>props.matchResultCard</find>
       <find>sliderImage</find>
       <find>props</find>
       <find>fini</find>
-      <find>table</find>
-      <find>state</find>
       <find>prop</find>
+      <find>News</find>
+      <find>matchResultCards</find>
+      <find>state</find>
+      <find>table</find>
+      <find>LeagueDashboard</find>
+      <find>this.state</find>
     </findStrings>
     <replaceStrings>
       <replace>Image</replace>
       <replace>props.</replace>
       <replace>props.matchResultCard</replace>
       <replace>props.data</replace>
+      <replace>News props={this.state.news}</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -139,21 +144,21 @@
         <option value="$PROJECT_DIR$/src/component/footer/Footer.css" />
         <option value="$PROJECT_DIR$/src/component/timeline/Timeline.js" />
         <option value="$PROJECT_DIR$/src/pages/game/Game.js" />
-        <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/src/component/match-result-card/MatchResultCard.js" />
         <option value="$PROJECT_DIR$/src/component/small-match-card/SmallMatchCard.js" />
-        <option value="$PROJECT_DIR$/src/component/leagues-dashboard/LeagueDashboard.js" />
-        <option value="$PROJECT_DIR$/src/component/league-table/LeagueTable.js" />
-        <option value="$PROJECT_DIR$/src/component/news/News.js" />
         <option value="$PROJECT_DIR$/src/component/news-div/NewsDiv.js" />
         <option value="$PROJECT_DIR$/src/component/news-div/NewsDiv.css" />
+        <option value="$PROJECT_DIR$/src/component/match-result-card/MatchResultCard.js" />
+        <option value="$PROJECT_DIR$/src/component/news/News.js" />
+        <option value="$PROJECT_DIR$/src/component/league-table/LeagueTable.js" />
+        <option value="$PROJECT_DIR$/src/component/leagues-dashboard/LeagueDashboard.js" />
         <option value="$PROJECT_DIR$/src/pages/home/Home.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="25" />
-    <option name="width" value="960" />
+    <option name="width" value="1144" />
     <option name="height" value="1055" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -164,6 +169,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -200,7 +206,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -300,7 +305,8 @@
       <workItem from="1547452219982" duration="187000" />
       <workItem from="1547670563103" duration="4878000" />
       <workItem from="1547705894745" duration="2097000" />
-      <workItem from="1547750880462" duration="8869000" />
+      <workItem from="1547750880462" duration="8984000" />
+      <workItem from="1547838472832" duration="4816000" />
     </task>
     <task id="LOCAL-00001" summary="Semantic-ui-css">
       <created>1544052059663</created>
@@ -526,17 +532,24 @@
       <option name="project" value="LOCAL" />
       <updated>1547681008587</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="updated.">
+      <created>1547760844239</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1547760844239</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115670000" />
+    <option name="totallyTimeSpent" value="120601000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49919486" visible="true" weight="0.1829204" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49919486" visible="true" weight="0.13389562" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" sideWeight="0.50080514" side_tool="true" weight="0.18239325" />
@@ -550,7 +563,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32829374" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5002636" side_tool="true" weight="0.32937366" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49962264" weight="0.31681034" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49962264" weight="0.23542117" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -625,15 +638,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="updated." />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/component/player-news/PlayerNews.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-171">
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/component/player-result/PlayerResult.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -893,23 +897,6 @@
     <entry file="file://$PROJECT_DIR$/src/pages/game/Game.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/small-match-card/SmallMatchCard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="16" column="44" lean-forward="true" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/leagues-dashboard/LeagueDashboard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="86" column="44" lean-forward="true" selection-start-line="86" selection-start-column="44" selection-end-line="88" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/component/news/News.css">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -924,23 +911,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/news/News.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="11" column="15" lean-forward="true" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/component/news-div/NewsDiv.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -948,27 +918,68 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/news/News.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="32" column="90" lean-forward="true" selection-start-line="32" selection-start-column="90" selection-end-line="32" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/match-result-card/MatchResultCard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/react.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18">
+          <caret line="306" column="8" selection-start-line="306" selection-start-column="8" selection-end-line="306" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/small-match-card/SmallMatchCard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/component/league-table/LeagueTable.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="105" column="32" selection-start-line="105" selection-start-column="32" selection-end-line="112" selection-end-column="33" />
+        <state relative-caret-position="36">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/leagues-dashboard/LeagueDashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="51" column="40" lean-forward="true" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/home/Home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="117" column="79" selection-start-line="117" selection-start-column="79" selection-end-line="117" selection-end-column="79" />
+        <state relative-caret-position="4654">
+          <caret line="412" column="61" selection-start-line="412" selection-start-column="61" selection-end-line="412" selection-end-column="61" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/match-result-card/MatchResultCard.js">
+    <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-108">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="306">
+          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

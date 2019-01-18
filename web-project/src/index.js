@@ -13,8 +13,8 @@ import BigLeagueTable from "./component/bigLeagueTable/BigLeagueTable";
 import Game from "./pages/game/Game";
 import NewsPage from "./pages/news";
 
-ReactDOM.render(<Home/>, document.getElementById('root'));
-// ReactDOM.render(<Team/>, document.getElementById('root'));
+// ReactDOM.render(<Home/>, document.getElementById('root'));
+ReactDOM.render(<Team/>, document.getElementById('root'));
 // ReactDOM.render(<Player/>, document.getElementById('root'));
 // ReactDOM.render(<League/>, document.getElementById('root'));
 // ReactDOM.render(<NewsPage/>, document.getElementById('root'));
