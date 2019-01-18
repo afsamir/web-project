@@ -10,139 +10,6 @@ import Divider from "semantic-ui-react/dist/commonjs/elements/Divider/Divider";
 
 class App extends Component {
     render() {
-        let teams = [
-            {
-                name: 'جام حذفی اسپانیا',
-                date: '2015/2016',
-                result: 'نیمه نهایی',
-                gameNum: '5',
-                goalNum1: '5',
-                goalNum2: '5',
-                penaltyGoal: '5',
-
-            },
-            {
-                name: 'جام حذفی اسپانیا',
-                date: '2015/2016',
-                result: 'نیمه نهایی',
-                gameNum: '5',
-                goalNum1: '5',
-                goalNum2: '5',
-            },
-            {
-                name: 'جام حذفی اسپانیا',
-                date: '2015/2016',
-                result: 'نیمه نهایی',
-                gameNum: '5',
-                goalNum1: '5',
-                goalNum2: '5',
-            },
-            {
-                name: 'جام حذفی اسپانیا',
-                date: '2015/2016',
-                result: 'نیمه نهایی',
-                gameNum: '5',
-                goalNum1: '5',
-                goalNum2: '5',
-            },
-            {
-                name: 'جام حذفی اسپانیا',
-                date: '2015/2016',
-                result: 'نیمه نهایی',
-                gameNum: '5',
-                goalNum1: '5',
-                goalNum2: '5',
-            },
-            {
-                name: 'جام حذفی اسپانیا',
-                date: '2015/2016',
-                result: 'نیمه نهایی',
-                gameNum: '5',
-                goalNum1: '5',
-                goalNum2: '5',
-            },
-            {
-                name: 'جام حذفی اسپانیا',
-                date: '2015/2016',
-                result: 'نیمه نهایی',
-                gameNum: '5',
-                goalNum1: '5',
-                goalNum2: '5',
-            },
-            {
-                name: 'جام حذفی اسپانیا',
-                date: '2015/2016',
-                result: 'نیمه نهایی',
-                gameNum: '5',
-                goalNum1: '5',
-                goalNum2: '5',
-            },
-            {
-                name: 'جام حذفی اسپانیا',
-                date: '2015/2016',
-                result: 'نیمه نهایی',
-                gameNum: '5',
-                goalNum1: '5',
-                goalNum2: '5',
-            },
-            {
-                name: 'جام حذفی اسپانیا',
-                date: '2015/2016',
-                result: 'نیمه نهایی',
-                gameNum: '5',
-                goalNum1: '5',
-                goalNum2: '5',
-            },
-            {
-                name: 'جام حذفی اسپانیا',
-                date: '2015/2016',
-                result: 'نیمه نهایی',
-                gameNum: '5',
-                goalNum1: '5',
-                goalNum2: '5',
-            },
-            {
-                name: 'جام حذفی اسپانیا',
-                date: '2015/2016',
-                result: 'نیمه نهایی',
-                gameNum: '5',
-                goalNum1: '5',
-                goalNum2: '5',
-            },
-            {
-                name: 'جام حذفی اسپانیا',
-                date: '2015/2016',
-                result: 'نیمه نهایی',
-                gameNum: '5',
-                goalNum1: '5',
-                goalNum2: '5',
-            },
-            {
-                name: 'جام حذفی اسپانیا',
-                date: '2015/2016',
-                result: 'نیمه نهایی',
-                gameNum: '5',
-                goalNum1: '5',
-                goalNum2: '5',
-            },
-            {
-                name: 'جام حذفی اسپانیا',
-                date: '2015/2016',
-                result: 'نیمه نهایی',
-                gameNum: '5',
-                goalNum1: '5',
-                goalNum2: '5',
-            },
-            {
-                name: 'جام حذفی اسپانیا',
-                date: '2015/2016',
-                result: 'نیمه نهایی',
-                gameNum: '5',
-                goalNum1: '5',
-                goalNum2: '5',
-            },
-        ];
-
         return (
             <DirectionProvider direction={DIRECTIONS.RTL} textAlign='center'>
                 <Segment id='TeamResult' textAlign='center'>
@@ -167,7 +34,7 @@ class App extends Component {
 
                             <Table.Body>
                                 {
-                                    teams.map(team =>
+                                    this.props.data.map(team =>
                                         <Table.Row>
                                             <Table.HeaderCell textAlign='center'>{team.name}<br/><Divider hidden/></Table.HeaderCell>
                                             <Table.HeaderCell textAlign='center'>{team.date}<br/><Divider hidden/></Table.HeaderCell>

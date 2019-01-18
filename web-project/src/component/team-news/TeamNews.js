@@ -19,38 +19,9 @@ class App extends Component {
                     </Header>
                     <Divider inverted/>
                     <div style={{ height: '480px', overflow: 'scroll'}}>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
-                        <NewsDiv/>
+                        {this.props.news.map(news =>
+                            <NewsDiv data={news}/>
+                        )}
                     </div>
                 </div>
             </DirectionProvider>
