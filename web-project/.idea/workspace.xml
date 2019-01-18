@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd8e2431-d039-438e-b3ad-cd35c62dced9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/league-table/LeagueTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/league-table/LeagueTable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/leagues-dashboard/LeagueDashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/leagues-dashboard/LeagueDashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/match-result-card/MatchResultCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/match-result-card/MatchResultCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/news/News.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/news/News.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/team-logo/TeamLogo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/team-logo/TeamLogo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/team-news/TeamNews.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/team-news/TeamNews.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/team-result/TeamResult.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/team-result/TeamResult.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/team/Team.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/team/Team.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,8 +24,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/home/Home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4654">
-              <caret line="412" column="61" selection-start-line="412" selection-start-column="61" selection-end-line="412" selection-end-column="61" />
+            <state relative-caret-position="260">
+              <caret line="417" column="51" selection-start-line="417" selection-start-column="51" selection-end-line="417" selection-end-column="51" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/component/news/News.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="522">
+              <caret line="35" column="34" lean-forward="true" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/team/Team.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="522">
+              <caret line="497" column="55" selection-start-line="497" selection-start-column="49" selection-end-line="497" selection-end-column="59" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -37,12 +55,57 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/index.js">
+        <entry file="file://$PROJECT_DIR$/src/component/team-member/TeamMember.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+            <state relative-caret-position="108">
+              <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/component/team-result/TeamResult.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-18">
+              <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/component/team-news/TeamNews.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="21" column="40" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="40" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/component/leagues-dashboard/LeagueDashboard.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1242">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/component/team-logo/TeamLogo.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="36" column="49" selection-start-line="36" selection-start-column="49" selection-end-line="36" selection-end-column="49" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -83,8 +146,11 @@
       <find>matchResultCards</find>
       <find>state</find>
       <find>table</find>
-      <find>LeagueDashboard</find>
       <find>this.state</find>
+      <find>info</find>
+      <find>LeagueDashboard</find>
+      <find>TeamNews</find>
+      <find>TeamResult</find>
     </findStrings>
     <replaceStrings>
       <replace>Image</replace>
@@ -92,6 +158,7 @@
       <replace>props.matchResultCard</replace>
       <replace>props.data</replace>
       <replace>News props={this.state.news}</replace>
+      <replace>this.props</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -102,8 +169,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/component/footer/Footer.js" />
-        <option value="$PROJECT_DIR$/src/pages/league/league.css" />
         <option value="$PROJECT_DIR$/src/component/league-card/LeagueCard.css" />
         <option value="$PROJECT_DIR$/src/component/league-card/LeagueCard.js" />
         <option value="$PROJECT_DIR$/src/component/bigLeague/BigLeagueTable.js" />
@@ -135,8 +200,6 @@
         <option value="$PROJECT_DIR$/src/component/live-report/LiveReport.js" />
         <option value="$PROJECT_DIR$/src/component/match-result-card/MatchResultCard.css" />
         <option value="$PROJECT_DIR$/src/component/player-card/PlayerCard.js" />
-        <option value="$PROJECT_DIR$/src/component/team-news/TeamNews.js" />
-        <option value="$PROJECT_DIR$/src/component/team-result/TeamResult.js" />
         <option value="$PROJECT_DIR$/src/component/video/VideoFrame.js" />
         <option value="$PROJECT_DIR$/src/pages/news/NewsPage.js" />
         <option value="$PROJECT_DIR$/src/pages/player/Player.js" />
@@ -151,8 +214,12 @@
         <option value="$PROJECT_DIR$/src/component/news/News.js" />
         <option value="$PROJECT_DIR$/src/component/league-table/LeagueTable.js" />
         <option value="$PROJECT_DIR$/src/component/leagues-dashboard/LeagueDashboard.js" />
-        <option value="$PROJECT_DIR$/src/pages/home/Home.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/component/team-logo/TeamLogo.js" />
+        <option value="$PROJECT_DIR$/src/pages/home/Home.js" />
+        <option value="$PROJECT_DIR$/src/component/team-news/TeamNews.js" />
+        <option value="$PROJECT_DIR$/src/component/team-result/TeamResult.js" />
+        <option value="$PROJECT_DIR$/src/pages/team/Team.js" />
       </list>
     </option>
   </component>
@@ -306,7 +373,7 @@
       <workItem from="1547670563103" duration="4878000" />
       <workItem from="1547705894745" duration="2097000" />
       <workItem from="1547750880462" duration="8984000" />
-      <workItem from="1547838472832" duration="4816000" />
+      <workItem from="1547838472832" duration="7182000" />
     </task>
     <task id="LOCAL-00001" summary="Semantic-ui-css">
       <created>1544052059663</created>
@@ -539,23 +606,30 @@
       <option name="project" value="LOCAL" />
       <updated>1547760844239</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="updated.">
+      <created>1547843756562</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1547843756562</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120601000" />
+    <option name="totallyTimeSpent" value="122967000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49919486" visible="true" weight="0.13389562" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49919486" visible="true" weight="0.13389562" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" sideWeight="0.50080514" side_tool="true" weight="0.18239325" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32937366" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49973643" visible="true" weight="0.32937366" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49973643" weight="0.32937366" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -563,7 +637,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32829374" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5002636" side_tool="true" weight="0.32937366" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49962264" weight="0.23542117" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49962264" visible="true" weight="0.23542117" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -669,29 +743,11 @@
     <entry file="file://$PROJECT_DIR$/src/component/small-match-card/SmallMatchCard.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/team-logo/TeamLogo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/component/team-logo/TeamLogo.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/component/team-member/TeamMember.css">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/team-member/TeamMember.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/component/team-member-div/TeamMemberDiv.css">
       <provider selected="true" editor-type-id="text-editor" />
@@ -706,25 +762,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/team-news/TeamNews.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/component/team-result/TeamResult.css">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/team-result/TeamResult.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2641">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/component/timeline/Timeline.css">
       <provider selected="true" editor-type-id="text-editor" />
@@ -784,15 +823,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/team/Team.css">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/team/Team.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-684">
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.test.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -918,13 +948,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/news/News.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="32" column="90" lean-forward="true" selection-start-line="32" selection-start-column="90" selection-end-line="32" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/component/match-result-card/MatchResultCard.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -956,29 +979,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/leagues-dashboard/LeagueDashboard.js">
+    <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="51" column="40" lean-forward="true" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="40" />
+        <state relative-caret-position="288">
+          <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/home/Home.js">
+    <entry file="file://$PROJECT_DIR$/src/component/team-logo/TeamLogo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4654">
-          <caret line="412" column="61" selection-start-line="412" selection-start-column="61" selection-end-line="412" selection-end-column="61" />
+        <state relative-caret-position="486">
+          <caret line="36" column="49" selection-start-line="36" selection-start-column="49" selection-end-line="36" selection-end-column="49" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
+    <entry file="file://$PROJECT_DIR$/src/component/leagues-dashboard/LeagueDashboard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+        <state relative-caret-position="-1242">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/home/Home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="417" column="51" selection-start-line="417" selection-start-column="51" selection-end-line="417" selection-end-column="51" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/team-news/TeamNews.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="40" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/news/News.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="35" column="34" lean-forward="true" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/team-result/TeamResult.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/team/Team.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="497" column="55" selection-start-line="497" selection-start-column="49" selection-end-line="497" selection-end-column="59" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/team-member/TeamMember.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
