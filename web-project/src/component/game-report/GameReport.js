@@ -20,7 +20,9 @@ class App extends Component {
                     </Header>
                     <Divider inverted/>
                     <div style={{height: '509px', overflow: 'scroll'}}>
-                       <LiveReport item={'futbol'} time={'۲۰:۳۴'} summary={' گل برای سپاهان : هادی عقیلی'}/>
+                        {this.props.data.map(c=>
+                            <LiveReport data={c}/>
+                        )}
                     </div>
                 </div>
             </DirectionProvider>

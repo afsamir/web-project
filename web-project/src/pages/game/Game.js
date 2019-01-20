@@ -18,6 +18,161 @@ import GameTeams from "../../component/game-teams/GameTeams";
 import Timeline from "../../component/timeline";
 
 class Home extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            news: [
+                {
+                    type: 'حاشیه',
+                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
+                    image: false,
+                    src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
+                    time: '۸ساعت پیش'
+                },
+                {
+                    type: 'حاشیه',
+                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
+                    image: true,
+                    src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
+                    time: '۸ساعت پیش'
+                },
+                {
+                    type: 'حاشیه',
+                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
+                    image: false,
+                    src: 'https://react.semantic-ui.com/images/wireframe/image.png',
+                    time: '۸ساعت پیش'
+                },
+                {
+                    type: 'حاشیه',
+                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
+                    image: true,
+                    src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
+                    time: '۸ساعت پیش'
+                },
+                {
+                    type: 'حاشیه',
+                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
+                    image: false,
+                    src: 'https://react.semantic-ui.com/images/wireframe/image.png',
+                    time: '۸ساعت پیش'
+                },
+                {
+                    type: 'حاشیه',
+                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
+                    image: true,
+                    src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
+                    time: '۸ساعت پیش'
+                },
+                {
+                    type: 'حاشیه',
+                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
+                    image: false,
+                    src: 'https://react.semantic-ui.com/images/wireframe/image.png',
+                    time: '۸ساعت پیش'
+                },
+                {
+                    type: 'حاشیه',
+                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
+                    image: true,
+                    src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
+                    time: '۸ساعت پیش'
+                },
+                {
+                    type: 'حاشیه',
+                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
+                    image: false,
+                    src: 'https://react.semantic-ui.com/images/wireframe/image.png',
+                    time: '۸ساعت پیش'
+                },
+                {
+                    type: 'حاشیه',
+                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
+                    image: true,
+                    src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
+                    time: '۸ساعت پیش'
+                },
+                {
+                    type: 'حاشیه',
+                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
+                    image: false,
+                    src: 'https://react.semantic-ui.com/images/wireframe/image.png',
+                    time: '۸ساعت پیش'
+                },
+                {
+                    type: 'حاشیه',
+                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
+                    image: true,
+                    src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
+                    time: '۸ساعت پیش'
+                },
+                {
+                    type: 'حاشیه',
+                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
+                    image: false,
+                    src: 'https://react.semantic-ui.com/images/wireframe/image.png',
+                    time: '۸ساعت پیش'
+                },
+                {
+                    type: 'حاشیه',
+                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
+                    image: true,
+                    src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
+                    time: '۸ساعت پیش'
+                },
+            ],
+            teamStats: {
+                goal1: 0,
+                goal2: 0,
+                shots1: 7,
+                shots2: 14,
+                shotsOnTarget1: 3,
+                shotsOnTarget2: 5,
+                possession1: 54,
+                possession2: 46,
+                passes1: 283,
+                passes2: 390,
+                fouls1: 20,
+                fouls2: 10,
+                yellowCards1: 1,
+                yellowCards2: 1,
+                redCards1: 1,
+                redCards2: 2,
+                offsides1: 4,
+                offsides2: 2,
+                corners1: 4,
+                corners2: 1,
+                src1: 'https://upload.wikimedia.org/wikipedia/commons/7/70/Perspolis_FC.png',
+                src2: 'https://www.cambodianfootball.com/medias/esteghlal-logo.png',
+            },
+            sliderImages: [
+                {
+                    src: 'http://www.fifaworldcupnews.com/wp-content/uploads/2018/08/Bundesliga-Fixtures-Point-Table-Teams.jpg',
+                },
+                {
+                    src: 'https://brightcove04pmdo-a.akamaihd.net/4221396001/4221396001_5702845000001_5702842932001-vs.jpg?pubId=4221396001&videoId=5702842932001',
+                },
+            ],
+            gameReport: [
+                {
+                    item: 'futbol',
+                    time: '۲۰:۳۴',
+                    summary: 'گل برای سپاهان : هادی عقیلی'
+                },
+                {
+                    item: 'futbol',
+                    time: '۲۰:۳۴',
+                    summary: 'گل برای سپاهان : هادی عقیلی'
+                },
+                {
+                    item: 'futbol',
+                    time: '۲۰:۳۴',
+                    summary: 'گل برای سپاهان : هادی عقیلی'
+                },
+            ]
+        }
+    }
+
     render() {
         const picSettings = {
             dots: true,
@@ -46,7 +201,7 @@ class Home extends Component {
                                                 <Timeline/>
                                             </Grid.Column>
                                             <Grid.Column width={6}>
-                                                <GameTable/>
+                                                <GameTable data={this.state.teamStats}/>
                                             </Grid.Column>
                                             <Grid.Column width={5}>
                                                 <GameTeams/>
@@ -54,19 +209,18 @@ class Home extends Component {
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={8}>
-                                                <GameNews/>
+                                                <GameNews data={this.state.news}/>
                                             </Grid.Column>
                                             <Grid.Column width={8}>
-                                                <GameReport/>
+                                                <GameReport data={this.state.gameReport}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
                                                 <Slider {...picSettings} className={'slider'}>
-                                                    <Image
-                                                        src="http://www.fifaworldcupnews.com/wp-content/uploads/2018/08/Bundesliga-Fixtures-Point-Table-Teams.jpg"/>
-                                                    <Image
-                                                        src="https://brightcove04pmdo-a.akamaihd.net/4221396001/4221396001_5702845000001_5702842932001-vs.jpg?pubId=4221396001&videoId=5702842932001"/>
+                                                    {this.state.sliderImages.map(c=>
+                                                        <Image src={c.src}/>
+                                                    )}
                                                 </Slider>
                                             </Grid.Column>
                                         </Grid.Row>
@@ -76,7 +230,7 @@ class Home extends Component {
                                     <Grid>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
-                                                <GameTable/>
+                                                <GameTable data={this.state.teamStats}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>
@@ -89,19 +243,18 @@ class Home extends Component {
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={8}>
-                                                <GameNews/>
+                                                <GameNews data={this.state.news}/>
                                             </Grid.Column>
                                             <Grid.Column width={8}>
-                                                <GameReport/>
+                                                <GameReport data={this.state.gameReport}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
                                                 <Slider {...picSettings} className={'slider'}>
-                                                    <Image
-                                                        src="http://www.fifaworldcupnews.com/wp-content/uploads/2018/08/Bundesliga-Fixtures-Point-Table-Teams.jpg"/>
-                                                    <Image
-                                                        src="https://brightcove04pmdo-a.akamaihd.net/4221396001/4221396001_5702845000001_5702842932001-vs.jpg?pubId=4221396001&videoId=5702842932001"/>
+                                                    {this.state.sliderImages.map(c=>
+                                                        <Image src={c.src}/>
+                                                    )}
                                                 </Slider>
                                             </Grid.Column>
                                         </Grid.Row>
@@ -111,7 +264,7 @@ class Home extends Component {
                                     <Grid>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
-                                                <GameTable/>
+                                                <GameTable data={this.state.teamStats}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>
@@ -126,21 +279,20 @@ class Home extends Component {
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
-                                                <GameNews/>
+                                                <GameNews data={this.state.news}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
-                                                <GameReport/>
+                                                <GameReport data={this.state.gameReport}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
                                                 <Slider {...picSettings} className={'slider'}>
-                                                    <Image
-                                                        src="http://www.fifaworldcupnews.com/wp-content/uploads/2018/08/Bundesliga-Fixtures-Point-Table-Teams.jpg"/>
-                                                    <Image
-                                                        src="https://brightcove04pmdo-a.akamaihd.net/4221396001/4221396001_5702845000001_5702842932001-vs.jpg?pubId=4221396001&videoId=5702842932001"/>
+                                                    {this.state.sliderImages.map(c=>
+                                                        <Image src={c.src}/>
+                                                    )}
                                                 </Slider>
                                             </Grid.Column>
                                         </Grid.Row>
