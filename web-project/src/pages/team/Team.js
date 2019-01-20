@@ -373,6 +373,48 @@ class Team extends Component {
                     goalNum2: '5',
                 },
             ],
+            teamMembers: [
+                {
+                    name: 'برانکو ایوانکویچ',
+                    post: 'سرمربی'
+                },
+                {
+                    name: 'برانکو ایوانکویچ',
+                    post: 'سرمربی'
+                },
+                {
+                    name: 'برانکو ایوانکویچ',
+                    post: 'سرمربی'
+                },
+                {
+                    name: 'برانکو ایوانکویچ',
+                    post: 'سرمربی'
+                },
+                {
+                    name: 'برانکو ایوانکویچ',
+                    post: 'سرمربی'
+                },
+                {
+                    name: 'برانکو ایوانکویچ',
+                    post: 'سرمربی'
+                },
+                {
+                    name: 'برانکو ایوانکویچ',
+                    post: 'سرمربی'
+                },
+                {
+                    name: 'برانکو ایوانکویچ',
+                    post: 'سرمربی'
+                },
+                {
+                    name: 'برانکو ایوانکویچ',
+                    post: 'سرمربی'
+                },
+                {
+                    name: 'برانکو ایوانکویچ',
+                    post: 'سرمربی'
+                },
+            ]
         }
     }
     render() {
@@ -417,13 +459,13 @@ class Team extends Component {
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={5}>
-                                                <TeamNews news={this.state.news}/>
+                                                <TeamNews data={this.state.news}/>
                                             </Grid.Column>
                                             <Grid.Column width={6}>
                                                 <TeamResult data={this.state.teams}/>
                                             </Grid.Column>
                                             <Grid.Column width={5}>
-                                                <TeamMember/>
+                                                <TeamMember data={this.state.teamMembers}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                     </Grid>
@@ -444,7 +486,7 @@ class Team extends Component {
                                                 <TeamLogo style={{padding: '10px'}} data={this.state.teamLogo}/>
                                             </Grid.Column>
                                             <Grid.Column width={8}>
-                                                <TeamMember/>
+                                                <TeamMember data={this.state.teamMembers}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>
@@ -495,7 +537,7 @@ class Team extends Component {
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
-                                                <TeamMember/>
+                                                <TeamMember data={this.state.teamMembers}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                     </Grid>

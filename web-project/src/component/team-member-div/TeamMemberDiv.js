@@ -12,9 +12,9 @@ export class TeamMemberDiv extends React.Component{
                     <Feed.Event>
                         <Feed.Label image={<Image circular size='small' src='https://react.semantic-ui.com/images/avatar/small/elliot.jpg' />}/>
                         <Feed.Content>
-                            <a position="right" className={'name'}>برانکو ایوانکویچ </a>
+                            <a position="right" className={'name'}>{this.props.data.name}</a>
                             <Divider/>
-                        <Feed.Extra className={'position'}> سرمربی</Feed.Extra>
+                        <Feed.Extra className={'position'}>{this.props.data.post}</Feed.Extra>
                         </Feed.Content>
                     </Feed.Event>
                 </Feed>

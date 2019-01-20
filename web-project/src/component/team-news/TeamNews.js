@@ -19,7 +19,7 @@ class App extends Component {
                     </Header>
                     <Divider inverted/>
                     <div style={{ height: '480px', overflow: 'scroll'}}>
-                        {this.props.news.map(news =>
+                        {this.props.data.map(news =>
                             <NewsDiv data={news}/>
                         )}
                     </div>
