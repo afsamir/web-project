@@ -18,24 +18,9 @@ class App extends Component {
                     </Header>
                     <Divider inverted/>
                     <div style={{height: '310px', overflow: 'scroll'}}>
-                        <TeamMemberDiv/>
-                        <TeamMemberDiv/>
-                        <TeamMemberDiv/>
-                        <TeamMemberDiv/>
-                        <TeamMemberDiv/>
-                        <TeamMemberDiv/>
-                        <TeamMemberDiv/>
-                        <TeamMemberDiv/>
-                        <TeamMemberDiv/>
-                        <TeamMemberDiv/>
-                        <TeamMemberDiv/>
-                        <TeamMemberDiv/>
-                        <TeamMemberDiv/>
-                        <TeamMemberDiv/>
-                        <TeamMemberDiv/>
-                        <TeamMemberDiv/>
-                        <TeamMemberDiv/>
-                        <TeamMemberDiv/>
+                        {this.props.data.map (
+                            teamMember => <TeamMemberDiv data={teamMember}/>
+                        )}
                     </div>
                 </div>
             </DirectionProvider>

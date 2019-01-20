@@ -11,128 +11,6 @@ import {LeagueSelector} from "../leagues-dashboard";
 class App extends Component {
 
     render() {
-        let teams = [
-            {
-                id: 1,
-                name: 'دورتموند',
-                gameNum: '14',
-                win: '11',
-                lose: '0',
-                draw: '0',
-                goalNum1: '39',
-                goalNum2: '14',
-                goalAverage: '25',
-                score: '36',
-            },
-            {
-                id: 1,
-                name: 'دورتموند',
-                gameNum: '14',
-                win: '11',
-                lose: '0',
-                draw: '0',
-                goalNum1: '39',
-                goalNum2: '14',
-                goalAverage: '25',
-                score: '36',
-            },
-            {
-                id: 1,
-                name: 'دورتموند',
-                gameNum: '14',
-                win: '11',
-                lose: '0',
-                draw: '0',
-                goalNum1: '39',
-                goalNum2: '14',
-                goalAverage: '25',
-                score: '36',
-            },
-            {
-                id: 1,
-                name: 'دورتموند',
-                gameNum: '14',
-                win: '11',
-                lose: '0',
-                draw: '0',
-                goalNum1: '39',
-                goalNum2: '14',
-                goalAverage: '25',
-                score: '36',
-            },
-            {
-                id: 1,
-                name: 'دورتموند',
-                gameNum: '14',
-                win: '11',
-                lose: '0',
-                draw: '0',
-                goalNum1: '39',
-                goalNum2: '14',
-                goalAverage: '25',
-                score: '36',
-            },
-            {
-                id: 1,
-                name: 'دورتموند',
-                gameNum: '14',
-                win: '11',
-                lose: '0',
-                draw: '0',
-                goalNum1: '39',
-                goalNum2: '14',
-                goalAverage: '25',
-                score: '36',
-            },
-            {
-                id: 1,
-                name: 'دورتموند',
-                gameNum: '14',
-                win: '11',
-                lose: '0',
-                draw: '0',
-                goalNum1: '39',
-                goalNum2: '14',
-                goalAverage: '25',
-                score: '36',
-            },
-            {
-                id: 1,
-                name: 'دورتموند',
-                gameNum: '14',
-                win: '11',
-                lose: '0',
-                draw: '0',
-                goalNum1: '39',
-                goalNum2: '14',
-                goalAverage: '25',
-                score: '36',
-            },
-            {
-                id: 1,
-                name: 'دورتموند',
-                gameNum: '14',
-                win: '11',
-                lose: '0',
-                draw: '0',
-                goalNum1: '39',
-                goalNum2: '14',
-                goalAverage: '25',
-                score: '36',
-            },
-            {
-                id: 1,
-                name: 'دورتموند',
-                gameNum: '14',
-                win: '11',
-                lose: '0',
-                draw: '0',
-                goalNum1: '39',
-                goalNum2: '14',
-                goalAverage: '25',
-                score: '36',
-            },
-        ];
         return (
             <div>
                 <Segment id='LeagueTable' textAlign='center'>
@@ -162,8 +40,8 @@ class App extends Component {
 
                             <Table.Body>
                                 {
-                                    teams.map(team =>
-                                        <Table.Row key={teams.id}>
+                                    this.props.data.map(team =>
+                                        <Table.Row key={this.props.data.id}>
                                             <Table.Cell textAlign='center'> {team.id} </Table.Cell>
                                             <Table.Cell textAlign='center'> {team.name} </Table.Cell>
                                             <Table.Cell textAlign='center'> {team.gameNum} </Table.Cell>

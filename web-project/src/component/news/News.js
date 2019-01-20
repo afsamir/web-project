@@ -31,7 +31,6 @@ class App extends Component {
                 <Divider horizontal>اخبار</Divider>
 
                 <Segment fluid textAlign='justified' style={{overflow: 'auto', height: this.props.height }}>
-                    {console.log(this.props.news)}
                     {this.props.news.map(news =>
                         <NewsDiv data={news}/>
                     )}
