@@ -194,7 +194,7 @@ class NewsPage extends Component {
                                                             </Divider>
                                                             <Slider {...matchResultSettings} className={'slider'}>
                                                                 {this.state.otherNews.map(c =>
-                                                                    <PictureNews data={this.state.mainNews}/>
+                                                                    <PictureNews data={c}/>
                                                                 )}
                                                             </Slider>
                                                         </Grid.Column>
@@ -237,7 +237,7 @@ class NewsPage extends Component {
                                                 <Slider {...matchResultSettings} className={'slider'}>
                                                     <Slider {...matchResultSettings} className={'slider'}>
                                                         {this.state.otherNews.map(c =>
-                                                            <PictureNews data={this.state.mainNews}/>
+                                                            <PictureNews data={c}/>
                                                         )}
                                                     </Slider>
                                                 </Slider>
@@ -273,7 +273,7 @@ class NewsPage extends Component {
                                                 <Slider {...matchResultSettings} className={'slider'}>
                                                     <Slider {...matchResultSettings} className={'slider'}>
                                                         {this.state.otherNews.map(c =>
-                                                            <PictureNews data={this.state.mainNews}/>
+                                                            <PictureNews data={c}/>
                                                         )}
                                                     </Slider>
                                                 </Slider>
