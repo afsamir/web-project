@@ -172,8 +172,7 @@ class NewsPage extends Component {
                                                     <Grid.Row>
                                                         <Grid.Column width={16}>
                                                             {/*<VideoFrame active={false} url={"http://varzesh3.com"} placeholder={'https://static.farakav.com/files/pictures/thumb/01360537.jpg'}/>*/}
-                                                            <PictureNews
-                                                                data={this.state.mainNews}/>
+                                                            <PictureNews data={this.state.mainNews}/>
                                                         </Grid.Column>
                                                     </Grid.Row>
                                                     <Grid.Row>
