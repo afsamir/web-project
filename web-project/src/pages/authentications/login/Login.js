@@ -13,14 +13,14 @@ class Home extends Component {
                 <div className="ui middle aligned center aligned grid"
                      style={{maxWidth: '500px', margin: '30px auto 0 auto', marginTop: '80px'}}>
                     <div className="column">
-                        <h2 className="ui image header">
-                            <div className="content">
-                                Log in
-                            </div>
-                        </h2>
                         <form action="https://s.codepen.io/voltron2112/debug/PqrEPM?" method="get"
                               className="ui large form">
                             <div className="ui stacked secondary  segment">
+                                <h2 className="ui image header">
+                                    <div className="content">
+                                        Log in
+                                    </div>
+                                </h2>
                                 <div className="field">
                                     <div className="ui left icon input">
                                         <i className="mail icon"/>

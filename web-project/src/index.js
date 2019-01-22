@@ -1,10 +1,10 @@
 import React from 'react';
 import './index.css';
 import ReactDOM from 'react-dom';
-import App from './App';
 import Home from './pages/home/Home'
-import Team from './pages/team/Team'
 import * as serviceWorker from './serviceWorker';
+import App from './App';
+import Team from './pages/team/Team'
 import {MatchResultCard} from "./component/match-result-card";
 import {MenuBar} from "./component/menu-bar";
 import Player from "./pages/player/Player";
@@ -17,14 +17,14 @@ import Register from "./pages/authentications/register/Register";
 import PasswordReset from "./pages/authentications/password-reset/PasswordReset";
 import NewPassword from "./pages/authentications/new-password/NewPassword";
 
-ReactDOM.render(<Home/>, document.getElementById('root'));
+// ReactDOM.render(<Home/>, document.getElementById('root'));
 // ReactDOM.render(<Login/>, document.getElementById('root'));
 // ReactDOM.render(<Register/>, document.getElementById('root'));
 // ReactDOM.render(<PasswordReset/>, document.getElementById('root'));
 // ReactDOM.render(<NewPassword/>, document.getElementById('root'));
 // ReactDOM.render(<Team/>, document.getElementById('root'));
 // ReactDOM.render(<Player/>, document.getElementById('root'));
-// ReactDOM.render(<League/>, document.getElementById('root'));
+ReactDOM.render(<League/>, document.getElementById('root'));
 // ReactDOM.render(<NewsPage/>, document.getElementById('root'));
 // ReactDOM.render(<Game/>, document.getElementById('root'));
 // If you want your app to work offline and load faster, you can change

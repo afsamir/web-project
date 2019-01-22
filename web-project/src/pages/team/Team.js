@@ -496,7 +496,7 @@ class Team extends Component {
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={8}>
-                                                <TeamNews news={this.state.news}/>
+                                                <TeamNews data={this.state.news}/>
                                             </Grid.Column>
                                             <Grid.Column width={8}>
                                                 <TeamResult data={this.state.teams}/>
@@ -527,7 +527,7 @@ class Team extends Component {
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
-                                                <TeamNews news={this.state.news}/>
+                                                <TeamNews data={this.state.news}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>
