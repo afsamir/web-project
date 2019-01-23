@@ -17,14 +17,14 @@ import Register from "./pages/authentications/register/Register";
 import PasswordReset from "./pages/authentications/password-reset/PasswordReset";
 import NewPassword from "./pages/authentications/new-password/NewPassword";
 
-// ReactDOM.render(<Home/>, document.getElementById('root'));
+ReactDOM.render(<Home/>, document.getElementById('root'));
 // ReactDOM.render(<Login/>, document.getElementById('root'));
 // ReactDOM.render(<Register/>, document.getElementById('root'));
 // ReactDOM.render(<PasswordReset/>, document.getElementById('root'));
 // ReactDOM.render(<NewPassword/>, document.getElementById('root'));
 // ReactDOM.render(<Team/>, document.getElementById('root'));
 // ReactDOM.render(<Player/>, document.getElementById('root'));
-ReactDOM.render(<League/>, document.getElementById('root'));
+// ReactDOM.render(<League/>, document.getElementById('root'));
 // ReactDOM.render(<NewsPage/>, document.getElementById('root'));
 // ReactDOM.render(<Game/>, document.getElementById('root'));
 // If you want your app to work offline and load faster, you can change

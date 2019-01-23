@@ -9,20 +9,21 @@ body {
 margin: 0;
 padding: 0;
 background-image: url("https://previews.123rf.com/images/seamartini/seamartini1605/seamartini160500045/60761540-seamless-soccer-game-pattern-with-black-and-white-sporting-background-composed-of-football-or-soccer.jpg");
-font-family: Morvarid, sans-serif;
+font-family: Mitra, sans-serif;
     font-size: 10px;
 }
 
 @font-face {
-    font-family: 'Morvarid';
-    src: url('font/Morvarid.woff') format('woff'),
-    url('font/Morvarid.ttf') format('ttf'),
-    url('font/Morvarid.eot') format('eot');
+    font-family: 'Mitra';
+    src: url('font/Mitra.woff') format('woff'),
+    url('font/Mitra.ttf') format('ttf'),
+    url('font/Mitra.eot') format('eot');
     font-weight: 400;
     font-stretch: normal;
     font-style: normal;
 }
 
 * {
-    font-family:Morvarid;
+    font-family:Mitra;
+    font-size: 16px;
 }
