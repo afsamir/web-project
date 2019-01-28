@@ -3,6 +3,7 @@ import './MenuBar.css';
 import _ from 'lodash'
 import {Menu, Segment, Grid, Icon, Dropdown, Transition, Search, Responsive} from 'semantic-ui-react'
 import DirectionProvider, {DIRECTIONS} from 'react-with-direction/dist/DirectionProvider';
+import Auth from "../../utils/Auth";
 
 
 export class MenuBar extends React.Component {
@@ -179,6 +180,7 @@ export class ProfileIcon extends React.Component {
     };
 
     dropdown = () => {
+
         this.setState({dropdown: !this.state.dropdown});
         if (this.state.dropdown)
             this.setState({color: 'black'});

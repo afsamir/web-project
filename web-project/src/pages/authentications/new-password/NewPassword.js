@@ -4,6 +4,8 @@ import "slick-carousel/slick/slick-theme.css";
 import './NewPassword.css';
 import 'semantic-ui-css/semantic.min.css';
 import {MenuBar} from "../../../component/menu-bar";
+import Urls from "../../../utils/Urls";
+import Auth from "../../../utils/Auth";
 
 class Home extends Component {
     render() {
@@ -13,7 +15,7 @@ class Home extends Component {
                 <div className="ui middle aligned center aligned grid"
                      style={{maxWidth: '600px', margin: '30px auto 0 auto', marginTop: '80px'}}>
                     <div className="column">
-                        <form action="https://s.codepen.io/voltron2112/debug/PqrEPM?" method="get"
+                        <form action={Urls.resetPassword + String(Auth.getToken())} method="post"
                               className="ui large form">
                             <div className="ui stacked secondary  segment">
                                 <h2 className="ui image header">
@@ -33,7 +35,7 @@ class Home extends Component {
                                         <input type="password" name="confirm password" placeholder="Confirm New Password"/>
                                     </div>
                                 </div>
-                                <div className="ui fluid large teal submit button">Reset Password</div>
+                                <input type="submit" value="Reset Password" className="ui fluid large teal submit button"/>
                             </div>
 
                             <div className="ui error message"/>

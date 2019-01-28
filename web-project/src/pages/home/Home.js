@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -14,20 +14,52 @@ import Responsive from "semantic-ui-react/dist/commonjs/addons/Responsive/Respon
 import Segment from "semantic-ui-react/dist/commonjs/elements/Segment/Segment";
 import {Image} from "semantic-ui-react";
 import {Footer} from "../../component/footer";
+import Axios from 'axios'
+import Urls from "../../utils/Urls";
+import Auth from "../../utils/Auth";
 
 class Home extends Component {
 
+    componentDidMount() {
+        this.setState({isLoading: true});
+
+        Axios.get(Urls.footballNewsSummary).then(response => {
+            const footballNews = (response.data);
+            this.setState({footballNews})
+
+        }).then(res =>
+
+        Axios.get(Urls.basketballNewsSummary).then(response => {
+            const basketballNews = (response.data);
+            this.setState({basketballNews});
+            this.setState({loading_news: false})
+
+        }));
+        Axios.get(Urls.homeSliders).then(response => {
+            const sliderImages = (response.data);
+            this.setState({sliderImages});
+            this.setState({ loading_sliderImages:false })
+
+        });
+        Axios.get(Urls.matchCards).then(response => {
+            const matchResultCards = (response.data);
+            this.setState({matchResultCards});
+            this.setState({ loading_matchCards:false })
+        });
+
+
+    }
+
+
     constructor(props) {
         super(props);
-        this.state  = {
-            sliderImage: [
-                {
-                    src: 'https://wallpaperaccess.com/full/498543.png'
-                },
-                {
-                    src: 'https://wallpaperaccess.com/full/498589.jpg'
-                }
-            ],
+        this.state = {
+            loading_news: true,
+            loading_slidersImages:true,
+            loading_matchCards:true,
+            sliderImages: [],
+            footballNews:[],
+            basketBallNews:[],
             matchResultCards: [
                 {
                     title: "لیگ قهرمانان اروپا", team1: "منچستر یونایتد", goal1: "2", team2: "بارسلونا", goal2: "1",
@@ -58,106 +90,6 @@ class Home extends Component {
                     state: "نتیجه نهایی", date: "۲۰۱۸/۰۸/۰۳",
                     src1: "https://igbolive.com/wp-content/uploads/2018/03/manu-logo.png",
                     src2: "http://upload.wikimedia.org/wikipedia/it/archive/0/07/20120411134648!Fc_barcelona.png",
-                },
-            ],
-            news: [
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: false,
-                    src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
-                    time: '۸ساعت پیش'
-                },
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: true,
-                    src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
-                    time: '۸ساعت پیش'
-                },
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: false,
-                    src: 'https://react.semantic-ui.com/images/wireframe/image.png',
-                    time: '۸ساعت پیش'
-                },
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: true,
-                    src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
-                    time: '۸ساعت پیش'
-                },
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: false,
-                    src: 'https://react.semantic-ui.com/images/wireframe/image.png',
-                    time: '۸ساعت پیش'
-                },
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: true,
-                    src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
-                    time: '۸ساعت پیش'
-                },
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: false,
-                    src: 'https://react.semantic-ui.com/images/wireframe/image.png',
-                    time: '۸ساعت پیش'
-                },
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: true,
-                    src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
-                    time: '۸ساعت پیش'
-                },
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: false,
-                    src: 'https://react.semantic-ui.com/images/wireframe/image.png',
-                    time: '۸ساعت پیش'
-                },
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: true,
-                    src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
-                    time: '۸ساعت پیش'
-                },
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: false,
-                    src: 'https://react.semantic-ui.com/images/wireframe/image.png',
-                    time: '۸ساعت پیش'
-                },
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: true,
-                    src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
-                    time: '۸ساعت پیش'
-                },
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: false,
-                    src: 'https://react.semantic-ui.com/images/wireframe/image.png',
-                    time: '۸ساعت پیش'
-                },
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: true,
-                    src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
-                    time: '۸ساعت پیش'
                 },
             ],
             smallMatchCards: [
@@ -227,7 +159,7 @@ class Home extends Component {
                     name: 'پرسپولیس',
                     gameNum: 13,
                     score: 27
-                },{
+                }, {
                     id: 1,
                     name: 'پرسپولیس',
                     gameNum: 13,
@@ -264,10 +196,12 @@ class Home extends Component {
                     score: 27
                 },
             ],
+
         };
     }
 
     render() {
+        // alert(this.state.fo)
         const picSettings = {
             dots: true,
             infinite: true,
@@ -294,14 +228,19 @@ class Home extends Component {
             // centerMode: true,
         };
 
+        const {footballNews} = this.state,
+            {basketballNews} = this.state,
+            {sliderImages} = this.state;
+
         return (
+
             <div className='Home'>
                 <MenuBar style={{position: 'fixed'}}/>
                 <DirectionProvider direction={DIRECTIONS.RTL}>
-                    <div style={{maxWidth: '1500px', margin: '30px auto 0 auto', marginTop: '80px'}} >
+                    <div style={{maxWidth: '1500px', margin: '30px auto 0 auto', marginTop: '80px'}}>
                         <div style={{margin: '5px'}}>
                             <Segment.Group>
-                                <Responsive as={Segment} minWidth={1080} >
+                                <Responsive as={Segment} minWidth={1080}>
                                     <Grid id={'background'}>
                                         <Grid.Row>
                                             <Grid.Column width={11}>
@@ -309,8 +248,8 @@ class Home extends Component {
                                                     <Grid.Row>
                                                         <Grid.Column width={16}>
                                                             <Slider {...picSettings} className={'slider'}>
-                                                                {this.state.sliderImage.map( c  =>
-                                                                    <Image src={c.src}/>
+                                                                {sliderImages.map(c =>
+                                                                    <Image src={c.image_url}/>
                                                                 )}
                                                             </Slider>
                                                         </Grid.Column>
@@ -318,7 +257,7 @@ class Home extends Component {
                                                     <Grid.Row>
                                                         <Grid.Column width={16}>
                                                             <Slider {...matchResultSettings} className={'slider'}>
-                                                                {this.state.matchResultCards.map( c  =>
+                                                                {this.state.matchResultCards.map(c =>
                                                                     <MatchResultCard data={c}/>
                                                                 )}
                                                             </Slider>
@@ -326,18 +265,18 @@ class Home extends Component {
                                                     </Grid.Row>
                                                     <Grid.Row>
                                                         <Grid.Column width={16}>
-                                                            <LeagueSelector/>
                                                         </Grid.Column>
                                                     </Grid.Row>
                                                     <Grid.Row>
                                                         <Grid.Column width={16}>
-                                                            <LeagueDashboard smallMatchCards={this.state.smallMatchCards} tableData={this.state.tableData}/>
+                                                            <LeagueSelector/>
                                                         </Grid.Column>
                                                     </Grid.Row>
                                                 </Grid>
                                             </Grid.Column>
                                             <Grid.Column width={5}>
-                                                <News news={this.state.news} height={1360}/>
+                                                <News isLoading={this.state.loading_news} footballNews={footballNews}
+                                                      basketballNews={basketballNews} height={1360}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                     </Grid>
@@ -347,8 +286,8 @@ class Home extends Component {
                                         <Grid.Row>
                                             <Grid.Column width={16}>
                                                 <Slider {...picSettings} className={'slider'}>
-                                                    {this.state.sliderImage.map( c  =>
-                                                        <Image src={c.src}/>
+                                                    {sliderImages.map(c =>
+                                                        <Image src={c.image_url}/>
                                                     )}
                                                 </Slider>
                                             </Grid.Column>
@@ -356,7 +295,7 @@ class Home extends Component {
                                         <Grid.Row>
                                             <Grid.Column width={16}>
                                                 <Slider {...matchResultSettings} className={'slider'}>
-                                                    {this.state.matchResultCards.map( c  =>
+                                                    {this.state.matchResultCards.map(c =>
                                                         <MatchResultCard data={c}/>
                                                     )}
                                                 </Slider>
@@ -372,13 +311,16 @@ class Home extends Component {
                                                     </Grid.Row>
                                                     <Grid.Row>
                                                         <Grid.Column width={16}>
-                                                            <LeagueDashboard smallMatchCards={this.state.smallMatchCards} tableData={this.state.tableData}/>
+                                                            <LeagueDashboard
+                                                                smallMatchCards={this.state.smallMatchCards}
+                                                                tableData={this.state.tableData}/>
                                                         </Grid.Column>
                                                     </Grid.Row>
                                                 </Grid>
                                             </Grid.Column>
                                             <Grid.Column width={8}>
-                                                <News news={this.state.news} height={974}/>
+                                                <News isLoading={this.state.loading_news} footballNews={footballNews}
+                                                      basketballNews={basketballNews} height={974}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                     </Grid>
@@ -388,8 +330,8 @@ class Home extends Component {
                                         <Grid.Row>
                                             <Grid.Column width={16}>
                                                 <Slider {...picSettings} className={'slider'}>
-                                                    {this.state.sliderImage.map( c  =>
-                                                        <Image src={c.src}/>
+                                                    {sliderImages.map(c =>
+                                                        <Image src={c.image_url}/>
                                                     )}
                                                 </Slider>
                                             </Grid.Column>
@@ -399,7 +341,7 @@ class Home extends Component {
                                                 <div
                                                     style={{display: 'none'}}>  {matchResultSettings.slidesToShow = 2}</div>
                                                 <Slider {...matchResultSettings} className={'slider'}>
-                                                    {this.state.matchResultCards.map( c  =>
+                                                    {this.state.matchResultCards.map(c =>
                                                         <MatchResultCard data={c}/>
                                                     )}
                                                 </Slider>
@@ -410,12 +352,14 @@ class Home extends Component {
                                                 <LeagueSelector style={{maxWidth: '500px'}}/>
                                             </Grid.Column>
                                             <Grid.Column width={16}>
-                                                <LeagueDashboard smallMatchCards={this.state.smallMatchCards} tableData={this.state.tableData}/>
+                                                <LeagueDashboard smallMatchCards={this.state.smallMatchCards}
+                                                                 tableData={this.state.tableData}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
-                                                <News news={this.state.news} height={1314}/>
+                                                <News isLoading={this.state.loading_news} footballNews={footballNews}
+                                                      basketballNews={basketballNews} height={1314}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                     </Grid>

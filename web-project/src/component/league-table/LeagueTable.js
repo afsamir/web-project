@@ -20,7 +20,7 @@ class App extends Component {
                     {/*<Dropdown disabled={!table} placeholder='State' search selection options={leagues} defaultValue='ir' inverted/>*/}
                     <Divider/>
                     <div style={{height: '300px', overflow:'scroll'}}>
-                    <Table>
+                    <Table unstackable sortable>
                         <Table.Header>
                             <Table.Row>
                                 <Table.HeaderCell textAlign='center'>ردیف</Table.HeaderCell>

@@ -2,31 +2,48 @@ import React from 'react';
 import './NewsDiv.css';
 
 import DirectionProvider, {DIRECTIONS} from 'react-with-direction/dist/DirectionProvider';
-import {Icon, Image, Responsive} from "semantic-ui-react";
+import { Responsive} from "semantic-ui-react";
 
 
 export class NewsDiv extends React.Component {
     render() {
         return (
             <DirectionProvider direction={DIRECTIONS.RTL}>
-                <div className={'news-div'}>
-                    <Responsive minWidth={768}>
-                        <Icon className={"icon"}/>
-                         <p className={'news-text'}>
-                                <p className={'main'}>{this.props.data.type}</p>
-                                <Image style={this.props.data.image? {}: {display:'none'}} size={'small'} src={this.props.data.src}
-                                   className={'news-image'}/> {this.props.data.title}
-                            <div className={'news-date'}>{this.props.data.time}</div>
-                        </p>
+
+
+                <div>
+                    <Responsive minWidth={1080} className={'news-div'}>
+
+                        {/*
+                        <Image style={this.props.data.image_url ? {} : {display: 'none'}} size={'small'}
+                               src={this.props.data.image_url}
+                               className={'news-image-large'}/>
+*/}
+                        <div className={'news-text-large'}>
+                            <b>
+                                <div className={'main'} style={{display: 'block'}}>{this.props.data.category} </div>
+                                {this.props.data.title}
+                            </b>
+                        </div>
+                        <div className={'news-date'}>{this.props.data.time}</div>
                     </Responsive>
-                    <Responsive maxWidth={767} >
-                        <Icon className={"icon"}/>
-                        <p className={'news-text'}>
-                            <Icon name={'angle left'} className={'main'}/>
-                            <Image style={this.props.data.image? {}: {display:'none'}} size={'small'} src={this.props.data.src}
-                                   className={'news-image'}/> {this.props.data.title}
+                    <Responsive maxWidth={1079} minWidth={768} className={'news-div'}>
+
+                        <div className={'news-text'}>
+                            <b>
+                                <div className={'main'}>{this.props.data.category}</div>
+                                {this.props.data.title}
+                            </b>
                             <div className={'news-date'}>{this.props.data.time}</div>
-                        </p>
+                        </div>
+                    </Responsive>
+                    <Responsive maxWidth={767} className={'news-div'}>
+
+                        <b>
+                            <div className={'main'}>{this.props.data.category}</div>
+                            {this.props.data.title}
+                        </b>
+                        <div className={'news-date'}>{this.props.data.time}</div>
                     </Responsive>
                 </div>
             </DirectionProvider>

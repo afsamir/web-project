@@ -1,43 +1,77 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import 'semantic-ui-css/semantic.min.css';
 import {Container, Divider, Dropdown, Menu} from "semantic-ui-react";
 import './News.css'
 import {NewsDiv} from "../news-div";
 import Segment from "semantic-ui-react/dist/commonjs/elements/Segment/Segment";
-import Table from "semantic-ui-react/dist/commonjs/collections/Table";
 
-class App extends Component {
-    state = {
-        activeItem: 'buy',
-    };
+class News extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            activeItem: 'آخرین اخبار',
+            footballNews: [{}],
+            basketballNews: [{}],
+            newsToShow: [{}]
+        };
+
+    }
+
+    componentWillReceiveProps(nextProps, nextContext) {
+        this.setState({footballNews: nextProps.footballNews});
+        this.setState({basketballNews: nextProps.basketballNews});
+        this.setState({newsToShow: nextProps.footballNews})
+
+    }
+
     stateOptions = [{key: 'FB', value: 'FB', text: 'فوتبال'}, {key: 'BB', value: 'BB', text: 'بسکتبال'}];
 
-    handleItemClick = (e, {name}) => this.setState({activeItem: name});
+    handleItemClick = (e, {value}) => {
+
+
+        if (value === 'FB') {
+            this.setState({newsToShow: this.state.footballNews})
+        } else
+            this.setState({newsToShow: this.state.basketballNews})
+
+    };
 
     render() {
-        const {activeItem} = this.state;
+
+        const {isLoading} = this.props, {activeItem} = this.state;
+        var newsToShow;
+        if (isLoading) {
+            newsToShow = [];
+        } else {
+            newsToShow = this.state.newsToShow;
+        }
         return (
             <div id="App">
                 <Menu fluid widths={2} inverted>
-                    <Menu.Item name='آخرین اخبار' active={activeItem === 'buy'} onClick={this.handleItemClick}/>
-                    <Menu.Item name='مورد علاقه ها ' active={activeItem === 'sell'} onClick={this.handleItemClick}/>
+                    <Menu.Item name='آخرین اخبار' active={activeItem === 'آخرین اخبار'}
+                    />
+                    <Menu.Item name='مورد علاقه ها' active={activeItem === 'مورد علاقه ها'}
+                    />
                 </Menu>
 
                 <Container textAlign='center'>
-                    <Dropdown placeholder='State' search selection options={this.stateOptions} defaultValue='FB' inverted/>
+                    <Dropdown placeholder='State' search selection options={this.stateOptions} defaultValue='FB'
+                              inverted onChange={this.handleItemClick}/>
                 </Container>
 
                 <Divider hidden/>
                 <Divider horizontal>اخبار</Divider>
 
-                <Segment fluid textAlign='justified' style={{overflow: 'auto', height: this.props.height }}>
-                    {this.props.news.map(news =>
+                <Segment fluid textAlign='justified' style={{overflow: 'auto', height: this.props.height}}>
+                    {newsToShow.map(news =>
                         <NewsDiv data={news}/>
                     )}
                 </Segment>
             </div>
         );
     }
+
 }
 
-export default App;
+export default News;

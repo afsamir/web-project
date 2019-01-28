@@ -6,6 +6,7 @@ import DirectionProvider, {DIRECTIONS} from 'react-with-direction/dist/Direction
 import {Image} from "../util/image";
 
 export class MatchResultCard extends React.Component {
+
     render() {
         return (
             <DirectionProvider direction={DIRECTIONS.LTR} >

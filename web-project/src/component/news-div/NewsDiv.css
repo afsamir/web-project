@@ -1,17 +1,16 @@
 .news-text {
     text-align: right;
-    color: #757575;
+    color: #757575 !important;
     border-radius: 4px;
     padding: 6px;
     transition-duration: 500ms;
     align-content: space-between;
     display: inline;
     float: right;
-
+    alignment: center;
 }
 
-.news-text:hover {
-    text-align: right;
+.news-text-large:hover {
     color: black;
     transition-duration: 500ms;
     cursor: pointer;
@@ -29,6 +28,10 @@
 .news-div {
     margin-bottom: 30px !important;
     margin-top: 30px !important;
+    overflow-wrap: normal;
+    color: #757575 !important;
+    transition-duration: 500ms;
+
 }
 
 .news-date {
@@ -39,15 +42,21 @@
     position: sticky;
     padding: 4px;
     vertical-align: bottom !important;
-
+    transition-duration: 500ms;
+ 
 }
 
-.news-image {
+.news-image, .news-image-large {
     float: left !important;
     margin-right: 12px;
     transition-duration: 500ms;
+    margin-bottom: 20px ;
 
 
+}
+.news-text-large{
+    display: block;
+    margin-top: 20px !important;
 }
 
 .news-image:hover {

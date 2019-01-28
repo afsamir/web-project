@@ -10,9 +10,27 @@ import "slick-carousel/slick/slick-theme.css";
 import Dropdown from "semantic-ui-react/dist/commonjs/modules/Dropdown/Dropdown";
 import Image from "semantic-ui-react/dist/commonjs/elements/Image/Image";
 import Header from "semantic-ui-react/dist/commonjs/elements/Header/Header";
+import Axios from "axios";
+import Urls from "../../utils/Urls";
 
 
 export class LeagueDashboard extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            // smallMatchCards: [{}],
+            // tableData: [{}]
+        };
+    }
+    componentWillMount() {
+
+        const tableData =this.props.tableData;
+        const smallMatchCards = this.props.smallMatchCards;
+        this.setState({tableData});
+        this.setState({smallMatchCards});
+    }
+
     render() {
         const matchResultSettings = {
             speed: 300,
@@ -22,7 +40,7 @@ export class LeagueDashboard extends React.Component {
             verticalSwiping: true,
             swipeToSlide: true,
             centerMode: false,
-            arrows:false
+            arrows: false
         };
 
         return (
@@ -34,22 +52,22 @@ export class LeagueDashboard extends React.Component {
                             <Grid.Row>
                                 <Grid.Column className={'match-results'} width={6}>
                                     <div id='match-result'>
-                                    <Header as='h1' icon textAlign='center'>
-                                        <Image
-                                            src="https://cdn4.iconfinder.com/data/icons/football-13/64/Football-22-512.png"/>
-                                        <Header.Content>بازی ها</Header.Content>
-                                    </Header>
-                                    <div style={{height: '250px'}}>
-                                        <Slider {...matchResultSettings}>
-                                            {this.props.smallMatchCards.map( c  =>
-                                                <SmallMatchCard data={c}/>
-                                            )}
-                                        </Slider>
-                                    </div>
+                                        <Header as='h1' icon textAlign='center'>
+                                            <Image
+                                                src="https://cdn4.iconfinder.com/data/icons/football-13/64/Football-22-512.png"/>
+                                            <Header.Content>بازی ها</Header.Content>
+                                        </Header>
+                                        <div style={{height: '250px'}}>
+                                            <Slider {...matchResultSettings}>
+                                                {this.state.smallMatchCards.map(c =>
+                                                    <SmallMatchCard data={c}/>
+                                                )}
+                                            </Slider>
                                         </div>
+                                    </div>
                                 </Grid.Column>
                                 <Grid.Column width={10}>
-                                    <LeagueTable width={'300px'} tableData={this.props.tableData}/>
+                                    <LeagueTable width={'300px'} tableData={this.state.tableData}/>
                                 </Grid.Column>
                             </Grid.Row>
                         </Grid>
@@ -67,7 +85,7 @@ export class LeagueDashboard extends React.Component {
                                         </Header>
                                         <div style={{height: '250px'}}>
                                             <Slider {...matchResultSettings}>
-                                                {this.props.smallMatchCards.map( c  =>
+                                                {this.props.smallMatchCards.map(c =>
                                                     <SmallMatchCard data={c}/>
                                                 )}
                                             </Slider>
@@ -89,6 +107,46 @@ export class LeagueDashboard extends React.Component {
 }
 
 export class LeagueSelector extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            smallMatchCards: [{
+                src1: "https://igbolive.com/wp-content/uploads/2018/03/manu-logo.png",
+                src2: "http://upload.wikimedia.org/wikipedia/it/archive/0/07/20120411134648!Fc_barcelona.png",
+                goalNum1: 1, goalNum2: 2, time: 55, finished: true
+            },],
+            tableData: [
+                {
+                    id: 1,
+                    name: 'پدیده',
+                    gameNum: 14,
+                    score: 30
+                },
+                {
+                    id: 1,
+                    name: 'سپاهان',
+                    gameNum: 13,
+                    score: 29
+                },
+            ]
+        }
+    }
+
+    componentDidMount() {/*
+        Axios.get(Urls.footballNewsSummary).then(response => {
+            const smallMatchCard = (response.data);
+            this.setState({smallMatchCard});
+        });
+        Axios.get(Urls.footballNewsSummary).then(response => {
+            const tableData = (response.data);
+            this.setState({tableData});
+        });*/
+    }
+
+    fetchData() {
+
+    }
+
 
     render() {
         let leagues = [
@@ -102,7 +160,7 @@ export class LeagueSelector extends React.Component {
                 menuItem: 'فوتبال',
                 render: () => <Tab.Pane> <Dropdown placeholder='State' search selection
                                                    options={leagues} defaultValue='ir' inverted
-                                                   className={'leagues-dropdown'}/>
+                                                   className={'leagues-dropdown'} onTabcChange/>
                     <Button circular={true} color={'teal'} content={' صفحه لیگ'}/>
                 </Tab.Pane>
             },
@@ -117,7 +175,12 @@ export class LeagueSelector extends React.Component {
             }
         ];
 
-        return (<Tab menu={{tabular: true}} panes={panes}/>)
+        return (
+            <div>
+                <Tab menu={{tabular: true}} panes={panes}/>
+                <LeagueDashboard smallMatchCards={this.state.smallMatchCards}
+                                 tableData={this.state.tableData}/>
+            </div>)
 
     }
 }
