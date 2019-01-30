@@ -11,9 +11,9 @@ class News extends Component {
 
         this.state = {
             activeItem: 'آخرین اخبار',
-            footballNews: [{}],
-            basketballNews: [{}],
-            newsToShow: [{}]
+            footballNews: [],
+            basketballNews: [],
+            newsToShow: []
         };
 
     }
@@ -29,7 +29,6 @@ class News extends Component {
 
     handleItemClick = (e, {value}) => {
 
-
         if (value === 'FB') {
             this.setState({newsToShow: this.state.footballNews})
         } else
@@ -39,13 +38,8 @@ class News extends Component {
 
     render() {
 
-        const {isLoading} = this.props, {activeItem} = this.state;
-        var newsToShow;
-        if (isLoading) {
-            newsToShow = [];
-        } else {
-            newsToShow = this.state.newsToShow;
-        }
+        const {activeItem} = this.state;
+        const {newsToShow} = this.state;
         return (
             <div id="App">
                 <Menu fluid widths={2} inverted>

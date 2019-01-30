@@ -15,38 +15,33 @@ import Segment from "semantic-ui-react/dist/commonjs/elements/Segment/Segment";
 import {Image} from "semantic-ui-react";
 import {Footer} from "../../component/footer";
 import Axios from 'axios'
-import Urls from "../../utils/Urls";
+import BackUrls from "../../utils/BackUrls";
 import Auth from "../../utils/Auth";
 
 class Home extends Component {
 
     componentDidMount() {
-        this.setState({isLoading: true});
 
-        Axios.get(Urls.footballNewsSummary).then(response => {
+        Axios.get(BackUrls.footballNewsSummary).then(response => {
             const footballNews = (response.data);
             this.setState({footballNews})
 
-        }).then(res =>
+        }).catch(er => this.setState({footballNews:[]}));
 
-        Axios.get(Urls.basketballNewsSummary).then(response => {
+        Axios.get(BackUrls.basketballNewsSummary).then(response => {
             const basketballNews = (response.data);
             this.setState({basketballNews});
-            this.setState({loading_news: false})
 
-        }));
-        Axios.get(Urls.homeSliders).then(response => {
+        }).catch(er => this.setState({basketballNews:[]}));
+        Axios.get(BackUrls.homeSliders).then(response => {
             const sliderImages = (response.data);
             this.setState({sliderImages});
-            this.setState({ loading_sliderImages:false })
 
-        });
-        Axios.get(Urls.matchCards).then(response => {
+        }).catch(er => this.setState({sliderImages:[]}));
+        Axios.get(BackUrls.matchCards).then(response => {
             const matchResultCards = (response.data);
             this.setState({matchResultCards});
-            this.setState({ loading_matchCards:false })
-        });
-
+        }).catch(er => this.setState({matchResultCards:[]}));
 
     }
 
@@ -201,7 +196,6 @@ class Home extends Component {
     }
 
     render() {
-        // alert(this.state.fo)
         const picSettings = {
             dots: true,
             infinite: true,
@@ -275,7 +269,7 @@ class Home extends Component {
                                                 </Grid>
                                             </Grid.Column>
                                             <Grid.Column width={5}>
-                                                <News isLoading={this.state.loading_news} footballNews={footballNews}
+                                                <News footballNews={footballNews}
                                                       basketballNews={basketballNews} height={1360}/>
                                             </Grid.Column>
                                         </Grid.Row>
@@ -319,7 +313,7 @@ class Home extends Component {
                                                 </Grid>
                                             </Grid.Column>
                                             <Grid.Column width={8}>
-                                                <News isLoading={this.state.loading_news} footballNews={footballNews}
+                                                <News footballNews={footballNews}
                                                       basketballNews={basketballNews} height={974}/>
                                             </Grid.Column>
                                         </Grid.Row>
@@ -358,7 +352,7 @@ class Home extends Component {
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
-                                                <News isLoading={this.state.loading_news} footballNews={footballNews}
+                                                <News footballNews={footballNews}
                                                       basketballNews={basketballNews} height={1314}/>
                                             </Grid.Column>
                                         </Grid.Row>

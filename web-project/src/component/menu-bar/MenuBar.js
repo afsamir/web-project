@@ -28,6 +28,7 @@ export class MenuBar extends React.Component {
                                     name='لیگ ها'
                                     active={activeItem === 'لیگ ها'}
                                     onClick={this.handleItemClick}
+
                                 />
                                 <Menu.Item
                                     name='ویدیو ها'

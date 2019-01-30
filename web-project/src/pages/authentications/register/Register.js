@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import './Register.css';
 import 'semantic-ui-css/semantic.min.css';
 import {MenuBar} from "../../../component/menu-bar";
-import Urls from "../../../utils/Urls";
+import BackUrls from "../../../utils/BackUrls";
 
 
 class Home extends Component {
@@ -17,7 +17,7 @@ class Home extends Component {
                 <div className="ui middle aligned center aligned grid"
                      style={{maxWidth: '600px', margin: '30px auto 0 auto', marginTop: '80px'}}>
                     <div className="column">
-                        <form action={Urls.register} method="post" target="_self"
+                        <form action={BackUrls.register} method="post" target="_self"
                               className="ui large form">
 
                             <div className="ui stacked secondary  segment">
@@ -68,7 +68,7 @@ class Home extends Component {
                         </form>
 
                         <div className="ui message">
-                            New to us? <a href={Urls.register}>Register</a>
+                            New to us? <a href={BackUrls.register}>Register</a>
                         </div>
                     </div>
                 </div>

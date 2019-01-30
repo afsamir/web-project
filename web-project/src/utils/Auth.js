@@ -1,5 +1,5 @@
 import Axios from "axios";
-import Urls from "./Urls";
+import BackUrls from "./BackUrls";
 
 export default class Auth{
 
@@ -16,7 +16,7 @@ export default class Auth{
     static is_loggedIn(token){
 
 
-        Axios.get(Urls.userProfile).then(res => this.profile = res.data.user).then()
+        Axios.get(BackUrls.userProfile).then(res => this.profile = res.data.user).then()
 
     }
     static formToJSON(formID){
@@ -41,7 +41,7 @@ export default class Auth{
     static login(formID) {
         let formJSON = this.formToJSON(formID);
         // alert(formJSON);
-        Axios.post(Urls.login, formJSON).then(response => alert(response.data.token))
+        Axios.post(BackUrls.login, formJSON).then(response => alert(response.data.token))
 
     }
 }

@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import './NewPassword.css';
 import 'semantic-ui-css/semantic.min.css';
 import {MenuBar} from "../../../component/menu-bar";
-import Urls from "../../../utils/Urls";
+import BackUrls from "../../../utils/BackUrls";
 import Auth from "../../../utils/Auth";
 
 class Home extends Component {
@@ -15,7 +15,7 @@ class Home extends Component {
                 <div className="ui middle aligned center aligned grid"
                      style={{maxWidth: '600px', margin: '30px auto 0 auto', marginTop: '80px'}}>
                     <div className="column">
-                        <form action={Urls.resetPassword + String(Auth.getToken())} method="post"
+                        <form action={BackUrls.resetPassword + String(Auth.getToken())} method="post"
                               className="ui large form">
                             <div className="ui stacked secondary  segment">
                                 <h2 className="ui image header">

@@ -7,7 +7,9 @@ import * as serviceWorker from './serviceWorker';
 import Login from "./pages/authentications/login/Login";
 import Register from "./pages/authentications/register/Register";
 import NewPassword from "./pages/authentications/new-password/NewPassword";
-import { Route, Link, BrowserRouter as Router } from 'react-router-dom'// import App from './App';
+import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
+import NewsPage from "./pages/news";
+// import App from './App';
 // import Team from './pages/team/Team'
 // import {MatchResultCard} from "./component/match-result-card";
 // import {MenuBar} from "./component/menu-bar";
@@ -21,7 +23,7 @@ import { Route, Link, BrowserRouter as Router } from 'react-router-dom'// import
 // import PasswordReset from "./pages/authentications/password-reset/PasswordReset";
 // import NewPassword from "./pages/authentications/new-password/NewPassword";
 
-ReactDOM.render(<Home/>, document.getElementById('root'));
+// ReactDOM.render(<Home/>, document.getElementById('root'));
 // ReactDOM.render(<Login/>, document.getElementById('root'));
 // ReactDOM.render(<Register/>, document.getElementById('root'));
 // ReactDOM.render(<PasswordReset/>, document.getElementById('root'));
@@ -34,21 +36,19 @@ ReactDOM.render(<Home/>, document.getElementById('root'));
 // ReactDOM.render(<NewPassword/>, document.getElementById('root'));
 // ReactDOM.render(<Register/>, document.getElementById('root'));
 
-/*
 
 ReactDOM.render(
     <Router>
         <div>
-            <Route exact path="/"  component={Home}/>
-            {/!*<Route exact path="/login" component={Login}/>*!/}
-            {/!*<Route exact path="/register" component={Register}/>*!/}
-            {/!*<Route exact path="/new_password" component={NewPassword}/>*!/}
-
+            <Route exact path="/"  render={(routeProps) => <Home {...routeProps} ds={'sdsd'}/>}/>
+            <Route exact path="/login" component={Login}/>
+            <Route exact path="/register" component={Register}/>
+            <Route exact path="/new_password" component={NewPassword}/>
+            <Route exact path="/news/:slug" component={NewsPage}/>
 
         </div>
     </Router>
     , document.getElementById('root'));
-*/
 
 
 // If you want your app to work offline and load faster, you can change

@@ -11,7 +11,7 @@ import Dropdown from "semantic-ui-react/dist/commonjs/modules/Dropdown/Dropdown"
 import Image from "semantic-ui-react/dist/commonjs/elements/Image/Image";
 import Header from "semantic-ui-react/dist/commonjs/elements/Header/Header";
 import Axios from "axios";
-import Urls from "../../utils/Urls";
+import BackUrls from "../../utils/BackUrls";
 
 
 export class LeagueDashboard extends React.Component {
@@ -133,11 +133,11 @@ export class LeagueSelector extends React.Component {
     }
 
     componentDidMount() {/*
-        Axios.get(Urls.footballNewsSummary).then(response => {
+        Axios.get(BackUrls.footballNewsSummary).then(response => {
             const smallMatchCard = (response.data);
             this.setState({smallMatchCard});
         });
-        Axios.get(Urls.footballNewsSummary).then(response => {
+        Axios.get(BackUrls.footballNewsSummary).then(response => {
             const tableData = (response.data);
             this.setState({tableData});
         });*/

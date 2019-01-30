@@ -13,17 +13,37 @@ import Segment from "semantic-ui-react/dist/commonjs/elements/Segment/Segment";
 import {Container, Divider, Header} from "semantic-ui-react";
 import {PictureNews} from "../../component/picture-news";
 import {Footer} from "../../component/footer";
+import Axios from 'axios'
+import BackUrls from "../../utils/BackUrls";
+import FrontUrls from "../../utils/FrontUrls";
 
 class NewsPage extends Component {
+
+    componentDidMount() {
+        Axios.get(BackUrls.footballNewsSummary).then(response => {
+            const footballNews = response.data;
+            this.setState({footballNews});
+        }).catch(er => this.setState({footballNews: []}));
+
+        Axios.get(BackUrls.basketballNewsSummary).then(response => {
+            const basketballNews = response.data;
+            this.setState({basketballNews});
+        }).catch(er => this.setState({basketballNews: []}));
+
+        Axios.get(BackUrls.detailedNews(this.props.match.params.slug)).then(response => {
+            const news = response.data;
+            this.setState({news});
+        }).catch(er => this.setState({news: {related_news: [{}]}}));
+
+    }
+
+
     constructor(props) {
         super(props);
         this.state = {
-            content: 'نشریات کره ای در روزهای اخیر اخباری در مورد دخالت غیرمستقیم یا مستقیم فدراسیون فوتبال کره جنوبی و درخواست آنها از پائولو بنتو برای قرار دادن لی سئونگ وو، بازیکن محبوب فوتبال این کشور حتی برای دقایقی کوتاه در ترکیب داده بودند که مسئولان فدراسیون این اخبار را تکذیب کردند.\n' +
-                'کیم سئون، رئیس روابط عمومی فدراسیون کره جنوبی و مسئول تیم رسانه ای این کشور در جام ملت ها این اخبار را مسخره توصیف کرد. همچنین لی جائه چول، مدیر بازاریابی بازاریابی فدراسیون که تصویر لی سئونگ وو را بر روی پوستر تبلیغاتی بازی های کره قرار داده است در این مورد گفت: "هیچگونه ارتباط مستقیمی بین پائولو بنتو و بخش بازاریابی وجود نداشته و چنین اتفاقاتی واقعیت ندارد."',
-            mainNews: {
-                src: 'https://static.farakav.com/files/pictures/thumb/01360537.jpg',
-                text: 'text'
-            },
+            footballNews: [],
+            basketballNews: [],
+            news: {related_news: [{}]},
             otherNews: [
                 {
                     src: 'https://www.activenewcastle.co.uk/sites/default/files/2017-11/soccer1.jpg',
@@ -38,106 +58,7 @@ class NewsPage extends Component {
                     src: 'https://www.activenewcastle.co.uk/sites/default/files/2017-11/soccer1.jpg',
                 },
             ],
-            news: [
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: false,
-                    src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
-                    time: '۸ساعت پیش'
-                },
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: true,
-                    src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
-                    time: '۸ساعت پیش'
-                },
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: false,
-                    src: 'https://react.semantic-ui.com/images/wireframe/image.png',
-                    time: '۸ساعت پیش'
-                },
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: true,
-                    src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
-                    time: '۸ساعت پیش'
-                },
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: false,
-                    src: 'https://react.semantic-ui.com/images/wireframe/image.png',
-                    time: '۸ساعت پیش'
-                },
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: true,
-                    src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
-                    time: '۸ساعت پیش'
-                },
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: false,
-                    src: 'https://react.semantic-ui.com/images/wireframe/image.png',
-                    time: '۸ساعت پیش'
-                },
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: true,
-                    src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
-                    time: '۸ساعت پیش'
-                },
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: false,
-                    src: 'https://react.semantic-ui.com/images/wireframe/image.png',
-                    time: '۸ساعت پیش'
-                },
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: true,
-                    src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
-                    time: '۸ساعت پیش'
-                },
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: false,
-                    src: 'https://react.semantic-ui.com/images/wireframe/image.png',
-                    time: '۸ساعت پیش'
-                },
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: true,
-                    src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
-                    time: '۸ساعت پیش'
-                },
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: false,
-                    src: 'https://react.semantic-ui.com/images/wireframe/image.png',
-                    time: '۸ساعت پیش'
-                },
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: true,
-                    src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
-                    time: '۸ساعت پیش'
-                },
-            ],
+
         }
 
     }
@@ -157,6 +78,10 @@ class NewsPage extends Component {
             // centerMode: true,
         };
 
+        const {basketballNews} = this.state,
+            {footballNews} = this.state,
+            {news} = this.state;
+
         return (
             <div className='Home'>
                 <MenuBar style={{position: 'fixed'}}/>
@@ -172,14 +97,15 @@ class NewsPage extends Component {
                                                     <Grid.Row>
                                                         <Grid.Column width={16}>
                                                             {/*<VideoFrame active={false} url={"http://varzesh3.com"} placeholder={'https://static.farakav.com/files/pictures/thumb/01360537.jpg'}/>*/}
-                                                            <PictureNews data={this.state.mainNews}/>
+                                                            <PictureNews
+                                                                data={{image: news.image_url, text: news.title}}/>
                                                         </Grid.Column>
                                                     </Grid.Row>
                                                     <Grid.Row>
                                                         <Grid.Column width={16}>
                                                             <Container textAlign={'right'}>
                                                                 <p>
-                                                                    {this.state.content}
+                                                                    {news.text}
                                                                 </p>
                                                             </Container>
                                                         </Grid.Column>
@@ -192,8 +118,12 @@ class NewsPage extends Component {
                                                                 </Header>
                                                             </Divider>
                                                             <Slider {...matchResultSettings} className={'slider'}>
-                                                                {this.state.otherNews.map(c =>
-                                                                    <PictureNews data={c}/>
+                                                                {news.related_news.map(c =>
+                                                                    <PictureNews data={{
+                                                                        image: c.image_url,
+                                                                        text: c.title,
+                                                                        url: FrontUrls.news + c.slug
+                                                                    }}/>
                                                                 )}
                                                             </Slider>
                                                         </Grid.Column>
@@ -201,7 +131,8 @@ class NewsPage extends Component {
                                                 </Grid>
                                             </Grid.Column>
                                             <Grid.Column width={5}>
-                                                <News news={this.state.news} height={1314}/>
+                                                <News footballNews={footballNews}
+                                                      basketballNews={basketballNews} height={1314}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                     </Grid>
@@ -210,36 +141,41 @@ class NewsPage extends Component {
                                     <Grid>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
-                                                <PictureNews
-                                                    data={this.state.mainNews}/>
+                                                <PictureNews data={{image: news.image_url, text: news.title}}/>
+
 
                                             </Grid.Column>
                                         </Grid.Row>
 
                                         <Grid.Row>
                                             <Grid.Column width={11}>
-                                                <Container textAlign={'right'}>
-                                                    <p>
-                                                        {this.state.content}
-                                                    </p>
-                                                </Container>
-                                            </Grid.Column>
-                                            <Grid.Column width={5}>
-                                                <News news={this.state.news} height={1314}/>
-                                            </Grid.Column>
-                                            <Grid.Column width={16}>
-                                                <Divider horizontal>
-                                                    <Header as='h4'>
-                                                        اخبار مرتبط
-                                                    </Header>
-                                                </Divider>
-                                                <Slider {...matchResultSettings} className={'slider'}>
+                                                <Grid.Row>
+                                                    <Container textAlign={'right'}>
+                                                        <p>
+                                                            {news.text}
+                                                        </p>
+                                                    </Container>
+                                                </Grid.Row>
+                                                <Grid.Row>
+                                                    <Divider horizontal>
+                                                        <Header as='h4'>
+                                                            اخبار مرتبط
+                                                        </Header>
+                                                    </Divider>
                                                     <Slider {...matchResultSettings} className={'slider'}>
-                                                        {this.state.otherNews.map(c =>
-                                                            <PictureNews data={c}/>
+                                                        {news.related_news.map(c =>
+                                                            <PictureNews data={{
+                                                                image: c.image_url,
+                                                                text: c.title,
+                                                                url: FrontUrls.news + c.slug
+                                                            }}/>
                                                         )}
                                                     </Slider>
-                                                </Slider>
+                                                </Grid.Row>
+                                            </Grid.Column>
+                                            <Grid.Column width={5}>
+                                                <News footballNews={footballNews}
+                                                      basketballNews={basketballNews} height={1314}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                     </Grid>
@@ -248,15 +184,14 @@ class NewsPage extends Component {
                                     <Grid>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
-                                                <PictureNews
-                                                    data={this.state.mainNews}/>
+                                                <PictureNews data={{image: news.image_url, text: news.title}}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
                                                 <Container textAlign={'right'}>
                                                     <p>
-                                                        {this.state.content}
+                                                        {news.text}
                                                     </p>
                                                 </Container>
 
@@ -270,17 +205,20 @@ class NewsPage extends Component {
                                                     </Header>
                                                 </Divider>
                                                 <Slider {...matchResultSettings} className={'slider'}>
-                                                    <Slider {...matchResultSettings} className={'slider'}>
-                                                        {this.state.otherNews.map(c =>
-                                                            <PictureNews data={c}/>
-                                                        )}
-                                                    </Slider>
+                                                    {news.related_news.map(c =>
+                                                        <PictureNews data={{
+                                                            image: c.image_url,
+                                                            text: c.title,
+                                                            url: FrontUrls.news + c.slug
+                                                        }}/>
+                                                    )}
                                                 </Slider>
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
-                                                <News news={this.state.news} height={480}/>
+                                                <News footballNews={footballNews}
+                                                      basketballNews={basketballNews} height={480}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                     </Grid>

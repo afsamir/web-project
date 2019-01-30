@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import './Login.css';
 import 'semantic-ui-css/semantic.min.css';
 import {MenuBar} from "../../../component/menu-bar";
-import Urls from "../../../utils/Urls";
+import BackUrls from "../../../utils/BackUrls";
 import Axios from "axios";
 import Auth from "../../../utils/Auth";
 
@@ -31,7 +31,7 @@ class Login extends Component {
     login() {
         const form = document.getElementById('login-form');
         let formJSON = this.formToJSON(form);
-        Axios.post(Urls.login, formJSON).then(response => Auth.setToken(response.data.token));
+        Axios.post(BackUrls.login, formJSON).then(response => Auth.setToken(response.data.token));
     }
 
 
@@ -42,7 +42,7 @@ class Login extends Component {
                 <div className="ui middle aligned center aligned grid"
                      style={{maxWidth: '500px', margin: '30px auto 0 auto', marginTop: '80px'}}>
                     <div className="column">
-                        <form action={Urls.login} method="post"
+                        <form action={BackUrls.login} method="post"
                               className="ui large form" id={'login-form'}>
                             <div className="ui stacked secondary  segment">
                                 <h2 className="ui image header">
