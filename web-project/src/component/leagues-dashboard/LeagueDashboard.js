@@ -18,14 +18,17 @@ export class LeagueDashboard extends React.Component {
 
     constructor(props) {
         super(props);
+
     }
 
     render() {
         const matchResultSettings = {
             speed: 300,
-            slidesToShow: 7,
+            slidesToShow: 8,
             slidesToScroll: 1,
             vertical: true,
+            infinite: true,
+
             verticalSwiping: true,
             swipeToSlide: true,
             centerMode: false,
@@ -35,6 +38,7 @@ export class LeagueDashboard extends React.Component {
         const {smallMatchCards} = this.props,
             {tableData} = this.props;
 
+        // alert(JSON.stringify(smallMatchCards));
 
         return (
 
@@ -105,11 +109,9 @@ export class LeagueSelector extends React.Component {
         super(props);
         this.state = {
             selected: 'لالیگا-2017-2018',
-            smallMatchCards: [{
-                src1: "https://igbolive.com/wp-content/uploads/2018/03/manu-logo.png",
-                src2: "http://upload.wikimedia.org/wikipedia/it/archive/0/07/20120411134648!Fc_barcelona.png",
-                goalNum1: 1, goalNum2: 2, time: 55, finished: true
-            },],
+            smallMatchCards: {
+                games:[{}]
+            },
             tableData: {
                 teams: [
                     {
@@ -128,6 +130,11 @@ export class LeagueSelector extends React.Component {
             }
 
         }
+    }
+
+
+    componentDidMount() {
+        this.fetchData()
     }
 
 
@@ -189,7 +196,7 @@ export class LeagueSelector extends React.Component {
         return (
             <div>
                 <Tab menu={{tabular: true}} panes={panes}/>
-                <LeagueDashboard tableData={tableData} smallMatchCards={smallMatchCards}/>
+                <LeagueDashboard tableData={tableData} smallMatchCards={smallMatchCards.games}/>
             </div>)
 
     }

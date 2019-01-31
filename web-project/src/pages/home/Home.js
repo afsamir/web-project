@@ -51,8 +51,7 @@ class Home extends Component {
                 this.setState({footballLeagues: []});
                 this.setState({basketballLeagues: []})
             }
-        )
-        ;
+        );
 
     }
 

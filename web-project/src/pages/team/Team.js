@@ -15,8 +15,11 @@ import TeamMember from "../../component/team-member";
 import TeamNews from "../../component/team-news/TeamNews";
 import TeamResult from "../../component/team-result/TeamResult";
 import {LeagueDashboard} from "../../component/leagues-dashboard";
+import Axios from "axios";
+import BackUrls from "../../utils/BackUrls";
 
 class Team extends Component {
+
     constructor(props) {
         super(props);
         this.state={
@@ -417,6 +420,16 @@ class Team extends Component {
             ]
         }
     }
+
+    componentDidMount() {
+        Axios.get(BackUrls.footballNewsSummary).then(response => {
+            const footballNews = (response.data);
+            this.setState({footballNews})
+
+        }).catch(er => this.setState({footballNews: []}));
+    }
+
+
     render() {
         const picSettings = {
             dots: true,

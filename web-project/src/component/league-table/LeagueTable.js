@@ -7,6 +7,7 @@ import Divider from "semantic-ui-react/dist/commonjs/elements/Divider/Divider";
 import Segment from "semantic-ui-react/dist/commonjs/elements/Segment/Segment";
 import Header from "semantic-ui-react/dist/commonjs/elements/Header/Header";
 import Image from "semantic-ui-react/dist/commonjs/elements/Image/Image";
+import FrontUrls from "../../utils/FrontUrls";
 
 class App extends Component {
 
@@ -25,7 +26,7 @@ class App extends Component {
                     <Table unstackable sortable>
                         <Table.Header>
                             <Table.Row>
-                                <Table.HeaderCell textAlign='center'>ردیف</Table.HeaderCell>
+                                <Table.HeaderCell textAlign='center'>رتبه</Table.HeaderCell>
                                 <Table.HeaderCell textAlign='center'>تیم</Table.HeaderCell>
                                 <Table.HeaderCell textAlign='center'>بازی ها</Table.HeaderCell>
                                 <Table.HeaderCell textAlign='center'>امتیاز</Table.HeaderCell>
@@ -36,9 +37,9 @@ class App extends Component {
                             {
                                 this.props.tableData.map(team =>
                                     <Table.Row>
-                                        <a><Table.Cell textAlign='center'> {team.team__name} </Table.Cell></a>
+                                        <Table.Cell textAlign='center'>{}</Table.Cell>
+                                        <Table.Cell textAlign='center'><a href={FrontUrls.teamPage(team.team__slug)}> {team.team__name}</a> </Table.Cell>
                                         <Table.Cell textAlign='center'> {team.game_number} </Table.Cell>
-                                        <Table.Cell textAlign='center'> {team.gameNum} </Table.Cell>
                                         <Table.Cell textAlign='center'> {team.score} </Table.Cell>
                                     </Table.Row>
                                 )
