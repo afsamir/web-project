@@ -35,6 +35,13 @@
     top: 48px !important;
     left: -45% !important;
 }
+.profile-dropdown a .item{
+    color: #666 !important;
+}
+.profile-dropdown a .item:hover{
+    background: rgba(34,36,38,.1) !important;
+
+}
 
 .search-dropdown{
     top: 64px !important;

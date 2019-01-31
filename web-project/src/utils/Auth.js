@@ -14,8 +14,9 @@ export default class Auth{
         return localStorage.getItem('token')
     }
     static getProfile(token){
-        let profile;
-        Axios.get(BackUrls.userProfile).then(res => Auth.profile = res.data.user)
+        let profile = undefined;
+        Axios.get(BackUrls.userProfile, {auth:token}).then(res => Auth.profile = res.data.user).catch(er => profile = undefined);
+        return profile
 
     }
 

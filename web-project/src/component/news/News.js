@@ -15,29 +15,28 @@ class News extends Component {
             basketballNews: [],
             newsToShow: []
         };
+        this.state.newsToShow = this.props.footballNews
+
 
     }
 
-    componentWillReceiveProps(nextProps, nextContext) {
-        this.setState({footballNews: nextProps.footballNews});
-        this.setState({basketballNews: nextProps.basketballNews});
-        this.setState({newsToShow: nextProps.footballNews})
-
+    componentWillUpdate(nextProps, nextState, nextContext) {
+        this.state.newsToShow = nextProps.footballNews
     }
+
 
     stateOptions = [{key: 'FB', value: 'FB', text: 'فوتبال'}, {key: 'BB', value: 'BB', text: 'بسکتبال'}];
 
     handleItemClick = (e, {value}) => {
 
         if (value === 'FB') {
-            this.setState({newsToShow: this.state.footballNews})
+            this.setState({newsToShow: this.props.footballNews})
         } else
-            this.setState({newsToShow: this.state.basketballNews})
+            this.setState({newsToShow: this.props.basketballNews})
 
     };
 
     render() {
-
         const {activeItem} = this.state;
         const {newsToShow} = this.state;
         return (

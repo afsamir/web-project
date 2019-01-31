@@ -47,7 +47,7 @@ export class MenuBar extends React.Component {
                                 </Menu.Item>
 
                                 <Menu.Item id='profile-icon'>
-                                    <ProfileIcon/>
+                                    <ProfileIcon user={Auth.getProfile()}/>
                                 </Menu.Item>
 
                                 <Menu.Item id='search-icon'>
@@ -79,7 +79,7 @@ export class MenuBar extends React.Component {
                                 </Menu.Item>
 
                                 <Menu.Item id='profile-icon' position='left'>
-                                    <ProfileIcon/>
+                                    <ProfileIcon user={Auth.getProfile()}/>
                                 </Menu.Item>
 
                                 <Menu.Item id='search-icon'>
@@ -114,7 +114,7 @@ export class MenuBar extends React.Component {
                                 </Menu.Item>
 
                                 <Menu.Item id='profile-icon' position='left'>
-                                    <ProfileIcon/>
+                                    <ProfileIcon user={Auth.getProfile()}/>
                                 </Menu.Item>
 
 
@@ -215,10 +215,10 @@ export class ProfileIcon extends React.Component {
                                                onMouseLeave={this.mouseLeave}/>}>
                     <Transition visible={dropdown} animation='slide down' duration={250}>
                         <Dropdown.Menu inverted className={'profile-dropdown'}>
-                            <Dropdown.Item content='نام کابری' lowercase={true}/>
+                            <Dropdown.Item  lowercase={true}> {this.props.user !== undefined? this.props.user.username:'میهمان'}</Dropdown.Item>
                             <Dropdown.Divider/>
-                            <Dropdown.Item text='نمایه'/>
-                            <Dropdown.Item text='خروج'/>
+                            <a href={this.props.user !== undefined? FrontUrls.newPassword: FrontUrls.signup}><Dropdown.Item >{this.props.user !== undefined? 'تغییر رمز' :'ثبت نام'}</Dropdown.Item></a>
+                            <a href={this.props.user !== undefined? FrontUrls.logout: FrontUrls.login}><Dropdown.Item >{this.props.user !== undefined? 'خروج' : 'ورود'}</Dropdown.Item></a>
                         </Dropdown.Menu>
                     </Transition>
                 </Dropdown>
