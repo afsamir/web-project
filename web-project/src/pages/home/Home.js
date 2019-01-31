@@ -186,16 +186,13 @@ class Home extends Component {
                                                 <Grid>
                                                     <Grid.Row>
                                                         <Grid.Column width={16}>
-                                                            <LeagueSelector/>
+                                                            <LeagueSelector leagues={{
+                                                                basketballLeagues: basketballLeagues,
+                                                                footballLeagues: footballLeagues
+                                                            }}/>
                                                         </Grid.Column>
                                                     </Grid.Row>
-                                                    <Grid.Row>
-                                                        <Grid.Column width={16}>
-                                                            <LeagueDashboard
-                                                                smallMatchCards={this.state.smallMatchCards}
-                                                                tableData={this.state.tableData}/>
-                                                        </Grid.Column>
-                                                    </Grid.Row>
+
                                                 </Grid>
                                             </Grid.Column>
                                             <Grid.Column width={8}>
@@ -230,12 +227,12 @@ class Home extends Component {
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
-                                                <LeagueSelector style={{maxWidth: '500px'}}/>
+                                                <LeagueSelector leagues={{
+                                                    basketballLeagues: basketballLeagues,
+                                                    footballLeagues: footballLeagues
+                                                }} style={{maxWidth: '500px'}}/>
                                             </Grid.Column>
-                                            <Grid.Column width={16}>
-                                                <LeagueDashboard smallMatchCards={this.state.smallMatchCards}
-                                                                 tableData={this.state.tableData}/>
-                                            </Grid.Column>
+
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={16}>

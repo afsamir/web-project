@@ -20,7 +20,7 @@ class App extends Component {
                     </Header>
                     <Divider inverted/>
                     <div style={{height: "480px", overflow: "auto"}}>
-                        <Table color='grey'>
+                        <Table unstackable color='grey'>
                             <Table.Header>
                                 <Table.Row>
                                     <Table.HeaderCell textAlign='center'>رقابت</Table.HeaderCell>

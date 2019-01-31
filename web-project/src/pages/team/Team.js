@@ -175,7 +175,7 @@ class Team extends Component {
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={8}>
-                                                <TeamNews data={this.state.palyerNews}/>
+                                                <TeamNews data={this.state.playerNews}/>
                                             </Grid.Column>
                                             <Grid.Column width={8}>
                                                 <TeamResult data={this.state.stats}/>
