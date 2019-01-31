@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './Team.css';
@@ -22,415 +22,79 @@ class Team extends Component {
 
     constructor(props) {
         super(props);
-        this.state={
-            sliderImage:[
+        this.state = {
+            sliderImage: [
                 {
                     src: "http://hd.wallpaperswide.com/thumbs/real_madrid_champions_league_winners_2016-t2.jpg,",
                 }
             ],
-            teamLogo: {
-                internatinalRank: "1",
-                europeRank: '1',
-                name: 'رئال مادرید',
-                nickname: 'کهکشانی ها - کرکس ها',
-                city: 'مادرید',
-                country: 'اسپانیا',
-                establishedYear: '1902',
-                coach: 'سانتیاگو سولاری',
-                captain: 'سرخیو راموس',
-                site: 'www.realmadrid.com'
-            },
-            news: [
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: false,
-                    src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
-                    time: '۸ساعت پیش'
-                },
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: true,
-                    src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
-                    time: '۸ساعت پیش'
-                },
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: false,
-                    src: 'https://react.semantic-ui.com/images/wireframe/image.png',
-                    time: '۸ساعت پیش'
-                },
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: true,
-                    src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
-                    time: '۸ساعت پیش'
-                },
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: false,
-                    src: 'https://react.semantic-ui.com/images/wireframe/image.png',
-                    time: '۸ساعت پیش'
-                },
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: true,
-                    src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
-                    time: '۸ساعت پیش'
-                },
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: false,
-                    src: 'https://react.semantic-ui.com/images/wireframe/image.png',
-                    time: '۸ساعت پیش'
-                },
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: true,
-                    src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
-                    time: '۸ساعت پیش'
-                },
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: false,
-                    src: 'https://react.semantic-ui.com/images/wireframe/image.png',
-                    time: '۸ساعت پیش'
-                },
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: true,
-                    src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
-                    time: '۸ساعت پیش'
-                },
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: false,
-                    src: 'https://react.semantic-ui.com/images/wireframe/image.png',
-                    time: '۸ساعت پیش'
-                },
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: true,
-                    src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
-                    time: '۸ساعت پیش'
-                },
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: false,
-                    src: 'https://react.semantic-ui.com/images/wireframe/image.png',
-                    time: '۸ساعت پیش'
-                },
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: true,
-                    src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
-                    time: '۸ساعت پیش'
-                },
-            ],
-            smallMatchCards: [
-                {
-                    src1: "https://igbolive.com/wp-content/uploads/2018/03/manu-logo.png",
-                    src2: "http://upload.wikimedia.org/wikipedia/it/archive/0/07/20120411134648!Fc_barcelona.png",
-                    goalNum1: 1, goalNum2: 2, time: 55, finished: true
-                },
-                {
-                    src1: "https://igbolive.com/wp-content/uploads/2018/03/manu-logo.png",
-                    src2: "http://upload.wikimedia.org/wikipedia/it/archive/0/07/20120411134648!Fc_barcelona.png",
-                    goalNum1: 1, goalNum2: 2, time: 55, finished: true
-                },
-                {
-                    src1: "https://igbolive.com/wp-content/uploads/2018/03/manu-logo.png",
-                    src2: "http://upload.wikimedia.org/wikipedia/it/archive/0/07/20120411134648!Fc_barcelona.png",
-                    goalNum1: 1, goalNum2: 2, time: 55, finished: true
-                },
-                {
-                    src1: "https://igbolive.com/wp-content/uploads/2018/03/manu-logo.png",
-                    src2: "http://upload.wikimedia.org/wikipedia/it/archive/0/07/20120411134648!Fc_barcelona.png",
-                    goalNum1: 1, goalNum2: 2, time: 55, finished: true
-                },
-                {
-                    src1: "https://igbolive.com/wp-content/uploads/2018/03/manu-logo.png",
-                    src2: "http://upload.wikimedia.org/wikipedia/it/archive/0/07/20120411134648!Fc_barcelona.png",
-                    goalNum1: 1, goalNum2: 2, time: 55, finished: true
-                },
-                {
-                    src1: "https://igbolive.com/wp-content/uploads/2018/03/manu-logo.png",
-                    src2: "http://upload.wikimedia.org/wikipedia/it/archive/0/07/20120411134648!Fc_barcelona.png",
-                    goalNum1: 1, goalNum2: 2, time: 55, finished: true
-                },
-                {
-                    src1: "https://igbolive.com/wp-content/uploads/2018/03/manu-logo.png",
-                    src2: "http://upload.wikimedia.org/wikipedia/it/archive/0/07/20120411134648!Fc_barcelona.png",
-                    goalNum1: 1, goalNum2: 2, time: 55, finished: true
-                },
-            ],
-            tableData: [
-                {
-                    id: 1,
-                    name: 'پدیده',
-                    gameNum: 14,
-                    score: 30
-                },
-                {
-                    id: 1,
-                    name: 'سپاهان',
-                    gameNum: 13,
-                    score: 29
-                },
-                {
-                    id: 1,
-                    name: 'پرسپولیس',
-                    gameNum: 13,
-                    score: 27
-                },
-                {
-                    id: 1,
-                    name: 'پرسپولیس',
-                    gameNum: 13,
-                    score: 27
-                },
-                {
-                    id: 1,
-                    name: 'پرسپولیس',
-                    gameNum: 13,
-                    score: 27
-                },{
-                    id: 1,
-                    name: 'پرسپولیس',
-                    gameNum: 13,
-                    score: 27
-                },
-                {
-                    id: 1,
-                    name: 'پرسپولیس',
-                    gameNum: 13,
-                    score: 27
-                },
-                {
-                    id: 1,
-                    name: 'پرسپولیس',
-                    gameNum: 13,
-                    score: 27
-                },
-                {
-                    id: 1,
-                    name: 'پرسپولیس',
-                    gameNum: 13,
-                    score: 27
-                },
-                {
-                    id: 1,
-                    name: 'پرسپولیس',
-                    gameNum: 13,
-                    score: 27
-                },
-                {
-                    id: 1,
-                    name: 'پرسپولیس',
-                    gameNum: 13,
-                    score: 27
-                },
-            ],
-            teams: [
-                {
-                    name: 'جام حذفی اسپانیا',
-                    date: '2015/2016',
-                    result: 'نیمه نهایی',
-                    gameNum: '5',
-                    goalNum1: '5',
-                    goalNum2: '5',
-                    penaltyGoal: '5',
-
-                },
-                {
-                    name: 'جام حذفی اسپانیا',
-                    date: '2015/2016',
-                    result: 'نیمه نهایی',
-                    gameNum: '5',
-                    goalNum1: '5',
-                    goalNum2: '5',
-                },
-                {
-                    name: 'جام حذفی اسپانیا',
-                    date: '2015/2016',
-                    result: 'نیمه نهایی',
-                    gameNum: '5',
-                    goalNum1: '5',
-                    goalNum2: '5',
-                },
-                {
-                    name: 'جام حذفی اسپانیا',
-                    date: '2015/2016',
-                    result: 'نیمه نهایی',
-                    gameNum: '5',
-                    goalNum1: '5',
-                    goalNum2: '5',
-                },
-                {
-                    name: 'جام حذفی اسپانیا',
-                    date: '2015/2016',
-                    result: 'نیمه نهایی',
-                    gameNum: '5',
-                    goalNum1: '5',
-                    goalNum2: '5',
-                },
-                {
-                    name: 'جام حذفی اسپانیا',
-                    date: '2015/2016',
-                    result: 'نیمه نهایی',
-                    gameNum: '5',
-                    goalNum1: '5',
-                    goalNum2: '5',
-                },
-                {
-                    name: 'جام حذفی اسپانیا',
-                    date: '2015/2016',
-                    result: 'نیمه نهایی',
-                    gameNum: '5',
-                    goalNum1: '5',
-                    goalNum2: '5',
-                },
-                {
-                    name: 'جام حذفی اسپانیا',
-                    date: '2015/2016',
-                    result: 'نیمه نهایی',
-                    gameNum: '5',
-                    goalNum1: '5',
-                    goalNum2: '5',
-                },
-                {
-                    name: 'جام حذفی اسپانیا',
-                    date: '2015/2016',
-                    result: 'نیمه نهایی',
-                    gameNum: '5',
-                    goalNum1: '5',
-                    goalNum2: '5',
-                },
-                {
-                    name: 'جام حذفی اسپانیا',
-                    date: '2015/2016',
-                    result: 'نیمه نهایی',
-                    gameNum: '5',
-                    goalNum1: '5',
-                    goalNum2: '5',
-                },
-                {
-                    name: 'جام حذفی اسپانیا',
-                    date: '2015/2016',
-                    result: 'نیمه نهایی',
-                    gameNum: '5',
-                    goalNum1: '5',
-                    goalNum2: '5',
-                },
-                {
-                    name: 'جام حذفی اسپانیا',
-                    date: '2015/2016',
-                    result: 'نیمه نهایی',
-                    gameNum: '5',
-                    goalNum1: '5',
-                    goalNum2: '5',
-                },
-                {
-                    name: 'جام حذفی اسپانیا',
-                    date: '2015/2016',
-                    result: 'نیمه نهایی',
-                    gameNum: '5',
-                    goalNum1: '5',
-                    goalNum2: '5',
-                },
-                {
-                    name: 'جام حذفی اسپانیا',
-                    date: '2015/2016',
-                    result: 'نیمه نهایی',
-                    gameNum: '5',
-                    goalNum1: '5',
-                    goalNum2: '5',
-                },
-                {
-                    name: 'جام حذفی اسپانیا',
-                    date: '2015/2016',
-                    result: 'نیمه نهایی',
-                    gameNum: '5',
-                    goalNum1: '5',
-                    goalNum2: '5',
-                },
-                {
-                    name: 'جام حذفی اسپانیا',
-                    date: '2015/2016',
-                    result: 'نیمه نهایی',
-                    gameNum: '5',
-                    goalNum1: '5',
-                    goalNum2: '5',
-                },
-            ],
-            teamMembers: [
-                {
-                    name: 'برانکو ایوانکویچ',
-                    post: 'سرمربی'
-                },
-                {
-                    name: 'برانکو ایوانکویچ',
-                    post: 'سرمربی'
-                },
-                {
-                    name: 'برانکو ایوانکویچ',
-                    post: 'سرمربی'
-                },
-                {
-                    name: 'برانکو ایوانکویچ',
-                    post: 'سرمربی'
-                },
-                {
-                    name: 'برانکو ایوانکویچ',
-                    post: 'سرمربی'
-                },
-                {
-                    name: 'برانکو ایوانکویچ',
-                    post: 'سرمربی'
-                },
-                {
-                    name: 'برانکو ایوانکویچ',
-                    post: 'سرمربی'
-                },
-                {
-                    name: 'برانکو ایوانکویچ',
-                    post: 'سرمربی'
-                },
-                {
-                    name: 'برانکو ایوانکویچ',
-                    post: 'سرمربی'
-                },
-                {
-                    name: 'برانکو ایوانکویچ',
-                    post: 'سرمربی'
-                },
-            ]
+            playerNews: [{}],
+            teamNews: {},
+            info: {},
+            members: [{}],
+            stats: [{}],
+            games: [],
+            tableData: {teams:[]},
         }
     }
 
-    componentDidMount() {
-        Axios.get(BackUrls.footballNewsSummary).then(response => {
-            const footballNews = (response.data);
-            this.setState({footballNews})
+    componentWillMount() {
+        let slug = this.props.match.params.slug;
 
-        }).catch(er => this.setState({footballNews: []}));
+        Axios.get(BackUrls.teamSlider(slug)).then(response => {
+            const sliderImage = (response.data);
+            this.setState({sliderImage})
+
+        }).catch(er => this.setState({sliderImage: []}));
+
+        Axios.get(BackUrls.teamInfo(slug)).then(response => {
+            const info = (response.data);
+            this.setState({info})
+
+        }).catch(er => this.setState({info: []}));
+
+        Axios.get(BackUrls.teamNewsByPlayer(slug)).then(response => {
+            const playerNews = (response.data);
+            this.setState({playerNews})
+
+        }).catch(er => this.setState({playerNews: [{}]}));
+
+        Axios.get(BackUrls.teamNewsByTeam(slug)).then(response => {
+            const teamNews = (response.data);
+            this.setState({teamNews})
+
+        }).catch(er => this.setState({teamNews: [{}]}));
+
+        Axios.get(BackUrls.teamLeagues(slug)).then(response => {
+            const tableData = (response.data[0]);
+            this.setState({tableData})
+
+        }).catch(er => this.setState({tableData: {teams:[]}}));
+
+        Axios.get(BackUrls.teamMembers(slug)).then(response => {
+            const members = (response.data);
+            this.setState({members})
+        }).catch(er => this.setState({members: [{}]}));
+
+
+        Axios.get(BackUrls.teamStats(slug)).then(response => {
+            const stats = (response.data);
+            this.setState({stats})
+
+        }).catch(er => this.setState({stats: [{}]}));
+
+
+        Axios.get(BackUrls.teamGames(slug)).then(response => {
+            const games = (response.data);
+            this.setState({games})
+
+        }).catch(er => this.setState({games: [{}]}));
+
     }
 
 
     render() {
+
         const picSettings = {
             dots: true,
             infinite: true,
@@ -456,29 +120,30 @@ class Team extends Component {
                                         <Grid.Row>
                                             <Grid.Column width={12}>
                                                 <Slider {...picSettings} className={'slider'}>
-                                                    {this.state.sliderImage.map( c  =>
-                                                        <Image src={c.src}/>
+                                                    {this.state.sliderImage.map(c =>
+                                                        <Image src={c.image_url}/>
                                                     )}
                                                 </Slider>
                                             </Grid.Column>
                                             <Grid.Column width={4}>
-                                                <TeamLogo style={{padding: '10px'}} data={this.state.teamLogo}/>
+                                                <TeamLogo style={{padding: '10px'}} data={this.state.info}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
-                                                <LeagueDashboard smallMatchCards={this.state.smallMatchCards} tableData={this.state.tableData}/>
+                                                <LeagueDashboard smallMatchCards={this.state.games}
+                                                                 tableData={this.state.tableData}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={5}>
-                                                <TeamNews data={this.state.news}/>
+                                                <TeamNews data={this.state.playerNews}/>
                                             </Grid.Column>
                                             <Grid.Column width={6}>
-                                                <TeamResult data={this.state.teams}/>
+                                                <TeamResult data={this.state.stats}/>
                                             </Grid.Column>
                                             <Grid.Column width={5}>
-                                                <TeamMember data={this.state.teamMembers}/>
+                                                <TeamMember data={this.state.members}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                     </Grid>
@@ -488,7 +153,7 @@ class Team extends Component {
                                         <Grid.Row>
                                             <Grid.Column width={16}>
                                                 <Slider {...picSettings} className={'slider'}>
-                                                    {this.state.sliderImage.map( c  =>
+                                                    {this.state.sliderImage.map(c =>
                                                         <Image src={c.src}/>
                                                     )}
                                                 </Slider>
@@ -504,7 +169,8 @@ class Team extends Component {
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
-                                                <LeagueDashboard smallMatchCards={this.state.smallMatchCards} tableData={this.state.tableData}/>
+                                                <LeagueDashboard smallMatchCards={this.state.smallMatchCards}
+                                                                 tableData={this.state.tableData}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>
@@ -522,7 +188,7 @@ class Team extends Component {
                                         <Grid.Row>
                                             <Grid.Column width={16}>
                                                 <Slider {...picSettings} className={'slider'}>
-                                                    {this.state.sliderImage.map( c  =>
+                                                    {this.state.sliderImage.map(c =>
                                                         <Image src={c.src}/>
                                                     )}
                                                 </Slider>
@@ -535,7 +201,8 @@ class Team extends Component {
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
-                                                <LeagueDashboard smallMatchCards={this.state.smallMatchCards} tableData={this.state.tableData}/>
+                                                <LeagueDashboard smallMatchCards={this.state.smallMatchCards}
+                                                                 tableData={this.state.tableData}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>

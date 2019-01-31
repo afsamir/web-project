@@ -38,7 +38,6 @@ export class LeagueDashboard extends React.Component {
         const {smallMatchCards} = this.props,
             {tableData} = this.props;
 
-        // alert(JSON.stringify(smallMatchCards));
 
         return (
 
@@ -114,18 +113,6 @@ export class LeagueSelector extends React.Component {
             },
             tableData: {
                 teams: [
-                    {
-                        id: 1,
-                        name: 'پدیده',
-                        gameNum: 14,
-                        score: 30
-                    },
-                    {
-                        id: 1,
-                        name: 'سپاهان',
-                        gameNum: 13,
-                        score: 29
-                    },
                 ]
             }
 

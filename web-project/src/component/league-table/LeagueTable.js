@@ -13,6 +13,7 @@ class App extends Component {
 
 
     render() {
+        alert(JSON.stringify(this.props.tableData))
         return (
             <DirectionProvider direction={DIRECTIONS.RTL} textAlign='center'>
                 <Segment id='LeagueTable' textAlign='center'>

@@ -34,14 +34,14 @@ class App extends Component {
 
                             <Table.Body>
                                 {
-                                    this.props.data.map(team =>
+                                    this.props.data.map(l =>
                                         <Table.Row>
-                                            <Table.HeaderCell textAlign='center'>{team.name}<br/><Divider hidden/></Table.HeaderCell>
-                                            <Table.HeaderCell textAlign='center'>{team.date}<br/><Divider hidden/></Table.HeaderCell>
-                                            <Table.HeaderCell textAlign='center'>{team.result}<br/><Divider hidden/></Table.HeaderCell>
-                                            <Table.HeaderCell textAlign='center'>{team.gameNum}<br/><Divider hidden/></Table.HeaderCell>
-                                            <Table.HeaderCell textAlign='center'>{team.goalNum1}<br/><Divider hidden/></Table.HeaderCell>
-                                            <Table.HeaderCell textAlign='center'>{team.goalNum2}<br/><Divider hidden/></Table.HeaderCell>
+                                            <Table.HeaderCell textAlign='center'>{l.league__name}<br/><Divider hidden/></Table.HeaderCell>
+                                            <Table.HeaderCell textAlign='center'>{l.league__year}<br/><Divider hidden/></Table.HeaderCell>
+                                            <Table.HeaderCell textAlign='center'>{l.result}<br/><Divider hidden/></Table.HeaderCell>
+                                            <Table.HeaderCell textAlign='center'>{l.game_number}<br/><Divider hidden/></Table.HeaderCell>
+                                            <Table.HeaderCell textAlign='center'>{l.scoring_goal_number}<br/><Divider hidden/></Table.HeaderCell>
+                                            <Table.HeaderCell textAlign='center'>{l.receiving_goal_number}<br/><Divider hidden/></Table.HeaderCell>
                                         </Table.Row>
                                     )
                                 }

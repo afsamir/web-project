@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import 'semantic-ui-css/semantic.min.css';
 import {Divider} from "semantic-ui-react";
 import './TeamNews.css'
@@ -18,7 +18,7 @@ class App extends Component {
                         <Header.Content>اخبار تیم</Header.Content>
                     </Header>
                     <Divider inverted/>
-                    <div style={{ height: '480px', overflow: 'scroll'}}>
+                    <div style={{height: '480px', overflow: 'scroll'}}>
                         {this.props.data.map(news =>
                             <NewsDiv data={news}/>
                         )}
