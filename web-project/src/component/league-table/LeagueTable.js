@@ -9,6 +9,8 @@ import Header from "semantic-ui-react/dist/commonjs/elements/Header/Header";
 import Image from "semantic-ui-react/dist/commonjs/elements/Image/Image";
 
 class App extends Component {
+
+
     render() {
         return (
             <DirectionProvider direction={DIRECTIONS.RTL} textAlign='center'>
@@ -34,8 +36,8 @@ class App extends Component {
                             {
                                 this.props.tableData.map(team =>
                                     <Table.Row>
-                                        <Table.Cell textAlign='center'> {team.id} </Table.Cell>
-                                        <Table.Cell textAlign='center'> {team.name} </Table.Cell>
+                                        <a><Table.Cell textAlign='center'> {team.team__name} </Table.Cell></a>
+                                        <Table.Cell textAlign='center'> {team.game_number} </Table.Cell>
                                         <Table.Cell textAlign='center'> {team.gameNum} </Table.Cell>
                                         <Table.Cell textAlign='center'> {team.score} </Table.Cell>
                                     </Table.Row>

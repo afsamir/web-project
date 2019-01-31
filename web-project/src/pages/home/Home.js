@@ -43,8 +43,8 @@ class Home extends Component {
             this.setState({matchResultCards});
         }).catch(er => this.setState({matchResultCards: []}));
         Axios.get(BackUrls.leagueSummary).then(response => {
-            const footballLeagues = response.data[0],
-                basketballLeagues = response.data[1];
+            const footballLeagues = response.data.football,
+                basketballLeagues = response.data.basketball;
             this.setState({footballLeagues});
             this.setState({basketballLeagues})
         }).catch(er => {

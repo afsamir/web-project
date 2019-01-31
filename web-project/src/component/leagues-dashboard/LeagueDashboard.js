@@ -18,17 +18,6 @@ export class LeagueDashboard extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = {
-            // smallMatchCards: [{}],
-            // tableData: [{}]
-        };
-    }
-    componentWillMount() {
-
-        const tableData =this.props.tableData;
-        const smallMatchCards = this.props.smallMatchCards;
-        this.setState({tableData});
-        this.setState({smallMatchCards});
     }
 
     render() {
@@ -43,7 +32,12 @@ export class LeagueDashboard extends React.Component {
             arrows: false
         };
 
+        const {smallMatchCards} = this.props,
+            {tableData} = this.props;
+
+
         return (
+
             <DirectionProvider direction={DIRECTIONS.RTL}>
                 <Segment id='LeagueDashboard'>
                     <Responsive minWidth={1080}>
@@ -59,7 +53,7 @@ export class LeagueDashboard extends React.Component {
                                         </Header>
                                         <div style={{height: '250px'}}>
                                             <Slider {...matchResultSettings}>
-                                                {this.state.smallMatchCards.map(c =>
+                                                {smallMatchCards.map(c =>
                                                     <SmallMatchCard data={c}/>
                                                 )}
                                             </Slider>
@@ -67,7 +61,7 @@ export class LeagueDashboard extends React.Component {
                                     </div>
                                 </Grid.Column>
                                 <Grid.Column width={10}>
-                                    <LeagueTable width={'300px'} tableData={this.state.tableData}/>
+                                    <LeagueTable width={'300px'} tableData={tableData.teams}/>
                                 </Grid.Column>
                             </Grid.Row>
                         </Grid>
@@ -85,7 +79,7 @@ export class LeagueDashboard extends React.Component {
                                         </Header>
                                         <div style={{height: '250px'}}>
                                             <Slider {...matchResultSettings}>
-                                                {this.props.smallMatchCards.map(c =>
+                                                {smallMatchCards.map(c =>
                                                     <SmallMatchCard data={c}/>
                                                 )}
                                             </Slider>
@@ -95,7 +89,7 @@ export class LeagueDashboard extends React.Component {
                             </Grid.Row>
                             <Grid.Row>
                                 <Grid.Column width={16}>
-                                    <LeagueTable width={'300px'} tableData={this.props.tableData}/>
+                                    <LeagueTable width={'300px'} tableData={tableData.teams}/>
                                 </Grid.Column>
                             </Grid.Row>
                         </Grid>
@@ -110,44 +104,74 @@ export class LeagueSelector extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            selected: 'لالیگا-2017-2018',
             smallMatchCards: [{
                 src1: "https://igbolive.com/wp-content/uploads/2018/03/manu-logo.png",
                 src2: "http://upload.wikimedia.org/wikipedia/it/archive/0/07/20120411134648!Fc_barcelona.png",
                 goalNum1: 1, goalNum2: 2, time: 55, finished: true
             },],
-            tableData: [
-                {
-                    id: 1,
-                    name: 'پدیده',
-                    gameNum: 14,
-                    score: 30
-                },
-                {
-                    id: 1,
-                    name: 'سپاهان',
-                    gameNum: 13,
-                    score: 29
-                },
-            ]
+            tableData: {
+                teams: [
+                    {
+                        id: 1,
+                        name: 'پدیده',
+                        gameNum: 14,
+                        score: 30
+                    },
+                    {
+                        id: 1,
+                        name: 'سپاهان',
+                        gameNum: 13,
+                        score: 29
+                    },
+                ]
+            }
+
         }
     }
 
 
     fetchData() {
 
+
+
+        Axios.get(BackUrls.leagueTable(this.state.selected)).then(response => {
+            const tableData = response.data;
+            this.setState({tableData})
+        }).catch(er => {
+            this.setState({tableData: [{}]})
+        });
+
+        Axios.get(BackUrls.leagueGames(this.state.selected)).then(response => {
+            const smallMatchCards = response.data;
+            this.setState({smallMatchCards})
+
+        }).catch(er => this.setState({smallMatchCards: [{}]}));
     }
 
 
-    render() {
-        const footballLeagues =this.props.leagues.footballLeagues,
-            basketballLeagues = this.props.leagues.basketballLeagues;
+    handleItemClick = (e, {value}) => {
 
+        this.setState({selected: value});
+        if (this.state.selected !== '') {
+
+            this.fetchData()
+        }
+    };
+
+
+    render() {
+
+        const footballLeagues = this.props.leagues.footballLeagues,
+            basketballLeagues = this.props.leagues.basketballLeagues,
+            {tableData} = this.state,
+            {smallMatchCards} = this.state;
         const panes = [
             {
                 menuItem: 'فوتبال',
                 render: () => <Tab.Pane> <Dropdown placeholder='State' search selection
-                                                   options={footballLeagues} defaultValue='ir' inverted
-                                                   className={'leagues-dropdown'} onTabcChange/>
+                                                   options={footballLeagues} defaultValue='لالیگا-2017-2018' inverted
+                                                   className={'leagues-dropdown'} onChange={this.handleItemClick}/>
                     <Button circular={true} color={'teal'} content={' صفحه لیگ'}/>
                 </Tab.Pane>
             },
@@ -155,8 +179,8 @@ export class LeagueSelector extends React.Component {
                 menuItem: 'بسکتبال',
                 render: () => <Tab.Pane>
                     <Dropdown placeholder='State' search selection
-                              options={basketballLeagues} defaultValue='en' inverted
-                              className={'leagues-dropdown'}/>
+                              options={basketballLeagues} defaultValue='لالیگا-2017-2018' inverted
+                              className={'leagues-dropdown'} onChange={this.handleItemClick}/>
                     <Button circular={true} color={'teal'} content={' صفحه لیگ'}/>
                 </Tab.Pane>
             }
@@ -165,8 +189,7 @@ export class LeagueSelector extends React.Component {
         return (
             <div>
                 <Tab menu={{tabular: true}} panes={panes}/>
-                <LeagueDashboard smallMatchCards={this.state.smallMatchCards}
-                                 tableData={this.state.tableData}/>
+                <LeagueDashboard tableData={tableData} smallMatchCards={smallMatchCards}/>
             </div>)
 
     }
