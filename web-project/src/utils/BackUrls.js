@@ -3,8 +3,8 @@ export default class BackUrls {
     static base = 'http://localhost:8000/api/';
     static home = BackUrls.base + 'home/';
     static news = BackUrls.home + 'news/';
-    static footballNewsSummary = BackUrls.news + 'football/';
-    static basketballNewsSummary = BackUrls.news + 'basketball/';
+    static footballNewsSummary = BackUrls.news + 'allfootball/';
+    static basketballNewsSummary = BackUrls.news + 'allbasketball/';
     static homeSliders = BackUrls.home + 'slider-images/';
     static matchCards = BackUrls.home + 'games/';
     static accounts = BackUrls.base + 'accounts/';
@@ -17,6 +17,6 @@ export default class BackUrls {
         // alert(slug);
         return BackUrls.base + 'news/' + slug +'/'
     }
-    static leagueSummary ;
+    static leagueSummary = BackUrls.home + 'league-names';
 
 }

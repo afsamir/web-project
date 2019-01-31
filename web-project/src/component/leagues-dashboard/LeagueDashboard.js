@@ -139,17 +139,14 @@ export class LeagueSelector extends React.Component {
 
 
     render() {
-        let leagues = [
-            {key: 'en', value: 'en', text: 'لیگ برتر انگلیس',},
-            {key: 'la', value: 'la', text: 'لالیگا',},
-            {key: 'ir', value: 'ir', text: 'لیگ برتر ایران',},
-        ];
+        const footballLeagues =this.props.leagues.footballLeagues,
+            basketballLeagues = this.props.leagues.basketballLeagues;
 
         const panes = [
             {
                 menuItem: 'فوتبال',
                 render: () => <Tab.Pane> <Dropdown placeholder='State' search selection
-                                                   options={leagues} defaultValue='ir' inverted
+                                                   options={footballLeagues} defaultValue='ir' inverted
                                                    className={'leagues-dropdown'} onTabcChange/>
                     <Button circular={true} color={'teal'} content={' صفحه لیگ'}/>
                 </Tab.Pane>
@@ -158,7 +155,7 @@ export class LeagueSelector extends React.Component {
                 menuItem: 'بسکتبال',
                 render: () => <Tab.Pane>
                     <Dropdown placeholder='State' search selection
-                              options={leagues} defaultValue='en' inverted
+                              options={basketballLeagues} defaultValue='en' inverted
                               className={'leagues-dropdown'}/>
                     <Button circular={true} color={'teal'} content={' صفحه لیگ'}/>
                 </Tab.Pane>
