@@ -26,7 +26,7 @@ export class PictureNews extends React.Component {
                                      onMouseLeave={this.handleHide} className={'pic-news-div'}>
                         <Image src={this.props.data.image} centered fluid/>
                         <Dimmer active={active} onClickOutside={this.handleHide}>
-                            <Header dividing={true} as='h1' inverted className={'pic-news'}>
+                            <Header dividing={true} as='h3' position={'top'} inverted className={'pic-news'}>
                                 {this.props.data.text}
                             </Header>
                         </Dimmer>

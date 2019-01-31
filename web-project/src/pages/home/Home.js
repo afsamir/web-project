@@ -26,22 +26,33 @@ class Home extends Component {
             const footballNews = (response.data);
             this.setState({footballNews})
 
-        }).catch(er => this.setState({footballNews:[]}));
+        }).catch(er => this.setState({footballNews: []}));
 
         Axios.get(BackUrls.basketballNewsSummary).then(response => {
             const basketballNews = (response.data);
             this.setState({basketballNews});
 
-        }).catch(er => this.setState({basketballNews:[]}));
+        }).catch(er => this.setState({basketballNews: []}));
         Axios.get(BackUrls.homeSliders).then(response => {
             const sliderImages = (response.data);
             this.setState({sliderImages});
 
-        }).catch(er => this.setState({sliderImages:[]}));
+        }).catch(er => this.setState({sliderImages: []}));
         Axios.get(BackUrls.matchCards).then(response => {
             const matchResultCards = (response.data);
             this.setState({matchResultCards});
-        }).catch(er => this.setState({matchResultCards:[]}));
+        }).catch(er => this.setState({matchResultCards: []}));
+        Axios.get(BackUrls.leagueSummary).then(response => {
+            const footballLeagues = response.data[0],
+                basketballLeagues = response.data[1];
+            this.setState({footballLeagues});
+            this.setState({basketballLeagues})
+        }).catch(er => {
+                this.setState({footballLeagues: []});
+                this.setState({basketballLeagues: []})
+            }
+        )
+        ;
 
     }
 
@@ -50,11 +61,13 @@ class Home extends Component {
         super(props);
         this.state = {
             loading_news: true,
-            loading_slidersImages:true,
-            loading_matchCards:true,
+            loading_slidersImages: true,
+            loading_matchCards: true,
             sliderImages: [],
-            footballNews:[],
-            basketBallNews:[],
+            footballNews: [],
+            basketBallNews: [],
+            footballLeagues: [],
+            basketballLeagues: [],
             matchResultCards: [
                 {
                     title: "لیگ قهرمانان اروپا", team1: "منچستر یونایتد", goal1: "2", team2: "بارسلونا", goal2: "1",
@@ -219,12 +232,17 @@ class Home extends Component {
             pauseOnHover: true,
             pauseOnDotsHover: true,
             slide: MatchResultCard,
+
             // centerMode: true,
         };
 
         const {footballNews} = this.state,
             {basketballNews} = this.state,
-            {sliderImages} = this.state;
+            {sliderImages} = this.state,
+            {matchResultCards} = this.state,
+            {footballLeagues} = this.state,
+            {basketballLeagues} = this.state;
+
 
         return (
 
@@ -251,7 +269,7 @@ class Home extends Component {
                                                     <Grid.Row>
                                                         <Grid.Column width={16}>
                                                             <Slider {...matchResultSettings} className={'slider'}>
-                                                                {this.state.matchResultCards.map(c =>
+                                                                {matchResultCards.map(c =>
                                                                     <MatchResultCard data={c}/>
                                                                 )}
                                                             </Slider>
@@ -263,7 +281,10 @@ class Home extends Component {
                                                     </Grid.Row>
                                                     <Grid.Row>
                                                         <Grid.Column width={16}>
-                                                            <LeagueSelector/>
+                                                            <LeagueSelector leagues={{
+                                                                basketballLeagues: basketballLeagues,
+                                                                footballLeagues: footballLeagues
+                                                            }}/>
                                                         </Grid.Column>
                                                     </Grid.Row>
                                                 </Grid>
@@ -289,7 +310,7 @@ class Home extends Component {
                                         <Grid.Row>
                                             <Grid.Column width={16}>
                                                 <Slider {...matchResultSettings} className={'slider'}>
-                                                    {this.state.matchResultCards.map(c =>
+                                                    {matchResultCards.map(c =>
                                                         <MatchResultCard data={c}/>
                                                     )}
                                                 </Slider>
@@ -333,9 +354,10 @@ class Home extends Component {
                                         <Grid.Row>
                                             <Grid.Column width={16}>
                                                 <div
-                                                    style={{display: 'none'}}>  {matchResultSettings.slidesToShow = 2}</div>
+                                                    style={{display: 'none'}}>  {matchResultSettings.slidesToShow = 2}
+                                                </div>
                                                 <Slider {...matchResultSettings} className={'slider'}>
-                                                    {this.state.matchResultCards.map(c =>
+                                                    {matchResultCards.map(c =>
                                                         <MatchResultCard data={c}/>
                                                     )}
                                                 </Slider>

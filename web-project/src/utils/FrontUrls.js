@@ -1,4 +1,4 @@
 export default class FrontUrls {
-    static base = '/#/localhost:3000/';
+    static base = '/#/';
     static news =  '/news/';
 }

@@ -1,7 +1,8 @@
 .footer{
     height: 200px;
     text-align: center;
-    position: fixed;
+    position: relative !important;
+    top: 0 !important;
     margin: 0 auto !important;
 }
 

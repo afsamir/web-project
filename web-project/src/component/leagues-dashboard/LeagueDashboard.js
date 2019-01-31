@@ -132,16 +132,6 @@ export class LeagueSelector extends React.Component {
         }
     }
 
-    componentDidMount() {/*
-        Axios.get(BackUrls.footballNewsSummary).then(response => {
-            const smallMatchCard = (response.data);
-            this.setState({smallMatchCard});
-        });
-        Axios.get(BackUrls.footballNewsSummary).then(response => {
-            const tableData = (response.data);
-            this.setState({tableData});
-        });*/
-    }
 
     fetchData() {
 

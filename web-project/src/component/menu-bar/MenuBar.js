@@ -4,6 +4,7 @@ import _ from 'lodash'
 import {Menu, Segment, Grid, Icon, Dropdown, Transition, Search, Responsive} from 'semantic-ui-react'
 import DirectionProvider, {DIRECTIONS} from 'react-with-direction/dist/DirectionProvider';
 import Auth from "../../utils/Auth";
+import FrontUrls from "../../utils/FrontUrls";
 
 
 export class MenuBar extends React.Component {
@@ -23,7 +24,12 @@ export class MenuBar extends React.Component {
                         <Responsive minWidth={768}>
                             <Menu inverted pointing secondary className={'menu-bar'}>
                                 <Menu.Item name="<ورزش>" id={'site-name'}/>
-                                <Menu.Item name='خانه' active={activeItem === 'خانه'} onClick={this.handleItemClick}/>
+                                <a href={FrontUrls.base}>
+
+                                    <Menu.Item name='خانه' active={activeItem === 'خانه'}
+                                               onClick={this.handleItemClick}/>
+                                </a>
+
                                 <Menu.Item
                                     name='لیگ ها'
                                     active={activeItem === 'لیگ ها'}
@@ -53,7 +59,11 @@ export class MenuBar extends React.Component {
 
                             <Menu inverted pointing secondary className={'menu-bar'}>
                                 <Menu.Item name="Sport" id={'site-name'}/>
-                                <Menu.Item name='خانه' active={activeItem === 'خانه'} onClick={this.handleItemClick}/>
+                                <a href={FrontUrls.base}>
+
+                                    <Menu.Item name='خانه' active={activeItem === 'خانه'}
+                                               onClick={this.handleItemClick}/>
+                                </a>
                                 <Menu.Item
                                     name='لیگ ها'
                                     active={activeItem === 'لیگ ها'}
@@ -82,10 +92,13 @@ export class MenuBar extends React.Component {
                         <Responsive maxWidth={540}>
 
                             <Menu inverted pointing secondary className={'menu-bar'}>
-                                <Menu.Item
-                                    icon='home'
-                                    active={activeItem === 'home'}
-                                    onClick={this.handleItemClick}/>
+                                <a href={FrontUrls.base}>
+
+                                    <Menu.Item
+                                        icon='home'
+                                        active={activeItem === 'home'}
+                                        onClick={this.handleItemClick}/>
+                                </a>
                                 <Menu.Item
                                     icon='trophy'
                                     active={activeItem === 'messages'}
@@ -169,6 +182,7 @@ export class ProfileIcon extends React.Component {
             dropdown: false,
         }
     }
+
     mouseEnter = () => {
         if (!this.state.dropdown)
             this.setState({color: 'teal'})
@@ -253,7 +267,7 @@ export class SearchIcon extends React.Component {
                                                onMouseLeave={this.mouseLeave}/>}>
                     <Transition visible={dropdown} animation='slide down' duration={250}>
                         <Dropdown.Menu inverted className={'search-dropdown'}>
-                            <SearchExampleStandard />
+                            <SearchExampleStandard/>
                         </Dropdown.Menu>
                     </Transition>
                 </Dropdown>
