@@ -154,31 +154,31 @@ class Team extends Component {
                                             <Grid.Column width={16}>
                                                 <Slider {...picSettings} className={'slider'}>
                                                     {this.state.sliderImage.map(c =>
-                                                        <Image src={c.src}/>
+                                                        <Image src={c.image_url}/>
                                                     )}
                                                 </Slider>
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={8}>
-                                                <TeamLogo style={{padding: '10px'}} data={this.state.teamLogo}/>
+                                                <TeamLogo style={{padding: '10px'}} data={this.state.info}/>
                                             </Grid.Column>
                                             <Grid.Column width={8}>
-                                                <TeamMember data={this.state.teamMembers}/>
+                                                <TeamMember data={this.state.members}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
-                                                <LeagueDashboard smallMatchCards={this.state.smallMatchCards}
+                                                <LeagueDashboard smallMatchCards={this.state.games}
                                                                  tableData={this.state.tableData}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={8}>
-                                                <TeamNews data={this.state.news}/>
+                                                <TeamNews data={this.state.palyerNews}/>
                                             </Grid.Column>
                                             <Grid.Column width={8}>
-                                                <TeamResult data={this.state.teams}/>
+                                                <TeamResult data={this.state.stats}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                     </Grid>
@@ -189,35 +189,35 @@ class Team extends Component {
                                             <Grid.Column width={16}>
                                                 <Slider {...picSettings} className={'slider'}>
                                                     {this.state.sliderImage.map(c =>
-                                                        <Image src={c.src}/>
+                                                        <Image src={c.image_url}/>
                                                     )}
                                                 </Slider>
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
-                                                <TeamLogo style={{padding: '10px'}} data={this.state.teamLogo}/>
+                                                <TeamLogo style={{padding: '10px'}} data={this.state.info}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
-                                                <LeagueDashboard smallMatchCards={this.state.smallMatchCards}
+                                                <LeagueDashboard smallMatchCards={this.state.games}
                                                                  tableData={this.state.tableData}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
-                                                <TeamNews data={this.state.news}/>
+                                                <TeamNews data={this.state.playerNews}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
-                                                <TeamResult data={this.state.teams}/>
+                                                <TeamResult data={this.state.stats}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
-                                                <TeamMember data={this.state.teamMembers}/>
+                                                <TeamMember data={this.state.members}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                     </Grid>

@@ -13,7 +13,7 @@ class App extends Component {
 
 
     render() {
-        alert(JSON.stringify(this.props.tableData))
+        // alert(JSON.stringify(this.props.tableData))
         return (
             <DirectionProvider direction={DIRECTIONS.RTL} textAlign='center'>
                 <Segment id='LeagueTable' textAlign='center'>
@@ -38,7 +38,7 @@ class App extends Component {
                             {
                                 this.props.tableData.map(team =>
                                     <Table.Row>
-                                        <Table.Cell textAlign='center'>{}</Table.Cell>
+                                        <Table.Cell textAlign='center'>{team.rank}</Table.Cell>
                                         <Table.Cell textAlign='center'><a href={FrontUrls.teamPage(team.team__slug)}> {team.team__name}</a> </Table.Cell>
                                         <Table.Cell textAlign='center'> {team.game_number} </Table.Cell>
                                         <Table.Cell textAlign='center'> {team.score} </Table.Cell>

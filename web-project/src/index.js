@@ -10,6 +10,7 @@ import NewPassword from "./pages/authentications/new-password/NewPassword";
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 import NewsPage from "./pages/news";
 import Team from "./pages/team/Team";
+import Player from "./pages/player/Player";
 // import App from './App';
 // import Team from './pages/team/Team'
 // import {MatchResultCard} from "./component/match-result-card";
@@ -47,6 +48,8 @@ ReactDOM.render(
             <Route exact path="/new_password" component={NewPassword}/>
             <Route exact path="/news/:slug" component={NewsPage}/>
             <Route exact path="/teams/:slug" component={Team}/>
+            <Route exact path="/player/:slug" component={Player}/>
+
 
         </div>
     </Router>
