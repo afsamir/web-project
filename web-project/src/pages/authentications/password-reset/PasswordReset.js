@@ -6,8 +6,16 @@ import 'semantic-ui-css/semantic.min.css';
 import {MenuBar} from "../../../component/menu-bar";
 import Axios from "axios";
 import BackUrls from "../../../utils/BackUrls";
+import Message from '../../message/Message';
 
 class Home extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            redirect:false
+        }
+    }
 
 
     formToJSON(form){
@@ -31,10 +39,17 @@ class Home extends Component {
     send() {
         const form = document.getElementById('reset-form');
         let formJSON = this.formToJSON(form);
-        Axios.post(BackUrls.resetPasswordRequest, formJSON);
+        Axios.post(BackUrls.resetPasswordRequest, formJSON).then(this.setState({redirect:true}));
     }
 
     render() {
+
+
+        const {redirect} = this.state;
+
+        if (redirect)
+            return(<Message message={'لینک تغییر رمز به ایمیل شما فرستاده شد .'}/>);
+
         return (
             <div className='Signup'>
                 <MenuBar style={{position: 'fixed'}}/>

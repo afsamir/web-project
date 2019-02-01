@@ -49,8 +49,12 @@ class Login extends Component {
 
 
     render() {
-        if (this.state.redirect)
+
+        const {redirect} = this.state;
+
+        if (redirect)
             return (<Home/>);
+
         return (
 
 

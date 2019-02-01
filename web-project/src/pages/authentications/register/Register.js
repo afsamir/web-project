@@ -8,9 +8,18 @@ import BackUrls from "../../../utils/BackUrls";
 import Axios from "axios";
 import Auth from "../../../utils/Auth";
 import FrontUrls from "../../../utils/FrontUrls";
+import Message from "../../message";
 
 
 class Home extends Component {
+
+
+    constructor(props) {
+        super(props);
+        this.state ={
+            redirect:false
+        }
+    }
 
     formToJSON(form){
 
@@ -33,11 +42,16 @@ class Home extends Component {
     register() {
         const form = document.getElementById('register-form');
         let formJSON = this.formToJSON(form);
-        Axios.post(BackUrls.register, formJSON);
+        Axios.post(BackUrls.register, formJSON).then(this.setState({redirect:true}));
     }
 
 
     render() {
+
+        const {redirect} = this.state;
+
+        if (redirect)
+            return(<Message message={'لینک فعال سازی به ایمیل شما فرستاده شد .'}/>)
         return (
             <div className='Signup'>
                 <MenuBar style={{position: 'fixed'}}/>

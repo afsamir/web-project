@@ -1,14 +1,12 @@
 import React from "react";
-import Home from "../authentications/login/Login";
 import {MenuBar} from "../../component/menu-bar";
-import 'Message.css'
+import './Message.css'
 
 export default class Message extends React.Component {
 
     render() {
 
         return (
-
 
             <div className='Login'>
                 <MenuBar style={{position: 'fixed'}}/>
