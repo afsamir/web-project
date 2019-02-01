@@ -93,11 +93,11 @@ class Team extends Component {
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>
-                                            <Grid.Column width={8}>
+                                            <Grid.Column width={6}>
                                                 <PlayerNews data={this.state.news}/>
                                             </Grid.Column>
-                                            <Grid.Column width={8}>
-                                                <PlayerResult data={this.state.stats}/>
+                                            <Grid.Column width={10}>
+                                                <PlayerResult data={this.state.stats} field={this.state.info.field} />
                                             </Grid.Column>
                                         </Grid.Row>
                                     </Grid>

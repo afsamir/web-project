@@ -20,7 +20,7 @@ class PlayerResult extends Component {
                     </Header>
                     <Divider inverted/>
                     <div style={{height: "542px", overflow: "auto"}}>
-                        <Table color='grey'>
+                        <Table color='grey' unstackable>
                             <Table.Header>
                                 <Table.Row>
                                     <Table.HeaderCell textAlign='center'>رقابت</Table.HeaderCell>
@@ -28,12 +28,17 @@ class PlayerResult extends Component {
                                     <Table.HeaderCell textAlign='center'>تیم</Table.HeaderCell>
                                     <Table.HeaderCell textAlign='center'>شماره پیراهن</Table.HeaderCell>
                                     <Table.HeaderCell textAlign='center'>تعداد بازی </Table.HeaderCell>
-                                    <Table.HeaderCell textAlign='center'>گل زده </Table.HeaderCell>
-                                    <Table.HeaderCell textAlign='center'>پاس گل </Table.HeaderCell>
-                                    <Table.HeaderCell textAlign='center'>گل پنالتی</Table.HeaderCell>
-                                    <Table.HeaderCell textAlign='center'>کار زرد</Table.HeaderCell>
-                                    <Table.HeaderCell textAlign='center'>کارت قرمز</Table.HeaderCell>
+                                    <Table.HeaderCell textAlign='center'>دقایق بازی </Table.HeaderCell>
 
+                                    <Table.HeaderCell
+                                        textAlign='center'>{this.props.field === 'FTB' ? 'گل زده' : 'امتیاز'}</Table.HeaderCell>
+                                    < Table.HeaderCell textAlign='center'>پاس گل </Table.HeaderCell>
+                                    <Table.HeaderCell
+                                        textAlign='center'>{this.props.field === 'FTB' ? 'گل پنالتی' : 'سه امتیازی'}</Table.HeaderCell>
+                                    <Table.HeaderCell
+                                        textAlign='center'>{this.props.field === 'FTB' ? 'کار زرد' : 'ریباند'}</Table.HeaderCell>
+                                    <Table.HeaderCell
+                                        textAlign='center'>{this.props.field === 'FTB' ? 'کارت قرمز' : 'خطا'}</Table.HeaderCell>
                                 </Table.Row>
                             </Table.Header>
 
@@ -41,16 +46,20 @@ class PlayerResult extends Component {
                                 {
                                     this.props.data.map(team =>
                                         <Table.Row key={this.props.data.id}>
-                                            <Table.Cell textAlign='center'> {team.teamLeague__league__name} </Table.Cell>
-                                            <Table.Cell textAlign='center'> {team.teamLeague__league__year} </Table.Cell>
+                                            <Table.Cell
+                                                textAlign='center'> {team.teamLeague__league__name} </Table.Cell>
+                                            <Table.Cell
+                                                textAlign='center'> {team.teamLeague__league__year} </Table.Cell>
                                             <Table.Cell textAlign='center'> {team.team} </Table.Cell>
                                             <Table.Cell textAlign='center'> {team.num} </Table.Cell>
                                             <Table.Cell textAlign='center'> {team.game_num} </Table.Cell>
-                                            <Table.Cell textAlign='center'> {team.scoring_goal_number} </Table.Cell>
-                                            <Table.Cell textAlign='center'> {team.assist_goal_number} </Table.Cell>
-                                            <Table.Cell textAlign='center'> {team.scoring_penalty_goal_number} </Table.Cell>
-                                            <Table.Cell textAlign='center'> {team.yellow_card_number} </Table.Cell>
-                                            <Table.Cell textAlign='center'> {team.red_card_number} </Table.Cell>
+                                            <Table.Cell textAlign='center'> {team.time} </Table.Cell>
+                                            <Table.Cell textAlign='center'> {team.scoring_goal_number | team.all_score } </Table.Cell>
+                                            <Table.Cell textAlign='center'> {team.assist_goal_number | team.assist_number} </Table.Cell>
+                                            <Table.Cell
+                                                textAlign='center'> {team.scoring_penalty_goal_number | team.throw3_number} </Table.Cell>
+                                            <Table.Cell textAlign='center'> {team.yellow_card_number | team.ribbond} </Table.Cell>
+                                            <Table.Cell textAlign='center'> {team.red_card_number | team.foul_number} </Table.Cell>
 
                                         </Table.Row>
                                     )
