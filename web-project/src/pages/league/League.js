@@ -358,7 +358,7 @@ class Home extends Component {
         }).catch(er => this.setState({sliderImage: []}));
 
 
-        Axios.get(BackUrls.leagueSlider(slug)).then(response => {
+        Axios.get(BackUrls.leagueInfo(slug)).then(response => {
             const info= (response.data);
             this.setState({info});
         }).catch(er => this.setState({info: []}));

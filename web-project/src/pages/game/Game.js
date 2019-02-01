@@ -16,6 +16,8 @@ import GameNews from "../../component/game-news/GameNews";
 import GameReport from "../../component/game-report/GameReport";
 import GameTeams from "../../component/game-teams/GameTeams";
 import Timeline from "../../component/timeline";
+import Axios from "axios";
+import BackUrls from "../../utils/BackUrls";
 
 class Home extends Component {
     constructor(props) {
@@ -173,6 +175,43 @@ class Home extends Component {
         }
     }
 
+
+    componentDidMount() {
+        let slug = this.props.match.params.slug;
+
+
+        Axios.get(BackUrls.gameNews(slug)).then(response => {
+            const news= (response.data);
+            this.setState({news});
+        }).catch(er => this.setState({news: []}));
+
+        Axios.get(BackUrls.gamePlayers(slug)).then(response => {
+            const players= (response.data);
+            this.setState({players});
+        }).catch(er => this.setState({players: []}));
+
+        Axios.get(BackUrls.gamesInfo(slug)).then(response => {
+            const info= (response.data);
+            this.setState({info});
+        }).catch(er => this.setState({info: []}));
+
+        Axios.get(BackUrls.gameReport(slug)).then(response => {
+            const report= (response.data);
+            this.setState({report});
+        }).catch(er => this.setState({report: []}));
+
+        Axios.get(BackUrls.gameTimeLine(slug)).then(response => {
+            const timeLine= (response.data);
+            this.setState({timeLine});
+        }).catch(er => this.setState({timeLine: []}));
+
+        Axios.get(BackUrls.gameSlider(slug)).then(response => {
+            const slider= (response.data);
+            this.setState({slider});
+        }).catch(er => this.setState({slider: []}));
+
+    }
+
     render() {
         const picSettings = {
             dots: true,
@@ -198,13 +237,13 @@ class Home extends Component {
                                     <Grid id={'background'}>
                                         <Grid.Row>
                                             <Grid.Column width={5}>
-                                                <Timeline/>
+                                                <Timeline data={this.state.timeLine}/>
                                             </Grid.Column>
                                             <Grid.Column width={6}>
                                                 <GameTable data={this.state.teamStats}/>
                                             </Grid.Column>
                                             <Grid.Column width={5}>
-                                                <GameTeams/>
+                                                <GameTeams players={this.state.players}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>

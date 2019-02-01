@@ -5,7 +5,8 @@ export default class FrontUrls {
     static login = '/login/';
     static signup = '/register/';
     static logout = '/logout/';
-    static players = '/players/'
+    static players = '/players/';
+    static game = '/game/';
     static resetPassword = '/reset_password/';
     static newPassword = '/new_password/';
 

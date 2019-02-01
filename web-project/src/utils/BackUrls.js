@@ -6,6 +6,7 @@ export default class BackUrls {
     static team = BackUrls.base + 'team/';
     static player = BackUrls.base + 'player/';
     static league = BackUrls.base + 'league/';
+    static games = BackUrls.base + 'game/';
     static footballNewsSummary = BackUrls.news + 'all/football/';
     static basketballNewsSummary = BackUrls.news + 'all/basketball/';
     static homeSliders = BackUrls.home + 'slider-images/';
@@ -16,6 +17,8 @@ export default class BackUrls {
     static resetPassword = BackUrls.accounts + 'reset/';
     static resetPasswordRequest = BackUrls.accounts + 'password_reset/';
     static userProfile = BackUrls.accounts + 'user-profile/';
+
+
     static detailedNews = function (slug) {
         return BackUrls.base + 'news/' + slug + '/'
     };
@@ -84,11 +87,11 @@ export default class BackUrls {
     }
 
     static leagueStats(slug) {
-        return this.league+ slug + '/statistics/'
+        return this.league + slug + '/statistics/'
     }
 
     static leagueSlider(slug) {
-        return this.league+ slug + '/slider/'
+        return this.league + slug + '/slider/'
     }
 
 
@@ -103,6 +106,37 @@ export default class BackUrls {
 
     static leagueGames(slug) {
         return this.league + slug + '/games/'
+    }
+
+    static leagueInfo(slug) {
+        return this.league + slug + '/info/'
+    }
+
+
+    static gamesInfo(slug) {
+        return BackUrls.games + slug + '/info/'
+    }
+
+    static gamePlayers(slug) {
+        return BackUrls.games + slug + '/players/'
+    }
+
+
+    static gameTimeLine(slug) {
+        return BackUrls.games + slug + '/time_lines/'
+    }
+
+
+    static gameNews(slug) {
+        return BackUrls.games + slug + '/news/'
+    }
+
+    static gameReport(slug) {
+        return BackUrls.games + slug + '/reports/'
+    }
+
+    static gameSlider(slug) {
+        return BackUrls.games + slug + '/slider/'
     }
 
 
