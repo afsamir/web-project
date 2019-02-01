@@ -7,6 +7,7 @@ import Segment from "semantic-ui-react/dist/commonjs/elements/Segment/Segment";
 import Header from "semantic-ui-react/dist/commonjs/elements/Header/Header";
 import Image from "semantic-ui-react/dist/commonjs/elements/Image/Image";
 import Divider from "semantic-ui-react/dist/commonjs/elements/Divider/Divider";
+import FrontUrls from "../../utils/FrontUrls";
 
 class PlayerResult extends Component {
     render() {
@@ -50,7 +51,7 @@ class PlayerResult extends Component {
                                                 textAlign='center'> {team.teamLeague__league__name} </Table.Cell>
                                             <Table.Cell
                                                 textAlign='center'> {team.teamLeague__league__year} </Table.Cell>
-                                            <Table.Cell textAlign='center'> {team.team} </Table.Cell>
+                                            <Table.Cell textAlign='center'><a href={FrontUrls.teamPage(team.team_slug)}> {team.team} </a></Table.Cell>
                                             <Table.Cell textAlign='center'> {team.num} </Table.Cell>
                                             <Table.Cell textAlign='center'> {team.game_num} </Table.Cell>
                                             <Table.Cell textAlign='center'> {team.time} </Table.Cell>

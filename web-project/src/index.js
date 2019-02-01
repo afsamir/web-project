@@ -12,6 +12,7 @@ import NewsPage from "./pages/news";
 import Team from "./pages/team/Team";
 import Player from "./pages/player/Player";
 import PasswordReset from "./pages/authentications/password-reset/PasswordReset";
+import League from "./pages/league/League";
 // import App from './App';
 // import Team from './pages/team/Team'
 // import {MatchResultCard} from "./component/match-result-card";
@@ -33,12 +34,13 @@ import PasswordReset from "./pages/authentications/password-reset/PasswordReset"
 // ReactDOM.render(<NewPassword/>, document.getElementById('root'));
 // ReactDOM.render(<Team/>, document.getElementById('root'));
 // ReactDOM.render(<Player/>, document.getElementById('root'));
-// ReactDOM.render(<League/>, document.getElementById('root'));
+ReactDOM.render(<League/>, document.getElementById('root'));
 // ReactDOM.render(<NewsPage/>, document.getElementById('root'));
 // ReactDOM.render(<Game/>, document.getElementById('root'));
 // ReactDOM.render(<NewPassword/>, document.getElementById('root'));
 // ReactDOM.render(<Register/>, document.getElementById('root'));
 
+/*
 
 ReactDOM.render(
     <Router>
@@ -52,7 +54,7 @@ ReactDOM.render(
             <Route exact path="/news/:slug" component={NewsPage}/>
             <Route exact path="/teams/:slug" component={Team}/>
             <Route exact path="/players/:slug" component={Player}/>
-            {/*<Route exact path="/league/:slug" component={Player}/>*/}
+            <Route exact path="/league/:slug" component={League}/>
 
 
 
@@ -60,6 +62,7 @@ ReactDOM.render(
         </div>
     </Router>
     , document.getElementById('root'));
+*/
 
 
 // If you want your app to work offline and load faster, you can change

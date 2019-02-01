@@ -17,6 +17,8 @@ import LeagueNews from "../../component/league-news/LeagueNews";
 import BestPlayer from "../../component/best-player/BestPlayer";
 import Header from "semantic-ui-react/dist/commonjs/elements/Header/Header";
 import {SmallMatchCard} from "../../component/small-match-card";
+import Axios from "axios";
+import BackUrls from "../../utils/BackUrls";
 
 class Home extends Component {
     constructor(props) {
@@ -344,6 +346,45 @@ class Home extends Component {
         }
     }
 
+
+    componentDidMount() {
+
+        let slug = this.props.match.params.slug;
+
+
+        Axios.get(BackUrls.leagueSlider(slug)).then(response => {
+            const sliderImage = (response.data);
+            this.setState({sliderImage});
+        }).catch(er => this.setState({sliderImage: []}));
+
+
+        Axios.get(BackUrls.leagueSlider(slug)).then(response => {
+            const info= (response.data);
+            this.setState({info});
+        }).catch(er => this.setState({info: []}));
+
+        Axios.get(BackUrls.leagueNews(slug)).then(response => {
+            const news = (response.data);
+            this.setState({news});
+        }).catch(er => this.setState({news: []}));
+
+        Axios.get(BackUrls.leagueStats(slug)).then(response => {
+            const stats= (response.data);
+            this.setState({stats});
+        }).catch(er => this.setState({stats: []}));
+
+        Axios.get(BackUrls.leagueBests(slug)).then(response => {
+            const bests= (response.data);
+            this.setState({bests});
+        }).catch(er => this.setState({bests: []}));
+
+        Axios.get(BackUrls.leagueGames(slug)).then(response => {
+            const games= (response.data);
+            this.setState({games});
+        }).catch(er => this.setState({games: []}));
+
+    }
+
     render() {
         const picSettings = {
             dots: true,
@@ -380,22 +421,22 @@ class Home extends Component {
                                             <Grid.Column width={10}>
                                                 <Slider {...picSettings} className={'slider'}>
                                                     {this.state.sliderImage.map( c  =>
-                                                        <Image src={c.src}/>
+                                                        <Image src={c.image_url}/>
                                                     )}
                                                 </Slider>
                                             </Grid.Column>
                                             <Grid.Column width={6}>
-                                                <LeagueCard data={this.state.leagueCard}/>
+                                                <LeagueCard data={this.state.info}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
-                                                <BigLeagueTable data={this.state.leagueTable}/>
+                                                {/*<BigLeagueTable data={this.state.homeLeagueTable}/>*/}
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={5}>
-                                                <BestPlayer data={this.state.theBestPlayers}/>
+                                                <BestPlayer data={this.state.bests}/>
                                             </Grid.Column>
                                             <Grid.Column width={6}>
                                                 <LeagueNews data={this.state.news}/>
@@ -409,7 +450,7 @@ class Home extends Component {
                                                     </Header>
                                                     <div style={{height: '250px'}}>
                                                         <Slider {...matchResultSettings}>
-                                                            {this.state.smallMatchCards.map( c  =>
+                                                            {this.state.games.map( c  =>
                                                                 <SmallMatchCard data={c}/>
                                                             )}
                                                         </Slider>
@@ -425,14 +466,14 @@ class Home extends Component {
                                             <Grid.Column width={16}>
                                                 <Slider {...picSettings} className={'slider'}>
                                                     {this.state.sliderImage.map( c  =>
-                                                        <Image src={c.src}/>
+                                                        <Image src={c.image_url}/>
                                                     )}
                                                 </Slider>
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={8}>
-                                                <LeagueCard data={this.state.leagueCard}/>
+                                                <LeagueCard data={this.state.info}/>
                                             </Grid.Column>
                                             <Grid.Column width={8}>
                                                 <div id='games'>
@@ -443,7 +484,7 @@ class Home extends Component {
                                                     </Header>
                                                     <div style={{height: '250px'}}>
                                                         <Slider {...matchResultSettings}>
-                                                            {this.state.smallMatchCards.map( c  =>
+                                                            {this.state.games.map( c  =>
                                                                 <SmallMatchCard data={c}/>
                                                             )}
                                                         </Slider>
@@ -453,12 +494,12 @@ class Home extends Component {
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
-                                                <BigLeagueTable data={this.state.leagueTable}/>
+                                                <BigLeagueTable data={this.state.homeLeagueTable}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={8}>
-                                                <BestPlayer data={this.state.theBestPlayers}/>
+                                                <BestPlayer data={this.state.bests}/>
                                             </Grid.Column>
                                             <Grid.Column width={8}>
                                                 <LeagueNews data={this.state.news}/>
@@ -472,24 +513,24 @@ class Home extends Component {
                                             <Grid.Column width={16}>
                                                 <Slider {...picSettings} className={'slider'}>
                                                     {this.state.sliderImage.map( c  =>
-                                                        <Image src={c.src}/>
+                                                        <Image src={c.image_url}/>
                                                     )}
                                                 </Slider>
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
-                                                <LeagueCard data={this.state.leagueCard}/>
+                                                <LeagueCard data={this.state.info}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
-                                                <BigLeagueTable data={this.state.leagueTable}/>
+                                                <BigLeagueTable data={this.state.homeLeagueTable}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
-                                                <BestPlayer data={this.state.theBestPlayers}/>
+                                                <BestPlayer data={this.state.bests}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>
@@ -507,7 +548,7 @@ class Home extends Component {
                                                     </Header>
                                                     <div style={{height: '250px'}}>
                                                         <Slider {...matchResultSettings}>
-                                                            {this.state.smallMatchCards.map( c  =>
+                                                            {this.state.games.map( c  =>
                                                                 <SmallMatchCard data={c}/>
                                                             )}
                                                         </Slider>

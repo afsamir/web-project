@@ -5,6 +5,7 @@ export default class BackUrls {
     static news = BackUrls.home + 'news/';
     static team = BackUrls.base + 'team/';
     static player = BackUrls.base + 'player/';
+    static league = BackUrls.base + 'league/';
     static footballNewsSummary = BackUrls.news + 'all/football/';
     static basketballNewsSummary = BackUrls.news + 'all/basketball/';
     static homeSliders = BackUrls.home + 'slider-images/';
@@ -20,11 +21,11 @@ export default class BackUrls {
     };
     static leagueSummary = BackUrls.home + 'league-names/';
 
-    static leagueTable(slug) {
+    static homeLeagueTable(slug) {
         return BackUrls.home + 'league-tables/' + slug + '/';
     }
 
-    static leagueGames(slug) {
+    static homeLeagueGames(slug) {
         return BackUrls.home + 'league-games/' + slug + '/';
 
     }
@@ -49,18 +50,19 @@ export default class BackUrls {
         return this.team + slug + '/leagues/'
     }
 
-    static teamGames(slug){
-        return this.team +slug + '/games/'
+    static teamGames(slug) {
+        return this.team + slug + '/games/'
     }
 
 
-    static teamNewsByPlayer(slug){
-        return this.team +slug + '/news/by-team/'
+    static teamNewsByPlayer(slug) {
+        return this.team + slug + '/news/by-team/'
     }
 
-    static teamNewsByTeam(slug){
-        return this.team +slug + '/news/by-player/'
+    static teamNewsByTeam(slug) {
+        return this.team + slug + '/news/by-player/'
     }
+
     static playerInfo(slug) {
         return this.player + slug + '/info/'
     }
@@ -72,8 +74,36 @@ export default class BackUrls {
     static playerSlider(slug) {
         return this.player + slug + '/slider/'
     }
-    static playerNews(slug){
-        return this.player +slug + '/news/'
+
+    static playerNews(slug) {
+        return this.player + slug + '/news/'
     }
+
+    static leagueInfo(slug) {
+        return this.league + slug + '/info/'
+    }
+
+    static leagueStats(slug) {
+        return this.league+ slug + '/statistics/'
+    }
+
+    static leagueSlider(slug) {
+        return this.league+ slug + '/slider/'
+    }
+
+
+    static leagueBests(slug) {
+        return this.league + slug + '/best_players/'
+    }
+
+
+    static leagueNews(slug) {
+        return this.league + slug + '/news/'
+    }
+
+    static leagueGames(slug) {
+        return this.league + slug + '/games/'
+    }
+
 
 }

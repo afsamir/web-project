@@ -129,14 +129,14 @@ export class LeagueSelector extends React.Component {
 
 
 
-        Axios.get(BackUrls.leagueTable(this.state.selected)).then(response => {
+        Axios.get(BackUrls.homeLeagueTable(this.state.selected)).then(response => {
             const tableData = response.data;
             this.setState({tableData})
         }).catch(er => {
             this.setState({tableData: {teams:[]}})
         });
 
-        Axios.get(BackUrls.leagueGames(this.state.selected)).then(response => {
+        Axios.get(BackUrls.homeLeagueGames(this.state.selected)).then(response => {
             const smallMatchCards = response.data;
             this.setState({smallMatchCards})
 
