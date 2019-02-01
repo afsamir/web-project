@@ -10,7 +10,51 @@ import Icon from "semantic-ui-react/dist/commonjs/elements/Icon/Icon";
 import Slider from "react-slick/lib";
 
 class GameTable extends Component {
+
+    TLHandler(tl) {
+        alert(JSON.stringify(tl.score))
+
+
+        let icon = 'futbol';
+        if (tl.type === 'goal') {
+            icon = 'futbol';
+        } else if (tl.type === 'red card') {
+            icon = 'red clone';
+        } else if (tl.type === 'yellow card') {
+            icon = 'yellow clone';
+        } else if (tl.type === 'substitute') {
+            icon = 'sync alternate';
+        } else if (tl.type === 'throw') {
+            if (tl.score === '1') {
+                icon = 'red basketball ball';
+            } else if (tl.score === '2') {
+                icon = 'basketball ball';
+            } else if (tl.score === '3') {
+                icon = 'crosshairs';
+            }
+        } else if (tl.type === 'penalty goal') {
+            icon = 'flag checkered';
+        }
+
+        if (tl.team__name === this.props.team2.name) {
+            return (<Table.Row>
+                <Table.Cell textAlign='center'></Table.Cell>
+                <Table.Cell textAlign='center'>{tl.minute} : {tl.second}</Table.Cell>
+                <Table.Cell textAlign='center'><Icon name={icon}/></Table.Cell>
+            </Table.Row>)
+
+        } else return (<Table.Row>
+            <Table.Cell textAlign='center'><Icon name={icon}/></Table.Cell>
+            <Table.Cell textAlign='center'>{tl.minute} : {tl.second}</Table.Cell>
+            <Table.Cell textAlign='center'></Table.Cell>
+
+        </Table.Row>)
+
+
+    }
+
     render() {
+
         return (
             <div>
                 <Segment id='LeagueTable' textAlign='center'>
@@ -19,37 +63,35 @@ class GameTable extends Component {
                         <Header.Content>خط زمانی بازی</Header.Content>
                     </Header>
                     <Divider/>
-                    <div style={{height: '500px', overflow:'scroll'}}>
+                    <div style={{height: '500px', overflow: 'scroll'}}>
                         <Table>
                             <Table.Header>
                                 <Table.Row>
-                                    <Table.HeaderCell textAlign='center'><img src='https://upload.wikimedia.org/wikipedia/commons/7/70/Perspolis_FC.png' style={{height: '100px', width: '100px'}}/><Divider/><h3>پرسپولیس</h3></Table.HeaderCell>
-                                    <Table.HeaderCell textAlign='center'> <h1></h1> </Table.HeaderCell>
-                                    <Table.HeaderCell textAlign='center'><img src='https://www.cambodianfootball.com/medias/esteghlal-logo.png' style={{height: '100px', width: '100px'}}/><Divider/><h3>استقلال تهران</h3></Table.HeaderCell>
+                                    <Table.HeaderCell textAlign='center'><img src={this.props.team1.image_url} style={{
+                                        height: '100px',
+                                        width: '100px'
+                                    }}/>
+                                        <Divider/>
+                                        <h3>{this.props.team1.name}</h3>
+                                    </Table.HeaderCell>
+                                    <Table.HeaderCell textAlign='center'><h1></h1></Table.HeaderCell>
+                                    <Table.HeaderCell textAlign='center'><img src={this.props.team2.image_url} style={{
+                                        height: '100px',
+                                        width: '100px'
+                                    }}/>
+                                        <Divider/>
+                                        <h3>{this.props.team2.name}
+                                        </h3>
+                                    </Table.HeaderCell>
                                 </Table.Row>
                             </Table.Header>
 
                             <Table.Body>
-                                <Table.Row>
-                                    <Table.Cell textAlign='center'></Table.Cell>
-                                    <Table.Cell textAlign='center'>5:10</Table.Cell>
-                                    <Table.Cell textAlign='center'><Icon name='black futbol'/></Table.Cell>
-                                </Table.Row>
-                                <Table.Row>
-                                    <Table.Cell textAlign='center'><Icon name='black futbol'/></Table.Cell>
-                                    <Table.Cell textAlign='center'>10:20</Table.Cell>
-                                    <Table.Cell textAlign='center'></Table.Cell>
-                                </Table.Row>
-                                <Table.Row>
-                                    <Table.Cell textAlign='center'></Table.Cell>
-                                    <Table.Cell textAlign='center'>48:19</Table.Cell>
-                                    <Table.Cell textAlign='center'><Icon name='black futbol'/></Table.Cell>
-                                </Table.Row>
-                                <Table.Row>
-                                    <Table.Cell textAlign='center'><Icon name='black futbol'/></Table.Cell>
-                                    <Table.Cell textAlign='center'>87:23</Table.Cell>
-                                    <Table.Cell textAlign='center'></Table.Cell>
-                                </Table.Row>
+
+                                {this.props.data.map(tl =>
+                                    this.TLHandler(tl)
+                                )}
+
                             </Table.Body>
                         </Table>
                     </div>

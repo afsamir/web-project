@@ -30,9 +30,14 @@ class Home extends Component {
                 "substitute_player1": [],
                 "substitute_player2": []
             },
-            info: {},
+            info: {
+                team1__name: '',
+                team2__name: '',
+                team1__image_url:'',
+                team2__image_url:''
+            },
             report: [{}],
-            timeLine: {},
+            timeLine: [{}],
             slider: [{}]
         }
     }
@@ -89,7 +94,9 @@ class Home extends Component {
             // centerMode: true,
         };
 
-        const {players} = this.state;
+        const {players} = this.state,
+            {info} = this.state,
+            {timeLine} = this.state;
         return (
             <div className='Home'>
                 <MenuBar style={{position: 'fixed'}}/>
@@ -101,7 +108,13 @@ class Home extends Component {
                                     <Grid id={'background'}>
                                         <Grid.Row>
                                             <Grid.Column width={5}>
-                                                <Timeline data={this.state.timeLine}/>
+                                                <Timeline team1={{
+                                                    name: info.team1__name,
+                                                    image_url: info.team1__image_url
+                                                }} team2={{
+                                                    name: info.team2__name,
+                                                    image_url: info.team2__image_url
+                                                }} data={timeLine}/>
                                             </Grid.Column>
                                             <Grid.Column width={6}>
                                                 <GameTable data={this.state.info}/>
