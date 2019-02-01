@@ -29,11 +29,16 @@ class App extends Component {
                                     <Table.HeaderCell textAlign='center'>بازی ها</Table.HeaderCell>
                                     <Table.HeaderCell textAlign='center'>برد</Table.HeaderCell>
                                     <Table.HeaderCell textAlign='center'>باخت</Table.HeaderCell>
-                                    <Table.HeaderCell textAlign='center'>{/*{this.props.tableData.field === 'FTB' ? 'امتیاز' : 'برد'}*/}تساوی</Table.HeaderCell>
-                                    <Table.HeaderCell textAlign='center'>گل زده</Table.HeaderCell>
-                                    <Table.HeaderCell textAlign='center'>گل خورده</Table.HeaderCell>
-                                    <Table.HeaderCell textAlign='center'>تفاضل گل</Table.HeaderCell>
-                                    <Table.HeaderCell textAlign='center'>امتیاز</Table.HeaderCell>
+                                    <Table.HeaderCell
+                                        textAlign='center'>{this.props.data.field === 'FTB' ? 'تساوی' : 'سه امتیازی'}</Table.HeaderCell>
+                                    <Table.HeaderCell
+                                        textAlign='center'>{this.props.data.field === 'FTB' ? 'گل زده' : 'جمع امتیازات'}</Table.HeaderCell>
+                                    <Table.HeaderCell
+                                        textAlign='center'>{this.props.data.field === 'FTB' ? 'گل خورده' : 'ریباند'}</Table.HeaderCell>
+                                    <Table.HeaderCell
+                                        textAlign='center'>{this.props.data.field === 'FTB' ? 'تفاضل گل' : 'خطا'}</Table.HeaderCell>
+                                    {this.props.data.field === 'FTB' ?
+                                        <Table.HeaderCell textAlign='center'>امتیاز</Table.HeaderCell> : undefined}
                                 </Table.Row>
                             </Table.Header>
 
@@ -42,15 +47,21 @@ class App extends Component {
                                     this.props.data.teams.map(team =>
                                         <Table.Row key={this.props.data.id}>
                                             <Table.Cell textAlign='center'> {team.rank} </Table.Cell>
-                                            <Table.Cell textAlign='center'> <a href={FrontUrls.teamPage(team.team__slug)}>{team.team__name} </a></Table.Cell>
+                                            <Table.Cell textAlign='center'> <a
+                                                href={FrontUrls.teamPage(team.team__slug)}>{team.team__name} </a></Table.Cell>
                                             <Table.Cell textAlign='center'> {team.game_number} </Table.Cell>
                                             <Table.Cell textAlign='center'> {team.win_number} </Table.Cell>
                                             <Table.Cell textAlign='center'> {team.lose_number} </Table.Cell>
-                                            <Table.Cell textAlign='center'> {team.draw_number} </Table.Cell>
-                                            <Table.Cell textAlign='center'> {team.scoring_goal_number} </Table.Cell>
-                                            <Table.Cell textAlign='center'> {team.receiving_goal_number} </Table.Cell>
-                                            <Table.Cell textAlign='center'> {team.difference} </Table.Cell>
-                                            <Table.Cell textAlign='center'> {team.score} </Table.Cell>
+                                            <Table.Cell
+                                                textAlign='center'> {team.draw_number | team.score3_number} </Table.Cell>
+                                            <Table.Cell
+                                                textAlign='center'> {team.scoring_goal_number | team.score} </Table.Cell>
+                                            <Table.Cell
+                                                textAlign='center'> {team.receiving_goal_number | team.ribbond_number} </Table.Cell>
+                                            <Table.Cell
+                                                textAlign='center'> {team.difference | team.foul_number} </Table.Cell>
+                                            {this.props.data.field === 'FTB' ?
+                                                <Table.Cell textAlign='center'> {team.score} </Table.Cell> : undefined}
                                         </Table.Row>
                                     )
                                 }

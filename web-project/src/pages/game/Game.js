@@ -176,7 +176,7 @@ class Home extends Component {
     }
 
 
-    componentDidMount() {
+    /*componentDidMount() {
         let slug = this.props.match.params.slug;
 
 
@@ -211,8 +211,9 @@ class Home extends Component {
         }).catch(er => this.setState({slider: []}));
 
     }
-
+*/
     render() {
+
         const picSettings = {
             dots: true,
             infinite: true,

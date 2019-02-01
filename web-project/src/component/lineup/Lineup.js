@@ -1,55 +1,33 @@
 import React from 'react'
 import {Divider, Icon, List} from "semantic-ui-react";
 import "./Lineup.css"
+import FrontUrls from "../../utils/FrontUrls";
 
 export class Lineup extends React.Component {
     render() {
         return (
             <div className={'lineup'}>
                 <List size={'huge'} link>
+                    ترکیب اصلی
                     <Divider/>
-                    <List.Item>
-                        <LineupItem number={'۱۰ - '} name={"لیونل مسی"} events={[{item: 'black futbol', minute: '۳۴'}, {
-                            item: 'red ambulance ',
-                            minute: '۵۶'
-                        }]}/>
-                    </List.Item>
-                    <List.Item>
-                        <LineupItem number={'۱۰ - '} name={"لیونل مسی"} events={[{item: 'black futbol', minute: '۳۴'}, {
-                            item: 'red ambulance ',
-                            minute: '۵۶'
-                        }]}/>
-                    </List.Item>
-                    <List.Item>
-                        <LineupItem number={'۱۰ - '} name={"لیونل مسی"} events={[{item: 'black futbol', minute: '۳۴'}, {
-                            item: 'red ambulance ',
-                            minute: '۵۶'
-                        }]}/>
-                    </List.Item> <List.Item>
-                    <LineupItem number={'۱۰ - '} name={"لیونل مسی"} events={[{item: 'black futbol', minute: '۳۴'}, {
-                        item: 'red ambulance ',
-                        minute: '۵۶'
-                    }]}/>
-                </List.Item> <List.Item>
-                    <LineupItem number={'۱۰ - '} name={"لیونل مسی"} events={[{item: 'black futbol', minute: '۳۴'}, {
-                        item: 'red ambulance ',
-                        minute: '۵۶'
-                    }]}/>
-                </List.Item> <List.Item>
-                    <LineupItem number={'۱۰ - '} name={"لیونل مسی"} events={[{item: 'black futbol', minute: '۳۴'}, {
-                        item: 'red ambulance ',
-                        minute: '۵۶'
-                    }]}/>
-                </List.Item> <List.Item>
-                    <LineupItem number={'۱۰ - '} name={"لیونل مسی"} events={[{item: 'black futbol', minute: '۳۴'}, {
-                        item: 'red ambulance ',
-                        minute: '۵۶'
-                    }]}/>
-                </List.Item>
+                    {this.props.players.fix.map(p =>
+                        <List.Item>
 
+                            <LineupItem data={p}/>
 
+                        </List.Item>
+                    )}
+                    <Divider/>
+                    ذخیره
+                    <Divider/>
 
+                    {this.props.players.sub.map(p =>
+                        <List.Item>
 
+                            <LineupItem data={p}/>
+
+                        </List.Item>
+                    )}
 
 
                 </List>
@@ -63,19 +41,18 @@ export class Lineup extends React.Component {
 export class LineupItem extends React.Component {
     render() {
 
-        const {number} = this.props, {name} = this.props, {events} = this.props;
         return (
 
             <List horizontal className={'lineup-item'}>
                 <List.Item className={'player-num'}>
-                    {number}
+                    {this.props.data.number}
                 </List.Item>
                 <List.Item as='a' className={'player-name'}>
-                    {name}
+                    <a href={FrontUrls.playerPage(this.props.data.name)}>{this.props.data.name}</a>
                 </List.Item>
-                {events.map(event => <List.Item>
-                    <LineupEvent item={event.item} minute={event.minute}/>
-                </List.Item>)}
+                {/*{events.map(event => <List.Item>*/}
+                {/*<LineupEvent item={event.item} minute={event.minute}/>*/}
+                {/*</List.Item>)}*/}
 
 
             </List>
