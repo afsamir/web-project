@@ -4,6 +4,7 @@ export default class BackUrls {
     static home = BackUrls.base + 'home/';
     static news = BackUrls.home + 'news/';
     static team = BackUrls.base + 'team/';
+    static player = BackUrls.base + 'player/';
     static footballNewsSummary = BackUrls.news + 'all/football/';
     static basketballNewsSummary = BackUrls.news + 'all/basketball/';
     static homeSliders = BackUrls.home + 'slider-images/';
@@ -60,4 +61,19 @@ export default class BackUrls {
     static teamNewsByTeam(slug){
         return this.team +slug + '/news/by-player/'
     }
+    static playerInfo(slug) {
+        return this.player + slug + '/info/'
+    }
+
+    static playerStats(slug) {
+        return this.player + slug + '/statistics/'
+    }
+
+    static playerSlider(slug) {
+        return this.player + slug + '/slider/'
+    }
+    static playerNews(slug){
+        return this.player +slug + '/news/'
+    }
+
 }

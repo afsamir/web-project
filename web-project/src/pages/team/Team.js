@@ -38,7 +38,7 @@ class Team extends Component {
         }
     }
 
-    componentWillMount() {
+    componentDidMount() {
         let slug = this.props.match.params.slug;
 
         Axios.get(BackUrls.teamSlider(slug)).then(response => {

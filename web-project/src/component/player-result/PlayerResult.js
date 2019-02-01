@@ -27,10 +27,13 @@ class PlayerResult extends Component {
                                     <Table.HeaderCell textAlign='center'>فصل</Table.HeaderCell>
                                     <Table.HeaderCell textAlign='center'>تیم</Table.HeaderCell>
                                     <Table.HeaderCell textAlign='center'>شماره پیراهن</Table.HeaderCell>
-                                    <Table.HeaderCell textAlign='center'>دقایق بازی </Table.HeaderCell>
                                     <Table.HeaderCell textAlign='center'>تعداد بازی </Table.HeaderCell>
                                     <Table.HeaderCell textAlign='center'>گل زده </Table.HeaderCell>
+                                    <Table.HeaderCell textAlign='center'>پاس گل </Table.HeaderCell>
                                     <Table.HeaderCell textAlign='center'>گل پنالتی</Table.HeaderCell>
+                                    <Table.HeaderCell textAlign='center'>کار زرد</Table.HeaderCell>
+                                    <Table.HeaderCell textAlign='center'>کارت قرمز</Table.HeaderCell>
+
                                 </Table.Row>
                             </Table.Header>
 
@@ -38,14 +41,17 @@ class PlayerResult extends Component {
                                 {
                                     this.props.data.map(team =>
                                         <Table.Row key={this.props.data.id}>
-                                            <Table.Cell textAlign='center'> {team.name} </Table.Cell>
-                                            <Table.Cell textAlign='center'> {team.date} </Table.Cell>
+                                            <Table.Cell textAlign='center'> {team.teamLeague__league__name} </Table.Cell>
+                                            <Table.Cell textAlign='center'> {team.teamLeague__league__year} </Table.Cell>
                                             <Table.Cell textAlign='center'> {team.team} </Table.Cell>
                                             <Table.Cell textAlign='center'> {team.num} </Table.Cell>
-                                            <Table.Cell textAlign='center'> {team.time} </Table.Cell>
-                                            <Table.Cell textAlign='center'> {team.gameNum} </Table.Cell>
-                                            <Table.Cell textAlign='center'> {team.goalNum} </Table.Cell>
-                                            <Table.Cell textAlign='center'> {team.goalPenalty} </Table.Cell>
+                                            <Table.Cell textAlign='center'> {team.game_num} </Table.Cell>
+                                            <Table.Cell textAlign='center'> {team.scoring_goal_number} </Table.Cell>
+                                            <Table.Cell textAlign='center'> {team.assist_goal_number} </Table.Cell>
+                                            <Table.Cell textAlign='center'> {team.scoring_penalty_goal_number} </Table.Cell>
+                                            <Table.Cell textAlign='center'> {team.yellow_card_number} </Table.Cell>
+                                            <Table.Cell textAlign='center'> {team.red_card_number} </Table.Cell>
+
                                         </Table.Row>
                                     )
                                 }

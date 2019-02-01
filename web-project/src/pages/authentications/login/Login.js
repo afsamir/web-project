@@ -8,11 +8,19 @@ import BackUrls from "../../../utils/BackUrls";
 import Axios from "axios";
 import Auth from "../../../utils/Auth";
 import FrontUrls from "../../../utils/FrontUrls";
+import Home from "../../home";
 
 class Login extends Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {
+            redirect: false,
+        }
+    }
 
-    formToJSON(form){
+
+    formToJSON(form) {
 
         let obj = {};
         let elements = form.querySelectorAll("input");
@@ -32,12 +40,20 @@ class Login extends Component {
     login() {
         const form = document.getElementById('login-form');
         let formJSON = this.formToJSON(form);
-        Axios.post(BackUrls.login, formJSON).then(response => {Auth.setToken(response.data.token); alert('sss')}).catch(er => alert());
+        Axios.post(BackUrls.login, formJSON).then(response => {
+            Auth.setToken(response.data.token);
+            this.setState({redirect: true})
+        }).catch(er => this.state.error = er);
+
     }
 
 
     render() {
+        if (this.state.redirect)
+            return (<Home/>);
         return (
+
+
             <div className='Login'>
                 <MenuBar style={{position: 'fixed'}}/>
                 <div className="ui middle aligned center aligned grid"
@@ -63,7 +79,9 @@ class Login extends Component {
                                         <input type="password" name="password" placeholder="رمز عبور"/>
                                     </div>
                                 </div>
-                                <div className="ui fluid large teal submit button" onClick={this.login.bind(this)}>ورود</div>
+                                <div className="ui fluid large teal submit button"
+                                     onClick={this.login.bind(this)}>ورود
+                                </div>
                             </div>
 
                             <div className="ui error message"/>
@@ -71,6 +89,7 @@ class Login extends Component {
 
                         <div className="ui message">
                             رمزتان را فرموش کردید؟ <a href={FrontUrls.resetPassword}> تغییر رمز </a>
+                            {JSON.stringify(this.state.error)}
                         </div>
                     </div>
                 </div>
