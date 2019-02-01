@@ -84,7 +84,7 @@ class Team extends Component {
                                             <Grid.Column width={12}>
                                                 <Slider {...picSettings} className={'slider'}>
                                                     {this.state.sliderImage.map( c  =>
-                                                        <Image src={c.iamge_url}/>
+                                                        <Image src={c.image_url}/>
                                                     )}
                                                 </Slider>
                                             </Grid.Column>

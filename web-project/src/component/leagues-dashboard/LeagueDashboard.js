@@ -56,7 +56,7 @@ export class LeagueDashboard extends React.Component {
                                         </Header>
                                         <div style={{height: '250px'}}>
                                             <Slider {...matchResultSettings}>
-                                                {smallMatchCards.games.map(c =>
+                                                {smallMatchCards.map(c =>
                                                     <SmallMatchCard data={c} field={c.field}/>
                                                 )}
                                             </Slider>
@@ -82,7 +82,7 @@ export class LeagueDashboard extends React.Component {
                                         </Header>
                                         <div style={{height: '250px'}}>
                                             <Slider {...matchResultSettings}>
-                                                {smallMatchCards.games.map(c =>
+                                                {smallMatchCards.map(c =>
                                                     <SmallMatchCard data={c}/>
                                                 )}
                                             </Slider>
@@ -186,7 +186,7 @@ export class LeagueSelector extends React.Component {
         return (
             <div>
                 <Tab menu={{tabular: true}} panes={panes}/>
-                <LeagueDashboard tableData={tableData} smallMatchCards={smallMatchCards}/>
+                <LeagueDashboard tableData={tableData} smallMatchCards={smallMatchCards.games}/>
             </div>)
 
     }

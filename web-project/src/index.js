@@ -51,7 +51,9 @@ ReactDOM.render(
             <Route exact path="/logout/" component={Home}/>
             <Route exact path="/news/:slug" component={NewsPage}/>
             <Route exact path="/teams/:slug" component={Team}/>
-            <Route exact path="/player/:slug" component={Player}/>
+            <Route exact path="/players/:slug" component={Player}/>
+            {/*<Route exact path="/league/:slug" component={Player}/>*/}
+
 
 
 
