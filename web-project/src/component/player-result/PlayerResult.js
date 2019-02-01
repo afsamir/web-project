@@ -48,7 +48,7 @@ class PlayerResult extends Component {
                                     this.props.data.map(team =>
                                         <Table.Row key={this.props.data.id}>
                                             <Table.Cell
-                                                textAlign='center'> {team.teamLeague__league__name} </Table.Cell>
+                                                textAlign='center'> <a href={FrontUrls.leaguePage(team.teamLeague__league__slug)}>{team.teamLeague__league__name} </a></Table.Cell>
                                             <Table.Cell
                                                 textAlign='center'> {team.teamLeague__league__year} </Table.Cell>
                                             <Table.Cell textAlign='center'><a href={FrontUrls.teamPage(team.team_slug)}> {team.team} </a></Table.Cell>

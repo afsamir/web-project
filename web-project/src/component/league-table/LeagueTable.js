@@ -30,7 +30,7 @@ class App extends Component {
                                 <Table.HeaderCell textAlign='center'>رتبه</Table.HeaderCell>
                                 <Table.HeaderCell textAlign='center'>تیم</Table.HeaderCell>
                                 <Table.HeaderCell textAlign='center'>بازی ها</Table.HeaderCell>
-                                <Table.HeaderCell textAlign='center'>{this.props.tableData.field === 'FTB'? 'امتیاز':'برد' }</Table.HeaderCell>
+                                <Table.HeaderCell textAlign='center'>{this.props.tableData.field === 'FTB' ? 'امتیاز' : 'برد'}</Table.HeaderCell>
                             </Table.Row>
                         </Table.Header>
 

@@ -7,6 +7,7 @@ import Image from "semantic-ui-react/dist/commonjs/elements/Image/Image";
 import Divider from "semantic-ui-react/dist/commonjs/elements/Divider/Divider";
 import Table from "semantic-ui-react/dist/commonjs/collections/Table/Table";
 import {LeagueSelector} from "../leagues-dashboard";
+import FrontUrls from "../../utils/FrontUrls";
 
 class App extends Component {
 
@@ -28,7 +29,7 @@ class App extends Component {
                                     <Table.HeaderCell textAlign='center'>بازی ها</Table.HeaderCell>
                                     <Table.HeaderCell textAlign='center'>برد</Table.HeaderCell>
                                     <Table.HeaderCell textAlign='center'>باخت</Table.HeaderCell>
-                                    <Table.HeaderCell textAlign='center'>تساوی</Table.HeaderCell>
+                                    <Table.HeaderCell textAlign='center'>{/*{this.props.tableData.field === 'FTB' ? 'امتیاز' : 'برد'}*/}تساوی</Table.HeaderCell>
                                     <Table.HeaderCell textAlign='center'>گل زده</Table.HeaderCell>
                                     <Table.HeaderCell textAlign='center'>گل خورده</Table.HeaderCell>
                                     <Table.HeaderCell textAlign='center'>تفاضل گل</Table.HeaderCell>
@@ -41,7 +42,7 @@ class App extends Component {
                                     this.props.data.teams.map(team =>
                                         <Table.Row key={this.props.data.id}>
                                             <Table.Cell textAlign='center'> {team.rank} </Table.Cell>
-                                            <Table.Cell textAlign='center'> {team.team__name} </Table.Cell>
+                                            <Table.Cell textAlign='center'> <a href={FrontUrls.teamPage(team.team__slug)}>{team.team__name} </a></Table.Cell>
                                             <Table.Cell textAlign='center'> {team.game_number} </Table.Cell>
                                             <Table.Cell textAlign='center'> {team.win_number} </Table.Cell>
                                             <Table.Cell textAlign='center'> {team.lose_number} </Table.Cell>

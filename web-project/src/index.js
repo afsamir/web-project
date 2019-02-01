@@ -54,8 +54,8 @@ ReactDOM.render(
             <Route exact path="/news/:slug" component={NewsPage}/>
             <Route exact path="/teams/:slug" component={Team}/>
             <Route exact path="/players/:slug" component={Player}/>
-            <Route exact path="/league/:slug" component={League}/>
-            <Route exact path="/game/:slug" component={Game}/>
+            <Route exact path="/leagues/:slug" component={League}/>
+            <Route exact path="/games/:slug" component={Game}/>
 
 
 

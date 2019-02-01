@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -29,9 +29,9 @@ class Home extends Component {
             info: {},
             news: [],
             stats: [],
-            bests:[{}],
-            games:[],
-            tableData:{teams:[]},
+            bests: [{}],
+            games: [],
+            tableData: {teams: []},
         }
     }
 
@@ -48,7 +48,7 @@ class Home extends Component {
 
 
         Axios.get(BackUrls.leagueInfo(slug)).then(response => {
-            const info= (response.data);
+            const info = (response.data);
             this.setState({info});
         }).catch(er => this.setState({info: []}));
 
@@ -58,24 +58,24 @@ class Home extends Component {
         }).catch(er => this.setState({news: []}));
 
         Axios.get(BackUrls.leagueStats(slug)).then(response => {
-            const stats= (response.data);
+            const stats = (response.data);
             this.setState({stats});
         }).catch(er => this.setState({stats: []}));
 
         Axios.get(BackUrls.leagueBests(slug)).then(response => {
-            const bests= (response.data);
+            const bests = (response.data);
             this.setState({bests});
         }).catch(er => this.setState({bests: []}));
 
         Axios.get(BackUrls.leagueGames(slug)).then(response => {
-            const games= (response.data);
+            const games = (response.data);
             this.setState({games});
         }).catch(er => this.setState({games: []}));
 
         Axios.get(BackUrls.leagueStats(slug)).then(response => {
-            const tableData= (response.data);
+            const tableData = (response.data);
             this.setState({tableData});
-        }).catch(er => this.setState({tableData: {teams:[]}}));
+        }).catch(er => this.setState({tableData: {teams: []}}));
 
 
     }
@@ -115,7 +115,7 @@ class Home extends Component {
                                         <Grid.Row>
                                             <Grid.Column width={10}>
                                                 <Slider {...picSettings} className={'slider'}>
-                                                    {this.state.sliderImage.map( c  =>
+                                                    {this.state.sliderImage.map(c =>
                                                         <Image src={c.image_url}/>
                                                     )}
                                                 </Slider>
@@ -145,7 +145,7 @@ class Home extends Component {
                                                     </Header>
                                                     <div style={{height: '250px'}}>
                                                         <Slider {...matchResultSettings}>
-                                                            {this.state.games.map( c  =>
+                                                            {this.state.games.map(c =>
                                                                 <SmallMatchCard data={c}/>
                                                             )}
                                                         </Slider>
@@ -160,7 +160,7 @@ class Home extends Component {
                                         <Grid.Row>
                                             <Grid.Column width={16}>
                                                 <Slider {...picSettings} className={'slider'}>
-                                                    {this.state.sliderImage.map( c  =>
+                                                    {this.state.sliderImage.map(c =>
                                                         <Image src={c.image_url}/>
                                                     )}
                                                 </Slider>
@@ -179,7 +179,7 @@ class Home extends Component {
                                                     </Header>
                                                     <div style={{height: '250px'}}>
                                                         <Slider {...matchResultSettings}>
-                                                            {this.state.games.map( c  =>
+                                                            {this.state.games.map(c =>
                                                                 <SmallMatchCard data={c}/>
                                                             )}
                                                         </Slider>
@@ -207,7 +207,7 @@ class Home extends Component {
                                         <Grid.Row>
                                             <Grid.Column width={16}>
                                                 <Slider {...picSettings} className={'slider'}>
-                                                    {this.state.sliderImage.map( c  =>
+                                                    {this.state.sliderImage.map(c =>
                                                         <Image src={c.image_url}/>
                                                     )}
                                                 </Slider>
@@ -243,7 +243,7 @@ class Home extends Component {
                                                     </Header>
                                                     <div style={{height: '250px'}}>
                                                         <Slider {...matchResultSettings}>
-                                                            {this.state.games.map( c  =>
+                                                            {this.state.games.map(c =>
                                                                 <SmallMatchCard data={c}/>
                                                             )}
                                                         </Slider>

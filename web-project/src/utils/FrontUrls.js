@@ -6,7 +6,8 @@ export default class FrontUrls {
     static signup = '/register/';
     static logout = '/logout/';
     static players = '/players/';
-    static game = '/game/';
+    static leagues = '/leagues/';
+    static game = '/games/';
     static resetPassword = '/reset_password/';
     static newPassword = '/new_password/';
 
@@ -16,7 +17,9 @@ export default class FrontUrls {
 
     static playerPage(player__slug) {
         return FrontUrls.players + player__slug + '/'
-
+    }
+    static leaguePage(league__slug){
+        return FrontUrls.leagues  + league__slug + '/'
     }
 
 }
