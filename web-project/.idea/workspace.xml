@@ -8,8 +8,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/game-table/GameTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/game-table/GameTable.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/game-teams/GameTeams.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/game-teams/GameTeams.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/lineup/Lineup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/lineup/Lineup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/live-report/LiveReport.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/live-report/LiveReport.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/timeline/Timeline.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/timeline/Timeline.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/game/Game.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/game/Game.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -27,32 +27,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/utils/BackUrls.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-                <element signature="e#239#295#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/game/Game.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="52" selection-start-line="52" selection-end-line="52" />
+            <state relative-caret-position="96">
+              <caret line="162" column="53" lean-forward="true" selection-start-line="162" selection-start-column="53" selection-end-line="162" selection-end-column="53" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -60,11 +38,38 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/component/timeline/Timeline.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="697">
+              <caret line="44" column="67" selection-start-line="44" selection-start-column="67" selection-end-line="44" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/component/game-teams/GameTeams.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="697">
+              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/component/game-report/GameReport.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+            <state relative-caret-position="330">
+              <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/component/live-report/LiveReport.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -72,7 +77,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/component/lineup/Lineup.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
+            <state relative-caret-position="-88">
               <caret line="5" column="13" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
             </state>
           </provider>
@@ -108,20 +113,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/component/game-table/GameTable.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="138" column="44" selection-start-line="138" selection-start-column="44" selection-end-line="138" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/component/game-teams/GameTeams.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="440">
+              <caret line="114" column="46" selection-start-line="114" selection-start-column="46" selection-end-line="114" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -139,9 +135,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>smallma</find>
-      <find>smallMatchCar</find>
-      <find>smallMatch</find>
       <find>Slider</find>
       <find>LeagueNews</find>
       <find>segment</find>
@@ -169,6 +162,9 @@
       <find>games</find>
       <find>tabl</find>
       <find>aler</find>
+      <find>time</find>
+      <find>stat</find>
+      <find>gameStats</find>
     </findStrings>
     <replaceStrings>
       <replace>Image</replace>
@@ -197,8 +193,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/index.css" />
-        <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/component/news-div/NewsDiv.css" />
         <option value="$PROJECT_DIR$/src/config/Urls.js" />
         <option value="$PROJECT_DIR$/src/utils/CSRF_Token.js" />
@@ -245,9 +239,11 @@
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/component/lineup/Lineup.js" />
         <option value="$PROJECT_DIR$/src/component/menu-bar/MenuBar.js" />
-        <option value="$PROJECT_DIR$/src/component/game-teams/GameTeams.js" />
         <option value="$PROJECT_DIR$/src/pages/game/Game.js" />
+        <option value="$PROJECT_DIR$/src/component/game-teams/GameTeams.js" />
         <option value="$PROJECT_DIR$/src/component/game-table/GameTable.js" />
+        <option value="$PROJECT_DIR$/src/component/live-report/LiveReport.js" />
+        <option value="$PROJECT_DIR$/src/component/timeline/Timeline.js" />
       </list>
     </option>
   </component>
@@ -526,21 +522,7 @@
       <workItem from="1548883787486" duration="2297000" />
       <workItem from="1548925639930" duration="32521000" />
       <workItem from="1549009711131" duration="27128000" />
-      <workItem from="1549041057759" duration="5032000" />
-    </task>
-    <task id="LOCAL-00014" summary="Home page created.">
-      <created>1544428533284</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1544428533284</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Home page updated.">
-      <created>1544430766718</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1544430766718</updated>
+      <workItem from="1549041057759" duration="9870000" />
     </task>
     <task id="LOCAL-00016" summary="Home page updated.">
       <created>1544432751955</created>
@@ -871,11 +853,25 @@
       <option name="project" value="LOCAL" />
       <updated>1549042293474</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="game page receives data">
+      <created>1549046567150</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1549046567150</updated>
+    </task>
+    <task id="LOCAL-00064" summary="timeline works">
+      <created>1549050091012</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1549050091013</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="302158000" />
+    <option name="totallyTimeSpent" value="306996000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="34" width="1920" height="1046" extended-state="7" />
@@ -898,7 +894,7 @@
       <window_info anchor="bottom" id="TypeScript" order="10" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49947146" weight="0.32921347" />
       <window_info anchor="bottom" id="Statistic" order="12" weight="0.32937366" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="13" sideWeight="0.49735728" visible="true" weight="0.23932584" />
+      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.49735728" weight="0.23932584" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -948,8 +944,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Finally!!!&#10;:))" />
-    <MESSAGE value="updated." />
     <MESSAGE value="Team Page updated." />
     <MESSAGE value="League page and news page updated." />
     <MESSAGE value="Game page updated." />
@@ -973,14 +967,11 @@
     <MESSAGE value="league page table links to teams." />
     <MESSAGE value="list items done." />
     <MESSAGE value="game table parameters" />
-    <option name="LAST_COMMIT_MESSAGE" value="game table parameters" />
+    <MESSAGE value="game page receives data" />
+    <MESSAGE value="timeline works" />
+    <option name="LAST_COMMIT_MESSAGE" value="timeline works" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/react-slick/lib/slider.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4686" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/news/NewsPage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
@@ -1280,20 +1271,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/timeline/Timeline.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/game-teams/GameTeams.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/BackUrls.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -1312,27 +1289,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/game/Game.js">
+    <entry file="file://$PROJECT_DIR$/src/component/game-table/GameTable.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="440">
+          <caret line="114" column="46" selection-start-line="114" selection-start-column="46" selection-end-line="114" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/game-report/GameReport.js">
+    <entry file="file://$PROJECT_DIR$/src/component/game-news/GameNews.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
-          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/lineup/Lineup.js">
+    <entry file="file://$PROJECT_DIR$/src/component/menu-bar/MenuBar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="5" column="13" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="205">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -1346,24 +1320,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/menu-bar/MenuBar.js">
+    <entry file="file://$PROJECT_DIR$/src/component/lineup/Lineup.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+        <state relative-caret-position="-88">
+          <caret line="5" column="13" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/game-news/GameNews.js">
+    <entry file="file://$PROJECT_DIR$/src/pages/game/Game.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        <state relative-caret-position="96">
+          <caret line="162" column="53" lean-forward="true" selection-start-line="162" selection-start-column="53" selection-end-line="162" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/game-table/GameTable.js">
+    <entry file="file://$PROJECT_DIR$/src/component/live-report/LiveReport.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="138" column="44" selection-start-line="138" selection-start-column="44" selection-end-line="138" selection-end-column="44" />
+        <state relative-caret-position="462">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/game-report/GameReport.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/game-teams/GameTeams.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/timeline/Timeline.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="44" column="67" selection-start-line="44" selection-start-column="67" selection-end-line="44" selection-end-column="67" />
         </state>
       </provider>
     </entry>

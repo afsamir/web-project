@@ -12,8 +12,6 @@ import Slider from "react-slick/lib";
 class GameTable extends Component {
 
     TLHandler(tl) {
-        alert(JSON.stringify(tl.score))
-
 
         let icon = 'futbol';
         if (tl.type === 'goal') {
@@ -39,12 +37,14 @@ class GameTable extends Component {
         if (tl.team__name === this.props.team2.name) {
             return (<Table.Row>
                 <Table.Cell textAlign='center'></Table.Cell>
-                <Table.Cell textAlign='center'>{tl.minute} : {tl.second}</Table.Cell>
-                <Table.Cell textAlign='center'><Icon name={icon}/></Table.Cell>
+                <Table.Cell textAlign='center'>{tl.second} : {tl.minute}</Table.Cell>
+                <Table.Cell textAlign='center' style={{fontSize: '10px'}}>{tl.out_player__name || ''}<Icon
+                    name={icon}/>{tl.in_player__name || ''}</Table.Cell>
             </Table.Row>)
 
         } else return (<Table.Row>
-            <Table.Cell textAlign='center'><Icon name={icon}/></Table.Cell>
+            <Table.Cell textAlign='center' style={{fontSize: '10px'}}>{tl.out_player__name || ''}<Icon
+                name={icon}/>{tl.in_player__name || ''}</Table.Cell>
             <Table.Cell textAlign='center'>{tl.minute} : {tl.second}</Table.Cell>
             <Table.Cell textAlign='center'></Table.Cell>
 
@@ -64,7 +64,7 @@ class GameTable extends Component {
                     </Header>
                     <Divider/>
                     <div style={{height: '500px', overflow: 'scroll'}}>
-                        <Table>
+                        <Table unstackable>
                             <Table.Header>
                                 <Table.Row>
                                     <Table.HeaderCell textAlign='center'><img src={this.props.team1.image_url} style={{

@@ -146,12 +146,18 @@ class Home extends Component {
                                     <Grid>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
-                                                <GameTable data={this.state.teamStats}/>
+                                                <GameTable data={this.state.info}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={8}>
-                                                <Timeline/>
+                                                <Timeline team1={{
+                                                    name: info.team1__name,
+                                                    image_url: info.team1__image_url
+                                                }} team2={{
+                                                    name: info.team2__name,
+                                                    image_url: info.team2__image_url
+                                                }} data={timeLine}/>
                                             </Grid.Column>
                                             <Grid.Column width={8}>
                                                 <GameTeams players={players}/>
@@ -162,7 +168,7 @@ class Home extends Component {
                                                 <GameNews data={this.state.news}/>
                                             </Grid.Column>
                                             <Grid.Column width={8}>
-                                                <GameReport data={this.state.gameReport}/>
+                                                <GameReport data={this.state.report}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>
@@ -180,12 +186,19 @@ class Home extends Component {
                                     <Grid>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
-                                                <GameTable data={this.state.teamStats}/>
+                                                <GameTable data={this.state.info}/>
+
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
-                                                <Timeline data={this.state.timeLine}/>
+                                                <Timeline team1={{
+                                                    name: info.team1__name,
+                                                    image_url: info.team1__image_url
+                                                }} team2={{
+                                                    name: info.team2__name,
+                                                    image_url: info.team2__image_url
+                                                }} data={timeLine}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>
@@ -200,7 +213,7 @@ class Home extends Component {
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
-                                                <GameReport data={this.state.gameReport}/>
+                                                <GameReport data={this.state.report}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>

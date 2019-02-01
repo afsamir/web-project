@@ -23,7 +23,7 @@ class GameTable extends Component {
                         </Header>
                         <Divider/>
                         <div style={{height: '500px', overflow: 'scroll'}}>
-                            <Table>
+                            <Table unstackable>
                                 <Table.Header>
                                     <Table.Row>
                                         <Table.HeaderCell textAlign='center'><img src={this.props.data.team1__image_url}
@@ -112,7 +112,7 @@ class GameTable extends Component {
                         </Header>
                         <Divider/>
                         <div style={{height: '500px', overflow: 'scroll'}}>
-                            <Table>
+                            <Table unstackable>
                                 <Table.Header>
                                     <Table.Row>
                                         <Table.HeaderCell textAlign='center'><img src={this.props.data.team1__image_url}
