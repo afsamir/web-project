@@ -7,7 +7,11 @@ import Table from "semantic-ui-react/dist/commonjs/collections/Table/Table";
 import {Lineup} from "../lineup";
 
 class GameTeams extends Component {
+
+
+
     render() {
+        // alert(JSON.stringify(this.props.players));
         return (
             <div>
                 <Segment id='LeagueTable' textAlign='center'>

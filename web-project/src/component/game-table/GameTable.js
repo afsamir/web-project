@@ -13,7 +13,7 @@ import FrontUrls from "../../utils/FrontUrls";
 class GameTable extends Component {
     render() {
 
-        if (this.props.field === 'FTB') {
+        if (this.props.data.field === 'FTB') {
             return (
                 <div>
                     <Segment id='LeagueTable' textAlign='center'>
@@ -102,7 +102,7 @@ class GameTable extends Component {
                     </Segment>
                 </div>
             )
-        } else if (this.props.field === 'BSK') {
+        } else {
             return (
                 <div>
                     <Segment id='LeagueTable' textAlign='center'>
@@ -121,17 +121,22 @@ class GameTable extends Component {
                                                                                       width: '100px'
                                                                                   }}/>
                                             <Divider/>
-                                            <h3>{this.props.data.team1__name}</h3>
+                                            <h3><a
+                                                href={FrontUrls.teamPage(this.props.data.team1__slug)}>{this.props.data.team1__name}</a>
+                                            </h3>
                                         </Table.HeaderCell>
                                         <Table.HeaderCell textAlign='center'>
-                                            <h1>{this.props.data.all_score1} - {this.props.data.all_score2}</h1>
+                                            <h1>
+                                                {this.props.data.all_score1} - {this.props.data.all_score2}</h1>
                                         </Table.HeaderCell>
                                         <Table.HeaderCell textAlign='center'><img src={this.props.data.team2__image_url}
                                                                                   style={{
                                                                                       height: '100px',
                                                                                       width: '100px'
                                                                                   }}/><Divider/>
-                                            <h3>{this.props.data.team2__name}</h3>
+                                            <h3><a
+                                                href={FrontUrls.teamPage(this.props.data.team1__slug)}>{this.props.data.team1__name}</a>
+                                            </h3>
                                         </Table.HeaderCell>
                                     </Table.Row>
                                 </Table.Header>
@@ -166,15 +171,15 @@ class GameTable extends Component {
                                     </Table.Row>
                                     <Table.Row>
                                         <Table.Cell
-                                            textAlign='center'>{this.props.data.rebbond1}</Table.Cell>
+                                            textAlign='center'>{this.props.data.ribbond1}</Table.Cell>
                                         <Table.Cell textAlign='center'>ریباند</Table.Cell>
                                         <Table.Cell
-                                            textAlign='center'>{this.props.data.rebbond2}</Table.Cell>
+                                            textAlign='center'>{this.props.data.ribbond2}</Table.Cell>
                                     </Table.Row>
                                     <Table.Row>
-                                        <Table.Cell textAlign='center'>{this.props.data.styles1}</Table.Cell>
+                                        <Table.Cell textAlign='center'>{this.props.data.style1}</Table.Cell>
                                         <Table.Cell textAlign='center'>توپ دزدی</Table.Cell>
-                                        <Table.Cell textAlign='center'>{this.props.data.styles2}</Table.Cell>
+                                        <Table.Cell textAlign='center'>{this.props.data.style2}</Table.Cell>
                                     </Table.Row>
                                     <Table.Row>
                                         <Table.Cell textAlign='center'>{this.props.data.counter_attack1}</Table.Cell>

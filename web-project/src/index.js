@@ -28,6 +28,7 @@ import Game from "./pages/game/Game";
 // import PasswordReset from "./pages/authentications/password-reset/PasswordReset";
 // import NewPassword from "./pages/authentications/new-password/NewPassword";
 
+
 // ReactDOM.render(<Home/>, document.getElementById('root'));
 // ReactDOM.render(<Login/>, document.getElementById('root'));
 // ReactDOM.render(<Register/>, document.getElementById('root'));
@@ -40,27 +41,26 @@ import Game from "./pages/game/Game";
 // ReactDOM.render(<Game/>, document.getElementById('root'));
 // ReactDOM.render(<NewPassword/>, document.getElementById('root'));
 // ReactDOM.render(<Register/>, document.getElementById('root'));
+//
+ReactDOM.render(
+    <Router>
+        <div>
+            <Route exact path="/" component={Home}/>
+            <Route exact path="/login" component={Login}/>
+            <Route exact path="/register" component={Register}/>
+            <Route exact path="/new_password" component={NewPassword}/>
+            <Route exact path="/reset_password" component={PasswordReset}/>
+            <Route exact path="/logout/" component={Home}/>
+            <Route exact path="/news/:slug" component={NewsPage}/>
+            <Route exact path="/teams/:slug" component={Team}/>
+            <Route exact path="/players/:slug" component={Player}/>
+            <Route exact path="/leagues/:slug" component={League}/>
+            <Route exact path="/games/:slug" component={Game}/>
 
-//
-// ReactDOM.render(
-//     <Router>
-//         <div>
-//             <Route exact path="/" component={Home}/>
-//             <Route exact path="/login" component={Login}/>
-//             <Route exact path="/register" component={Register}/>
-//             <Route exact path="/new_password" component={NewPassword}/>
-//             <Route exact path="/reset_password" component={PasswordReset}/>
-//             <Route exact path="/logout/" component={Home}/>
-//             <Route exact path="/news/:slug" component={NewsPage}/>
-//             <Route exact path="/teams/:slug" component={Team}/>
-//             <Route exact path="/players/:slug" component={Player}/>
-//             <Route exact path="/leagues/:slug" component={League}/>
-//             <Route exact path="/games/:slug" component={Game}/>
-//
-//
-//         </div>
-//     </Router>
-//     , document.getElementById('root'));
+
+        </div>
+    </Router>
+    , document.getElementById('root'));
 
 
 // If you want your app to work offline and load faster, you can change

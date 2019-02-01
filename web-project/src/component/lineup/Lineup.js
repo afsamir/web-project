@@ -4,13 +4,17 @@ import "./Lineup.css"
 import FrontUrls from "../../utils/FrontUrls";
 
 export class Lineup extends React.Component {
+
+
     render() {
+
+        // alert(JSON.stringify(this.props.fix))
         return (
             <div className={'lineup'}>
                 <List size={'huge'} link>
                     ترکیب اصلی
                     <Divider/>
-                    {this.props.players.fix.map(p =>
+                    {this.props.fix.map(p =>
                         <List.Item>
 
                             <LineupItem data={p}/>
@@ -21,7 +25,7 @@ export class Lineup extends React.Component {
                     ذخیره
                     <Divider/>
 
-                    {this.props.players.sub.map(p =>
+                    {this.props.sub.map(p =>
                         <List.Item>
 
                             <LineupItem data={p}/>
