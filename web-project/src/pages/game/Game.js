@@ -259,7 +259,7 @@ class Home extends Component {
                                             <Grid.Column width={16}>
                                                 <Slider {...picSettings} className={'slider'}>
                                                     {this.state.sliderImages.map(c=>
-                                                        <Image src={c.src}/>
+                                                        <Image src={c.image_url}/>
                                                     )}
                                                 </Slider>
                                             </Grid.Column>
@@ -309,7 +309,7 @@ class Home extends Component {
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
-                                                <Timeline/>
+                                                <Timeline data={this.state.timeLine}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>

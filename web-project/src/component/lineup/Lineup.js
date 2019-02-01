@@ -45,14 +45,14 @@ export class LineupItem extends React.Component {
 
             <List horizontal className={'lineup-item'}>
                 <List.Item className={'player-num'}>
-                    {this.props.data.number}
+                    {this.props.data.num}
                 </List.Item>
                 <List.Item as='a' className={'player-name'}>
-                    <a href={FrontUrls.playerPage(this.props.data.name)}>{this.props.data.name}</a>
+                    <a href={FrontUrls.playerPage(this.props.data.player__slug)}>{this.props.data.player__name}</a>
                 </List.Item>
-                {/*{events.map(event => <List.Item>*/}
-                {/*<LineupEvent item={event.item} minute={event.minute}/>*/}
-                {/*</List.Item>)}*/}
+                <List.Item className={'player-num'}>
+                    {this.props.data.player__post__short_name}
+                </List.Item>
 
 
             </List>
