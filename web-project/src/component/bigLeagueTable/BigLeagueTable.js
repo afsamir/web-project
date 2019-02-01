@@ -18,10 +18,8 @@ class App extends Component {
                         <Image src="https://cdn3.iconfinder.com/data/icons/medcare/512/tables-512.png"/>
                         <Header.Content>جدول</Header.Content>
                     </Header>
-                    <LeagueSelector/>
-                    {/*<Dropdown disabled={!table} placeholder='State' search selection options={leagues} defaultValue='ir' inverted/>*/}
                     <Divider/>
-                    <div style={{height: '500px', overflow:'scroll'}}>
+                    <div style={{height: '500px', overflow: 'scroll'}}>
                         <Table>
                             <Table.Header>
                                 <Table.Row>
@@ -40,17 +38,17 @@ class App extends Component {
 
                             <Table.Body>
                                 {
-                                    this.props.data.map(team =>
+                                    this.props.data.teams.map(team =>
                                         <Table.Row key={this.props.data.id}>
-                                            <Table.Cell textAlign='center'> {team.id} </Table.Cell>
-                                            <Table.Cell textAlign='center'> {team.name} </Table.Cell>
-                                            <Table.Cell textAlign='center'> {team.gameNum} </Table.Cell>
-                                            <Table.Cell textAlign='center'> {team.win} </Table.Cell>
-                                            <Table.Cell textAlign='center'> {team.lose} </Table.Cell>
-                                            <Table.Cell textAlign='center'> {team.draw} </Table.Cell>
-                                            <Table.Cell textAlign='center'> {team.goalNum1} </Table.Cell>
-                                            <Table.Cell textAlign='center'> {team.goalNum2} </Table.Cell>
-                                            <Table.Cell textAlign='center'> {team.goalAverage} </Table.Cell>
+                                            <Table.Cell textAlign='center'> {team.rank} </Table.Cell>
+                                            <Table.Cell textAlign='center'> {team.team__name} </Table.Cell>
+                                            <Table.Cell textAlign='center'> {team.game_number} </Table.Cell>
+                                            <Table.Cell textAlign='center'> {team.win_number} </Table.Cell>
+                                            <Table.Cell textAlign='center'> {team.lose_number} </Table.Cell>
+                                            <Table.Cell textAlign='center'> {team.draw_number} </Table.Cell>
+                                            <Table.Cell textAlign='center'> {team.scoring_goal_number} </Table.Cell>
+                                            <Table.Cell textAlign='center'> {team.receiving_goal_number} </Table.Cell>
+                                            <Table.Cell textAlign='center'> {team.difference} </Table.Cell>
                                             <Table.Cell textAlign='center'> {team.score} </Table.Cell>
                                         </Table.Row>
                                     )

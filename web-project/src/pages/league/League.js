@@ -24,325 +24,14 @@ class Home extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            sliderImage: [
-                {
-                    src: "http://www.fifaworldcupnews.com/wp-content/uploads/2018/08/Bundesliga-Fixtures-Point-Table-Teams.jpg",
-                },
-                {
-                    src: "https://brightcove04pmdo-a.akamaihd.net/4221396001/4221396001_5702845000001_5702842932001-vs.jpg?pubId=4221396001&videoId=5702842932001",
-                }
-            ],
-            leagueCard: {
-                date: "1963",
-                country: 'آلمان',
-                confederation:'یوفا',
-                daste: '1',
-                teamNum: '18',
-                rank: '1',
-                bestTeam: 'بایرن مونیخ',
-                site: 'http://www.bundesliga.de/',
-            },
-            leagueTable: [
-                {
-                    id: 1,
-                    name: 'دورتموند',
-                    gameNum: '14',
-                    win: '11',
-                    lose: '0',
-                    draw: '0',
-                    goalNum1: '39',
-                    goalNum2: '14',
-                    goalAverage: '25',
-                    score: '36',
-                },
-                {
-                    id: 1,
-                    name: 'دورتموند',
-                    gameNum: '14',
-                    win: '11',
-                    lose: '0',
-                    draw: '0',
-                    goalNum1: '39',
-                    goalNum2: '14',
-                    goalAverage: '25',
-                    score: '36',
-                },
-                {
-                    id: 1,
-                    name: 'دورتموند',
-                    gameNum: '14',
-                    win: '11',
-                    lose: '0',
-                    draw: '0',
-                    goalNum1: '39',
-                    goalNum2: '14',
-                    goalAverage: '25',
-                    score: '36',
-                },
-                {
-                    id: 1,
-                    name: 'دورتموند',
-                    gameNum: '14',
-                    win: '11',
-                    lose: '0',
-                    draw: '0',
-                    goalNum1: '39',
-                    goalNum2: '14',
-                    goalAverage: '25',
-                    score: '36',
-                },
-                {
-                    id: 1,
-                    name: 'دورتموند',
-                    gameNum: '14',
-                    win: '11',
-                    lose: '0',
-                    draw: '0',
-                    goalNum1: '39',
-                    goalNum2: '14',
-                    goalAverage: '25',
-                    score: '36',
-                },
-                {
-                    id: 1,
-                    name: 'دورتموند',
-                    gameNum: '14',
-                    win: '11',
-                    lose: '0',
-                    draw: '0',
-                    goalNum1: '39',
-                    goalNum2: '14',
-                    goalAverage: '25',
-                    score: '36',
-                },
-                {
-                    id: 1,
-                    name: 'دورتموند',
-                    gameNum: '14',
-                    win: '11',
-                    lose: '0',
-                    draw: '0',
-                    goalNum1: '39',
-                    goalNum2: '14',
-                    goalAverage: '25',
-                    score: '36',
-                },
-                {
-                    id: 1,
-                    name: 'دورتموند',
-                    gameNum: '14',
-                    win: '11',
-                    lose: '0',
-                    draw: '0',
-                    goalNum1: '39',
-                    goalNum2: '14',
-                    goalAverage: '25',
-                    score: '36',
-                },
-                {
-                    id: 1,
-                    name: 'دورتموند',
-                    gameNum: '14',
-                    win: '11',
-                    lose: '0',
-                    draw: '0',
-                    goalNum1: '39',
-                    goalNum2: '14',
-                    goalAverage: '25',
-                    score: '36',
-                },
-                {
-                    id: 1,
-                    name: 'دورتموند',
-                    gameNum: '14',
-                    win: '11',
-                    lose: '0',
-                    draw: '0',
-                    goalNum1: '39',
-                    goalNum2: '14',
-                    goalAverage: '25',
-                    score: '36',
-                },
-            ],
-            theBestPlayers: [
-                {
-                    name: 'برانکو ایوانکویچ',
-                    post: 'سرمربی'
-                },
-                {
-                    name: 'برانکو ایوانکویچ',
-                    post: 'سرمربی'
-                },
-                {
-                    name: 'برانکو ایوانکویچ',
-                    post: 'سرمربی'
-                },
-                {
-                    name: 'برانکو ایوانکویچ',
-                    post: 'سرمربی'
-                },
-                {
-                    name: 'برانکو ایوانکویچ',
-                    post: 'سرمربی'
-                },
-                {
-                    name: 'برانکو ایوانکویچ',
-                    post: 'سرمربی'
-                },
-                {
-                    name: 'برانکو ایوانکویچ',
-                    post: 'سرمربی'
-                },
-                {
-                    name: 'برانکو ایوانکویچ',
-                    post: 'سرمربی'
-                },
-                {
-                    name: 'برانکو ایوانکویچ',
-                    post: 'سرمربی'
-                },
-                {
-                    name: 'برانکو ایوانکویچ',
-                    post: 'سرمربی'
-                },
-            ],
-            news: [
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: false,
-                    src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
-                    time: '۸ساعت پیش'
-                },
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: true,
-                    src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
-                    time: '۸ساعت پیش'
-                },
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: false,
-                    src: 'https://react.semantic-ui.com/images/wireframe/image.png',
-                    time: '۸ساعت پیش'
-                },
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: true,
-                    src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
-                    time: '۸ساعت پیش'
-                },
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: false,
-                    src: 'https://react.semantic-ui.com/images/wireframe/image.png',
-                    time: '۸ساعت پیش'
-                },
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: true,
-                    src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
-                    time: '۸ساعت پیش'
-                },
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: false,
-                    src: 'https://react.semantic-ui.com/images/wireframe/image.png',
-                    time: '۸ساعت پیش'
-                },
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: true,
-                    src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
-                    time: '۸ساعت پیش'
-                },
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: false,
-                    src: 'https://react.semantic-ui.com/images/wireframe/image.png',
-                    time: '۸ساعت پیش'
-                },
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: true,
-                    src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
-                    time: '۸ساعت پیش'
-                },
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: false,
-                    src: 'https://react.semantic-ui.com/images/wireframe/image.png',
-                    time: '۸ساعت پیش'
-                },
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: true,
-                    src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
-                    time: '۸ساعت پیش'
-                },
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: false,
-                    src: 'https://react.semantic-ui.com/images/wireframe/image.png',
-                    time: '۸ساعت پیش'
-                },
-                {
-                    type: 'حاشیه',
-                    title: 'یورگن کلوپ:قهرمانی بارسلونا من را شگفت زده کرد!',
-                    image: true,
-                    src: 'https://cdn-01.independent.ie/incoming/article35233744.ece/ALTERNATES/h342/JKLopp.jpg',
-                    time: '۸ساعت پیش'
-                },
-            ],
-            smallMatchCards: [
-                {
-                    src1: "https://igbolive.com/wp-content/uploads/2018/03/manu-logo.png",
-                    src2: "http://upload.wikimedia.org/wikipedia/it/archive/0/07/20120411134648!Fc_barcelona.png",
-                    goalNum1: 1, goalNum2: 2, time: 55, finished: true
-                },
-                {
-                    src1: "https://igbolive.com/wp-content/uploads/2018/03/manu-logo.png",
-                    src2: "http://upload.wikimedia.org/wikipedia/it/archive/0/07/20120411134648!Fc_barcelona.png",
-                    goalNum1: 1, goalNum2: 2, time: 55, finished: true
-                },
-                {
-                    src1: "https://igbolive.com/wp-content/uploads/2018/03/manu-logo.png",
-                    src2: "http://upload.wikimedia.org/wikipedia/it/archive/0/07/20120411134648!Fc_barcelona.png",
-                    goalNum1: 1, goalNum2: 2, time: 55, finished: true
-                },
-                {
-                    src1: "https://igbolive.com/wp-content/uploads/2018/03/manu-logo.png",
-                    src2: "http://upload.wikimedia.org/wikipedia/it/archive/0/07/20120411134648!Fc_barcelona.png",
-                    goalNum1: 1, goalNum2: 2, time: 55, finished: true
-                },
-                {
-                    src1: "https://igbolive.com/wp-content/uploads/2018/03/manu-logo.png",
-                    src2: "http://upload.wikimedia.org/wikipedia/it/archive/0/07/20120411134648!Fc_barcelona.png",
-                    goalNum1: 1, goalNum2: 2, time: 55, finished: true
-                },
-                {
-                    src1: "https://igbolive.com/wp-content/uploads/2018/03/manu-logo.png",
-                    src2: "http://upload.wikimedia.org/wikipedia/it/archive/0/07/20120411134648!Fc_barcelona.png",
-                    goalNum1: 1, goalNum2: 2, time: 55, finished: true
-                },
-                {
-                    src1: "https://igbolive.com/wp-content/uploads/2018/03/manu-logo.png",
-                    src2: "http://upload.wikimedia.org/wikipedia/it/archive/0/07/20120411134648!Fc_barcelona.png",
-                    goalNum1: 1, goalNum2: 2, time: 55, finished: true
-                },
-            ],
+
+            sliderImage: [],
+            info: {},
+            news: [],
+            stats: [],
+            bests:[{}],
+            games:[],
+            tableData:{teams:[]},
         }
     }
 
@@ -382,6 +71,12 @@ class Home extends Component {
             const games= (response.data);
             this.setState({games});
         }).catch(er => this.setState({games: []}));
+
+        Axios.get(BackUrls.leagueStats(slug)).then(response => {
+            const tableData= (response.data);
+            this.setState({tableData});
+        }).catch(er => this.setState({tableData: {teams:[]}}));
+
 
     }
 
@@ -431,7 +126,7 @@ class Home extends Component {
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
-                                                {/*<BigLeagueTable data={this.state.homeLeagueTable}/>*/}
+                                                <BigLeagueTable data={this.state.tableData}/>
                                             </Grid.Column>
                                         </Grid.Row>
                                         <Grid.Row>

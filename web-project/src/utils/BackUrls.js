@@ -108,11 +108,6 @@ export default class BackUrls {
         return this.league + slug + '/games/'
     }
 
-    static leagueInfo(slug) {
-        return this.league + slug + '/info/'
-    }
-
-
     static gamesInfo(slug) {
         return BackUrls.games + slug + '/info/'
     }
