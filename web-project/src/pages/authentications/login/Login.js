@@ -7,6 +7,7 @@ import {MenuBar} from "../../../component/menu-bar";
 import BackUrls from "../../../utils/BackUrls";
 import Axios from "axios";
 import Auth from "../../../utils/Auth";
+import FrontUrls from "../../../utils/FrontUrls";
 
 class Login extends Component {
 
@@ -31,7 +32,7 @@ class Login extends Component {
     login() {
         const form = document.getElementById('login-form');
         let formJSON = this.formToJSON(form);
-        Axios.post(BackUrls.login, formJSON).then(response => Auth.setToken(response.data.token));
+        Axios.post(BackUrls.login, formJSON).then(response => {Auth.setToken(response.data.token); alert('sss')}).catch(er => alert());
     }
 
 
@@ -47,29 +48,29 @@ class Login extends Component {
                             <div className="ui stacked secondary  segment">
                                 <h2 className="ui image header">
                                     <div className="content">
-                                        Log in
+                                        ورود
                                     </div>
                                 </h2>
                                 <div className="field">
                                     <div className="ui left icon input">
                                         <i className="mail icon"/>
-                                        <input type="text" name="email" placeholder="E-mail address"/>
+                                        <input type="text" name="email" placeholder="ایمیل"/>
                                     </div>
                                 </div>
                                 <div className="field">
                                     <div className="ui left icon input">
                                         <i className="lock icon"/>
-                                        <input type="password" name="password" placeholder="Password"/>
+                                        <input type="password" name="password" placeholder="رمز عبور"/>
                                     </div>
                                 </div>
-                                <div className="ui fluid large teal submit button" onClick={this.login.bind(this)}>Login</div>
+                                <div className="ui fluid large teal submit button" onClick={this.login.bind(this)}>ورود</div>
                             </div>
 
                             <div className="ui error message"/>
                         </form>
 
                         <div className="ui message">
-                            New to us? <a href="https://s.codepen.io/voltron2112/debug/PqrEPM?">Register</a>
+                            رمزتان را فرموش کردید؟ <a href={FrontUrls.resetPassword}> تغییر رمز </a>
                         </div>
                     </div>
                 </div>

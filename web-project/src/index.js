@@ -11,6 +11,7 @@ import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 import NewsPage from "./pages/news";
 import Team from "./pages/team/Team";
 import Player from "./pages/player/Player";
+import PasswordReset from "./pages/authentications/password-reset/PasswordReset";
 // import App from './App';
 // import Team from './pages/team/Team'
 // import {MatchResultCard} from "./component/match-result-card";
@@ -46,10 +47,12 @@ ReactDOM.render(
             <Route exact path="/login" component={Login}/>
             <Route exact path="/register" component={Register}/>
             <Route exact path="/new_password" component={NewPassword}/>
+            <Route exact path="/reset_password" component={PasswordReset}/>
+            <Route exact path="/logout/" component={Home}/>
             <Route exact path="/news/:slug" component={NewsPage}/>
             <Route exact path="/teams/:slug" component={Team}/>
             <Route exact path="/player/:slug" component={Player}/>
-            <Route exact path="/logout/" component={Home}/>
+
 
 
 

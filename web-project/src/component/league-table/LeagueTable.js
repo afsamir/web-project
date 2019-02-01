@@ -30,18 +30,18 @@ class App extends Component {
                                 <Table.HeaderCell textAlign='center'>رتبه</Table.HeaderCell>
                                 <Table.HeaderCell textAlign='center'>تیم</Table.HeaderCell>
                                 <Table.HeaderCell textAlign='center'>بازی ها</Table.HeaderCell>
-                                <Table.HeaderCell textAlign='center'>امتیاز</Table.HeaderCell>
+                                <Table.HeaderCell textAlign='center'>{this.props.tableData.field === 'FTB'? 'امتیاز':'برد' }</Table.HeaderCell>
                             </Table.Row>
                         </Table.Header>
 
                         <Table.Body>
                             {
-                                this.props.tableData.map(team =>
+                                this.props.tableData.teams.map(team =>
                                     <Table.Row>
                                         <Table.Cell textAlign='center'>{team.rank}</Table.Cell>
                                         <Table.Cell textAlign='center'><a href={FrontUrls.teamPage(team.team__slug)}> {team.team__name}</a> </Table.Cell>
                                         <Table.Cell textAlign='center'> {team.game_number} </Table.Cell>
-                                        <Table.Cell textAlign='center'> {team.score} </Table.Cell>
+                                        <Table.Cell textAlign='center'> {team.score || team.win_number} </Table.Cell>
                                     </Table.Row>
                                 )
                             }

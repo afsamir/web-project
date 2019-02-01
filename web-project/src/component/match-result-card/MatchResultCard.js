@@ -24,7 +24,7 @@ export class MatchResultCard extends React.Component {
                                 <Feed.Content>
                                     <Feed.Date content={this.props.data.team1__name}/>
                                     <Feed.Summary className={'goals-text'}>
-                                        {this.props.data.goals1}
+                                        {this.props.data.goals1 || this.props.data.all_score1}
                                     </Feed.Summary>
                                 </Feed.Content>
                             </Feed.Event>
@@ -36,7 +36,7 @@ export class MatchResultCard extends React.Component {
                                 <Feed.Content>
                                     <Feed.Date content={this.props.data.team2__name}/>
                                     <Feed.Summary className={'goals-text'}>
-                                        {this.props.data.goals2}
+                                        {this.props.data.goals2 || this.props.data.all_score2}
                                     </Feed.Summary>
                                 </Feed.Content>
                             </Feed.Event>
