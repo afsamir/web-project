@@ -11,15 +11,18 @@ export default class BackUrls {
     static basketballNewsSummary = BackUrls.news + 'all/basketball/';
     static homeSliders = BackUrls.home + 'slider-images/';
     static matchCards = BackUrls.home + 'games/';
+    static newsComment = BackUrls.base + 'news/';
     static accounts = BackUrls.base + 'accounts/';
     static register = BackUrls.accounts + 'register/';
     static login = BackUrls.accounts + 'login/';
     static resetPassword = BackUrls.accounts + 'reset/';
     static resetPasswordRequest = BackUrls.accounts + 'password_reset/';
     static userProfile = BackUrls.accounts + 'user-profile/';
+
     static comment(slug) {
         return BackUrls.base + 'news/' + slug + '/comment/';
     }
+
 
 
     static detailedNews = function (slug) {

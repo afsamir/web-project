@@ -12,7 +12,7 @@ export default class Time {
         }else if(now.getDay() - date.getDay() < 1) {
             str = now.getHours() - date.getHours() + ' ساعت'
         }
-        else if (now.getDay() - date.getDay() >= 1){
+        if (now.getDay() - date.getDay() >= 1){
             str = now.getDay() - date.getDay() + ' روز'
         }
         return str + ' پیش'

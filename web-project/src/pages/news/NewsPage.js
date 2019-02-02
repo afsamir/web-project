@@ -17,6 +17,7 @@ import Axios from 'axios'
 import BackUrls from "../../utils/BackUrls";
 import FrontUrls from "../../utils/FrontUrls";
 import Comment from "../../component/comment";
+import CreateComment from "../../component/create-comment";
 
 class NewsPage extends Component {
 
@@ -74,7 +75,8 @@ class NewsPage extends Component {
 
         const {basketballNews} = this.state,
             {footballNews} = this.state,
-            {news} = this.state;
+            {news} = this.state,
+            {match} = this.props;
 
         return (
             <div className='Home'>
@@ -127,6 +129,7 @@ class NewsPage extends Component {
                                                             {this.state.comments.map(c =>
                                                             <Comment data={c}/>
                                                             )}
+                                                            <CreateComment slug={match.params.slug}/>
                                                         </Grid.Column>
 
                                                     </Grid.Row>

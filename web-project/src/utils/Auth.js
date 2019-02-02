@@ -20,7 +20,6 @@ export default class Auth {
         let token = Auth.getToken();
         let headers = {Authorization: 'Token ' + token};
         Axios.get(BackUrls.userProfile, {headers: headers}).then(res => {Auth.profile = res.data.user;
-        alert(JSON.stringify(res.data.user))
         }).catch(er => Auth.profile = undefined);
         return Auth.profile
 
