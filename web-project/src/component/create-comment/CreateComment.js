@@ -37,12 +37,12 @@ export default class CreateComment extends React.Component {
         formJSON['slug'] = this;
         formJSON['title'] = 'عنوان';
 
-        // if (Auth.getProfile())
+        if (Auth.getProfile())
             Axios.post(BackUrls.newsComment, formJSON).then(re => alert('نظر شما ثبت شد.')).catch(er =>
                 alert('این امکان به دلیل مشکلات فنی در حال حاضر وجود ندارد.')
             );
-        // else
-        //     alert('ابتدا وارد حساب خود شوید.')
+        else
+            alert('ابتدا وارد حساب خود شوید.')
 
     }
 
