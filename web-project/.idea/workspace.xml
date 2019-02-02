@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cd8e2431-d039-438e-b3ad-cd35c62dced9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/match-result-card/MatchResultCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/match-result-card/MatchResultCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/small-match-card/SmallMatchCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/small-match-card/SmallMatchCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/authentications/new-password/NewPassword.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/authentications/new-password/NewPassword.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/FrontUrls.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/FrontUrls.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/leagues-dashboard/LeagueDashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/leagues-dashboard/LeagueDashboard.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,27 +22,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/authentications/password-reset/PasswordReset.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="49" selection-start-line="49" selection-end-line="50" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/component/menu-bar/MenuBar.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="223" column="126" selection-start-line="223" selection-start-column="126" selection-end-line="223" selection-end-column="126" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/utils/BackUrls.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -88,11 +64,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/component/small-match-card/SmallMatchCard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="10" column="56" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
+            <state relative-caret-position="352">
+              <caret line="19" column="63" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/component/leagues-dashboard/LeagueDashboard.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="235">
+              <caret line="171" selection-start-line="171" selection-end-line="171" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/component/player-card/PlayerCard.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="484">
+              <caret line="29" column="78" selection-start-line="29" selection-start-column="78" selection-end-line="29" selection-end-column="78" />
             </state>
           </provider>
         </entry>
@@ -213,9 +207,7 @@
         <option value="$PROJECT_DIR$/src/pages/authentications/login/Login.css" />
         <option value="$PROJECT_DIR$/src/pages/authentications/register/Register.css" />
         <option value="$PROJECT_DIR$/src/pages/authentications/login/Login.js" />
-        <option value="$PROJECT_DIR$/src/component/player-card/PlayerCard.js" />
         <option value="$PROJECT_DIR$/src/pages/team/Team.js" />
-        <option value="$PROJECT_DIR$/src/component/leagues-dashboard/LeagueDashboard.js" />
         <option value="$PROJECT_DIR$/src/component/team-member/TeamMember.js" />
         <option value="$PROJECT_DIR$/src/component/team-member-div/TeamMemberDiv.js" />
         <option value="$PROJECT_DIR$/src/component/news-div/NewsDiv.js" />
@@ -253,6 +245,8 @@
         <option value="$PROJECT_DIR$/src/utils/FrontUrls.js" />
         <option value="$PROJECT_DIR$/src/component/match-result-card/MatchResultCard.js" />
         <option value="$PROJECT_DIR$/src/component/small-match-card/SmallMatchCard.js" />
+        <option value="$PROJECT_DIR$/src/component/player-card/PlayerCard.js" />
+        <option value="$PROJECT_DIR$/src/component/leagues-dashboard/LeagueDashboard.js" />
       </list>
     </option>
   </component>
@@ -499,21 +493,7 @@
       <workItem from="1549041057759" duration="10928000" />
       <workItem from="1549052971276" duration="206000" />
       <workItem from="1549058359929" duration="3405000" />
-      <workItem from="1549091388361" duration="8633000" />
-    </task>
-    <task id="LOCAL-00022" summary="League page created.">
-      <created>1544529179854</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1544529179854</updated>
-    </task>
-    <task id="LOCAL-00023" summary="League page created.">
-      <created>1544529375117</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1544529375117</updated>
+      <workItem from="1549091388361" duration="9184000" />
     </task>
     <task id="LOCAL-00024" summary="League page updated.">
       <created>1544532165494</created>
@@ -844,11 +824,25 @@
       <option name="project" value="LOCAL" />
       <updated>1549099022657</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="match cards links.">
+      <created>1549100075005</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1549100075005</updated>
+    </task>
+    <task id="LOCAL-00072" summary="match cards links.">
+      <created>1549100489385</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1549100489385</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="320298000" />
+    <option name="totallyTimeSpent" value="320849000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="34" width="1920" height="1046" extended-state="7" />
@@ -921,7 +915,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="working on leagueSelector" />
     <MESSAGE value="leagueSelector works" />
     <MESSAGE value="league dashboard works." />
     <MESSAGE value="home completed." />
@@ -946,7 +939,8 @@
     <MESSAGE value="comment creations done." />
     <MESSAGE value="comment creations no token bug." />
     <MESSAGE value="comment complete." />
-    <option name="LAST_COMMIT_MESSAGE" value="comment complete." />
+    <MESSAGE value="match cards links." />
+    <option name="LAST_COMMIT_MESSAGE" value="match cards links." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/pages/home/Home.js">
@@ -980,24 +974,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/leagues-dashboard/LeagueDashboard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="84" column="64" selection-start-line="84" selection-start-column="64" selection-end-line="84" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
           <caret line="745" column="60" lean-forward="true" selection-start-line="745" selection-start-column="60" selection-end-line="745" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/player-card/PlayerCard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="20" column="53" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
         </state>
       </provider>
     </entry>
@@ -1331,8 +1311,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/component/small-match-card/SmallMatchCard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="10" column="56" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
+        <state relative-caret-position="352">
+          <caret line="19" column="63" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/player-card/PlayerCard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="29" column="78" selection-start-line="29" selection-start-column="78" selection-end-line="29" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/leagues-dashboard/LeagueDashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="171" selection-start-line="171" selection-end-line="171" />
         </state>
       </provider>
     </entry>

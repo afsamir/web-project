@@ -12,6 +12,7 @@ import Image from "semantic-ui-react/dist/commonjs/elements/Image/Image";
 import Header from "semantic-ui-react/dist/commonjs/elements/Header/Header";
 import Axios from "axios";
 import BackUrls from "../../utils/BackUrls";
+import FrontUrls from "../../utils/FrontUrls";
 
 
 export class LeagueDashboard extends React.Component {
@@ -167,7 +168,7 @@ export class LeagueSelector extends React.Component {
                 render: () => <Tab.Pane> <Dropdown placeholder='State' search selection
                                                    options={footballLeagues} defaultValue='لالیگا-2017-2018' inverted
                                                    className={'leagues-dropdown'} onChange={this.handleItemClick}/>
-                    <Button circular={true} color={'teal'} content={' صفحه لیگ'}/>
+                    <a href={FrontUrls.leaguePage(this.state.selected)}><Button circular={true} color={'teal'} content={' صفحه لیگ'}/></a>
                 </Tab.Pane>
             },
             {
@@ -176,7 +177,7 @@ export class LeagueSelector extends React.Component {
                     <Dropdown placeholder='State' search selection
                               options={basketballLeagues} defaultValue='لالیگا-2017-2018' inverted
                               className={'leagues-dropdown'} onChange={this.handleItemClick}/>
-                    <a href={'wwd/'}><Button circular={true} color={'teal'} content={' صفحه لیگ'}/></a>
+                    <a href={FrontUrls.leaguePage(this.state.selected)}><Button circular={true} color={'teal'} content={' صفحه لیگ'}/></a>
                 </Tab.Pane>
             }
         ];
