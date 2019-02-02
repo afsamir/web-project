@@ -207,7 +207,10 @@ export class ProfileIcon extends React.Component {
 
 
     render() {
-        const {dropdown} = this.state;
+        const {dropdown} = this.state,
+            {user} = this.props;
+
+        // alert(JSON.stringify(user))
         return (
             <DirectionProvider direction={DIRECTIONS.RTL}>
                 <Dropdown inverted icon={<Icon circular inverted name='user' color={this.state.color}
@@ -215,10 +218,10 @@ export class ProfileIcon extends React.Component {
                                                onMouseLeave={this.mouseLeave}/>}>
                     <Transition visible={dropdown} animation='slide down' duration={250}>
                         <Dropdown.Menu inverted className={'profile-dropdown'}>
-                            <Dropdown.Item  lowercase={true}> {this.props.user !== undefined? this.props.user.username:'میهمان'}</Dropdown.Item>
+                            <Dropdown.Item  lowercase={true}> {user !== undefined? user.first_name:'میهمان'}</Dropdown.Item>
                             <Dropdown.Divider/>
-                            <a href={this.props.user !== undefined? FrontUrls.newPassword: FrontUrls.signup}><Dropdown.Item >{this.props.user !== undefined? 'تغییر رمز' :'ثبت نام'}</Dropdown.Item></a>
-                            <a href={this.props.user !== undefined? FrontUrls.logout: FrontUrls.login}><Dropdown.Item >{this.props.user !== undefined? 'خروج' : 'ورود'}</Dropdown.Item></a>
+                            <a href={user !== undefined? FrontUrls.newPassword: FrontUrls.signup}><Dropdown.Item >{user !== undefined? 'تغییر رمز' :'ثبت نام'}</Dropdown.Item></a>
+                            <a href={user !== undefined? FrontUrls.logout: FrontUrls.login}><Dropdown.Item >{user !== undefined? 'خروج' : 'ورود'}</Dropdown.Item></a>
                         </Dropdown.Menu>
                     </Transition>
                 </Dropdown>

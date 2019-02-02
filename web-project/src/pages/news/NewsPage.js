@@ -16,6 +16,7 @@ import {Footer} from "../../component/footer";
 import Axios from 'axios'
 import BackUrls from "../../utils/BackUrls";
 import FrontUrls from "../../utils/FrontUrls";
+import Comment from "../../component/comment";
 
 class NewsPage extends Component {
 
@@ -35,6 +36,13 @@ class NewsPage extends Component {
             this.setState({news});
         }).catch(er => this.setState({news: {related_news: [{}]}}));
 
+
+        Axios.get(BackUrls.comment(this.props.match.params.slug)).then(response => {
+            const comments= response.data;
+            this.setState({comments});
+        }).catch(er => this.setState({comments:[{}]}));
+
+
     }
 
 
@@ -44,21 +52,7 @@ class NewsPage extends Component {
             footballNews: [],
             basketballNews: [],
             news: {related_news: [{}]},
-            otherNews: [
-                {
-                    src: 'https://www.activenewcastle.co.uk/sites/default/files/2017-11/soccer1.jpg',
-                },
-                {
-                    src: 'https://www.activenewcastle.co.uk/sites/default/files/2017-11/soccer1.jpg',
-                },
-                {
-                    src: 'https://www.activenewcastle.co.uk/sites/default/files/2017-11/soccer1.jpg',
-                },
-                {
-                    src: 'https://www.activenewcastle.co.uk/sites/default/files/2017-11/soccer1.jpg',
-                },
-            ],
-
+            comments:[{}]
         }
 
     }
@@ -128,6 +122,14 @@ class NewsPage extends Component {
                                                             </Slider>
                                                         </Grid.Column>
                                                     </Grid.Row>
+                                                    <Grid.Row>
+                                                        <Grid.Column width={16}>
+                                                            {this.state.comments.map(c =>
+                                                            <Comment data={c}/>
+                                                            )}
+                                                        </Grid.Column>
+
+                                                    </Grid.Row>
                                                 </Grid>
                                             </Grid.Column>
                                             <Grid.Column width={5}>
@@ -172,6 +174,7 @@ class NewsPage extends Component {
                                                         )}
                                                     </Slider>
                                                 </Grid.Row>
+
                                             </Grid.Column>
                                             <Grid.Column width={5}>
                                                 <News footballNews={footballNews}

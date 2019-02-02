@@ -1,26 +1,32 @@
 import Axios from "axios";
 import BackUrls from "./BackUrls";
 
-export default class Auth{
+export default class Auth {
 
     static profile;
-    static setToken(t){
+
+    static setToken(t) {
 
         localStorage.setItem('token', t)
         alert(t)
     }
 
-    static getToken(){
+    static getToken() {
         return localStorage.getItem('token')
     }
-    static getProfile(token){
+
+    static getProfile() {
         let profile = undefined;
-        Axios.get(BackUrls.userProfile, {auth:token}).then(res => Auth.profile = res.data.user).catch(er => profile = undefined);
-        return profile
+        let token = Auth.getToken();
+        let headers = {Authorization: 'Token ' + token};
+        Axios.get(BackUrls.userProfile, {headers: headers}).then(res => {Auth.profile = res.data.user;
+        alert(JSON.stringify(res.data.user))
+        }).catch(er => Auth.profile = undefined);
+        return Auth.profile
 
     }
 
-    static formToJSON(formID){
+    static formToJSON(formID) {
 
         let form = document.getElementById(formID);
 

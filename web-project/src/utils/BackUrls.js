@@ -17,6 +17,9 @@ export default class BackUrls {
     static resetPassword = BackUrls.accounts + 'reset/';
     static resetPasswordRequest = BackUrls.accounts + 'password_reset/';
     static userProfile = BackUrls.accounts + 'user-profile/';
+    static comment(slug) {
+        return BackUrls.base + 'news/' + slug + '/comment/';
+    }
 
 
     static detailedNews = function (slug) {
