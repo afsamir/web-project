@@ -6,9 +6,51 @@ import 'semantic-ui-css/semantic.min.css';
 import {MenuBar} from "../../../component/menu-bar";
 import BackUrls from "../../../utils/BackUrls";
 import Auth from "../../../utils/Auth";
+import Axios from "axios";
+import Login from "../login/Login";
 
 class Home extends Component {
+
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            redirect:false
+        }
+    }
+
+
+    formToJSON(form){
+
+        let obj = {};
+        let elements = form.querySelectorAll("input");
+        for (let i = 0; i < elements.length; ++i) {
+            let element = elements[i];
+            let name = element.name;
+            let value = element.value;
+
+            if (name) {
+                obj[name] = value;
+            }
+        }
+
+        return (obj);
+    }
+
+
+    send() {
+        const form = document.getElementById('reset-form');
+        let formJSON = this.formToJSON(form);
+        Axios.post(BackUrls.resetPassword, formJSON).then(re => this.setState({redirect:true}));
+    }
+
+
+
     render() {
+        const {redirect} = this.state;
+
+        if (redirect)
+            return(<Login/>)
         return (
             <div className='Signup'>
                 <MenuBar style={{position: 'fixed'}}/>
@@ -20,30 +62,28 @@ class Home extends Component {
                             <div className="ui stacked secondary  segment">
                                 <h2 className="ui image header">
                                     <div className="content">
-                                        RESET PASSWORD
+                                        رمز جدید
                                     </div>
                                 </h2>
                                 <div className="field">
                                     <div className="ui left icon input">
                                         <i className="lock icon"/>
-                                        <input type="password" name="password" placeholder="New Password"/>
+                                        <input type="password" name="password" placeholder="رمز"/>
                                     </div>
                                 </div>
                                 <div className="field">
                                     <div className="ui left icon input">
                                         <i className="lock icon"/>
-                                        <input type="password" name="confirm password" placeholder="Confirm New Password"/>
+                                        <input type="password" name="confirm password" placeholder="تکرار رمز"/>
                                     </div>
                                 </div>
-                                <input type="submit" value="Reset Password" className="ui fluid large teal submit button"/>
+                                <div className="ui fluid large teal submit button" onClick={this.send.bind(this)}>تغییر رمز</div>
+
                             </div>
 
                             <div className="ui error message"/>
                         </form>
 
-                        <div className="ui message">
-                            New to us? <a href="https://s.codepen.io/voltron2112/debug/PqrEPM?">Register</a>
-                        </div>
                     </div>
                 </div>
             </div>

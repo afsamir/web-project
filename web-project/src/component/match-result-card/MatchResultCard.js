@@ -4,6 +4,7 @@ import './MatchResultCard.css';
 import {Card, Feed, Divider} from 'semantic-ui-react'
 import DirectionProvider, {DIRECTIONS} from 'react-with-direction/dist/DirectionProvider';
 import {Image} from "../util/image";
+import FrontUrls from "../../utils/FrontUrls";
 
 export class MatchResultCard extends React.Component {
 
@@ -11,6 +12,7 @@ export class MatchResultCard extends React.Component {
         return (
             <DirectionProvider direction={DIRECTIONS.LTR} >
                 <div className={'card'}>
+                    <a href={FrontUrls.gamePage(this.props.data.slug)}>
                 <Card className={'match-result'} >
                     <Card.Content>
                         <Card.Header className={'league'}>{this.props.data.league__name}</Card.Header>
@@ -48,6 +50,7 @@ export class MatchResultCard extends React.Component {
                         </Feed>
                     </Card.Content>
                 </Card>
+                    </a>
                 </div>
             </DirectionProvider>)
     }

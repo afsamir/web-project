@@ -22,4 +22,8 @@ export default class FrontUrls {
         return FrontUrls.leagues  + league__slug + '/'
     }
 
+    static gamePage(slug){
+        return FrontUrls.game + slug + '/'
+    }
+
 }

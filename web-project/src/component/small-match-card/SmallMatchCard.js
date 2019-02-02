@@ -1,11 +1,13 @@
 import React from 'react'
 import {Icon, Feed,} from "semantic-ui-react";
 import './SmallMatchCard.css'
+import FrontUrls from "../../utils/FrontUrls";
 
 
 export class SmallMatchCard extends React.Component {
     render() {
         return (
+            <a href={FrontUrls.gamePage(this.props.data.slug)}>
             <Feed className={'results'}>
                 <Feed.Event>
                     <Feed.Label className={'home-logo'}>
@@ -26,6 +28,7 @@ export class SmallMatchCard extends React.Component {
                     </Feed.Label>
                 </Feed.Event>
             </Feed>
+            </a>
         )
     }
 }

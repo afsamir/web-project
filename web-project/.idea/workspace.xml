@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd8e2431-d039-438e-b3ad-cd35c62dced9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/component/create-comment/CreateComment.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/create-comment/CreateComment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/menu-bar/MenuBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/menu-bar/MenuBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/news/NewsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/news/NewsPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/match-result-card/MatchResultCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/match-result-card/MatchResultCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/small-match-card/SmallMatchCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/small-match-card/SmallMatchCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/authentications/new-password/NewPassword.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/authentications/new-password/NewPassword.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/FrontUrls.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/FrontUrls.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,10 +26,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/news/NewsPage.js">
+        <entry file="file://$PROJECT_DIR$/src/pages/authentications/password-reset/PasswordReset.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="240" column="51" selection-start-line="240" selection-start-column="51" selection-end-line="240" selection-end-column="51" />
+            <state relative-caret-position="405">
+              <caret line="49" selection-start-line="49" selection-end-line="50" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -36,8 +40,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/component/menu-bar/MenuBar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-374">
-              <caret line="223" column="134" selection-start-line="223" selection-start-column="134" selection-end-line="223" selection-end-column="134" />
+            <state relative-caret-position="112">
+              <caret line="223" column="126" selection-start-line="223" selection-start-column="126" selection-end-line="223" selection-end-column="126" />
             </state>
           </provider>
         </entry>
@@ -45,8 +49,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/utils/BackUrls.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+            <state relative-caret-position="178">
+              <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -54,8 +58,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/utils/Auth.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+            <state relative-caret-position="587">
+              <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -64,9 +68,39 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/authentications/new-password/NewPassword.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="631">
+              <caret line="91" selection-start-line="91" selection-end-line="91" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/component/match-result-card/MatchResultCard.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="15" column="50" lean-forward="true" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/component/small-match-card/SmallMatchCard.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="10" column="56" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/component/comment/Comment.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
+            <state relative-caret-position="374">
               <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -78,8 +112,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/utils/FrontUrls.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+            <state relative-caret-position="550">
+              <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -93,36 +127,6 @@
                 <element signature="e#0#26#0" expanded="true" />
                 <element signature="e#239#295#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/component/create-comment/CreateComment.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="40" column="60" selection-start-line="40" selection-start-column="60" selection-end-line="40" selection-end-column="60" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/utils/Time.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/component/create-comment/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -206,11 +210,8 @@
         <option value="$PROJECT_DIR$/src/pages/home/Home.js" />
         <option value="$PROJECT_DIR$/src/component/news/News.js" />
         <option value="$PROJECT_DIR$/src/component/menu-bar/MenuBar.css" />
-        <option value="$PROJECT_DIR$/src/component/match-result-card/MatchResultCard.js" />
-        <option value="$PROJECT_DIR$/src/component/small-match-card/SmallMatchCard.js" />
         <option value="$PROJECT_DIR$/src/pages/authentications/login/Login.css" />
         <option value="$PROJECT_DIR$/src/pages/authentications/register/Register.css" />
-        <option value="$PROJECT_DIR$/src/pages/authentications/new-password/NewPassword.js" />
         <option value="$PROJECT_DIR$/src/pages/authentications/login/Login.js" />
         <option value="$PROJECT_DIR$/src/component/player-card/PlayerCard.js" />
         <option value="$PROJECT_DIR$/src/pages/team/Team.js" />
@@ -225,7 +226,6 @@
         <option value="$PROJECT_DIR$/src/pages/league/League.js" />
         <option value="$PROJECT_DIR$/src/component/league-table/LeagueTable.js" />
         <option value="$PROJECT_DIR$/src/component/player-result/PlayerResult.js" />
-        <option value="$PROJECT_DIR$/src/utils/FrontUrls.js" />
         <option value="$PROJECT_DIR$/src/component/bigLeagueTable/BigLeagueTable.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/component/lineup/Lineup.js" />
@@ -249,6 +249,10 @@
         <option value="$PROJECT_DIR$/src/utils/Auth.js" />
         <option value="$PROJECT_DIR$/src/pages/news/NewsPage.js" />
         <option value="$PROJECT_DIR$/src/component/create-comment/CreateComment.js" />
+        <option value="$PROJECT_DIR$/src/pages/authentications/new-password/NewPassword.js" />
+        <option value="$PROJECT_DIR$/src/utils/FrontUrls.js" />
+        <option value="$PROJECT_DIR$/src/component/match-result-card/MatchResultCard.js" />
+        <option value="$PROJECT_DIR$/src/component/small-match-card/SmallMatchCard.js" />
       </list>
     </option>
   </component>
@@ -495,28 +499,7 @@
       <workItem from="1549041057759" duration="10928000" />
       <workItem from="1549052971276" duration="206000" />
       <workItem from="1549058359929" duration="3405000" />
-      <workItem from="1549091388361" duration="6878000" />
-    </task>
-    <task id="LOCAL-00019" summary="Player page created.">
-      <created>1544485077470</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1544485077470</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Updated.:))">
-      <created>1544515748550</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1544515748551</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Updated.:))">
-      <created>1544517191715</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1544517191715</updated>
+      <workItem from="1549091388361" duration="8633000" />
     </task>
     <task id="LOCAL-00022" summary="League page created.">
       <created>1544529179854</created>
@@ -840,17 +823,38 @@
       <option name="project" value="LOCAL" />
       <updated>1549097352232</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="comment creations no token bug.">
+      <created>1549098324470</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1549098324470</updated>
+    </task>
+    <task id="LOCAL-00069" summary="comment creations no token bug.">
+      <created>1549098333909</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1549098333909</updated>
+    </task>
+    <task id="LOCAL-00070" summary="comment complete.">
+      <created>1549099022657</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1549099022657</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="318543000" />
+    <option name="totallyTimeSpent" value="320298000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="34" width="1920" height="1046" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49832776" visible="true" weight="0.18551797" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49832776" visible="true" weight="0.18551797" />
       <window_info id="Structure" order="1" sideWeight="0.50167227" side_tool="true" weight="0.18551797" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" sideWeight="0.50080514" side_tool="true" weight="0.18239325" />
@@ -867,7 +871,7 @@
       <window_info anchor="bottom" id="TypeScript" order="10" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49947146" weight="0.32921347" />
       <window_info anchor="bottom" id="Statistic" order="12" weight="0.32937366" />
-      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.49735728" visible="true" weight="0.23932584" />
+      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.49735728" weight="0.23932584" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -917,8 +921,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="works" />
-    <MESSAGE value="Authentication Pages created." />
     <MESSAGE value="working on leagueSelector" />
     <MESSAGE value="leagueSelector works" />
     <MESSAGE value="league dashboard works." />
@@ -942,16 +944,11 @@
     <MESSAGE value="timeline and reports." />
     <MESSAGE value="comment done." />
     <MESSAGE value="comment creations done." />
-    <option name="LAST_COMMIT_MESSAGE" value="comment creations done." />
+    <MESSAGE value="comment creations no token bug." />
+    <MESSAGE value="comment complete." />
+    <option name="LAST_COMMIT_MESSAGE" value="comment complete." />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/pages/home/Home.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/home/Home.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="682">
@@ -959,13 +956,6 @@
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/small-match-card/SmallMatchCard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1053,16 +1043,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="32" column="69" lean-forward="true" selection-start-line="32" selection-start-column="69" selection-end-line="32" selection-end-column="126" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/authentications/login/Login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="97" lean-forward="true" selection-start-line="50" selection-end-line="97" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1202,16 +1182,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/authentications/new-password/NewPassword.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/component/news/News.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-484">
@@ -1239,16 +1209,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/authentications/password-reset/PasswordReset.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-396">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/component/create-comment/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -1263,44 +1223,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/Time.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/authentications/login/Login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="43" column="46" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/create-comment/CreateComment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="44" column="8" lean-forward="true" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/authentications/password-reset/PasswordReset.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="49" selection-start-line="49" selection-end-line="50" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/component/menu-bar/MenuBar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-374">
-          <caret line="223" column="134" selection-start-line="223" selection-start-column="134" selection-end-line="223" selection-end-column="134" />
+        <state relative-caret-position="112">
+          <caret line="223" column="126" selection-start-line="223" selection-start-column="126" selection-end-line="223" selection-end-column="126" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/BackUrls.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+        <state relative-caret-position="178">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/Auth.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        <state relative-caret-position="587">
+          <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/comment/Comment.js">
+    <entry file="file://$PROJECT_DIR$/src/pages/authentications/new-password/NewPassword.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+        <state relative-caret-position="631">
+          <caret line="91" selection-start-line="91" selection-end-line="91" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/FrontUrls.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -1315,20 +1305,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/Time.js">
+    <entry file="file://$PROJECT_DIR$/src/utils/FrontUrls.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+        <state relative-caret-position="550">
+          <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/create-comment/CreateComment.js">
+    <entry file="file://$PROJECT_DIR$/src/component/comment/Comment.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="40" column="60" selection-start-line="40" selection-start-column="60" selection-end-line="40" selection-end-column="60" />
+        <state relative-caret-position="374">
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/match-result-card/MatchResultCard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="15" column="50" lean-forward="true" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/small-match-card/SmallMatchCard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="10" column="56" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
         </state>
       </provider>
     </entry>
