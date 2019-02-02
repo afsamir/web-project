@@ -221,7 +221,7 @@ export class ProfileIcon extends React.Component {
                             <Dropdown.Item  lowercase={true}> {user !== undefined? user.first_name:'میهمان'}</Dropdown.Item>
                             <Dropdown.Divider/>
                             <a href={user !== undefined? FrontUrls.newPassword: FrontUrls.signup}><Dropdown.Item >{user !== undefined? 'تغییر رمز' :'ثبت نام'}</Dropdown.Item></a>
-                            <a href={user !== undefined? FrontUrls.logout: FrontUrls.login}><Dropdown.Item >{user !== undefined? 'خروج' : 'ورود'}</Dropdown.Item></a>
+                            <a href={user !== undefined? FrontUrls.logout: FrontUrls.login} onClick={user !== undefined? Auth.logout:''}><Dropdown.Item >{user !== undefined? 'خروج' : 'ورود'}</Dropdown.Item></a>
                         </Dropdown.Menu>
                     </Transition>
                 </Dropdown>

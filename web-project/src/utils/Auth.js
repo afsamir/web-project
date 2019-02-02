@@ -7,8 +7,8 @@ export default class Auth {
 
     static setToken(t) {
 
-        localStorage.setItem('token', t)
-        alert(t)
+        localStorage.setItem('token', t);
+        alert("شما وارد حساب خود شدید .")
     }
 
     static getToken() {
@@ -49,6 +49,11 @@ export default class Auth {
         let formJSON = Auth.formToJSON(formID);
         // alert(formJSON);
         Axios.post(BackUrls.login, formJSON).then(response => alert(response.data.token))
+    }
+
+    static logout(){
+        localStorage.setItem('token', '');
+        alert('شما از حساب خود خارج شدید .')
 
     }
 }

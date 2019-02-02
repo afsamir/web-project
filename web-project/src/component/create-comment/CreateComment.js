@@ -6,7 +6,7 @@ import Auth from "../../utils/Auth";
 
 export default class CreateComment extends React.Component {
 
-    static formToJSON(form){
+    static formToJSON(form) {
 
         let obj = {};
         let elements = form.querySelectorAll("textarea");
@@ -24,7 +24,7 @@ export default class CreateComment extends React.Component {
     }
 
 
-    static reRender(){
+    static reRender() {
         CreateComment.render()
     }
 
@@ -32,13 +32,18 @@ export default class CreateComment extends React.Component {
         const form = document.getElementById('comment-form');
 
         let formJSON = CreateComment.formToJSON(form);
-        alert(formJSON['text']);
 
         formJSON['token'] = Auth.getToken();
         formJSON['slug'] = this;
         formJSON['title'] = 'عنوان';
 
-        Axios.post(BackUrls.newsComment, formJSON).then();
+        // if (Auth.getProfile())
+            Axios.post(BackUrls.newsComment, formJSON).then(re => alert('نظر شما ثبت شد.')).catch(er =>
+                alert('این امکان به دلیل مشکلات فنی در حال حاضر وجود ندارد.')
+            );
+        // else
+        //     alert('ابتدا وارد حساب خود شوید.')
+
     }
 
     render() {
@@ -46,21 +51,22 @@ export default class CreateComment extends React.Component {
 
         return (
 
-        <div>
-            <Form className={'comment-form'} id={'comment-form'}>
-                <Form.TextArea name={'text'} label='نظر' placeholder='نظر خود را اینجا بنویسید ...' id={'create-comment-text'}/>
-            </Form>
-            <div className={'create-comment'}>
-                <div>
-                    <Button animated='vertical' onClick={this.createComment.bind(slug)}>
-                        <Button.Content hidden>ارسال</Button.Content>
-                        <Button.Content visible>
-                            <Icon name='send' />
-                        </Button.Content>
-                    </Button>
+            <div>
+                <Form className={'comment-form'} id={'comment-form'}>
+                    <Form.TextArea name={'text'} label='نظر' placeholder='نظر خود را اینجا بنویسید ...'
+                                   id={'create-comment-text'}/>
+                </Form>
+                <div className={'create-comment'}>
+                    <div>
+                        <Button animated='vertical' onClick={this.createComment.bind(slug)}>
+                            <Button.Content hidden>ارسال</Button.Content>
+                            <Button.Content visible>
+                                <Icon name='send'/>
+                            </Button.Content>
+                        </Button>
+                    </div>
                 </div>
             </div>
-        </div>
         );
     }
 

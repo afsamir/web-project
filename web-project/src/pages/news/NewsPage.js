@@ -177,6 +177,15 @@ class NewsPage extends Component {
                                                         )}
                                                     </Slider>
                                                 </Grid.Row>
+                                                <Grid.Row>
+                                                    <Grid.Column width={16}>
+                                                        {this.state.comments.map(c =>
+                                                            <Comment data={c}/>
+                                                        )}
+                                                        <CreateComment slug={match.params.slug}/>
+                                                    </Grid.Column>
+
+                                                </Grid.Row>
 
                                             </Grid.Column>
                                             <Grid.Column width={5}>
@@ -220,6 +229,15 @@ class NewsPage extends Component {
                                                     )}
                                                 </Slider>
                                             </Grid.Column>
+                                        </Grid.Row>
+                                        <Grid.Row>
+                                            <Grid.Column width={16}>
+                                                {this.state.comments.map(c =>
+                                                    <Comment data={c}/>
+                                                )}
+                                                <CreateComment slug={match.params.slug}/>
+                                            </Grid.Column>
+
                                         </Grid.Row>
                                         <Grid.Row>
                                             <Grid.Column width={16}>
