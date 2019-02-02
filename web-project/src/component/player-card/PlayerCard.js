@@ -23,12 +23,12 @@ class App extends Component {
                         ملیت: {this.props.data.nationality} <Divider/>
                         باشگاه: {this.props.data.team} <Divider/>
                         سن: {this.props.data.age} <Divider/>
-                        محل تولد: {this.props.data.birthPlace} <Divider/>
+                        محل تولد: {this.props.data.birth_place} <Divider/>
                         قد: {this.props.data.height} <Divider/>
                         وزن: {this.props.data.weight} <Divider/>
                         شماره پیراهن در باشگاه: {this.props.data.teamNum} <Divider/>
-                        شماره پیراهن در تیم ملی: {this.props.data.nationalTeamNum} <Divider/>
-                        وب سایت رسمی: <a href={this.props.data.site}>{this.props.data.site}</a> <Divider/>
+                        شماره پیراهن در تیم ملی: {this.props.data.nationalityTeamNum} <Divider/>
+                        وب سایت رسمی: <a href={this.props.data.website}>{this.props.data.website}</a> <Divider/>
                     </div>
                 </Segment>
             </DirectionProvider>

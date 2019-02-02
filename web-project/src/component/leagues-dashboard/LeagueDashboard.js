@@ -109,11 +109,10 @@ export class LeagueSelector extends React.Component {
         this.state = {
             selected: 'لالیگا-2017-2018',
             smallMatchCards: {
-                games:[{}]
+                games: [{}]
             },
             tableData: {
-                teams: [
-                ]
+                teams: []
             }
 
         }
@@ -128,19 +127,18 @@ export class LeagueSelector extends React.Component {
     fetchData() {
 
 
-
         Axios.get(BackUrls.homeLeagueTable(this.state.selected)).then(response => {
             const tableData = response.data;
             this.setState({tableData})
         }).catch(er => {
-            this.setState({tableData: {teams:[]}})
+            this.setState({tableData: {teams: []}})
         });
 
         Axios.get(BackUrls.homeLeagueGames(this.state.selected)).then(response => {
             const smallMatchCards = response.data;
             this.setState({smallMatchCards})
 
-        }).catch(er => this.setState({smallMatchCards: {games:[]}}));
+        }).catch(er => this.setState({smallMatchCards: {games: []}}));
     }
 
 
@@ -168,7 +166,7 @@ export class LeagueSelector extends React.Component {
                 menuItem: 'فوتبال',
                 render: () => <Tab.Pane> <Dropdown placeholder='State' search selection
                                                    options={footballLeagues} defaultValue='لالیگا-2017-2018' inverted
-                                                   className={'leagues-dropdown'} onChange={this.handleItemClick} />
+                                                   className={'leagues-dropdown'} onChange={this.handleItemClick}/>
                     <Button circular={true} color={'teal'} content={' صفحه لیگ'}/>
                 </Tab.Pane>
             },
@@ -178,7 +176,7 @@ export class LeagueSelector extends React.Component {
                     <Dropdown placeholder='State' search selection
                               options={basketballLeagues} defaultValue='لالیگا-2017-2018' inverted
                               className={'leagues-dropdown'} onChange={this.handleItemClick}/>
-                    <Button circular={true} color={'teal'} content={' صفحه لیگ'}/>
+                    <a href={'wwd/'}><Button circular={true} color={'teal'} content={' صفحه لیگ'}/></a>
                 </Tab.Pane>
             }
         ];
