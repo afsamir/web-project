@@ -140,5 +140,14 @@ export default class BackUrls {
         return BackUrls.games + slug + '/slider/'
     }
 
+    static sendLike(slug){
+        return BackUrls.team + slug + '/like'
+    }
+
+
+    static likeStatus(slug){
+        return BackUrls.team + slug + '/like_check'
+    }
+
 
 }
