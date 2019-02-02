@@ -45,7 +45,7 @@ class GameTable extends Component {
         } else return (<Table.Row>
             <Table.Cell textAlign='center' style={{fontSize: '10px'}}>{tl.out_player__name || ''}<Icon
                 name={icon}/>{tl.in_player__name || ''}</Table.Cell>
-            <Table.Cell textAlign='center'>{tl.minute} : {tl.second}</Table.Cell>
+            <Table.Cell textAlign='center'>{tl.second}:{tl.minute} </Table.Cell>
             <Table.Cell textAlign='center'></Table.Cell>
 
         </Table.Row>)
